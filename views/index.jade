@@ -2,8 +2,30 @@ extends layout
 
 block content
   h1= title
-  div#canvas-wrapper(data-bottom-center="background-color: rgb(0,0,0);", data--200-top="background-color: rgb(125,125,125);", data-emit-events)
+  div#canvas-wrapper(data-bottom-center="", data--200-top="", data-emit-events)
+    div#story-title
+      h3 ALMOST NOTHING CAPTIVATES US LIKE
+      h2 TELLING A STORY
+    div#story-top-right
+      div.story-top-right-inner
+        p NO ONE CAN TELL SOMEONE ELSE'S
+          br
+          | STORY
+          img(src="")
+    div#story-top-left
+      p What truly gets us excited are the story makers. It's the one place where...
+    div#story-bottom-left
+      h3 ENERGY
+      hr
+      h3 AUTHENTICITY
+      h2 MEET.
+    div#story-bottom-right
+      p On top of that,
+      h3 EVERYONE HAS A STORY
+      p that we are part of making.
     div#canvas
+
+
 
   script(src="//code.jquery.com/jquery-1.11.0.min.js")
   script(src="/javascripts/jquery-ui.min.js")

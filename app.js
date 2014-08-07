@@ -4,6 +4,7 @@ var favicon = require('static-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var sass = require('node-sass');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
@@ -21,6 +22,16 @@ app.use(bodyParser.urlencoded());
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+//SCSS compiler
+app.use(
+    sass.middleware({
+        src: __dirname + '/sass',
+        dest: __dirname + '/public/compiled',
+        prefix:  '/compiled',
+        debug: true,
+    })
+);
+
 app.use('/', routes);
 app.use('/users', users);
 
@@ -30,6 +41,10 @@ app.use(function(req, res, next) {
     err.status = 404;
     next(err);
 });
+
+
+
+
 
 /// error handlers
 
