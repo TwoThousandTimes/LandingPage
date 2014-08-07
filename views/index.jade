@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1= title
+  div#canvas-wrapper(data-bottom-center="background-color: rgb(0,0,0);", data--200-top="background-color: rgb(125,125,125);", data-emit-events)
+    div#canvas
+
+  script(src="//code.jquery.com/jquery-1.11.0.min.js")
+  script(src="/javascripts/jquery-ui.min.js")
+  script(src="/javascripts/raphael-min.js")
+  script(src="/javascripts/skrollr.min.js")
+  script(src="/javascripts/index.js")
