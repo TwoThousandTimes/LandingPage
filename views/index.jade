@@ -3,29 +3,41 @@ extends layout
 block content
   -// TITLE SECTION
   section.title-container
-    h1 Two Thousand Times
+    div.video-overlay
+      h2 THE
+      h1 Two Thousand Times
+      div.loading-container
+        | X X X X X
+
+    div.learn-more
+      | Learn More
+      img(src="")
+
     video#bgvid(autoplay)
       source(src="/images/oceans.mp4", type="video/mp4")
-  -// WHO WE ARE SECTION
+  -// =========================== WHO WE ARE SECTION =============================
   section.who-we-are
-    div.who-top-left
+    div.who-top-left(data-0="opacity: 0;", data-center="opacity: 1;", data-top="opacity: 0;")
       h2 WE ARE A PLANET OF STORYTELLERS.
       h3 CENTURIES OF IT REALLY.
-    div.who-top-right
+    div.who-top-right(data-0="opacity: 0;", data-center="opacity: 1;", data-top="opacity: 0;")
       h3 THE DESIRE TO LEAVE OUR MARK,
       img(src="")
       h3 TO COMMUNICATE,
       h3 TO SHARE.
-    div.who-bottom-left
+    div.who-bottom-left(data-0="opacity: 0;", data-center="opacity: 1;", data-top="opacity: 0;")
       h3 FROM CAVE PAINTINGS
-      img(src="")
+      div.center-x X
       h3 TO MANIFESTOS
-    div.who-bottom-right
+      div.border-lines
+    div.who-bottom-right(data-0="opacity: 0;", data-center="opacity: 1;", data-top="opacity: 0;")
       h3 TO CAMPFIRES
-      img(src="")
+      div.center-x X
       h3 TO GRAFFITI
+      div.border-lines
+    img.silhouette(src="")
 
-  -// STORY SECTION
+  -// ============================= STORY SECTION ====================================
   section#canvas-wrapper(data-bottom-center="", data--200-top="", data-emit-events)
     div.story-title
       h3 ALMOST NOTHING CAPTIVATES US LIKE
@@ -49,11 +61,41 @@ block content
       p that we are part of making.
     div#canvas
 
-  -// FIXED FOOTER
+    p.story-bottom-message
+      span.highlight It turns strangers into friends. It's where we learn. It builds community.
+      br
+      span.highlight Until today, 
+      span no one forum existed.
+
+  -// ====================================== FINAL SECTION ===================================
+  section.final-section
+    div.logo-container
+      img.logo(src="")
+    p 
+      | We are 
+      span.ttt TWO THOUSAND TIMES
+      | , and we realize that epic stories come from strangers, and there needs to be a place to share them. 
+      | We have developed a community where writers and readers meet, and it is our mission to connect the world on a purely human level.
+    h2 LOREM IPSUM
+    form.email-form
+      input(type="text", placeholder="Email")
+      button(type="submit") Submit
+    div.social-media-container
+      img(src="")
+      img(src="")
+
+
+  -// =================================== FIXED FOOTER =====================================
   div.footer
     div.progress-container
       div.progress(data-0="width:0%;", data-end="width:100%;")
       div.progress-default
+        div.progress-node-x X
+        div.progress-node
+        div.progress-node
+        div.progress-node
+        div.progress-node
+
     form.email-form
       input(type="text", placeholder="Email")
       button(type="submit") Submit

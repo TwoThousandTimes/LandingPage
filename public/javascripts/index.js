@@ -1,5 +1,4 @@
-$(function() {
-
+$(document).ready(function() {
     // Line Animations (right after "Almost Nothing Captivates Us Like Telling a Story")
 
     var canvasId = "canvas";
@@ -12,7 +11,7 @@ $(function() {
     var triggerBottomLeft = 2400;
 
     var pathColor = "#fff";
-    var pathStrokeWidth = 2;
+    var pathStrokeWidth = 1;
     var topLineWidth = 40;
     var distanceBetweenTopHorizontalLines = 120;
     var arcSize = 100;
@@ -110,4 +109,12 @@ $(function() {
         }
     });
 
+});
+
+$(document).ready(function() {
+
+    // Set the video height
+    var footerHeight = $('.footer').height();
+    var windowHeight = $(window).height();
+    $('#bgvid, .title-container, .final-section').height( windowHeight - footerHeight );
 });
