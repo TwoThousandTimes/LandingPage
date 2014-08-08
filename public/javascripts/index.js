@@ -1,4 +1,7 @@
-$(document).ready(function() {
+$(function() {
+
+
+
     // Line Animations (right after "Almost Nothing Captivates Us Like Telling a Story")
 
     var canvasId = "canvas";
@@ -96,25 +99,28 @@ $(document).ready(function() {
 
     var hasAnimated = false;
 
-    var s = skrollr.init({
-        forceHeight: false,
-        keyframe: function(element, name, direction) {
-            //name will be one of data500, dataTopBottom, data_offsetCenter
+    
 
-            if (element.id === 'canvas-wrapper' && name === 'dataBottomCenter' && !hasAnimated) {
-                hasAnimated = true;
-                animateLines(canvas, pathColor, [pathStringLeft, pathStringRight, pathStringTopLeft, pathStringTopRight, pathStringTopLeft, pathStringTopRight]);
+    $(document).ready(function() {
 
+        // Set the video height
+        var footerHeight = $('.footer').height();
+        var windowHeight = $(window).height();
+        $('#bgvid, .title-container, .final-section').height( windowHeight - footerHeight );
+        // Setup the skrollr
+        var s = skrollr.init({
+            forceHeight: false,
+            keyframe: function(element, name, direction) {
+                //name will be one of data500, dataTopBottom, data_offsetCenter
+
+                if (element.id === 'canvas-wrapper' && name === 'dataBottomCenter' && !hasAnimated) {
+                    hasAnimated = true;
+                    animateLines(canvas, pathColor, [pathStringLeft, pathStringRight, pathStringTopLeft, pathStringTopRight, pathStringTopLeft, pathStringTopRight]);
+
+                }
             }
-        }
+        });
     });
 
 });
 
-$(document).ready(function() {
-
-    // Set the video height
-    var footerHeight = $('.footer').height();
-    var windowHeight = $(window).height();
-    $('#bgvid, .title-container, .final-section').height( windowHeight - footerHeight );
-});
