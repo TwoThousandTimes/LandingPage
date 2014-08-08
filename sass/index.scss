@@ -1,6 +1,14 @@
+$footer-height: 50px;
+
+html, body {
+	height: 100%;
+}
+
 body {
   background-color: #333;
   padding: 0;
+  padding-bottom: $footer-height;
+  overflow-x: hidden;
   margin: 0;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
@@ -9,14 +17,42 @@ a {
   color: #00B7FF;
 }
 
+// ============================= TITLE SECTION =============================
+.title-container {
+	text-align: center;
+	height: 100%;
+	color: white;
+	overflow: hidden;
+
+	video#bgvid {
+		position: absolute; top: 0; left: 0;
+		min-width: 100%; min-height: 100%;
+		width: auto; height: auto; z-index: -100;
+		// background: url(polina.jpg) no-repeat;
+		// background-size: cover;
+	}	
+}
+
+// =========================== WHO WE ARE SECTION ============================
+.who-we-are {
+	max-width: 1400px;
+	margin-left: auto;
+	margin-right: auto;
+
+	.who-top-left {
+		width: 30%;
+
+	}
+}
+
+
+
+// ===========================  STORY SECTION ================================
 #canvas-wrapper {
 	width: 100%;
-	margin-top: 800px;
 	position: relative;
 	color: white;
 	text-align: center;
-	position: absolute;
-	width: 100%;
 
 	#canvas {
 		padding: 5px; 
@@ -34,17 +70,17 @@ a {
 		margin-top: 20px;
 	}
 
-	#story-top-right, #story-top-left, #story-bottom-left, #story-bottom-right {
+	.story-top-right, .story-top-left, .story-bottom-left, .story-bottom-right {
 		position: absolute;
 		display: none;
 	}
 
-	#story-title {
+	.story-title {
 		position: absolute;
 		width: 100%;
 	}
 
-	#story-top-right {
+	.story-top-right {
 		left: 50%;
 		top: 180px;
 		padding-right: 42px;
@@ -64,7 +100,7 @@ a {
 		}
 	}
 
-	#story-top-left {
+	.story-top-left {
 		right: 50%;
 		top: 170px;
 		padding-right: 100px;
@@ -73,16 +109,53 @@ a {
 		text-align: left;
 	}
 
-	#story-bottom-left {
+	.story-bottom-left {
 		right: 50%;
 		top: 330px;
 		margin-right: 200px;
 	}
-	
-	#story-bottom-right {
+
+	.story-bottom-right {
 		text-align: left;
 		left: 50%;
 		top: 300px;
 		margin-left: 40px;
+	}
+}
+
+.footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 50px;
+	z-index: 99999;
+	padding-left: 10%;
+	padding-right: 10%;
+
+	background-color: white;
+
+	.progress-container {
+		width: 50%;
+		position: relative;
+		top: 24px;
+		left: 10%;
+
+		.progress-default, .progress {
+			position: absolute;
+			height: 2px;
+		}
+		.progress-default {
+			background-color: lightgrey;
+			width: 100%;
+			z-index: 1;
+		}
+		.progress {
+			background-color: royalblue;
+			z-index: 2;
+		}
+	}
+
+	.email-form, .progress-container {
+		float: left;
 	}
 }

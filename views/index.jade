@@ -1,31 +1,62 @@
 extends layout
 
 block content
-  h1= title
-  div#canvas-wrapper(data-bottom-center="", data--200-top="", data-emit-events)
-    div#story-title
+  -// TITLE SECTION
+  section.title-container
+    h1 Two Thousand Times
+    video#bgvid(autoplay)
+      source(src="/images/oceans.mp4", type="video/mp4")
+  -// WHO WE ARE SECTION
+  section.who-we-are
+    div.who-top-left
+      h2 WE ARE A PLANET OF STORYTELLERS.
+      h3 CENTURIES OF IT REALLY.
+    div.who-top-right
+      h3 THE DESIRE TO LEAVE OUR MARK,
+      img(src="")
+      h3 TO COMMUNICATE,
+      h3 TO SHARE.
+    div.who-bottom-left
+      h3 FROM CAVE PAINTINGS
+      img(src="")
+      h3 TO MANIFESTOS
+    div.who-bottom-right
+      h3 TO CAMPFIRES
+      img(src="")
+      h3 TO GRAFFITI
+
+  -// STORY SECTION
+  section#canvas-wrapper(data-bottom-center="", data--200-top="", data-emit-events)
+    div.story-title
       h3 ALMOST NOTHING CAPTIVATES US LIKE
       h2 TELLING A STORY
-    div#story-top-right
+    div.story-top-right
       div.story-top-right-inner
         p NO ONE CAN TELL SOMEONE ELSE'S
           br
           | STORY
           img(src="")
-    div#story-top-left
+    div.story-top-left
       p What truly gets us excited are the story makers. It's the one place where...
-    div#story-bottom-left
+    div.story-bottom-left
       h3 ENERGY
       hr
       h3 AUTHENTICITY
       h2 MEET.
-    div#story-bottom-right
+    div.story-bottom-right
       p On top of that,
       h3 EVERYONE HAS A STORY
       p that we are part of making.
     div#canvas
 
-
+  -// FIXED FOOTER
+  div.footer
+    div.progress-container
+      div.progress(data-0="width:0%;", data-end="width:100%;")
+      div.progress-default
+    form.email-form
+      input(type="text", placeholder="Email")
+      button(type="submit") Submit
 
   script(src="//code.jquery.com/jquery-1.11.0.min.js")
   script(src="/javascripts/jquery-ui.min.js")

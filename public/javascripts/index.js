@@ -56,19 +56,19 @@ $(function() {
             },
             progress: function(animation, progress, remainingMs) {
                 if (!hasAnimatedTopRight && remainingMs < triggerTopRight) {
-                    $('#story-top-right').fadeIn();
+                    $('.story-top-right').fadeIn();
                     $('.story-top-right-inner').css({marginLeft: 0});
                     hasAnimatedTopRight = true;
                     console.log('animate');
                 }
                 if (!hasAnimatedBottomRight && remainingMs < triggerBottomRight) {
-                    $('#story-bottom-right').fadeIn('slow');
+                    $('.story-bottom-right').fadeIn('slow');
                 }
                 if (!hasAnimatedBottomLeft && remainingMs < triggerBottomLeft) {
-                    $('#story-bottom-left').fadeIn(3000);
+                    $('.story-bottom-left').fadeIn(3000);
                 }
                 if (!hasAnimatedTopLeft && remainingMs < triggerTopLeft) {
-                    $('#story-top-left').fadeIn(4000);
+                    $('.story-top-left').fadeIn(4000);
                 }
             }
         });
@@ -98,6 +98,7 @@ $(function() {
     var hasAnimated = false;
 
     var s = skrollr.init({
+        forceHeight: false,
         keyframe: function(element, name, direction) {
             //name will be one of data500, dataTopBottom, data_offsetCenter
 

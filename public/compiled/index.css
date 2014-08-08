@@ -1,20 +1,44 @@
+html, body {
+  height: 100%; }
+
 body {
   background-color: #333;
   padding: 0;
+  padding-bottom: 50px;
+  overflow-x: hidden;
   margin: 0;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 a {
   color: #00B7FF; }
 
+.title-container {
+  text-align: center;
+  height: 100%;
+  color: white;
+  overflow: hidden; }
+  .title-container video#bgvid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100; }
+
+.who-we-are {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto; }
+  .who-we-are .who-top-left {
+    width: 30%; }
+
 #canvas-wrapper {
   width: 100%;
-  margin-top: 800px;
   position: relative;
   color: white;
-  text-align: center;
-  position: absolute;
-  width: 100%; }
+  text-align: center; }
   #canvas-wrapper #canvas {
     padding: 5px;
     height: 550px;
@@ -26,18 +50,18 @@ a {
   #canvas-wrapper h3 {
     font-size: 25px;
     margin-top: 20px; }
-  #canvas-wrapper #story-top-right, #canvas-wrapper #story-top-left, #canvas-wrapper #story-bottom-left, #canvas-wrapper #story-bottom-right {
+  #canvas-wrapper .story-top-right, #canvas-wrapper .story-top-left, #canvas-wrapper .story-bottom-left, #canvas-wrapper .story-bottom-right {
     position: absolute;
     display: none; }
-  #canvas-wrapper #story-title {
+  #canvas-wrapper .story-title {
     position: absolute;
     width: 100%; }
-  #canvas-wrapper #story-top-right {
+  #canvas-wrapper .story-top-right {
     left: 50%;
     top: 180px;
     padding-right: 42px;
     overflow: hidden; }
-    #canvas-wrapper #story-top-right .story-top-right-inner {
+    #canvas-wrapper .story-top-right .story-top-right-inner {
       margin-left: -100%;
       border: 2px solid white;
       border-left: none;
@@ -48,19 +72,46 @@ a {
       -moz-transition: all 1s ease-in-out;
       -o-transition: all 1s ease-in-out;
       transition: all 1s ease-in-out; }
-  #canvas-wrapper #story-top-left {
+  #canvas-wrapper .story-top-left {
     right: 50%;
     top: 170px;
     padding-right: 100px;
     width: 310px;
     font-size: 15px;
     text-align: left; }
-  #canvas-wrapper #story-bottom-left {
+  #canvas-wrapper .story-bottom-left {
     right: 50%;
     top: 330px;
     margin-right: 200px; }
-  #canvas-wrapper #story-bottom-right {
+  #canvas-wrapper .story-bottom-right {
     text-align: left;
     left: 50%;
     top: 300px;
     margin-left: 40px; }
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  z-index: 99999;
+  padding-left: 10%;
+  padding-right: 10%;
+  background-color: white; }
+  .footer .progress-container {
+    width: 50%;
+    position: relative;
+    top: 24px;
+    left: 10%; }
+    .footer .progress-container .progress-default, .footer .progress-container .progress {
+      position: absolute;
+      height: 2px; }
+    .footer .progress-container .progress-default {
+      background-color: lightgrey;
+      width: 100%;
+      z-index: 1; }
+    .footer .progress-container .progress {
+      background-color: royalblue;
+      z-index: 2; }
+  .footer .email-form, .footer .progress-container {
+    float: left; }
