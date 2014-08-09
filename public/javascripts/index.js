@@ -120,6 +120,21 @@ $(function() {
                 }
             }
         });
+
+        $('.email-form').submit(function() {
+            event.preventDefault();
+            var $form = $(this);
+            console.log($form.serialize());
+            $.ajax({
+                type: "POST",
+                url: '/process/username',
+                data: $form.serialize(),
+                success: function(data, textStatus, xhr) {
+                   alert(data);
+                }
+
+            });
+        });
     });
 
 });

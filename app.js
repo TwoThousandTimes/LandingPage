@@ -5,9 +5,10 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var sass = require('node-sass');
+var http = require('http');
+var db = require('./models');
 
 var routes = require('./routes/index');
-var users = require('./routes/users');
 
 var app = express();
 
@@ -34,7 +35,19 @@ app.use(
 
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
-app.use('/users', users);
+
+
+db
+    .sequelize
+    .sync({ force: false })
+    .complete(function(err) {
+        if (err) {
+            throw err[0]
+        } else {
+
+        }
+    });
+
 
 /// catch 404 and forward to error handler
 app.use(function(req, res, next) {

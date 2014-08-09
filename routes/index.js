@@ -1,9 +1,68 @@
 var express = require('express');
 var router = express.Router();
+var db = require('../models');
+var validator = require('validator');
 
-/* GET home page. */
-router.get('/', function(req, res) {
+/* 
+*	Render the Index page.
+*/
+router.get('/', function (req, res) {
 	res.render('index', { title: 'Express' });
+});
+
+/**
+*	Process email/username info. The following are valid username and email formats
+*		username:
+*			valid characters: a-z, A-Z, 0-9, - and _
+*			length: 3-15 chars
+*		email:
+*			(refer to node_modules/node-validator for email validation specifics)
+*	resposes:
+		200: username succesfully reserved
+		400: invalid username
+		401: invalid email
+		402: username already exists in the database
+		403: email already exists
+		500: database transaction error
+*/
+router.post('/process/username', function (req, res) {
+	// Before accessing database ensure that the email and username are both valid.
+	var usernameRegex = /^[a-zA-Z0-9\-\_]{3,15}$/;
+	var validUsername = validator.matches( req.body.username, usernameRegex );
+	var validEmail = validator.isEmail( req.body.email );
+
+	console.log('process: ' + req.body.username + ' ' + validUsername + '  ' + req.body.email + ' ' + validEmail);
+
+	if (!validUsername)
+		return res.status(400).send();
+	if (!validEmail)
+		return res.status(401).send();
+
+	db.User.findOrCreate(
+		db.sequelize.or(
+      		{ username: req.body.username },
+      		{ email: req.body.email }
+    	)
+	).success( function ( user, created ) {
+
+		if (created) {
+			// The username/email was saved!
+			res.status(200).send();	
+		} else if (user) {
+			if (user.dataValues.username === req.body.username) {
+				// the username already exists in db
+				res.status(402).send();
+			} else {
+				// assume the email already exists in db
+				res.status(403).send();
+			}			
+		} else {
+			res.status(500).send();  // Not sure if this is reachable, but just in case.
+		}
+	
+	}).error(function(err) {
+		res.status(500).send(err);
+	});
 });
 
 module.exports = router;
