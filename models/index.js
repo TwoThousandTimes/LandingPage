@@ -1,5 +1,8 @@
 /* This file simply sets up the database and any models located in this directory */
 
+var port = typeof(process.env.HOSTNAME) == 'undefined' ? 8889 : process.env.PORT;
+console.log(port);
+
 var fs        = require('fs')
   , path      = require('path')
   , Sequelize = require('sequelize')
@@ -9,7 +12,7 @@ var fs        = require('fs')
   //                       'database' , 'username', 'password' 
   , sequelize = new Sequelize('testdb', 'twothousandtimes', 'TT99**', {
       dialect: 'mysql',
-      port: typeof(process.env.HOSTNAME) == 'undefined' ? 8889 : process.env.PORT
+      port: port
   })
   
   , db        = {}
