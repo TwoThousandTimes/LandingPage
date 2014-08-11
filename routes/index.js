@@ -19,10 +19,13 @@ router.get('/', function (req, res) {
 *			(refer to node_modules/node-validator for email validation specifics)
 *	resposes:
 		200: username succesfully reserved
-		400: invalid username
-		401: invalid email
-		402: username already exists in the database
-		403: email already exists
+			{
+				success {
+					username:
+					email:
+				},
+				error: 'error message'
+			}
 		500: database transaction error
 */
 router.post('/process/username', function (req, res) {
@@ -34,9 +37,9 @@ router.post('/process/username', function (req, res) {
 	console.log('process: ' + req.body.username + ' ' + validUsername + '  ' + req.body.email + ' ' + validEmail);
 
 	if (!validUsername)
-		return res.status(400).send();
+		return res.status(200).send({error: 'Invalid username. Allowed characters: a-z, 0-9, -, and _'});
 	if (!validEmail)
-		return res.status(401).send();
+		return res.status(200).send({error: 'Invalid email format.'});
 
 	db.User.findOrCreate(
 		db.sequelize.or(
@@ -47,14 +50,14 @@ router.post('/process/username', function (req, res) {
 
 		if (created) {
 			// The username/email was saved!
-			res.status(200).send();	
+			res.status(200).send({success: { username: req.body.username, email: req.body.email }});	
 		} else if (user) {
 			if (user.dataValues.username === req.body.username) {
 				// the username already exists in db
-				res.status(402).send();
+				res.status(200).send({error: 'The username has already been taken!'});
 			} else {
 				// assume the email already exists in db
-				res.status(403).send();
+				res.status(200).send({error: 'The email is already in use.'});
 			}			
 		} else {
 			res.status(500).send();  // Not sure if this is reachable, but just in case.

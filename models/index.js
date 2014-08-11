@@ -4,9 +4,16 @@ var fs        = require('fs')
   , path      = require('path')
   , Sequelize = require('sequelize')
   , lodash    = require('lodash')
+  
+
   //                       'database' , 'username', 'password' 
-  , sequelize = new Sequelize('testdb', 'root', 'new-password')
+  , sequelize = new Sequelize('testdb', 'root', 'new-password', {
+      dialect: 'mysql',
+      port: typeof(process.env.HOSTNAME) == 'undefined' ? 8889 : process.env.PORT
+  })
+  
   , db        = {}
+
  
 fs
   .readdirSync(__dirname)
