@@ -7,7 +7,7 @@ var fs        = require('fs')
   
 
   //                       'database' , 'username', 'password' 
-  , sequelize = new Sequelize('testdb', 'root', 'new-password', {
+  , sequelize = new Sequelize('testdb', 'twothousandtimes', 'TT99**', {
       dialect: 'mysql',
       port: typeof(process.env.HOSTNAME) == 'undefined' ? 8889 : process.env.PORT
   })
