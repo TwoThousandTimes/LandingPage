@@ -121,19 +121,33 @@ $(function() {
             }
         });
 
+        // Handle the form submition
         $('.email-form').submit(function() {
             event.preventDefault();
             var $form = $(this);
-            console.log($form.serialize());
             $.ajax({
                 type: "POST",
                 url: '/process/username',
                 data: $form.serialize(),
                 success: function(data, textStatus, xhr) {
-                   alert(data);
-                }
+                    if (data.error) {
+                        $form.find('.error-message').html(data.error);
+                        $form.find('input').addClass('error');
+                    } else {
+                        // TODO: display some sort of success screen??
 
+                    }
+                },
+                error: function() {
+
+                }
             });
+        });
+
+        // Remove the error class (if any) when the user input changes. Also remove any error messages.
+        $('input').change(function() {
+            $(this).removeClass('error');
+            $('.error-message').html('');
         });
     });
 

@@ -1,7 +1,6 @@
 /* This file simply sets up the database and any models located in this directory */
 
 var port = typeof(process.env.HOSTNAME) == 'undefined' ? 8889 : process.env.PORT;
-console.log(port);
 
 var fs        = require('fs')
   , path      = require('path')
