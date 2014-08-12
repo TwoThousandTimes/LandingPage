@@ -217,7 +217,7 @@ a {
   text-align: center;
   background-image: url('/images/beach.jpg');
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: top center;
   background-size: cover; }
   #canvas-wrapper #canvas {
     position: relative;

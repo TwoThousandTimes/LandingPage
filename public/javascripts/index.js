@@ -89,18 +89,19 @@ $(function() {
     // Line Animations (right after "Almost Nothing Captivates Us Like Telling a Story")
 
     var canvasId = "canvas";
-    var animationTime = 4000;
+    var animationTime = 3000;
     // Assume animation is counting down from 'animationTime' towards 0ms. Raising the trigger's below will make the
     // animations happen sooner. Triggers must be 0 < trigger < animationTime 
-    var triggerTopRight = 3000; 
-    var triggerBottomRight = 2000;
-    var triggerTopLeft = 3500;
-    var triggerBottomLeft = 2400;
+    var triggerTopRight = 2500; 
+    var topRightAnimationSpeed = 1000;
+    var triggerBottomRight = 3000;
+    var triggerTopLeft = 3000;
+    var triggerBottomLeft = 2500;
 
     var pathColor = "#fff";
-    var pathStrokeWidth = 1;
-    var topLineWidth = 40;
-    var distanceBetweenTopHorizontalLines = 120;
+    var pathStrokeWidth = 3;
+    var topLineWidth = 100;
+    var distanceBetweenTopHorizontalLines =175;
     var arcSize = 100;
 
     animateLines = function(canvas, colorNumber, paths) {
@@ -142,19 +143,20 @@ $(function() {
             },
             progress: function(animation, progress, remainingMs) {
                 if (!hasAnimatedTopRight && remainingMs < triggerTopRight) {
-                    $('.story-top-right').fadeIn();
+                    $('.story-top-right').fadeIn(100);
                     $('.story-top-right-inner').css({marginLeft: 0});
                     hasAnimatedTopRight = true;
                     console.log('animate');
                 }
                 if (!hasAnimatedBottomRight && remainingMs < triggerBottomRight) {
-                    $('.story-bottom-right').fadeIn('slow');
+                    $('.story-bottom-right').fadeIn('slow').addClass('animated fadeInUp');
                 }
                 if (!hasAnimatedBottomLeft && remainingMs < triggerBottomLeft) {
-                    $('.story-bottom-left').fadeIn(3000);
+                    $('.story-bottom-left').fadeIn();
+                    $('.story-bottom-left .energy');
                 }
                 if (!hasAnimatedTopLeft && remainingMs < triggerTopLeft) {
-                    $('.story-top-left').fadeIn(4000);
+                    $('.story-top-left').fadeIn().addClass('animated fadeInUp');
                 }
             }
         });
