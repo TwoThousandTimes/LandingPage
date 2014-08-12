@@ -2,9 +2,9 @@ html, body {
   height: 100%; }
 
 body {
-  background-color: #333;
+  background-color: #161515;
   padding: 0;
-  padding-bottom: 50px;
+  padding-bottom: 80px;
   overflow-x: hidden;
   margin: 0;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
@@ -25,10 +25,37 @@ a {
     left: 0;
     bottom: 0;
     right: 0; }
+    .title-container .video-overlay h1 {
+      font-family: 'Fjalla One', sans-serif;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 10px;
+      font-size: 87px;
+      line-height: 80%;
+      margin-top: 20px;
+      margin-bottom: 20px; }
+      .title-container .video-overlay h1 span {
+        font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        font-weight: 100;
+        font-size: 30px;
+        letter-spacing: 5px; }
+    .title-container .video-overlay .loading-container {
+      font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+      font-weight: 100;
+      font-size: 30px;
+      letter-spacing: 5px; }
+      .title-container .video-overlay .loading-container img {
+        width: 186px; }
   .title-container .learn-more {
     position: absolute;
     bottom: 120px;
     width: 100%; }
+    .title-container .learn-more h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      text-transform: uppercase;
+      font-size: 12px;
+      letter-spacing: 1px; }
   .title-container video#bgvid {
     position: absolute;
     top: 0;
@@ -43,30 +70,106 @@ a {
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
-  color: white; }
+  color: white;
+  overflow: visible !important; }
   .who-we-are .who-top-left, .who-we-are .who-top-right, .who-we-are .who-bottom-left, .who-we-are .who-bottom-right {
     float: left;
     position: relative; }
   .who-we-are .who-top-left, .who-we-are .who-bottom-left {
-    width: 30%; }
+    width: 40%; }
   .who-we-are .who-top-right, .who-we-are .who-bottom-right {
-    width: 70%; }
+    width: 60%; }
   .who-we-are .who-top-left {
     margin-top: 55px; }
     .who-we-are .who-top-left h2, .who-we-are .who-top-left h3 {
       padding-left: 20px;
       padding-right: 20px; }
+    .who-we-are .who-top-left h2 {
+      font-family: 'Fjalla One', sans-serif;
+      font-weight: 400;
+      font-size: 80px;
+      letter-spacing: 2px;
+      line-height: 100%;
+      margin-top: 0px;
+      margin-bottom: 20px; }
+      .who-we-are .who-top-left h2 span {
+        font-family: 'Pathway Gothic One', sans-serif;
+        font-weight: 400;
+        letter-spacing: 0px;
+        line-height: 90%; }
+    .who-we-are .who-top-left h3 {
+      font-family: 'EB Garamond', serif;
+      font-weight: 400;
+      font-size: 32px;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      line-height: 95%;
+      margin: 0px; }
   .who-we-are .who-top-right {
+    position: relative;
     margin-top: 125px;
     text-align: center;
     box-shadow: inset 0px 0px 0px 1px #fff;
-    -webkit-box-shadow: inset 0px 0px 0px 1px #fff; }
+    -webkit-box-shadow: inset 0px 0px 0px 1px #fff;
+    overflow: visible !important; }
+    .who-we-are .who-top-right h3 {
+      padding: 0 20px;
+      margin: 10px 0; }
+      .who-we-are .who-top-right h3.desire {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 45px;
+        letter-spacing: 3px;
+        padding-top: 50px; }
+      .who-we-are .who-top-right h3.communicate {
+        width: 65%;
+        text-align: right;
+        padding-top: 30px;
+        padding-right: 60px;
+        background-image: url('/images/bubble.png');
+        background-repeat: no-repeat;
+        background-position: top right;
+        font-family: 'Pathway Gothic One', sans-serif;
+        font-weight: 400;
+        font-size: 40px;
+        letter-spacing: 7px;
+        text-transform: uppercase; }
+      .who-we-are .who-top-right h3.share {
+        width: 60%;
+        text-align: right;
+        padding-bottom: 50px;
+        font-family: 'EB Garamond', serif;
+        font-weight: 400;
+        font-size: 50px;
+        letter-spacing: 10px;
+        text-transform: uppercase; }
+    .who-we-are .who-top-right img.connect {
+      position: absolute;
+      right: -50px;
+      bottom: -200px; }
   .who-we-are .who-bottom-left {
-    margin-top: 75px;
+    margin-top: 200px;
     text-align: center; }
   .who-we-are .who-bottom-right {
-    margin-top: 150px;
+    margin-top: 270px;
     text-align: center; }
+  .who-we-are h3.from {
+    font-family: 'EB Garamond', serif;
+    font-weight: 400;
+    font-size: 32px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    line-height: 100%;
+    margin: 20px 0; }
+  .who-we-are h3.to {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin: 15px 0 20px 0; }
+  .who-we-are .center-x img {
+    width: 16px; }
   .who-we-are .border-lines {
     height: 100%;
     position: absolute;
@@ -75,7 +178,7 @@ a {
     right: 0;
     margin-left: auto;
     margin-right: auto;
-    width: 60px;
+    width: 127px;
     border-top: 1px solid white;
     border-bottom: 1px solid white; }
   .who-we-are .silhouette {
@@ -109,9 +212,23 @@ a {
   #canvas-wrapper .story-title {
     position: absolute;
     width: 100%; }
+    #canvas-wrapper .story-title h3 {
+      font-family: 'Pathway Gothic One', sans-serif;
+      font-weight: 400;
+      font-size: 50px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 5px; }
+    #canvas-wrapper .story-title h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 50px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-top: 0px; }
   #canvas-wrapper .story-top-right {
     left: 50%;
-    top: 180px;
+    top: 200px;
     padding-right: 42px;
     overflow: hidden; }
     #canvas-wrapper .story-top-right .story-top-right-inner {
@@ -125,29 +242,76 @@ a {
       -moz-transition: all 1s ease-in-out;
       -o-transition: all 1s ease-in-out;
       transition: all 1s ease-in-out; }
+      #canvas-wrapper .story-top-right .story-top-right-inner p {
+        font-family: 'Pathway Gothic One', sans-serif;
+        font-weight: 400;
+        font-size: 37px;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        margin: 10px 0; }
+        #canvas-wrapper .story-top-right .story-top-right-inner p span {
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 400; }
   #canvas-wrapper .story-top-left {
     right: 50%;
-    top: 170px;
+    top: 190px;
     padding-right: 100px;
-    width: 310px;
+    width: 500px;
     font-size: 15px;
     text-align: left; }
+    #canvas-wrapper .story-top-left p {
+      font-family: 'EB Garamond', serif;
+      font-weight: 400;
+      font-size: 24px;
+      letter-spacing: 3px; }
   #canvas-wrapper .story-bottom-left {
     right: 50%;
     top: 330px;
     margin-right: 200px; }
+    #canvas-wrapper .story-bottom-left h3 {
+      font-family: 'Pathway Gothic One', sans-serif;
+      font-weight: 400;
+      font-size: 66px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin: 10px 0; }
+    #canvas-wrapper .story-bottom-left h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      font-size: 50px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin: 10px 0; }
   #canvas-wrapper .story-bottom-right {
     text-align: left;
     left: 50%;
-    top: 300px;
+    top: 350px;
     margin-left: 40px; }
+    #canvas-wrapper .story-bottom-right p {
+      font-family: 'EB Garamond', serif;
+      font-weight: 400;
+      font-size: 24px;
+      letter-spacing: 5px;
+      margin: 0; }
+    #canvas-wrapper .story-bottom-right h3 {
+      font-family: 'Pathway Gothic One', sans-serif;
+      font-weight: 400;
+      font-size: 70px;
+      letter-spacing: 5px;
+      line-height: 77%;
+      margin: 0; }
   #canvas-wrapper .story-bottom-message {
-    text-align: center; }
+    font-family: 'EB Garamond', serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: 24px;
+    letter-spacing: 3px;
+    line-height: 200%; }
     #canvas-wrapper .story-bottom-message .highlight {
       color: #32b0c6; }
 
 .final-section {
-  margin-bottom: 50px;
+  margin-bottom: 80px;
   text-align: center;
   background-color: white; }
   .final-section .logo-container {
@@ -160,49 +324,120 @@ a {
   .final-section p {
     width: 60%;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    font-family: 'EB Garamond', serif;
+    font-weight: 400;
+    font-size: 24px;
+    letter-spacing: 3px;
+    line-height: 200%; }
+  .final-section h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    letter-spacing: 3px; }
 
 .footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 50px;
+  height: 80px;
   z-index: 99999;
-  border-top: 1px solid white;
-  background-color: white; }
-  .footer .progress-container {
-    width: 50%;
-    position: relative;
-    top: 24px;
-    left: 10%; }
-    .footer .progress-container .progress-default, .footer .progress-container .progress {
-      position: absolute;
-      height: 2px; }
-    .footer .progress-container .progress-default {
-      background-color: lightgrey;
-      width: 100%;
-      z-index: 1; }
-      .footer .progress-container .progress-default .progress-node {
-        height: 10px;
-        width: 10px;
-        background-color: lightgray;
-        border: 2px solid white;
-        border-radius: 50%;
-        margin-top: -6px;
-        margin-left: 25%;
-        float: left;
-        z-index: 3; }
-      .footer .progress-container .progress-default .progress-node-x {
+  border-top: 2px solid white;
+  background: url('/images/white90.png');
+  background-repeat: repeat; }
+  .footer .footer-container {
+    width: 95%;
+    margin: 0px auto; }
+    .footer .footer-container .progress-container {
+      position: relative;
+      width: 100%; }
+      .footer .footer-container .progress-container .progress-default, .footer .footer-container .progress-container .progress {
         position: absolute;
-        left: -10px;
-        font-weight: bolder;
-        top: -6px;
-        color: #32b0c6; }
-    .footer .progress-container .progress {
-      background-color: #32b0c6;
-      z-index: 2; }
-  .footer .email-form {
-    position: absolute;
-    left: 60%;
-    width: 30%;
-    padding: 12px; }
+        height: 3px; }
+      .footer .footer-container .progress-container .progress-default {
+        background-color: #aaa;
+        width: 100%;
+        z-index: 1; }
+        .footer .footer-container .progress-container .progress-default .progress-node {
+          height: 10px;
+          width: 10px;
+          background-color: lightgray;
+          border: 3px solid white;
+          border-radius: 50%;
+          margin-top: -6px;
+          margin-left: 24.1%;
+          float: left;
+          z-index: 3; }
+        .footer .footer-container .progress-container .progress-default .progress-node-x {
+          position: absolute;
+          left: -10px;
+          font-weight: bolder;
+          top: -9px;
+          color: #32b0c6; }
+          .footer .footer-container .progress-container .progress-default .progress-node-x img {
+            width: 21px; }
+      .footer .footer-container .progress-container .progress {
+        background-color: #32b0c6;
+        z-index: 2; }
+    .footer .footer-container .signup-container {
+      position: relative;
+      width: 40%;
+      margin: 0px auto;
+      text-align: center;
+      padding: 17px 0 0 0; }
+      .footer .footer-container .signup-container h3 {
+        float: left;
+        margin-right: 30px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 15px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #222; }
+      .footer .footer-container .signup-container .email-form {
+        position: relative;
+        float: left; }
+        .footer .footer-container .signup-container .email-form input[type="text"] {
+          position: relative;
+          width: 35%;
+          height: 46px;
+          float: left;
+          margin: 0px;
+          padding: 0px 10px;
+          border-top: solid 3px #32b1c6 !important;
+          border-right: 0px !important;
+          border-bottom: solid 3px #32b1c6 !important;
+          border-left: solid 3px #32b1c6 !important;
+          font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+          font-weight: 100;
+          font-size: 16px;
+          text-transform: lowercase;
+          letter-spacing: 1px;
+          color: #222; }
+        .footer .footer-container .signup-container .email-form button[type="submit"] {
+          position: relative;
+          width: 20%;
+          height: 52px;
+          float: left;
+          margin: 0px;
+          padding: 0px 10px;
+          background-color: #32b1c6 !important;
+          border-top: 0px !important;
+          border-right: 0px !important;
+          border-bottom: solid 3px #238484 !important;
+          border-left: 0px !important;
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 700;
+          text-transform: uppercase;
+          color: #fff;
+          font-size: 16px;
+          letter-spacing: 1px; }
+        .footer .footer-container .signup-container .email-form .error-message {
+          position: absolute;
+          text-align: center;
+          width: 100%;
+          top: -30px;
+          right: 0px;
+          background-color: #f74141;
+          color: #fff;
+          z-index: 10 !important; }
