@@ -8,5 +8,5 @@ module.exports = {
     db_name: production ? 'testdb' : 'testdb',
     db_username: production ? 'twothousandtimes' : 'twothousandtimes',
     db_password: production ? 'TT99**' : 'TT99**',
-    cdn: production ? 'cdn:' : ''
+    cdn: production ? 'dncuoirsa3u02.cloudfront.net/static-test' : ''
 };
