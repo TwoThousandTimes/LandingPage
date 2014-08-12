@@ -1,17 +1,17 @@
 /* This file simply sets up the database and any models located in this directory */
 
-var port = typeof(process.env.HOSTNAME) == 'undefined' ? 8889 : process.env.PORT;
 
 var fs        = require('fs')
   , path      = require('path')
   , Sequelize = require('sequelize')
   , lodash    = require('lodash')
+  , config    = require('../config')
   
 
-  //                       'database' , 'username', 'password' 
-  , sequelize = new Sequelize('testdb', 'twothousandtimes', 'TT99**', {
+  //                              'database' ,       'username',         'password' 
+  , sequelize = new Sequelize( config.db_name, config.db_username, config.db_password, {
       dialect: 'mysql',
-      port: port
+      port: config.db_port
   })
   
   , db        = {}
