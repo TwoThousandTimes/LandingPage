@@ -45,7 +45,11 @@ router.post('/process/username', function (req, res) {
 		db.sequelize.or(
       		{ username: req.body.username },
       		{ email: req.body.email }
-    	)
+    	),
+    	{
+    		username: req.body.username,
+    		email: req.body.email
+    	}
 	).success( function ( user, created ) {
 
 		if (created) {
