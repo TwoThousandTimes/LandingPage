@@ -1,7 +1,91 @@
 $(function() {
+    $(document).ready(function() {
+
+
+        // Setup the skrollr
+        var s = skrollr.init({
+            forceHeight: false,
+            keyframe: function(element, name, direction) {
+                //name will be one of data500, dataTopBottom, data_offsetCenter
+
+                if (element.id === 'canvas-wrapper' && name === 'dataBottomCenter' && !hasAnimated) {
+                    hasAnimated = true;
+                    animateLines(canvas, pathColor, [pathStringLeft, pathStringRight, pathStringTopLeft, pathStringTopRight, pathStringTopLeft, pathStringTopRight]);
+
+                }
+            }
+        });
+
+        var windowResize = function() {
+            // Set the video and final section heights
+            var footerHeight = $('.footer').height();
+            var windowHeight = $(window).height();
+            $('#bgvid, .title-container, .final-section').height( windowHeight - footerHeight );    
+            s.refresh();
+        };
+
+        windowResize();
+        $(window).resize(windowResize);
+
+        // TODO: start the loading animation
+
+
+        // Handle the form submition
+        $('.email-form').submit(function() {
+            event.preventDefault();
+            var $form = $(this);
+            $.ajax({
+                type: "POST",
+                url: '/process/username',
+                data: $form.serialize(),
+                success: function(data, textStatus, xhr) {
+                    if (data.error) {
+                        $form.find('.error-message').html(data.error);
+                        $form.find('input').addClass('error');
+                    } else {
+                        // TODO: display some sort of success screen??
+
+                    }
+                },
+                error: function() {
+
+                }
+            });
+        });
+
+        // Remove the error class (if any) when the user input changes. Also remove any error messages.
+        $('input').change(function() {
+            $(this).removeClass('error');
+            $('.error-message').html('');
+        });
+
+
+    });
+
+    // Fetch the landing page video!
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', '/images/B&W_pics_export._v2.mov', true);
+    xhr.responseType = 'blob';
+    xhr.onload = function(e) {
+        if (this.status == 200) {
+            console.log("got it");            
+
+            var myBlob = this.response;
+            var vid = (window.webkitURL ? webkitURL : URL).createObjectURL(myBlob);
+            // myBlob is now the blob that the object URL pointed to.
+            var video = document.getElementById("bgvid");
+            video.src = vid;
+            // TODO: stop the loading animation!
+            video.play();
+        }
+    }
+    xhr.send();
 
 
 
+
+
+    // ========================== LINE ANIMATION STUFF ===================================
     // Line Animations (right after "Almost Nothing Captivates Us Like Telling a Story")
 
     var canvasId = "canvas";
@@ -98,58 +182,6 @@ $(function() {
     var pathStringTopRight = "M" + widthMid + ",0h" + topLineWidth;
 
     var hasAnimated = false;
-
-    
-
-    $(document).ready(function() {
-
-        // Set the video height
-        var footerHeight = $('.footer').height();
-        var windowHeight = $(window).height();
-        $('.title-container, .final-section').height( windowHeight - footerHeight );
-        // Setup the skrollr
-        var s = skrollr.init({
-            forceHeight: false,
-            keyframe: function(element, name, direction) {
-                //name will be one of data500, dataTopBottom, data_offsetCenter
-
-                if (element.id === 'canvas-wrapper' && name === 'dataBottomCenter' && !hasAnimated) {
-                    hasAnimated = true;
-                    animateLines(canvas, pathColor, [pathStringLeft, pathStringRight, pathStringTopLeft, pathStringTopRight, pathStringTopLeft, pathStringTopRight]);
-
-                }
-            }
-        });
-
-        // Handle the form submition
-        $('.email-form').submit(function() {
-            event.preventDefault();
-            var $form = $(this);
-            $.ajax({
-                type: "POST",
-                url: '/process/username',
-                data: $form.serialize(),
-                success: function(data, textStatus, xhr) {
-                    if (data.error) {
-                        $form.find('.error-message').html(data.error);
-                        $form.find('input').addClass('error');
-                    } else {
-                        // TODO: display some sort of success screen??
-
-                    }
-                },
-                error: function() {
-
-                }
-            });
-        });
-
-        // Remove the error class (if any) when the user input changes. Also remove any error messages.
-        $('input').change(function() {
-            $(this).removeClass('error');
-            $('.error-message').html('');
-        });
-    });
 
 });
 
