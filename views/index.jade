@@ -13,11 +13,11 @@ block content
       | Learn More
       img(src="")
 
-    video#bgvid(autoplay)
-      source(src="/images/oceans.mp4", type="video/mp4")
+    video#bgvid(muted)
+      //- source(src="/images/oceans.mp4", type="video/mp4")
   -// =========================== WHO WE ARE SECTION =============================
   section.who-we-are
-    div.who-top-left(data-0="opacity: 0;", data-center="opacity: 1;", data-top="opacity: 0;")
+    div.who-top-left(data-0="opacity: 0; margin-top: 250px;", data-center="opacity: 1; margin-top: 100px;", data-top="opacity: 0; margin-top: 0;")
       h2 WE ARE A PLANET OF STORYTELLERS.
       h3 CENTURIES OF IT REALLY.
     div.who-top-right(data-0="opacity: 0;", data-center="opacity: 1;", data-top="opacity: 0;")
@@ -82,7 +82,7 @@ block content
       input(type="text", name="username", placeholder="Username")
       button(type="submit") Submit
       span.error-message
-        
+
     div.social-media-container
       img(src="")
       img(src="")
