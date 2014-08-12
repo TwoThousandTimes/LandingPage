@@ -64,7 +64,7 @@ a {
       text-transform: uppercase;
       font-size: 12px;
       letter-spacing: 1px; }
-  .title-container video {
+  .title-container video#bgvid {
     position: fixed;
     right: 0;
     bottom: 0;
@@ -73,7 +73,8 @@ a {
     width: auto;
     height: auto;
     z-index: -100;
-    background-size: cover; }
+    background-size: cover;
+    overflow: hidden; }
 
 .who-top-left, .who-top-right, .who-bottom-left, .who-bottom-right {
   float: left;
@@ -225,7 +226,8 @@ a {
     height: 750px;
     width: 100%;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    overflow: hidden; }
   #canvas-wrapper h2 {
     font-size: 30px; }
   #canvas-wrapper h3 {
@@ -450,7 +452,9 @@ a {
   background: url('/images/white90.png');
   background-repeat: repeat; }
   .footer .footer-container {
-    width: 95%;
+    width: 100%;
+    max-width: 1400px;
+    min-width: 970px;
     margin: 0px auto; }
     .footer .footer-container .progress-container {
       position: relative;
@@ -494,21 +498,25 @@ a {
         z-index: 2; }
     .footer .footer-container .signup-container {
       position: relative;
-      width: 40%;
-      margin: 0px auto;
+      float: left;
+      width: 75%;
+      margin: 0px;
       padding: 17px 0 0 0; }
-      .footer .footer-container .signup-container h3 {
+      .footer .footer-container .signup-container h4 {
+        width: 38%;
+        margin-rith: 2%;
         float: left;
-        margin-right: 30px;
         font-family: 'Montserrat', sans-serif;
         font-weight: 700;
         font-size: 15px;
         letter-spacing: 1px;
+        text-align: right;
         text-transform: uppercase;
         color: #222; }
       .footer .footer-container .signup-container .email-form {
+        width: 60%;
         position: relative;
-        float: left; }
+        float: right; }
         .footer .footer-container .signup-container .email-form input[type="text"] {
           position: relative;
           width: 35%;
@@ -553,3 +561,10 @@ a {
           background-color: #f74141;
           color: #fff;
           z-index: 10 !important; }
+    .footer .footer-container .social {
+      position: relative;
+      float: left;
+      text-align: right;
+      width: 24%;
+      margin: 0px 1% 0 0;
+      padding: 17px 0 0 0; }
