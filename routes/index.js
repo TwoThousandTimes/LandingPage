@@ -2,12 +2,13 @@ var express = require('express');
 var router = express.Router();
 var db = require('../models');
 var validator = require('validator');
+var config = require('../config');
 
 /* 
 *	Render the Index page.
 */
 router.get('/', function (req, res) {
-	res.render('index', { title: 'Express' });
+	res.render('index', { title: 'Two Thousand Times', cdn: config.cdn });
 });
 
 /**
@@ -49,7 +50,7 @@ router.post('/process/username', function (req, res) {
     	{
     		username: req.body.username,
     		email: req.body.email
-    	}
+    	}	
 	).success( function ( user, created ) {
 
 		if (created) {
