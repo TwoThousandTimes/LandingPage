@@ -1,11 +1,13 @@
-$footer-height: 50px;
+@import 'shared';
+
+$footer-height: 80px;
 
 html, body {
 	height: 100%;
 }
 
 body {
-  background-color: #333;
+  background-color: $bg_black;
   padding: 0;
   padding-bottom: $footer-height;
   overflow-x: hidden;
@@ -17,10 +19,21 @@ a {
   color: #00B7FF;
 }
 
+
+// ============================= General =============================
+.content-container {
+	position:relative;
+	width: 100%;
+	max-width: 1400px;
+	min-width:970px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow:visible !important;
+}
+
 // ============================= TITLE SECTION =============================
 .title-container {
 	text-align: center;
-	height: 100%;
 	color: white;
 	overflow: hidden;
 
@@ -29,9 +42,28 @@ a {
 		margin: auto;
 		position: absolute;
 		top: 0; left: 0; bottom: 0; right: 0;
-
+		
+		h1 {
+			@include fjalla;
+			text-transform:uppercase;
+			letter-spacing:10px;
+			font-size:87px;
+			line-height:80%;
+			margin-top:20px;
+			margin-bottom:20px;
+			span {
+				@include sans_serif;
+				font-size:30px;
+				letter-spacing:5px;
+			}
+		}
 		.loading-container {
-
+			@include sans_serif;
+			font-size:30px;
+			letter-spacing:5px;
+			img {
+				width:186px;
+			}
 		}
 	}
 
@@ -39,56 +71,151 @@ a {
 		position: absolute;
 		bottom: 120px;
 		width: 100%;
+		h3 {
+			@include montserrat;
+			text-transform:uppercase;
+			font-size:12px;
+			letter-spacing:1px;
+		}
 	}
 
-	video#bgvid {
-		position: absolute; top: 0; left: 0;
+	video{
+		position: fixed; right: 0; bottom: 0;
+		min-width: 100%; min-height: 100%;
 		width: auto; height: auto; z-index: -100;
-		// background: url(polina.jpg) no-repeat;
-		// background-size: cover;
+		background-size: cover;
 	}	
 }
 
 // =========================== WHO WE ARE SECTION ============================
-.who-we-are {
-	width: 80%;
-	max-width: 1400px;
-	margin-left: auto;
-	margin-right: auto;
-	overflow: hidden;
-	color: white;
 
-	.who-top-left, .who-top-right, .who-bottom-left, .who-bottom-right {
+.who-top-left, .who-top-right, .who-bottom-left, .who-bottom-right {
 		float: left;
 		position: relative;
-	}
-	.who-top-left, .who-bottom-left {
-		width: 30%;
-	}
-	.who-top-right, .who-bottom-right {
-		width: 70%;
-	}
+}
+.who-top-left, .who-bottom-left {
+	width: 40%;
+}
+.who-top-right, .who-bottom-right {
+	width: 60%;
 
+}
+	
+.who-we-are {
+	position:relative;
+	width:100%;
+	height:inherit;
+	padding-bottom:250px;
+	background-color: $bg_black;
+	background-image: url('/images/stars.jpg');
+	background-repeat:no-repeat;
+	background-position:top center;
+	background-size:cover;
+	color:#fff;
 	.who-top-left {
-		margin-top: 55px;
+		margin-top: 100px;
 		h2, h3 {
 			padding-left: 20px;
 			padding-right: 20px;
 		}
+		h2 {
+			@include fjalla;
+			font-size:80px;
+			letter-spacing:2px;
+			line-height:100%;
+			margin-top:0px;
+			margin-bottom:20px;
+			span {
+				@include pathway;
+				letter-spacing:0px;
+				line-height:90%;
+			}
+		}
+		h3 {
+			@include garamond;
+			font-size:32px;
+			text-transform:uppercase;
+			letter-spacing:5px;
+			line-height:95%;
+			margin:0px;
+		}
 	}
 	.who-top-right {
-		margin-top: 125px;
+		position:relative;
+		margin-top: 170px;
 		text-align: center;
 		box-shadow: inset 0px 0px 0px 1px #fff;
 		-webkit-box-shadow: inset 0px 0px 0px 1px #fff;
+		overflow:visible !important;
+
+		h3 {
+			padding:0 20px;
+			margin:10px 0;
+			&.desire {
+				@include montserrat_bold;
+				font-size:45px;
+				letter-spacing:3px;
+				padding-top:50px;
+			}
+			&.communicate {
+				width:65%;
+				text-align:right;
+				padding-top:30px;
+				padding-right:60px;
+				background-image: url('/images/bubble.png');
+				background-repeat:no-repeat;
+				background-position:top right;
+		
+				@include pathway;
+				font-size:40px;
+				letter-spacing:7px;
+				text-transform:uppercase;
+			}
+			&.share {
+				width:60%;
+				text-align:right;
+				padding-bottom:50px;
+		
+				@include garamond;
+				font-size:50px;
+				letter-spacing:10px;
+				text-transform:uppercase;
+			}
+		}
+		img.connect {
+			position:absolute;
+			right:-50px;
+			bottom:-200px;
+		}
 	}
+	
 	.who-bottom-left {
-		margin-top: 75px;
+		margin-top: 50px;
 		text-align: center;
 	}
 	.who-bottom-right {
-		margin-top: 150px;
+		margin-top: 120px;
 		text-align: center;
+	}
+	h3.from {
+		@include garamond;
+		font-size:32px;
+		letter-spacing:10px;
+		text-transform:uppercase;
+		line-height:100%;
+		margin:20px 0;
+	}
+	h3.to {
+		@include montserrat;
+		font-size:32px;
+		letter-spacing:3px;
+		text-transform:uppercase;
+		margin:15px 0 20px 0;
+	}
+	.center-x {
+		img {
+			width:16px;
+		}
 	}
 
 	.border-lines {
@@ -96,21 +223,24 @@ a {
 		position: absolute;
 		top: 0;
 		left:0;
-	    right:0;
-	    margin-left:auto;
-	    margin-right:auto;
-		width: 60px;
+		right:0;
+		margin-left:auto;
+		margin-right:auto;
+		width: 127px;
 
 		border-top: 1px solid white;
 		border-bottom: 1px solid white;
 
 	}
-
-	.silhouette {
-		margin-top: 25px;
-		width: 100%;
-		height: 200px;
-		background-color: black;
+	.silhouette-bg {
+		position:absolute;
+		bottom:0px;
+		width:100%;
+		height:560px;
+		background-image: url('/images/silhouette.png');
+		background-repeat:no-repeat;
+		background-position:center bottom;
+		z-index:3;
 	}
 }
 
@@ -120,17 +250,20 @@ a {
 #canvas-wrapper {
 	width: 100%;
 	position: relative;
-	margin-top: 75px;
-	margin-bottom: 75px;
-
+	padding-top:150px;
+	padding-bottom: 150px;
 	color: white;
 	text-align: center;
-
+	
+	background-image: url('/images/hair.jpg');
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size:cover;
 	#canvas {
 		position: relative;
-		padding: 5px; 
-		height: 550px; 
-		width: 900px;
+		padding: 5px 0; 
+		height: 750px; 
+		width: 100%;
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -151,52 +284,139 @@ a {
 	.story-title {
 		position: absolute;
 		width: 100%;
+		h3 {
+			@include pathway;
+			font-size:60px;
+			letter-spacing:3px;
+			text-transform:uppercase;
+			margin-bottom:5px;
+		}
+		h2 {
+			@include montserrat_bold;
+			font-size:60px;
+			letter-spacing:3px;
+			line-height:55px;
+			text-transform:uppercase;
+			margin-top:0px;
+		}
 	}
 
 	.story-top-right {
 		left: 50%;
-		top: 180px;
+		top: 250px;
 		padding-right: 42px;
 		overflow: hidden;
 	
 		.story-top-right-inner {
+			position:relative;
+			width: 100%;
+			height: inherit;
+			display:inline-block;
 			margin-left: -100%;
-			border: 2px solid white;
+			border: 2px solid #fff;
 			border-left: none;
 			padding-left: 20px;
-			padding-right: 20px;
-			width: 100%;
+			padding-right: 0px;
 			-webkit-transition: all 1s ease-in-out;
 			-moz-transition: all 1s ease-in-out;
 			-o-transition: all 1s ease-in-out;
 			transition: all 1s ease-in-out;
+			td.story-top-right-text {
+				p {
+					@include pathway;
+					font-size:37px;
+					letter-spacing:5px;
+					text-transform:uppercase;
+					margin:10px 0;
+					span {
+						@include montserrat;
+					}
+				}
+			}
+			td.story-top-right-img {
+				border-left:2px solid #fff;
+				vertical-align: center;
+				text-align:center;
+				img {
+					width:50px;
+					height:auto;
+					padding-left:21px;
+					margin:0px auto;
+				}
+			}
 		}
 	}
 
 	.story-top-left {
+		width:45%;
 		right: 50%;
-		top: 170px;
-		padding-right: 100px;
-		width: 310px;
+		top: 240px;
+		padding-right: 5%;
 		font-size: 15px;
 		text-align: left;
+		p {
+			@include garamond;
+			font-size:24px;
+			letter-spacing:3px;
+		}
 	}
 
 	.story-bottom-left {
 		right: 50%;
-		top: 330px;
+		top: 380px;
 		margin-right: 200px;
+		h3 {
+			@include pathway;
+			font-size:66px;
+			letter-spacing:3px;
+			text-transform:uppercase;
+			margin:10px 0;
+		}
+		h3.energy {
+			&::before {
+				content: url('/images/bolt-L.png');
+				padding-right:10px;
+			}
+			&::after {
+				content: url('/images/bolt-R.png');
+				padding-left:10px;
+			}
+		}
+		h2 {
+			@include montserrat;
+			font-size:50px;
+			letter-spacing:3px;
+			text-transform:uppercase;
+			margin:10px 0;
+		}
 	}
 
 	.story-bottom-right {
 		text-align: left;
 		left: 50%;
-		top: 300px;
+		top: 470px;
 		margin-left: 40px;
+		p {
+			@include garamond;
+			font-size:24px;
+			letter-spacing:5px;
+			margin:0;
+		}
+		h3 {
+			@include pathway;
+			font-size:70px;
+			letter-spacing:5px;
+			line-height:77%;
+			margin:0;
+		}
 	}
 
 	.story-bottom-message {
+		@include garamond;
 		text-align: center;
+		font-size:24px;
+		letter-spacing:3px;
+		line-height:200%;
 
 		.highlight {
 			color: #32b0c6;
@@ -209,27 +429,79 @@ a {
 	text-align: center;
 	
 	background-color: white;
+	background-image: url('/images/canoe.jpg');
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-size:cover;
+	.content-container {
+		padding-top:50px;
+		.logo-container {
+			padding: 20px;
+			padding-right: 10%;
+			text-align: right;
 
-
-	.logo-container {
-		padding: 20px;
-		padding-right: 10%;
-		text-align: right;
-
-		.logo {
-			height: 40px;
-			width: 40px;
+			.logo {
+				height: 85px;
+				width: 85px;
+			}
 		}
-	}
 
-	p {
-		width: 60%;
-		margin-left: auto;
-		margin-right: auto;
-	}
+		p {
+			width: 60%;
+			margin-left: auto;
+			margin-right: auto;
+			@include garamond;
+			font-size:24px;
+			letter-spacing:3px;
+			line-height:200%;
+			color:$text_black;
+			
+			img.footer-logo {
+				width:255px;
+				height:auto;
+			}
+		}
+	
+		h2 {
+			@include montserrat_bold;
+			font-size:32px;
+			letter-spacing:3px;
+			color:$text_black;
+		}
+	
+		.email-form {
+			position: relative;
+			display:block;
+			width:26%;
+			float:left;
+			text-align:center;
+			margin:0px 37%;
 
-	.social-media-container {
+			input[type="text"] {
+				position: relative;
+				width:90%;
+				height:46px;
+				margin:5px 0;
+				padding:0px 5%;
+				@include  fields_full;
+			}
+			button[type="submit"] {
+				position: relative;
+				width:50%;
+				height:52px;
+				margin:5px 0;
+				padding:0px 10px;
+				@include button;
+			}
+		
+			.error-message {
+				@include error_footer;
+			}
+		}
 
+		.social-media-container {
+
+		}
 	}
 }
 
@@ -237,56 +509,110 @@ a {
 	position: fixed;
 	bottom: 0;
 	width: 100%;
-	height: 50px;
+	height: 80px;
 	z-index: 99999;
 
-	border-top: 1px solid white;
-	background-color: white;
-
-	.progress-container {
-		width: 50%;
-		position: relative;
-		top: 24px;
-		left: 10%;
-
-		.progress-default, .progress {
-			position: absolute;
-			height: 2px;
-		}
-		.progress-default {
-			background-color: lightgrey;
+	border-top: 2px solid white;
+	background: url('/images/white90.png');
+	background-repeat: repeat;
+	.footer-container {
+		width:95%;
+		margin:0px auto;
+		.progress-container {
+			position: relative;
 			width: 100%;
-			z-index: 1;
 
-			.progress-node {
-				height: 10px;
-				width: 10px;
-				background-color: lightgray;
-				border: 2px solid white;
-				border-radius: 50%;
-				margin-top: -6px;
-				margin-left: 25%;
-				float: left;
-				z-index: 3;
-			}
-			.progress-node-x {
+			.progress-default, .progress {
 				position: absolute;
-				left: -10px;
-				font-weight: bolder;
-				top: -6px;
-				color: #32b0c6;
+				height: 3px;
+			}
+			.progress-default {
+				background-color: $lightgrey;
+				width: 100%;
+				z-index: 1;
+
+				.progress-node {
+					height: 10px;
+					width: 10px;
+					background-color: lightgray;
+					border: 3px solid white;
+					border-radius: 50%;
+					margin-top: -6px;
+					margin-left: 24%;
+					float: left;
+					z-index: 3;
+				}
+				.progress-node-x {
+					position: absolute;
+					left: -10px;
+					font-weight: bolder;
+					top: -9px;
+					color: #32b0c6;
+					img {
+						width:21px;		
+					}
+				}
+				.progress-node-last {
+					height: 10px;
+					width: 10px;
+					background-color: lightgray;
+					border: 3px solid white;
+					border-radius: 50%;
+					margin-top: -6px;
+					float:right;
+					z-index: 3;
+				}
+			}
+			.progress {
+				background-color: #32b0c6;
+				z-index: 2;
 			}
 		}
-		.progress {
-			background-color: #32b0c6;
-			z-index: 2;
-		}
-	}
+		
+		.signup-container {
+			position: relative;
+			width:40%;
+			margin:0px auto;
+			padding: 17px 0 0 0;
+			
+			h3 {
+				float:left;
+				margin-right:30px;
+				@include montserrat_bold;
+				font-size:15px;
+				letter-spacing:1px;
+				text-transform:uppercase;
+				color:$text_black;
+				
+			}
 
-	.email-form {
-		position: absolute;
-		left: 60%;
-		width: 30%;
-		padding: 12px;
+			.email-form {
+				position: relative;
+				float:left;
+		
+				input[type="text"] {
+					position: relative;
+					width:35%;
+					height:46px;
+					float:left;
+					margin:0px;
+					padding:0px 10px;
+					@include fields;
+				}
+				button[type="submit"] {
+					position: relative;
+					width:20%;
+					height:52px;
+					float:left;
+					margin:0px;
+					padding:0px 10px;
+					@include button;
+				}
+				
+				.error-message {
+					@include error_footer;
+				}
+			}
+		}
 	}
 }

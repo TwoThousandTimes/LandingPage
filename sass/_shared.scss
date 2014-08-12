@@ -1,0 +1,82 @@
+//Colors
+$bg_black: #161515;
+$text_black: #222;
+$blue: #32b1c6;
+$lightgrey: #aaa;
+
+//Fonts
+@mixin fjalla {
+	font-family: 'Fjalla One', sans-serif;
+	font-weight:400;
+} 
+@mixin sans_serif {
+   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   font-weight: 100;
+}
+
+@mixin montserrat {
+	font-family: 'Montserrat', sans-serif;
+	font-weight:400;
+}
+@mixin montserrat_bold {
+	font-family: 'Montserrat', sans-serif;
+	font-weight:700;
+}
+@mixin pathway {
+	font-family: 'Pathway Gothic One', sans-serif;
+	font-weight:400;
+}
+@mixin garamond {
+	font-family: 'EB Garamond', serif;
+	font-weight:400;
+}
+
+//signup
+@mixin fields_full {
+	border-top:solid 3px $blue !important;
+	border-right:solid 3px $blue !important;
+	border-bottom:solid 3px $blue !important;
+	border-left:solid 3px $blue !important;
+	
+	@include sans-serif;
+	font-size:16px;
+	text-transform:lowercase;
+	letter-spacing:1px;
+	color:$text_black;
+}
+@mixin fields {
+	border-top:solid 3px $blue !important;
+	border-right:0px !important;
+	border-bottom:solid 3px $blue !important;
+	border-left:solid 3px $blue !important;
+	
+	@include sans-serif;
+	font-size:16px;
+	text-transform:lowercase;
+	letter-spacing:1px;
+	color:$text_black;
+}
+@mixin button {
+	background-color:$blue !important;
+	border-top:0px !important;
+	border-right:0px !important;
+	border-bottom:solid 3px #238484 !important;
+	border-left:0px !important;
+	
+	@include montserrat_bold;
+	text-transform:uppercase;
+	color:#fff;
+	font-size:16px;
+	letter-spacing:1px;
+}
+
+@mixin error_footer {
+	position:absolute;
+	text-align:center;
+	width:100%;
+	top:-30px;
+	right:0px;
+	background-color:#f74141;
+	color:#fff;
+	z-index:10 !important;
+}

@@ -4,105 +4,132 @@ block content
   -// TITLE SECTION
   section.title-container
     div.video-overlay
-      h2 THE
-      h1 Two Thousand Times
+      h1 
+        span THE
+        br 
+        | Two Thousand Times
       div.loading-container
-        | X X X X X
+        img(src="/images/xxxxx.png")
 
     div.learn-more
-      | Learn More
-      img(src="")
+      h3 Learn More
+      img(src="/images/down-arrow.png")
+
 
     video#bgvid(muted)
-      //- source(src="/images/oceans.mp4", type="video/mp4")
+      
   -// =========================== WHO WE ARE SECTION =============================
   section.who-we-are
-    div.who-top-left(data-0="opacity: 0; margin-top: 250px;", data-center="opacity: 1; margin-top: 100px;", data-top="opacity: 0; margin-top: 0;")
-      h2 WE ARE A PLANET OF STORYTELLERS.
-      h3 CENTURIES OF IT REALLY.
-    div.who-top-right(data-0="opacity: 0;", data-center="opacity: 1;", data-top="opacity: 0;")
-      h3 THE DESIRE TO LEAVE OUR MARK,
-      img(src="")
-      h3 TO COMMUNICATE,
-      h3 TO SHARE.
-    div.who-bottom-left(data-0="opacity: 0;", data-center="opacity: 1;", data-top="opacity: 0;")
-      h3 FROM CAVE PAINTINGS
-      div.center-x X
-      h3 TO MANIFESTOS
-      div.border-lines
-    div.who-bottom-right(data-0="opacity: 0;", data-center="opacity: 1;", data-top="opacity: 0;")
-      h3 TO CAMPFIRES
-      div.center-x X
-      h3 TO GRAFFITI
-      div.border-lines
-    img.silhouette(src="")
+    div.content-container
+      div.who-top-left(data-0="opacity: 0;", data-center="opacity: 1;", data-top="opacity: 0;")
+        h2 WE ARE A PLANET OF 
+          span STORYTELLERS.
+        h3 CENTURIES OF IT REALLY.
+      div.who-top-right(data-0="opacity: 0;", data-center="opacity: 1;", data-top="opacity: 0;")
+        h3.desire THE DESIRE TO LEAVE OUR MARK,
+        img(src="")
+        h3.communicate TO COMMUNICATE,
+        h3.share TO SHARE.
+        img(class="connect" src="images/connect.png")
+      div.clearfix
+    
+    div.content-container
+      div.who-bottom-left(data-0="opacity: 0;", data-center="opacity: 1;", data-top="opacity: 0;")
+        h3.from FROM CAVE PAINTINGS
+        div.center-x
+          img(class="connect" src="images/bluex.png")
+        h3.to TO MANIFESTOS
+        div.border-lines
+      div.who-bottom-right(data-0="opacity: 0;", data-center="opacity: 1;", data-top="opacity: 0;")
+        h3.from TO CAMPFIRES
+        div.center-x
+          img(class="connect" src="images/bluex.png")
+        h3.to TO GRAFFITI
+        div.border-lines
+      div.clearfix
+    div.silhouette-bg
+    div.clearfix
+
 
   -// ============================= STORY SECTION ====================================
   section#canvas-wrapper(data-bottom-center="", data--200-top="", data-emit-events)
-    div.story-title
-      h3 ALMOST NOTHING CAPTIVATES US LIKE
-      h2 TELLING A STORY
-    div.story-top-right
-      div.story-top-right-inner
-        p NO ONE CAN TELL SOMEONE ELSE'S
-          br
-          | STORY
-          img(src="")
-    div.story-top-left
-      p What truly gets us excited are the story makers. It's the one place where...
-    div.story-bottom-left
-      h3 ENERGY
-      hr
-      h3 AUTHENTICITY
-      h2 MEET.
-    div.story-bottom-right
-      p On top of that,
-      h3 EVERYONE HAS A STORY
-      p that we are part of making.
-    div#canvas
+    div.content-container
+      div.story-title
+        h3 ALMOST NOTHING CAPTIVATES US LIKE
+        h2 TELLING A STORY.
+      div.story-top-right
+        div.story-top-right-inner
+          table
+            tr
+              td.story-top-right-text
+                p NO ONE CAN TELL SOMEONE ELSE'S
+                  br
+                  span STORY
+              td.story-top-right-img
+                img(src="images/book.png")
+      div.story-top-left
+        p What truly gets us excited are the story makers. It's the one place where...
+      div.story-bottom-left
+        h3.energy ENERGY
+        hr
+        h3 AUTHENTICITY
+        h2 MEET.
+      div.story-bottom-right
+        p On top of that,
+        h3 EVERYONE HAS A STORY
+        p that we are part of making.
+      div#canvas
 
-    p.story-bottom-message
-      span.highlight It turns strangers into friends. It's where we learn. It builds community.
-      br
-      span.highlight Until today, 
-      span no one forum existed.
+      p.story-bottom-message
+        span.highlight It turns strangers into friends. It's where we learn. It builds community.
+        br
+        span.highlight Until today, 
+        span no one forum existed.
+
 
   -// ====================================== FINAL SECTION ===================================
   section.final-section
-    div.logo-container
-      img.logo(src="")
-    p 
-      | We are 
-      span.ttt TWO THOUSAND TIMES
-      | , and we realize that epic stories come from strangers, and there needs to be a place to share them. 
-      | We have developed a community where writers and readers meet, and it is our mission to connect the world on a purely human level.
-    h2 LOREM IPSUM
-    form.email-form
-      input(type="text", name="email", placeholder="Email")
-      input(type="text", name="username", placeholder="Username")
-      button(type="submit") Submit
-      span.error-message
-
-    div.social-media-container
-      img(src="")
-      img(src="")
+    div.content-container
+      div.logo-container
+        img.logo(src="images/TTT-icon.png")
+      p 
+        | We are 
+        img.footer-logo(src="images/footer-logo.png" alt="the Two Thousand Times")
+        | , and we realize that epic stories come from strangers, and there needs to be a place to share them. 
+        | We have developed a community where writers and readers meet, and it is our mission to connect the world on a purely human level.
+      h2 LOREM IPSUM
+      form.email-form
+        input(type="text", name="email", placeholder="Email")
+        input(type="text", name="username", placeholder="Username")
+        button(type="submit") Submit
+        span.error-message
+        
+      div.social-media-container
+        img(src="")
+        img(src="")
 
 
   -// =================================== FIXED FOOTER =====================================
   div.footer
-    div.progress-container
-      div.progress(data-0="width:0%;", data-end="width:100%;")
-      div.progress-default
-        div.progress-node-x X
-        div.progress-node
-        div.progress-node
-        div.progress-node
+    div.footer-container
+      div.progress-container
+        div.progress(data-0="width:0%;", data-end="width:100%;")
+        div.progress-default
+          div.progress-node-x
+            img(src="images/bluex-border.png")
+          div.progress-node
+          div.progress-node
+          div.progress-node
+          div.progress-node-last
+      div.clearfix
 
-    form.email-form
-      input(type="text", name="email", placeholder="Email")
-      input(type="text", name="username", placeholder="Username")
-      button(type="submit") Submit
-      span.error-message
+      .signup-container
+        h3 Reserve a username
+        form.email-form
+          input(type="text", name="email", placeholder="Email")
+          input(type="text", name="username", placeholder="Username")
+          button(type="submit") Submit
+          span.error-message
 
   script(src="//code.jquery.com/jquery-1.11.0.min.js")
   script(src="/javascripts/jquery-ui.min.js")

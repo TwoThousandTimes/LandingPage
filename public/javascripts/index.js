@@ -64,7 +64,7 @@ $(function() {
 
     // Fetch the landing page video!
     var xhr = new XMLHttpRequest();
-    xhr.open('GET', '/images/oceans.mp4', true);
+    xhr.open('GET', '/images/B&W_pics_export._v2.mov', true);
     xhr.responseType = 'blob';
     xhr.onload = function(e) {
         if (this.status == 200) {
