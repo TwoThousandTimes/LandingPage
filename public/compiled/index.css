@@ -14,7 +14,6 @@ a {
 
 .title-container {
   text-align: center;
-  height: 100%;
   color: white;
   overflow: hidden; }
   .title-container .video-overlay {
@@ -56,12 +55,13 @@ a {
       text-transform: uppercase;
       font-size: 12px;
       letter-spacing: 1px; }
-  .title-container video#bgvid {
+  .title-container video {
     position: absolute;
     top: 0;
     left: 0;
-    width: auto;
+    width: 100%;
     height: auto;
+    overflow: hidden;
     z-index: -100; }
 
 .who-we-are {
@@ -335,6 +335,55 @@ a {
     font-weight: 700;
     font-size: 32px;
     letter-spacing: 3px; }
+  .final-section .email-form {
+    position: relative;
+    display: block;
+    width: 26%;
+    float: left;
+    text-align: center;
+    margin: 0px 37%; }
+    .final-section .email-form input[type="text"] {
+      position: relative;
+      width: 100%;
+      height: 46px;
+      margin: 5px 0;
+      padding: 0px 10px;
+      border-top: solid 3px #32b1c6 !important;
+      border-right: solid 3px #32b1c6 !important;
+      border-bottom: solid 3px #32b1c6 !important;
+      border-left: solid 3px #32b1c6 !important;
+      font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+      font-weight: 100;
+      font-size: 16px;
+      text-transform: lowercase;
+      letter-spacing: 1px;
+      color: #222; }
+    .final-section .email-form button[type="submit"] {
+      position: relative;
+      width: 50%;
+      height: 52px;
+      margin: 5px 0;
+      padding: 0px 10px;
+      background-color: #32b1c6 !important;
+      border-top: 0px !important;
+      border-right: 0px !important;
+      border-bottom: solid 3px #238484 !important;
+      border-left: 0px !important;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #fff;
+      font-size: 16px;
+      letter-spacing: 1px; }
+    .final-section .email-form .error-message {
+      position: absolute;
+      text-align: center;
+      width: 100%;
+      top: -30px;
+      right: 0px;
+      background-color: #f74141;
+      color: #fff;
+      z-index: 10 !important; }
 
 .footer {
   position: fixed;
