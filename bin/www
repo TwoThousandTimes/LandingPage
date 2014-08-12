@@ -2,8 +2,16 @@
 var debug = require('debug')('TTTAnimation');
 var app = require('../app');
 var config = require('../config');
+var fs = require('fs');
 
 app.set('port', config.port);
+
+/**
+*	Set the env variable for scss (determine whether or not to use cdn or not!)
+*/
+fs.writeFile('./../sass/_env.scss', '$cdn: \'' + config.cdn + '\';', function(err) {
+	if (err) console.log(err);
+});
 
 var server = app.listen(app.get('port'), function() {
   debug('Express server listening on port ' + server.address().port);
