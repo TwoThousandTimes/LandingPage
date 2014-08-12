@@ -106,7 +106,7 @@ $(function() {
         // Set the video height
         var footerHeight = $('.footer').height();
         var windowHeight = $(window).height();
-        $('#bgvid, .title-container, .final-section').height( windowHeight - footerHeight );
+        $('.title-container, .final-section').height( windowHeight - footerHeight );
         // Setup the skrollr
         var s = skrollr.init({
             forceHeight: false,

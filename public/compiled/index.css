@@ -56,15 +56,17 @@ a {
       font-size: 12px;
       letter-spacing: 1px; }
   .title-container video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
     height: auto;
-    overflow: hidden;
-    z-index: -100; }
+    z-index: -100;
+    background-size: cover; }
 
-.who-we-are {
+.content-container {
   width: 80%;
   max-width: 1400px;
   margin-left: auto;
@@ -72,13 +74,25 @@ a {
   overflow: hidden;
   color: white;
   overflow: visible !important; }
-  .who-we-are .who-top-left, .who-we-are .who-top-right, .who-we-are .who-bottom-left, .who-we-are .who-bottom-right {
-    float: left;
-    position: relative; }
-  .who-we-are .who-top-left, .who-we-are .who-bottom-left {
-    width: 40%; }
-  .who-we-are .who-top-right, .who-we-are .who-bottom-right {
-    width: 60%; }
+
+.who-top-left, .who-top-right, .who-bottom-left, .who-bottom-right {
+  float: left;
+  position: relative; }
+
+.who-top-left, .who-bottom-left {
+  width: 40%; }
+
+.who-top-right, .who-bottom-right {
+  width: 60%; }
+
+.who-we-are {
+  position: relative;
+  width: 100%;
+  background-color: #161515;
+  background-image: url('/images/stars.jpg');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover; }
   .who-we-are .who-top-left {
     margin-top: 55px; }
     .who-we-are .who-top-left h2, .who-we-are .who-top-left h3 {
@@ -148,10 +162,10 @@ a {
       right: -50px;
       bottom: -200px; }
   .who-we-are .who-bottom-left {
-    margin-top: 200px;
+    margin-top: 0px;
     text-align: center; }
   .who-we-are .who-bottom-right {
-    margin-top: 270px;
+    margin-top: 70px;
     text-align: center; }
   .who-we-are h3.from {
     font-family: 'EB Garamond', serif;
@@ -182,16 +196,17 @@ a {
     border-top: 1px solid white;
     border-bottom: 1px solid white; }
   .who-we-are .silhouette {
+    position: relative;
     margin-top: 25px;
+    margin-bottom: 0px !important;
     width: 100%;
-    height: 200px;
-    background-color: black; }
+    height: auto; }
 
 #canvas-wrapper {
   width: 100%;
   position: relative;
-  margin-top: 75px;
-  margin-bottom: 75px;
+  padding-top: 75px;
+  padding-bottom: 75px;
   color: white;
   text-align: center; }
   #canvas-wrapper #canvas {
