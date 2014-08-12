@@ -92,7 +92,7 @@ $(function() {
     var animationTime = 3000;
     // Assume animation is counting down from 'animationTime' towards 0ms. Raising the trigger's below will make the
     // animations happen sooner. Triggers must be 0 < trigger < animationTime 
-    var triggerTopRight = 2500; 
+    var triggerTopRight = 3000; 
     var topRightAnimationSpeed = 1000;
     var triggerBottomRight = 3000;
     var triggerTopLeft = 3000;
@@ -149,14 +149,14 @@ $(function() {
                     console.log('animate');
                 }
                 if (!hasAnimatedBottomRight && remainingMs < triggerBottomRight) {
-                    $('.story-bottom-right').fadeIn('slow').addClass('animated fadeInUp');
+                    $('.story-bottom-right').fadeIn('slow');
                 }
                 if (!hasAnimatedBottomLeft && remainingMs < triggerBottomLeft) {
                     $('.story-bottom-left').fadeIn();
                     $('.story-bottom-left .energy');
                 }
                 if (!hasAnimatedTopLeft && remainingMs < triggerTopLeft) {
-                    $('.story-top-left').fadeIn().addClass('animated fadeInUp');
+                    $('.story-top-left').fadeIn();
                 }
             }
         });
