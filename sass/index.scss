@@ -19,6 +19,18 @@ a {
   color: #00B7FF;
 }
 
+
+// ============================= General =============================
+.content-container {
+	position:relative;
+	width: 80%;
+	max-width: 1400px;
+	min-width:970px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow:visible !important;
+}
+
 // ============================= TITLE SECTION =============================
 .title-container {
 	text-align: center;
@@ -76,15 +88,6 @@ a {
 }
 
 // =========================== WHO WE ARE SECTION ============================
-.content-container {
-	width: 80%;
-	max-width: 1400px;
-	margin-left: auto;
-	margin-right: auto;
-	overflow: hidden;
-	color: white;
-	overflow:visible !important;
-}
 
 .who-top-left, .who-top-right, .who-bottom-left, .who-bottom-right {
 		float: left;
@@ -106,7 +109,7 @@ a {
 	background-repeat:no-repeat;
 	background-position:top center;
 	background-size:cover;
-
+	color:#fff;
 	.who-top-left {
 		margin-top: 55px;
 		h2, h3 {
@@ -245,10 +248,13 @@ a {
 	position: relative;
 	padding-top: 75px;
 	padding-bottom: 75px;
-
 	color: white;
 	text-align: center;
-
+	
+	background-image: url('/images/hair.jpg');
+	background-repeat:no-repeat;
+	background-position:top right;
+	background-size:cover;
 	#canvas {
 		position: relative;
 		padding: 5px; 
@@ -392,67 +398,71 @@ a {
 	text-align: center;
 	
 	background-color: white;
-
-
-	.logo-container {
-		padding: 20px;
-		padding-right: 10%;
-		text-align: right;
-
-		.logo {
-			height: 40px;
-			width: 40px;
-		}
-	}
-
-	p {
-		width: 60%;
-		margin-left: auto;
-		margin-right: auto;
-		@include garamond;
-		font-size:24px;
-		letter-spacing:3px;
-		line-height:200%;
-	}
 	
-	h2 {
-		@include montserrat_bold;
-		font-size:32px;
-		letter-spacing:3px;
-	}
-	
-	.email-form {
-		position: relative;
-		display:block;
-		width:26%;
-		float:left;
-		text-align:center;
-		margin:0px 37%;
+	.content-container {
+		padding-top:50px;
+		.logo-container {
+			padding: 20px;
+			padding-right: 10%;
+			text-align: right;
 
-		input[type="text"] {
-			position: relative;
-			width:100%;
-			height:46px;
-			margin:5px 0;
-			padding:0px 10px;
-			@include  fields_full;
+			.logo {
+				height: 40px;
+				width: 40px;
+			}
 		}
-		button[type="submit"] {
-			position: relative;
-			width:50%;
-			height:52px;
-			margin:5px 0;
-			padding:0px 10px;
-			@include button;
+
+		p {
+			width: 60%;
+			margin-left: auto;
+			margin-right: auto;
+			@include garamond;
+			font-size:24px;
+			letter-spacing:3px;
+			line-height:200%;
+			color:$text_black;
 		}
+	
+		h2 {
+			@include montserrat_bold;
+			font-size:32px;
+			letter-spacing:3px;
+			color:$text_black;
+		}
+	
+		.email-form {
+			position: relative;
+			display:block;
+			width:26%;
+			float:left;
+			text-align:center;
+			margin:0px 37%;
+
+			input[type="text"] {
+				position: relative;
+				width:90%;
+				height:46px;
+				margin:5px 0;
+				padding:0px 5%;
+				@include  fields_full;
+			}
+			button[type="submit"] {
+				position: relative;
+				width:50%;
+				height:52px;
+				margin:5px 0;
+				padding:0px 10px;
+				@include button;
+			}
 		
-		.error-message {
-			@include error_footer;
+			.error-message {
+				@include error_footer;
+			}
 		}
-	}
 
-	.social-media-container {
+		.social-media-container {
 
+		}
 	}
 }
 
@@ -489,7 +499,7 @@ a {
 					border: 3px solid white;
 					border-radius: 50%;
 					margin-top: -6px;
-					margin-left: 24.1%;
+					margin-left: 24%;
 					float: left;
 					z-index: 3;
 				}
@@ -502,6 +512,16 @@ a {
 					img {
 						width:21px;		
 					}
+				}
+				.progress-node-last {
+					height: 10px;
+					width: 10px;
+					background-color: lightgray;
+					border: 3px solid white;
+					border-radius: 50%;
+					margin-top: -6px;
+					float:right;
+					z-index: 3;
 				}
 			}
 			.progress {

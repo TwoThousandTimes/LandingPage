@@ -49,53 +49,55 @@ block content
 
   -// ============================= STORY SECTION ====================================
   section#canvas-wrapper(data-bottom-center="", data--200-top="", data-emit-events)
-    div.story-title
-      h3 ALMOST NOTHING CAPTIVATES US LIKE
-      h2 TELLING A STORY
-    div.story-top-right
-      div.story-top-right-inner
-        p NO ONE CAN TELL SOMEONE ELSE'S
-          br
-          span STORY
-          img(src="")
-    div.story-top-left
-      p What truly gets us excited are the story makers. It's the one place where...
-    div.story-bottom-left
-      h3 ENERGY
-      hr
-      h3 AUTHENTICITY
-      h2 MEET.
-    div.story-bottom-right
-      p On top of that,
-      h3 EVERYONE HAS A STORY
-      p that we are part of making.
-    div#canvas
+    div.content-container
+      div.story-title
+        h3 ALMOST NOTHING CAPTIVATES US LIKE
+        h2 TELLING A STORY
+      div.story-top-right
+        div.story-top-right-inner
+          p NO ONE CAN TELL SOMEONE ELSE'S
+            br
+            span STORY
+            img(src="")
+      div.story-top-left
+        p What truly gets us excited are the story makers. It's the one place where...
+      div.story-bottom-left
+        h3 ENERGY
+        hr
+        h3 AUTHENTICITY
+        h2 MEET.
+      div.story-bottom-right
+        p On top of that,
+        h3 EVERYONE HAS A STORY
+        p that we are part of making.
+      div#canvas
 
-    p.story-bottom-message
-      span.highlight It turns strangers into friends. It's where we learn. It builds community.
-      br
-      span.highlight Until today, 
-      span no one forum existed.
+      p.story-bottom-message
+        span.highlight It turns strangers into friends. It's where we learn. It builds community.
+        br
+        span.highlight Until today, 
+        span no one forum existed.
 
   -// ====================================== FINAL SECTION ===================================
   section.final-section
-    div.logo-container
-      img.logo(src="")
-    p 
-      | We are 
-      span.ttt TWO THOUSAND TIMES
-      | , and we realize that epic stories come from strangers, and there needs to be a place to share them. 
-      | We have developed a community where writers and readers meet, and it is our mission to connect the world on a purely human level.
-    h2 LOREM IPSUM
-    form.email-form
-      input(type="text", name="email", placeholder="Email")
-      input(type="text", name="username", placeholder="Username")
-      button(type="submit") Submit
-      span.error-message
+    div.content-container
+      div.logo-container
+        img.logo(src="")
+      p 
+        | We are 
+        span.ttt TWO THOUSAND TIMES
+        | , and we realize that epic stories come from strangers, and there needs to be a place to share them. 
+        | We have developed a community where writers and readers meet, and it is our mission to connect the world on a purely human level.
+      h2 LOREM IPSUM
+      form.email-form
+        input(type="text", name="email", placeholder="Email")
+        input(type="text", name="username", placeholder="Username")
+        button(type="submit") Submit
+        span.error-message
         
-    div.social-media-container
-      img(src="")
-      img(src="")
+      div.social-media-container
+        img(src="")
+        img(src="")
 
 
   -// =================================== FIXED FOOTER =====================================
@@ -109,7 +111,7 @@ block content
           div.progress-node
           div.progress-node
           div.progress-node
-          div.progress-node
+          div.progress-node-last
       div.clearfix
 
       .signup-container
