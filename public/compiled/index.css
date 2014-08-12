@@ -14,7 +14,7 @@ a {
 
 .content-container {
   position: relative;
-  width: 80%;
+  width: 100%;
   max-width: 1400px;
   min-width: 970px;
   margin-left: auto;
@@ -88,6 +88,8 @@ a {
 .who-we-are {
   position: relative;
   width: 100%;
+  height: inherit;
+  padding-bottom: 250px;
   background-color: #161515;
   background-image: url('/images/stars.jpg');
   background-repeat: no-repeat;
@@ -95,7 +97,7 @@ a {
   background-size: cover;
   color: #fff; }
   .who-we-are .who-top-left {
-    margin-top: 55px; }
+    margin-top: 100px; }
     .who-we-are .who-top-left h2, .who-we-are .who-top-left h3 {
       padding-left: 20px;
       padding-right: 20px; }
@@ -122,7 +124,7 @@ a {
       margin: 0px; }
   .who-we-are .who-top-right {
     position: relative;
-    margin-top: 125px;
+    margin-top: 170px;
     text-align: center;
     box-shadow: inset 0px 0px 0px 1px #fff;
     -webkit-box-shadow: inset 0px 0px 0px 1px #fff;
@@ -163,10 +165,10 @@ a {
       right: -50px;
       bottom: -200px; }
   .who-we-are .who-bottom-left {
-    margin-top: 0px;
+    margin-top: 50px;
     text-align: center; }
   .who-we-are .who-bottom-right {
-    margin-top: 70px;
+    margin-top: 120px;
     text-align: center; }
   .who-we-are h3.from {
     font-family: 'EB Garamond', serif;
@@ -196,29 +198,32 @@ a {
     width: 127px;
     border-top: 1px solid white;
     border-bottom: 1px solid white; }
-  .who-we-are .silhouette {
-    position: relative;
-    margin-top: 25px;
-    margin-bottom: 0px !important;
+  .who-we-are .silhouette-bg {
+    position: absolute;
+    bottom: 0px;
     width: 100%;
-    height: auto; }
+    height: 560px;
+    background-image: url('/images/silhouette.png');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    z-index: 3; }
 
 #canvas-wrapper {
   width: 100%;
   position: relative;
-  padding-top: 75px;
-  padding-bottom: 75px;
+  padding-top: 150px;
+  padding-bottom: 150px;
   color: white;
   text-align: center;
   background-image: url('/images/hair.jpg');
   background-repeat: no-repeat;
-  background-position: top right;
+  background-position: center center;
   background-size: cover; }
   #canvas-wrapper #canvas {
     position: relative;
-    padding: 5px;
-    height: 550px;
-    width: 900px;
+    padding: 5px 0;
+    height: 750px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto; }
   #canvas-wrapper h2 {
@@ -235,48 +240,61 @@ a {
     #canvas-wrapper .story-title h3 {
       font-family: 'Pathway Gothic One', sans-serif;
       font-weight: 400;
-      font-size: 50px;
+      font-size: 60px;
       letter-spacing: 3px;
       text-transform: uppercase;
       margin-bottom: 5px; }
     #canvas-wrapper .story-title h2 {
       font-family: 'Montserrat', sans-serif;
       font-weight: 700;
-      font-size: 50px;
+      font-size: 60px;
       letter-spacing: 3px;
+      line-height: 55px;
       text-transform: uppercase;
       margin-top: 0px; }
   #canvas-wrapper .story-top-right {
     left: 50%;
-    top: 200px;
+    top: 250px;
     padding-right: 42px;
     overflow: hidden; }
     #canvas-wrapper .story-top-right .story-top-right-inner {
+      position: relative;
+      width: 100%;
+      height: inherit;
+      display: inline-block;
       margin-left: -100%;
-      border: 2px solid white;
+      border: 2px solid #fff;
       border-left: none;
       padding-left: 20px;
-      padding-right: 20px;
-      width: 100%;
+      padding-right: 0px;
       -webkit-transition: all 1s ease-in-out;
       -moz-transition: all 1s ease-in-out;
       -o-transition: all 1s ease-in-out;
       transition: all 1s ease-in-out; }
-      #canvas-wrapper .story-top-right .story-top-right-inner p {
+      #canvas-wrapper .story-top-right .story-top-right-inner td.story-top-right-text p {
         font-family: 'Pathway Gothic One', sans-serif;
         font-weight: 400;
         font-size: 37px;
         letter-spacing: 5px;
         text-transform: uppercase;
         margin: 10px 0; }
-        #canvas-wrapper .story-top-right .story-top-right-inner p span {
+        #canvas-wrapper .story-top-right .story-top-right-inner td.story-top-right-text p span {
           font-family: 'Montserrat', sans-serif;
           font-weight: 400; }
+      #canvas-wrapper .story-top-right .story-top-right-inner td.story-top-right-img {
+        border-left: 2px solid #fff;
+        vertical-align: center;
+        text-align: center; }
+        #canvas-wrapper .story-top-right .story-top-right-inner td.story-top-right-img img {
+          width: 50px;
+          height: auto;
+          padding-left: 21px;
+          margin: 0px auto; }
   #canvas-wrapper .story-top-left {
+    width: 45%;
     right: 50%;
-    top: 190px;
-    padding-right: 100px;
-    width: 500px;
+    top: 240px;
+    padding-right: 5%;
     font-size: 15px;
     text-align: left; }
     #canvas-wrapper .story-top-left p {
@@ -286,7 +304,7 @@ a {
       letter-spacing: 3px; }
   #canvas-wrapper .story-bottom-left {
     right: 50%;
-    top: 330px;
+    top: 380px;
     margin-right: 200px; }
     #canvas-wrapper .story-bottom-left h3 {
       font-family: 'Pathway Gothic One', sans-serif;
@@ -295,6 +313,12 @@ a {
       letter-spacing: 3px;
       text-transform: uppercase;
       margin: 10px 0; }
+    #canvas-wrapper .story-bottom-left h3.energy::before {
+      content: url('/images/bolt-L.png');
+      padding-right: 10px; }
+    #canvas-wrapper .story-bottom-left h3.energy::after {
+      content: url('/images/bolt-R.png');
+      padding-left: 10px; }
     #canvas-wrapper .story-bottom-left h2 {
       font-family: 'Montserrat', sans-serif;
       font-weight: 400;
@@ -305,7 +329,7 @@ a {
   #canvas-wrapper .story-bottom-right {
     text-align: left;
     left: 50%;
-    top: 350px;
+    top: 470px;
     margin-left: 40px; }
     #canvas-wrapper .story-bottom-right p {
       font-family: 'EB Garamond', serif;
@@ -333,7 +357,11 @@ a {
 .final-section {
   margin-bottom: 80px;
   text-align: center;
-  background-color: white; }
+  background-color: white;
+  background-image: url('/images/canoe.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; }
   .final-section .content-container {
     padding-top: 50px; }
     .final-section .content-container .logo-container {
@@ -341,8 +369,8 @@ a {
       padding-right: 10%;
       text-align: right; }
       .final-section .content-container .logo-container .logo {
-        height: 40px;
-        width: 40px; }
+        height: 85px;
+        width: 85px; }
     .final-section .content-container p {
       width: 60%;
       margin-left: auto;
@@ -353,6 +381,9 @@ a {
       letter-spacing: 3px;
       line-height: 200%;
       color: #222; }
+      .final-section .content-container p img.footer-logo {
+        width: 255px;
+        height: auto; }
     .final-section .content-container h2 {
       font-family: 'Montserrat', sans-serif;
       font-weight: 700;
@@ -465,7 +496,6 @@ a {
       position: relative;
       width: 40%;
       margin: 0px auto;
-      text-align: center;
       padding: 17px 0 0 0; }
       .footer .footer-container .signup-container h3 {
         float: left;

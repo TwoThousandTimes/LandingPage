@@ -30,7 +30,8 @@ block content
         h3.communicate TO COMMUNICATE,
         h3.share TO SHARE.
         img(class="connect" src="images/connect.png")
-  
+      div.clearfix
+    
     div.content-container
       div.who-bottom-left(data-0="opacity: 0;", data-center="opacity: 1;", data-top="opacity: 0;")
         h3.from FROM CAVE PAINTINGS
@@ -44,7 +45,8 @@ block content
           img(class="connect" src="images/bluex.png")
         h3.to TO GRAFFITI
         div.border-lines
-      img.silhouette(src="images/people-bg.png")
+      div.clearfix
+    div.silhouette-bg
     div.clearfix
 
   -// ============================= STORY SECTION ====================================
@@ -52,17 +54,21 @@ block content
     div.content-container
       div.story-title
         h3 ALMOST NOTHING CAPTIVATES US LIKE
-        h2 TELLING A STORY
+        h2 TELLING A STORY.
       div.story-top-right
         div.story-top-right-inner
-          p NO ONE CAN TELL SOMEONE ELSE'S
-            br
-            span STORY
-            img(src="")
+          table
+            tr
+              td.story-top-right-text
+                p NO ONE CAN TELL SOMEONE ELSE'S
+                  br
+                  span STORY
+              td.story-top-right-img
+                img(src="images/book.png")
       div.story-top-left
         p What truly gets us excited are the story makers. It's the one place where...
       div.story-bottom-left
-        h3 ENERGY
+        h3.energy ENERGY
         hr
         h3 AUTHENTICITY
         h2 MEET.
@@ -82,10 +88,10 @@ block content
   section.final-section
     div.content-container
       div.logo-container
-        img.logo(src="")
+        img.logo(src="images/TTT-icon.png")
       p 
         | We are 
-        span.ttt TWO THOUSAND TIMES
+        img.footer-logo(src="images/footer-logo.png" alt="the Two Thousand Times")
         | , and we realize that epic stories come from strangers, and there needs to be a place to share them. 
         | We have developed a community where writers and readers meet, and it is our mission to connect the world on a purely human level.
       h2 LOREM IPSUM
