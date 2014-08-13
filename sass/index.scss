@@ -262,12 +262,10 @@ a {
 	background-size:cover;
 	#canvas {
 		position: relative;
+		float:left;
 		padding: 5px 0; 
 		height: 750px; 
 		width: 100%;
-		margin-left: auto;
-		margin-right: auto;
-		overflow:hidden;
 	}
 	
 	h2 {
