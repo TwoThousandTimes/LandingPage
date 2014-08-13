@@ -143,9 +143,8 @@ $(function() {
     var animationTime = 3000;
     // Assume animation is counting down from 'animationTime' towards 0ms. Raising the trigger's below will make the
     // animations happen sooner. Triggers must be 0 < trigger < animationTime 
-    var triggerTopRight = 3000; 
-    var topRightAnimationSpeed = 1000;
-    var triggerBottomRight = 3000;
+    var triggerTopRight = 2000; 
+    var triggerBottomRight = 1500;
     var triggerTopLeft = 3000;
     var triggerBottomLeft = 2500;
 

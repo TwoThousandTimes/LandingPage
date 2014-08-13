@@ -20,9 +20,7 @@ a {
   max-width: 1280px;
   min-width: 970px;
   margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px; }
+  margin-right: auto; }
 
 section, .title-container {
   position: relative;
@@ -100,7 +98,8 @@ section, .title-container {
   width: 40%; }
 
 .who-top-right {
-  width: 60%; }
+  width: 58%;
+  margin-right: 2%; }
 
 .who-bottom-left {
   width: 45%;
@@ -288,14 +287,14 @@ section, .title-container {
       height: inherit;
       display: inline-block;
       margin-left: -100%;
-      border: 2px solid #fff;
+      border: 3px solid #fff;
       border-left: none;
       padding-left: 20px;
       padding-right: 0px;
-      -webkit-transition: all 1s ease-in-out;
-      -moz-transition: all 1s ease-in-out;
-      -o-transition: all 1s ease-in-out;
-      transition: all 1s ease-in-out; }
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out; }
       #canvas-wrapper .story-top-right .story-top-right-inner td.story-top-right-text p {
         font-family: 'Pathway Gothic One', sans-serif;
         font-weight: 400;
@@ -317,11 +316,11 @@ section, .title-container {
           padding-right: 35px;
           margin: 0px auto; }
   #canvas-wrapper .story-top-left {
-    width: 45%;
+    width: 47%;
     right: 50%;
     top: 240px;
-    padding-right: 2.5%;
-    padding-right: 2.5%;
+    padding-right: 1%;
+    padding-left: 2%;
     font-size: 15px;
     text-align: left; }
     #canvas-wrapper .story-top-left p {
@@ -330,7 +329,7 @@ section, .title-container {
       font-size: 24px;
       letter-spacing: 3px; }
   #canvas-wrapper .story-bottom-left {
-    right: 50%;
+    right: 47%;
     top: 380px;
     margin-right: 200px; }
     #canvas-wrapper .story-bottom-left h3 {
@@ -357,7 +356,7 @@ section, .title-container {
     text-align: left;
     left: 50%;
     top: 470px;
-    margin-left: 40px; }
+    margin-left: 20px; }
     #canvas-wrapper .story-bottom-right p {
       font-family: 'EB Garamond', serif;
       font-weight: 400;

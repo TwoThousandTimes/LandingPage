@@ -30,8 +30,6 @@ a {
 	min-width:970px;
 	margin-left: auto;
 	margin-right: auto;
-	padding-left:15px;
-	padding-right:15px;
 }
 
 section,.title-container {
@@ -116,7 +114,8 @@ section,.title-container {
 	width: 40%;
 }
 .who-top-right {
-	width: 60%;
+	width: 58%;
+	margin-right:2%;
 }
 
 .who-bottom-left {
@@ -341,14 +340,14 @@ section,.title-container {
 			height: inherit;
 			display:inline-block;
 			margin-left: -100%;
-			border: 2px solid #fff;
+			border: 3px solid #fff;
 			border-left: none;
 			padding-left: 20px;
 			padding-right: 0px;
-			-webkit-transition: all 1s ease-in-out;
-			-moz-transition: all 1s ease-in-out;
-			-o-transition: all 1s ease-in-out;
-			transition: all 1s ease-in-out;
+			-webkit-transition: all .5s ease-in-out;
+			-moz-transition: all .5s ease-in-out;
+			-o-transition: all .5s ease-in-out;
+			transition: all .5s ease-in-out;
 			td.story-top-right-text {
 				p {
 					@include pathway;
@@ -377,11 +376,11 @@ section,.title-container {
 	}
 
 	.story-top-left {
-		width:45%;
+		width:47%;
 		right: 50%;
 		top: 240px;
-		padding-right: 2.5%;
-		padding-right: 2.5%;
+		padding-right: 1%;
+		padding-left: 2%;
 		font-size: 15px;
 		text-align: left;
 		p {
@@ -392,7 +391,7 @@ section,.title-container {
 	}
 
 	.story-bottom-left {
-		right: 50%;
+		right: 47%;
 		top: 380px;
 		margin-right: 200px;
 		h3 {
@@ -425,7 +424,7 @@ section,.title-container {
 		text-align: left;
 		left: 50%;
 		top: 470px;
-		margin-left: 40px;
+		margin-left: 20px;
 		p {
 			@include garamond;
 			font-size:24px;
