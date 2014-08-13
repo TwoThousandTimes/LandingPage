@@ -2,19 +2,31 @@
 $(function() {
 
     $(document).ready(function() {
-
-
+        footerHidden = false;
         // Setup the skrollr
         var s = skrollr.init({
-            forceHeight: false,
+            forceHeight: false,            
             keyframe: function(element, name, direction) {
                 //name will be one of data500, dataTopBottom, data_offsetCenter
-
+                
                 if (element.id === 'canvas-wrapper' && name === 'dataBottomCenter' && !hasAnimated) {
                     hasAnimated = true;
                     animateLines(canvas, pathColor, calculateLines() );
-
+                    console.log('animating');                    
                 }
+
+                if (name === 'data-100Bottom') {
+                    $('.footer').stop().animate({
+                                    opacity: 1
+                                }, 200, 'swing', false);
+                }
+
+                if ( element.id === 'final-section') {
+                    $('.footer').stop().animate({
+                                    opacity: 0
+                                }, 200, 'swing', false);
+                }
+
             }
         });
 
@@ -24,7 +36,7 @@ $(function() {
             // Set the video and final section heights
             var footerHeight = $('.footer').height();
             var windowHeight = $(window).height();
-            $('#bgvid, .title-container, .final-section').height( windowHeight - footerHeight );
+            $('.title-container').height( windowHeight - footerHeight );
             
             if(once) {
             	once = false;
@@ -54,23 +66,42 @@ $(function() {
         $(window).resize(windowResize);
 
         // TODO: start the loading animation
+        
+        // TODO: scroll link
+        $(function() {
+		  $('a[href*=#]:not([href=#])').click(function() {
+			if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+			  var target = $(this.hash);
+			  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			  if (target.length) {
+				$('html,body').animate({
+				  scrollTop: target.offset().top
+				}, 1000);
+				return false;
+			  }
+			}
+		  });
+		});
 
 
         // Handle the form submition
-        $('.email-form').submit(function() {
+        $('.email-form').submit(function(event) {
             event.preventDefault();
             var $form = $(this);
+            if( $form.find('.error-message') ) {
+                clear_error($form);
+            }
             $.ajax({
                 type: "POST",
                 url: '/process/username',
                 data: $form.serialize(),
                 success: function(data, textStatus, xhr) {
                     if (data.error) {
-                        $form.find('.error-message').html(data.error);
+                        $form.find('.error-message').css('display','block').html(data.error).fadeIn();
                         $form.find('input').addClass('error');
                     } else {
                         // TODO: display some sort of success screen??
-
+                        $('a.thanks').click();
                     }
                 },
                 error: function() {
@@ -81,24 +112,29 @@ $(function() {
 
         // Remove the error class (if any) when the user input changes. Also remove any error messages.
         $('input').change(function() {
-            $(this).removeClass('error');
-            $('.error-message').html('');
+            clear_error($(this).parent('form'));
         });
 
 
     });
 
+    function clear_error(form) {
+            form.find('input').removeClass('error');
+            form.find('.error-message').css('display','none').fadeOut();
+    }
+
     // Fetch the landing page video!
     var getSupportedVideo = function () {
-        if (window.Modernizr.video.ogg) return 'ogg';
         if (window.Modernizr.video.h264) return 'mp4';
         if (window.Modernizr.video.webm) return 'webm';
+        if (window.Modernizr.video.ogg) return 'ogg';
         return undefined;
     };
     var videoType = getSupportedVideo();
+    console.log(videoType);
     if (videoType) {
         var xhr = new XMLHttpRequest();
-        xhr.open('GET', window.cdn + '/images/B&W_pics_export._v2.' + videoType, true);
+        xhr.open('GET', window.cdn + '/images/video/intro.' + videoType, true);
         xhr.responseType = 'blob';
         xhr.onload = function(e) {
             if (this.status == 200) {
@@ -127,9 +163,8 @@ $(function() {
     var animationTime = 3000;
     // Assume animation is counting down from 'animationTime' towards 0ms. Raising the trigger's below will make the
     // animations happen sooner. Triggers must be 0 < trigger < animationTime 
-    var triggerTopRight = 3000; 
-    var topRightAnimationSpeed = 1000;
-    var triggerBottomRight = 3000;
+    var triggerTopRight = 2000; 
+    var triggerBottomRight = 1500;
     var triggerTopLeft = 3000;
     var triggerBottomLeft = 2500;
 
