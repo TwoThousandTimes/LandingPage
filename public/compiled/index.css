@@ -17,7 +17,7 @@ a {
 .content-container {
   position: relative;
   width: 100%;
-  max-width: 1400px;
+  max-width: 1280px;
   min-width: 970px;
   margin-left: auto;
   margin-right: auto;
@@ -96,11 +96,18 @@ section, .title-container {
   float: left;
   position: relative; }
 
-.who-top-left, .who-bottom-left {
+.who-top-left {
   width: 40%; }
 
-.who-top-right, .who-bottom-right {
+.who-top-right {
   width: 60%; }
+
+.who-bottom-left {
+  width: 45%;
+  margin-left: 5%; }
+
+.who-bottom-right {
+  width: 50%; }
 
 .who-we-are {
   position: relative;
@@ -292,7 +299,7 @@ section, .title-container {
       #canvas-wrapper .story-top-right .story-top-right-inner td.story-top-right-text p {
         font-family: 'Pathway Gothic One', sans-serif;
         font-weight: 400;
-        font-size: 37px;
+        font-size: 30px;
         letter-spacing: 5px;
         text-transform: uppercase;
         margin: 10px 0; }
@@ -306,7 +313,8 @@ section, .title-container {
         #canvas-wrapper .story-top-right .story-top-right-inner td.story-top-right-img img {
           width: 50px;
           height: auto;
-          padding-left: 21px;
+          padding-left: 35px;
+          padding-right: 35px;
           margin: 0px auto; }
   #canvas-wrapper .story-top-left {
     width: 45%;
