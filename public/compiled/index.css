@@ -71,7 +71,9 @@ section, .title-container {
     width: 100%; }
     .title-container .learn-more a {
       color: #fff;
-      text-decoration: none; }
+      text-decoration: none;
+      width: 150px;
+      height: 150px; }
       .title-container .learn-more a h3 {
         font-family: 'Montserrat', sans-serif;
         font-weight: 400;
@@ -370,7 +372,7 @@ section, .title-container {
     line-height: 200%; }
 
 .final-section {
-  height: 800px;
+  height: 900px;
   margin-bottom: 80px;
   text-align: center;
   background-color: white;

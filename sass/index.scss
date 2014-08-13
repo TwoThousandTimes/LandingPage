@@ -86,6 +86,8 @@ section,.title-container {
 		a {
 			color:#fff;
 			text-decoration:none;
+			width:150px;
+			height:150px;
 			h3 {
 				@include montserrat;
 				text-transform:uppercase;
@@ -443,7 +445,7 @@ section,.title-container {
 }
 
 .final-section {
-	height:800px;
+	height:900px;
 	margin-bottom: $footer-height;
 	text-align: center;
 	
