@@ -2,18 +2,31 @@
 $(function() {
 
     $(document).ready(function() {
-
+        footerHidden = false;
         // Setup the skrollr
         var s = skrollr.init({
-            forceHeight: false,
+            forceHeight: false,            
             keyframe: function(element, name, direction) {
                 //name will be one of data500, dataTopBottom, data_offsetCenter
-
+                
                 if (element.id === 'canvas-wrapper' && name === 'dataBottomCenter' && !hasAnimated) {
                     hasAnimated = true;
                     animateLines(canvas, pathColor, calculateLines() );
-
+                    console.log('animating');                    
                 }
+
+                if (name === 'data-100Bottom') {
+                    $('.footer').stop().animate({
+                                    opacity: 1
+                                }, 200, 'swing', false);
+                }
+
+                if ( element.id === 'final-section') {
+                    $('.footer').stop().animate({
+                                    opacity: 0
+                                }, 200, 'swing', false);
+                }
+
             }
         });
 
@@ -72,20 +85,23 @@ $(function() {
 
 
         // Handle the form submition
-        $('.email-form').submit(function() {
+        $('.email-form').submit(function(event) {
             event.preventDefault();
             var $form = $(this);
+            if( $form.find('.error-message') ) {
+                clear_error($form);
+            }
             $.ajax({
                 type: "POST",
                 url: '/process/username',
                 data: $form.serialize(),
                 success: function(data, textStatus, xhr) {
                     if (data.error) {
-                        $form.find('.error-message').html(data.error);
+                        $form.find('.error-message').css('display','block').html(data.error).fadeIn();
                         $form.find('input').addClass('error');
                     } else {
                         // TODO: display some sort of success screen??
-
+                        $('a.thanks').click();
                     }
                 },
                 error: function() {
@@ -96,12 +112,16 @@ $(function() {
 
         // Remove the error class (if any) when the user input changes. Also remove any error messages.
         $('input').change(function() {
-            $(this).removeClass('error');
-            $('.error-message').html('');
+            clear_error($(this).parent('form'));
         });
 
 
     });
+
+    function clear_error(form) {
+            form.find('input').removeClass('error');
+            form.find('.error-message').css('display','none').fadeOut();
+    }
 
     // Fetch the landing page video!
     var getSupportedVideo = function () {

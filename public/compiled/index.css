@@ -381,7 +381,6 @@ section, .title-container {
 
 .final-section {
   height: 900px;
-  margin-bottom: 80px;
   text-align: center;
   background-color: white;
   background-image: url('/images/beach2.jpg');
@@ -459,8 +458,10 @@ section, .title-container {
       .final-section .content-container .email-form .error-container .error-message {
         position: absolute;
         text-align: center;
+        display: none;
+        padding: 10px;
         width: 100%;
-        top: -30px;
+        top: -50px;
         right: 0px;
         background-color: #f74141;
         color: #fff;
@@ -475,6 +476,8 @@ section, .title-container {
   border-top: 2px solid white;
   background: url('/images/white90.png');
   background-repeat: repeat; }
+  .footer a.thanks {
+    display: none; }
   .footer .footer-container {
     width: 100%;
     max-width: 1400px;
@@ -579,8 +582,10 @@ section, .title-container {
         .footer .footer-container .signup-container .email-form .error-message {
           position: absolute;
           text-align: center;
+          display: none;
+          padding: 10px;
           width: 100%;
-          top: -30px;
+          top: -50px;
           right: 0px;
           background-color: #f74141;
           color: #fff;

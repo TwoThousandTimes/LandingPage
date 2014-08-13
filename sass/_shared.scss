@@ -73,8 +73,10 @@ $lightgrey: #aaa;
 @mixin error_footer {
 	position:absolute;
 	text-align:center;
+	display:none;
+	padding: 10px;
 	width:100%;
-	top:-30px;
+	top:-50px;
 	right:0px;
 	background-color:#f74141;
 	color:#fff;

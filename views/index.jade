@@ -83,7 +83,7 @@ block content
         div.canvas-center
         div#canvas
         
-      div.bottom-message
+      div.bottom-message(data--100-bottom="", data-emit-events)
         p.story-bottom-message
           span.highlight It turns strangers into friends. It's where we learn. It builds community.
           br
@@ -92,7 +92,7 @@ block content
 
 
   -// ====================================== FINAL SECTION ===================================
-  section.final-section
+  section.final-section#final-section(data-bottom-center="", data--50-bottom="", data-emit-events)
     div.content-container
       div.logo-container
         img.logo(src="#{cdn}/images/TTT-icon.png")
@@ -116,6 +116,8 @@ block content
 
   -// =================================== FIXED FOOTER =====================================
   div.footer
+    a.thanks(href="images/thanks.jpg",data-lightbox="thanks") Thanks for Signing up
+
     div.footer-container
       div.progress-container
         div.progress(data-0="width:0%;", data-end="width:100%;")
@@ -148,4 +150,5 @@ block content
   script(src="#{cdn}/javascripts/jquery-ui.min.js")
   script(src="#{cdn}/javascripts/raphael-min.js")
   script(src="#{cdn}/javascripts/skrollr.min.js")
+  script(src="#{cdn}/javascripts/lightbox.min.js")
   script(src="#{cdn}/javascripts/index.js")

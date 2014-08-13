@@ -455,7 +455,8 @@ section,.title-container {
 
 .final-section {
 	height:900px;
-	margin-bottom: $footer-height;
+	//margin-bottom: $footer-height;
+
 	text-align: center;
 	
 	background-color: white;
@@ -547,6 +548,11 @@ section,.title-container {
 	border-top: 2px solid white;
 	background: url('#{$cdn}/images/white90.png');
 	background-repeat: repeat;
+
+	a.thanks {
+		display:none;
+	}
+
 	.footer-container {
 		width: 100%;
 		max-width: 1400px;
