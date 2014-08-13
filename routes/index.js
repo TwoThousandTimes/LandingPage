@@ -3,6 +3,7 @@ var router = express.Router();
 var db = require('../models');
 var validator = require('validator');
 var config = require('../config');
+var nodemailer = require('nodemailer');
 
 // create reusable transport method (opens pool of SMTP connections)
 var smtpTransport = nodemailer.createTransport("SMTP",{
@@ -67,7 +68,7 @@ router.post('/process/username', function (req, res) {
 			res.status(200).send({success: { username: req.body.username, email: req.body.email }});	
 			
 
-			
+
 			// =======================   SEND NEW USER EMAIL CONFIRMATION  =============================
 			// setup e-mail data with unicode symbols
 			var mailOptions = {
