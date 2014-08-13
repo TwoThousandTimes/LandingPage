@@ -1,4 +1,6 @@
+
 $(function() {
+
     $(document).ready(function() {
 
 
@@ -63,6 +65,11 @@ $(function() {
     });
 
     // Fetch the landing page video!
+    var getSupportedVideo = function () {
+        if (window.Modernizr.video.ogg) return 'ogg';
+        if (window.Modernizr.video.h264) return 'mp4';
+        if (window.Modernizr.video.webm) return 'webm';
+    };
     var xhr = new XMLHttpRequest();
     xhr.open('GET', '/images/B&W_pics_export._v2.mov', true);
     xhr.responseType = 'blob';
