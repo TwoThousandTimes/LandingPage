@@ -4,11 +4,11 @@ var db = require('../models');
 var validator = require('validator');
 var config = require('../config');
 
-/* 
+/*
 *	Render the Index page.
 */
 router.get('/', function (req, res) {
-	res.render('index', { title: 'Two Thousand Times', cdn: config.cdn });
+	res.render('index', { title: 'Two Thousand Times', cdn: config.cdn ? config.cdn : '' });
 });
 
 /**

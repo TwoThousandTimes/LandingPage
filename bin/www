@@ -9,7 +9,7 @@ app.set('port', config.port);
 /**
 *	Set the env variable for scss (determine whether or not to use cdn or not!)
 */
-fs.writeFile('./../sass/_env.scss', '$cdn: \'' + config.cdn + '\';', function(err) {
+fs.writeFile(__dirname + '/../sass/_env.scss', '$cdn: \'' + config.cdn + '\';', function(err) {
 	if (err) console.log(err);
 });
 
