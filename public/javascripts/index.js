@@ -28,15 +28,13 @@ $(function() {
             
             if(once) {
             	once = false;
-            	
             	c_height = $('#canvas').height();
             	c_width = $('#canvas').width();
             } else {
-            	new_height = $('#canvas').height();
-            	new_width = c_width * new_height / c_height;
-            	console.log('resize');
-            	$('#canvas svg').width(new_width);
-            	$('#canvas svg').height(new_height);
+            	new_width = $('#canvas').width();
+                new_height = Math.floor(new_width * c_height / c_width);
+                canvas.setSize(new_width, new_height);
+                console.log(new_height+' : '+new_width);
             }
             
             s.refresh();
