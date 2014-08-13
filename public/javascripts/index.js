@@ -12,7 +12,7 @@ $(function() {
 
                 if (element.id === 'canvas-wrapper' && name === 'dataBottomCenter' && !hasAnimated) {
                     hasAnimated = true;
-                    animateLines(canvas, pathColor, [pathStringLeft, pathStringRight, pathStringTopLeft, pathStringTopRight, pathStringTopLeft, pathStringTopRight]);
+                    animateLines(canvas, pathColor, calculateLines() );
 
                 }
             }
@@ -32,8 +32,16 @@ $(function() {
             	c_width = $('#canvas').width();
             } else {
             	new_width = $('#canvas').width();
-                new_height = Math.floor(new_width * c_height / c_width);
+                new_height = $('#canvas').height();//Math.floor(new_width * c_height / c_width);
+                canvas.clear();
                 canvas.setSize(new_width, new_height);
+                var resizedLines = calculateLines();
+                resizedLines.forEach( function ( line ) {
+                    canvas.path( line ).attr({
+                        stroke: pathColor,
+                        'stroke-width': pathStrokeWidth
+                    })
+                });
                 console.log(new_height+' : '+new_width);
             }
             
@@ -85,25 +93,29 @@ $(function() {
         if (window.Modernizr.video.ogg) return 'ogg';
         if (window.Modernizr.video.h264) return 'mp4';
         if (window.Modernizr.video.webm) return 'webm';
+        return undefined;
     };
-    var xhr = new XMLHttpRequest();
-    xhr.open('GET', '/images/B&W_pics_export._v2.mov', true);
-    xhr.responseType = 'blob';
-    xhr.onload = function(e) {
-        if (this.status == 200) {
-            console.log("got it");            
+    var videoType = getSupportedVideo();
+    if (videoType) {
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', window.cdn + '/images/B&W_pics_export._v2.' + videoType, true);
+        xhr.responseType = 'blob';
+        xhr.onload = function(e) {
+            if (this.status == 200) {
+                console.log("got it");            
 
-            var myBlob = this.response;
-            var vid = (window.webkitURL ? webkitURL : URL).createObjectURL(myBlob);
-            // myBlob is now the blob that the object URL pointed to.
-            var video = document.getElementById("bgvid");
-            video.src = vid;
-            // TODO: stop the loading animation!
-            video.play();
+                var myBlob = this.response;
+                var vid = (window.webkitURL ? webkitURL : URL).createObjectURL(myBlob);
+                // myBlob is now the blob that the object URL pointed to.
+                var video = document.getElementById("bgvid");
+                video.src = vid;
+                // TODO: stop the loading animation!
+                video.play();
+
+            }
         }
+        xhr.send();
     }
-    xhr.send();
-
 
 
 
@@ -187,26 +199,30 @@ $(function() {
 
     var canvas = Raphael(canvasId);
 
-    var containerWidth = $('#' + canvasId).width();
-    var containerHeight = $('#' + canvasId).height();
-    var widthMid = containerWidth / 2;
-
-    /*      
-            -------
-                    120px height
-            -------
-               |
-               |
-               |
-    __________/ \__________
-    */
-
-    var pathStringLeft = "M" + widthMid + "," + distanceBetweenTopHorizontalLines + "h-" + topLineWidth + "M" + widthMid + "," + distanceBetweenTopHorizontalLines + "v" + (containerHeight - arcSize - distanceBetweenTopHorizontalLines) + "C" + widthMid + "," + containerHeight + " " + widthMid + "," + containerHeight + " " + (widthMid - arcSize) + "," + containerHeight + "H0";
-    var pathStringRight = "M" + widthMid + "," + distanceBetweenTopHorizontalLines + "h" + topLineWidth + "M" + widthMid + "," + distanceBetweenTopHorizontalLines + "v" + (containerHeight - arcSize - distanceBetweenTopHorizontalLines) + "C" + widthMid + "," + containerHeight + " " + widthMid + "," + containerHeight + " " + (widthMid + arcSize) + "," + containerHeight + "H" + containerWidth;
-    var pathStringTopLeft = "M" + widthMid + ",0h-" + topLineWidth;
-    var pathStringTopRight = "M" + widthMid + ",0h" + topLineWidth;
-
     var hasAnimated = false;
+
+    var calculateLines = function() {
+        var containerWidth = $('#' + canvasId).width();
+        var containerHeight = $('#' + canvasId).height();
+        var widthMid = containerWidth / 2;
+
+        /*      
+                -------
+                        120px height
+                -------
+                   |
+                   |
+                   |
+        __________/ \__________
+        */
+
+        var pathStringLeft = "M" + widthMid + "," + distanceBetweenTopHorizontalLines + "h-" + topLineWidth + "M" + widthMid + "," + distanceBetweenTopHorizontalLines + "v" + (containerHeight - arcSize - distanceBetweenTopHorizontalLines) + "C" + widthMid + "," + containerHeight + " " + widthMid + "," + containerHeight + " " + (widthMid - arcSize) + "," + containerHeight + "H0";
+        var pathStringRight = "M" + widthMid + "," + distanceBetweenTopHorizontalLines + "h" + topLineWidth + "M" + widthMid + "," + distanceBetweenTopHorizontalLines + "v" + (containerHeight - arcSize - distanceBetweenTopHorizontalLines) + "C" + widthMid + "," + containerHeight + " " + widthMid + "," + containerHeight + " " + (widthMid + arcSize) + "," + containerHeight + "H" + containerWidth;
+        var pathStringTopLeft = "M" + widthMid + ",0h-" + topLineWidth;
+        var pathStringTopRight = "M" + widthMid + ",0h" + topLineWidth;
+
+        return [pathStringLeft, pathStringRight, pathStringTopLeft, pathStringTopRight];
+    };
 
 });
 
