@@ -2,6 +2,8 @@ html, body {
   height: 100%; }
 
 body {
+  width: 100%;
+  min-width: 970px !important;
   background-color: #161515;
   padding: 0;
   padding-bottom: 80px;
@@ -19,14 +21,23 @@ a {
   min-width: 970px;
   margin-left: auto;
   margin-right: auto;
-  overflow: visible !important; }
+  padding-left: 15px;
+  padding-right: 15px; }
+
+section, .title-container {
+  position: relative;
+  width: 100%;
+  min-width: 970px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: hidden; }
 
 .title-container {
   text-align: center;
   color: white;
   overflow: hidden; }
   .title-container .video-overlay {
-    height: 300px;
+    height: 400px;
     margin: auto;
     position: absolute;
     top: 0;
@@ -58,12 +69,15 @@ a {
     position: absolute;
     bottom: 120px;
     width: 100%; }
-    .title-container .learn-more h3 {
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 400;
-      text-transform: uppercase;
-      font-size: 12px;
-      letter-spacing: 1px; }
+    .title-container .learn-more a {
+      color: #fff;
+      text-decoration: none; }
+      .title-container .learn-more a h3 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        text-transform: uppercase;
+        font-size: 12px;
+        letter-spacing: 1px; }
   .title-container video#bgvid {
     position: fixed;
     right: 0;
@@ -89,14 +103,15 @@ a {
 .who-we-are {
   position: relative;
   width: 100%;
-  height: inherit;
-  padding-bottom: 250px;
-  background-color: #161515;
+  display: block;
+  height: 1300px;
+  background-color: #fff;
   background-image: url('/images/stars.jpg');
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
-  color: #fff; }
+  color: #fff;
+  overflow-x: hidden; }
   .who-we-are .who-top-left {
     margin-top: 100px; }
     .who-we-are .who-top-left h2, .who-we-are .who-top-left h3 {
@@ -128,8 +143,7 @@ a {
     margin-top: 170px;
     text-align: center;
     box-shadow: inset 0px 0px 0px 1px #fff;
-    -webkit-box-shadow: inset 0px 0px 0px 1px #fff;
-    overflow: visible !important; }
+    -webkit-box-shadow: inset 0px 0px 0px 1px #fff; }
     .who-we-are .who-top-right h3 {
       padding: 0 20px;
       margin: 10px 0; }
@@ -216,13 +230,14 @@ a {
   padding-bottom: 150px;
   color: white;
   text-align: center;
-  background-image: url('/images/beach.jpg');
+  background-image: url('/images/car.jpg');
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover; }
   #canvas-wrapper #canvas {
     position: relative;
     float: left;
+    margin-bottom: 30px;
     padding: 5px 0;
     height: 750px;
     width: 100%; }
@@ -253,6 +268,7 @@ a {
       text-transform: uppercase;
       margin-top: 0px; }
   #canvas-wrapper .story-top-right {
+    width: 45%;
     left: 50%;
     top: 250px;
     padding-right: 42px;
@@ -294,7 +310,8 @@ a {
     width: 45%;
     right: 50%;
     top: 240px;
-    padding-right: 5%;
+    padding-right: 2.5%;
+    padding-right: 2.5%;
     font-size: 15px;
     text-align: left; }
     #canvas-wrapper .story-top-left p {
@@ -351,21 +368,20 @@ a {
     font-size: 24px;
     letter-spacing: 3px;
     line-height: 200%; }
-    #canvas-wrapper .story-bottom-message .highlight {
-      color: #32b0c6; }
 
 .final-section {
+  height: 800px;
   margin-bottom: 80px;
   text-align: center;
   background-color: white;
-  background-image: url('/images/canoe.jpg');
-  background-position: center center;
+  background-image: url('/images/beach2.jpg');
+  background-position: bottom center;
   background-repeat: no-repeat;
   background-size: cover; }
   .final-section .content-container {
-    padding-top: 50px; }
+    padding-top: 20px; }
     .final-section .content-container .logo-container {
-      padding: 20px;
+      padding: 20px 0 0 0;
       padding-right: 10%;
       text-align: right; }
       .final-section .content-container .logo-container .logo {
@@ -430,7 +446,7 @@ a {
         color: #fff;
         font-size: 16px;
         letter-spacing: 1px; }
-      .final-section .content-container .email-form .error-message {
+      .final-section .content-container .email-form .error-container .error-message {
         position: absolute;
         text-align: center;
         width: 100%;

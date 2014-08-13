@@ -3,7 +3,6 @@ $(function() {
 
     $(document).ready(function() {
 
-
         // Setup the skrollr
         var s = skrollr.init({
             forceHeight: false,
@@ -24,7 +23,7 @@ $(function() {
             // Set the video and final section heights
             var footerHeight = $('.footer').height();
             var windowHeight = $(window).height();
-            $('#bgvid, .title-container, .final-section').height( windowHeight - footerHeight );
+            $('.title-container').height( windowHeight - footerHeight );
             
             if(once) {
             	once = false;
@@ -54,6 +53,22 @@ $(function() {
         $(window).resize(windowResize);
 
         // TODO: start the loading animation
+        
+        // TODO: scroll link
+        $(function() {
+		  $('a[href*=#]:not([href=#])').click(function() {
+			if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+			  var target = $(this.hash);
+			  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			  if (target.length) {
+				$('html,body').animate({
+				  scrollTop: target.offset().top
+				}, 1000);
+				return false;
+			  }
+			}
+		  });
+		});
 
 
         // Handle the form submition
@@ -90,15 +105,16 @@ $(function() {
 
     // Fetch the landing page video!
     var getSupportedVideo = function () {
-        if (window.Modernizr.video.ogg) return 'ogg';
         if (window.Modernizr.video.h264) return 'mp4';
         if (window.Modernizr.video.webm) return 'webm';
+        if (window.Modernizr.video.ogg) return 'ogg';
         return undefined;
     };
     var videoType = getSupportedVideo();
+    console.log(videoType);
     if (videoType) {
         var xhr = new XMLHttpRequest();
-        xhr.open('GET', window.cdn + '/images/B&W_pics_export._v2.' + videoType, true);
+        xhr.open('GET', window.cdn + '/images/video/intro.' + videoType, true);
         xhr.responseType = 'blob';
         xhr.onload = function(e) {
             if (this.status == 200) {

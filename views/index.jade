@@ -12,20 +12,22 @@ block content
         img(src="#{cdn}/images/xxxxx.png")
 
     div.learn-more
-      h3 Learn More
-      img(src="#{cdn}/images/down-arrow.png")
+       a(href="#learn")
+        h3 Learn More
+        img(src="#{cdn}/images/down-arrow.png")
 
 
     video#bgvid(muted)
       
   -// =========================== WHO WE ARE SECTION =============================
   section.who-we-are
-    div.content-container
-      div.who-top-left(data-0="opacity: 0;", data-center="opacity: 1;", data-top="opacity: 0;")
+    a(name="learn")
+    div.content-container.who-top
+      div.who-top-left(data-0="opacity: 0;", data-center="opacity: 1;", data-top="opacity: .5;")
         h2 WE ARE A PLANET OF 
           span STORYTELLERS.
         h3 CENTURIES OF IT REALLY.
-      div.who-top-right(data-0="opacity: 0;", data-center="opacity: 1;", data-top="opacity: 0;")
+      div.who-top-right(data-0="opacity: 0;", data-center="opacity: 1;", data-top="opacity: .5;")
         h3.desire THE DESIRE TO LEAVE OUR MARK,
         h3.communicate TO COMMUNICATE,
         h3.share TO SHARE.
@@ -33,13 +35,13 @@ block content
       div.clearfix
     
     div.content-container
-      div.who-bottom-left(data-0="opacity: 0;", data-center="opacity: 1;", data-top="opacity: 0;")
+      div.who-bottom-left(data-0="opacity: 0; margin-top:250px;", data-center="opacity: 1; margin-top:100px;", data-top="opacity: 0.5; margin-top:0px;")
         h3.from FROM CAVE PAINTINGS
         div.center-x
           img(class="connect" src="#{cdn}/images/bluex.png")
         h3.to TO MANIFESTOS
         div.border-lines
-      div.who-bottom-right(data-0="opacity: 0;", data-center="opacity: 1;", data-top="opacity: 0;")
+      div.who-bottom-right(data-0="opacity: 0; margin-top:220px;", data-center="opacity: 1; margin-top:230px;", data-top="opacity: 0.5; margin-top:100px;")
         h3.from TO CAMPFIRES
         div.center-x
           img(class="connect" src="#{cdn}/images/bluex.png")
@@ -104,7 +106,8 @@ block content
         input(type="text", name="email", placeholder="Email")
         input(type="text", name="username", placeholder="Username")
         button(type="submit") Submit
-        span.error-message
+        div.error-container
+          span.error-message
         
       div.social-media-container
         img(src="#{cdn}/images/fbook.png")
@@ -131,18 +134,20 @@ block content
           input(type="text", name="email", placeholder="Email")
           input(type="text", name="username", placeholder="Username")
           button(type="submit") Submit
-          span.error-message
+          div.error-container
+            span.error-message
           
       .social
         img(src="#{cdn}/images/fbook.png")
         img(src="#{cdn}/images/twitter.png")
 
-  -// attach cdn to window so we can access in index.js (for video url)
   script.
     window.cdn = '#{cdn}';
   script(src="#{cdn}/javascripts/modernizr.min.js")
   script(src="//code.jquery.com/jquery-1.11.0.min.js")
   script(src="#{cdn}/javascripts/jquery-ui.min.js")
+  script(src="#{cdn}/javascripts/jquery.scrollTo.min.js")
+  script(src="#{cdn}/javascripts/jquery.localScroll.min.js")
   script(src="#{cdn}/javascripts/raphael-min.js")
   script(src="#{cdn}/javascripts/skrollr.min.js")
   script(src="#{cdn}/javascripts/index.js")

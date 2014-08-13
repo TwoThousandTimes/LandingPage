@@ -8,6 +8,8 @@ html, body {
 }
 
 body {
+  width: 100%;
+  min-width:970px !important;
   background-color: $bg_black;
   padding: 0;
   padding-bottom: $footer-height;
@@ -28,7 +30,17 @@ a {
 	min-width:970px;
 	margin-left: auto;
 	margin-right: auto;
-	overflow:visible !important;
+	padding-left:15px;
+	padding-right:15px;
+}
+
+section,.title-container {
+	position:relative;
+	width: 100%;
+	min-width:970px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow-x: hidden;
 }
 
 // ============================= TITLE SECTION =============================
@@ -38,7 +50,7 @@ a {
 	overflow: hidden;
 
 	.video-overlay {
-		height: 300px;
+		height: 400px;
 		margin: auto;
 		position: absolute;
 		top: 0; left: 0; bottom: 0; right: 0;
@@ -71,11 +83,15 @@ a {
 		position: absolute;
 		bottom: 120px;
 		width: 100%;
-		h3 {
-			@include montserrat;
-			text-transform:uppercase;
-			font-size:12px;
-			letter-spacing:1px;
+		a {
+			color:#fff;
+			text-decoration:none;
+			h3 {
+				@include montserrat;
+				text-transform:uppercase;
+				font-size:12px;
+				letter-spacing:1px;
+			}
 		}
 	}
 
@@ -105,14 +121,15 @@ a {
 .who-we-are {
 	position:relative;
 	width:100%;
-	height:inherit;
-	padding-bottom:250px;
-	background-color: $bg_black;
+	display:block;
+	height:1300px;
+	background-color: #fff;
 	background-image: url('#{$cdn}/images/stars.jpg');
 	background-repeat:no-repeat;
 	background-position:top center;
 	background-size:cover;
 	color:#fff;
+	overflow-x: hidden;
 	.who-top-left {
 		margin-top: 100px;
 		h2, h3 {
@@ -147,7 +164,6 @@ a {
 		text-align: center;
 		box-shadow: inset 0px 0px 0px 1px #fff;
 		-webkit-box-shadow: inset 0px 0px 0px 1px #fff;
-		overflow:visible !important;
 
 		h3 {
 			padding:0 20px;
@@ -256,13 +272,14 @@ a {
 	color: white;
 	text-align: center;
 	
-	background-image: url('#{$cdn}/images/beach.jpg');
+	background-image: url('#{$cdn}/images/car.jpg');
 	background-repeat:no-repeat;
 	background-position:top center;
 	background-size:cover;
 	#canvas {
 		position: relative;
 		float:left;
+		margin-bottom:30px;
 		padding: 5px 0; 
 		height: 750px; 
 		width: 100%;
@@ -302,6 +319,7 @@ a {
 	}
 
 	.story-top-right {
+		width:45%;
 		left: 50%;
 		top: 250px;
 		padding-right: 42px;
@@ -351,7 +369,8 @@ a {
 		width:45%;
 		right: 50%;
 		top: 240px;
-		padding-right: 5%;
+		padding-right: 2.5%;
+		padding-right: 2.5%;
 		font-size: 15px;
 		text-align: left;
 		p {
@@ -410,7 +429,6 @@ a {
 			margin:0;
 		}
 	}
-
 	.story-bottom-message {
 		@include garamond;
 		text-align: center;
@@ -419,24 +437,25 @@ a {
 		line-height:200%;
 
 		.highlight {
-			color: #32b0c6;
+			
 		}
 	}
 }
 
 .final-section {
+	height:800px;
 	margin-bottom: $footer-height;
 	text-align: center;
 	
 	background-color: white;
-	background-image: url('#{$cdn}/images/canoe.jpg');
-	background-position:center center;
+	background-image: url('#{$cdn}/images/beach2.jpg');
+	background-position:bottom center;
 	background-repeat:no-repeat;
 	background-size:cover;
 	.content-container {
-		padding-top:50px;
+		padding-top:20px;
 		.logo-container {
-			padding: 20px;
+			padding: 20px 0 0 0;
 			padding-right: 10%;
 			text-align: right;
 
@@ -493,9 +512,11 @@ a {
 				padding:0px 10px;
 				@include button;
 			}
-		
-			.error-message {
-				@include error_footer;
+			.error-container {
+				
+				.error-message {
+					@include error_footer;
+				}
 			}
 		}
 
