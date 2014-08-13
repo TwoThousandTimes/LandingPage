@@ -18,12 +18,30 @@ $(function() {
             }
         });
 
+		var once = 1;
+
         var windowResize = function() {
             // Set the video and final section heights
             var footerHeight = $('.footer').height();
             var windowHeight = $(window).height();
-            $('#bgvid, .title-container, .final-section').height( windowHeight - footerHeight );    
+            $('#bgvid, .title-container, .final-section').height( windowHeight - footerHeight );
+            
+            if(once) {
+            	once = false;
+            	
+            	c_height = $('#canvas').height();
+            	c_width = $('#canvas').width();
+            } else {
+            	new_height = $('#canvas').height();
+            	new_width = c_width * new_height / c_height;
+            	console.log('resize');
+            	$('#canvas svg').width(new_width);
+            	$('#canvas svg').height(new_height);
+            }
+            
             s.refresh();
+            
+            
         };
 
         windowResize();
@@ -169,7 +187,7 @@ $(function() {
         });
     };
 
-    var canvas = Raphael(canvasId, "100%", "100%");
+    var canvas = Raphael(canvasId);
 
     var containerWidth = $('#' + canvasId).width();
     var containerHeight = $('#' + canvasId).height();
