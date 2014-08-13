@@ -137,6 +137,10 @@ block content
         img(src="#{cdn}/images/fbook.png")
         img(src="#{cdn}/images/twitter.png")
 
+  -// attach cdn to window so we can access in index.js (for video url)
+  script.
+    window.cdn = '#{cdn}';
+  script(src="#{cdn}/javascripts/modernizr.min.js")
   script(src="//code.jquery.com/jquery-1.11.0.min.js")
   script(src="#{cdn}/javascripts/jquery-ui.min.js")
   script(src="#{cdn}/javascripts/raphael-min.js")
