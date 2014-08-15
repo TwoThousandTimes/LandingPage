@@ -18,7 +18,7 @@ var smtpTransport = nodemailer.createTransport("SMTP",{
 *	Render the Index page.
 */
 router.get('/', function (req, res) {
-	res.render('index', { title: 'Two Thousand Times', cdn: config.cdn ? config.cdn : '' });
+	res.render('index2', { title: 'Two Thousand Times', cdn: config.cdn ? config.cdn : '' });
 });
 
 /**

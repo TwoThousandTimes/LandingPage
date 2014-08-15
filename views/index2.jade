@@ -1,0 +1,78 @@
+extends layout
+
+block content
+	article.main
+		header.top-image
+			img.tt(src="images/v2/TTT-circle.png",alt="Two Thousand Times")
+
+		main.text
+			hgroup.intro
+				h1 Almost Nothing Captivates Us<br/>Like Telling a Story.
+				h2 the 
+					span Two Thousand Times 
+					| is a social storytelling platform
+			section.stories
+				p Epic Stories come from strangers, and there needs to be a place to share them.
+					| It is our <br/> mission to connect the world through the meidum of storytelling.
+
+		section.join
+			div.buttons
+				a.reserve(href="#reserve", data-toggle="modal", data-target="#reserveModal")
+					span.big Reserve
+					br			
+					span.small your username
+
+				a.learn-more(href="#learn", data-toggle="modal", data-target="#learnModal")
+					span.big Learn More
+
+		div.clearfix
+
+	div.modal.fade#reserveModal(tabindex="-1",role="dialog",aria-labelledby="reserveModalLabel",aria-hidden="true")
+		div.modal-dialog
+			div.modal-content
+				div.modal-header
+					button.close(type="button",data-dismiss="modal")
+						span(aria-hidden="true") &times;
+						span.sr-only Close
+				div.modal-body
+					form.email-form
+						input(type="text", name="email", placeholder="Email")
+						input(type="text", name="username", placeholder="Username")
+						button(type="submit") Submit
+						div.error-container
+						span.error-message
+
+	div.modal.fade#learnModal(tabindex="-1",role="dialog",aria-labelledby="learnModalLabel",aria-hidden="true")
+		div.modal-dialog
+			div.modal-content
+				div.modal-header
+					button.close(type="button",data-dismiss="modal")
+						span(aria-hidden="true") &times;
+						span.sr-only Close
+				div.modal-body
+					h2 Every Life is a Story Waiting to be Heard
+					p The desire to leave our mark, to communicate, to share.
+						| It turns strangers into friends, it's where we learn, it builds community
+						| Until today, no one forum existd.
+
+					div.separator
+
+					p After a successful private beta, we're makign some changes for a full scale launch.
+
+					h3 No One Can Tell Someone Else's Story
+						|<br/> &
+						|<br/> Somewhere is a story that you were a part of making.
+
+					div.float-right
+						span Stay tuned...
+						img.ttt(src="images/learn-twothousandtimes.png", alt="The Two Thousand Times")
+
+
+					
+	script.
+		window.cdn = '#{cdn}';  
+	script(src="#{cdn}/javascripts/modernizr.min.js")
+	script(src="//code.jquery.com/jquery-1.11.0.min.js")
+	script(src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js")
+	script(src="#{cdn}/javascripts/lightbox.min.js")
+	script(src="#{cdn}/javascripts/index2.js")

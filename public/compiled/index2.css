@@ -1,0 +1,82 @@
+html {
+  height: 100%;
+  background-image: url('/images/v2/bg.jpg');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  border: 30px solid #fff; }
+
+body {
+  text-align: center;
+  background: none; }
+
+article.main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  background-color: none; }
+  article.main header.top-image {
+    position: absolute;
+    top: 70px;
+    right: 50px; }
+    article.main header.top-image img.tt {
+      width: 75%; }
+  article.main main.text hgroup.intro {
+    padding-top: 120px; }
+    article.main main.text hgroup.intro h1 {
+      font-family: 'Fjalla One', sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      text-transform: uppercase;
+      font-size: 40px; }
+    article.main main.text hgroup.intro h2 {
+      font-family: 'Fjalla One', sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 17px;
+      text-transform: uppercase; }
+      article.main main.text hgroup.intro h2 span {
+        font-size: 20px;
+        letter-spacing: 2px; }
+  article.main section.join div.buttons a {
+    display: inline-block;
+    vertical-align: top;
+    padding: 15px 30px;
+    text-transform: uppercase; }
+    article.main section.join div.buttons a span {
+      display: inline-block; }
+    article.main section.join div.buttons a span.big {
+      font-size: 15px;
+      line-height: 12px; }
+    article.main section.join div.buttons a span.small {
+      line-height: 10px; }
+  article.main section.join div.buttons a.reserve {
+    background: #3fafc4;
+    color: #fff;
+    height: 63px; }
+  article.main section.join div.buttons a.learn-more {
+    color: #000;
+    height: 60px;
+    margin-left: 42px;
+    border: 3px solid #000; }
+
+/**
+	MODAL CODE
+**/
+.modal-backdrop {
+  background-color: #fff !important; }
+  .modal-backdrop.in {
+    opacity: 0.95 !important; }
+
+.modal-dialog {
+  width: 80% !important;
+  margin: 30px 10% 30px 10% !important; }
+  .modal-dialog .modal-content {
+    background: none;
+    box-shadow: none;
+    border: none;
+    border-radius: none; }
+    .modal-dialog .modal-content .modal-header {
+      border: none; }
+
