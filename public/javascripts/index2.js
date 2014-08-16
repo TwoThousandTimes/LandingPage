@@ -1,4 +1,6 @@
 $(function() {
+
+        var success = 'Success! Your username has been reserved. Confirmation has been sent to ';
 	// Handle the form submition
         $('.email-form').submit(function(event) {
             event.preventDefault();
@@ -16,7 +18,8 @@ $(function() {
                         $form.find('input').addClass('error');
                     } else {
                         // TODO: display some sort of success screen??
-                        $('a.thanks').click();
+                        $form.find('.error-message').css('display','block').html(success + "'" + $form.find('input.email-input').val() + "'").fadeIn();
+                        $form.find('input').addClass('error');
                     }
                 },
                 error: function() {
