@@ -36,8 +36,8 @@ article.main {
 	
 	header.top-image {
 		position: absolute;
-		top: 70px;
-		right: 50px;//might need to adjust value based on width.  Media Query?
+		top: 35px;
+		right: 25px;//might need to adjust value based on width.  Media Query?
 		img.tt {
 			width: 75%;
 		}
@@ -65,6 +65,8 @@ article.main {
 				font-size: 18px;
 				text-transform: uppercase;
 				span {
+					display:inline-block;
+					padding:0px 10px;
 					font-size: 22px;
 					letter-spacing: 3px;
 				}
@@ -80,11 +82,38 @@ article.main {
 
 	section.join {
 		div.buttons {		
-			margin-top:50px;	
+			margin-top:50px;
+			a.reserve {
+				line-height:15px;
+				padding: 20px 30px;
+				color:#fff;
+				background-color:#3fafc4;
+				&:hover { 
+					background-color:#222;
+					-webkit-transition: background-color ease-out .2s;
+    				-moz-transition: background-color ease-out .2s;
+    				-o-transition: background-color ease-out .2s;
+    				transition: background-color ease-out .2s;
+				}
+			}
+			a.learn-more {
+				padding: 22px 30px;
+				color:#000;
+				margin-left: 42px;
+				border: 3px solid #000;
+				&:hover { 
+					border:solid 3px #fff;
+					color:#fff;
+					-webkit-transition: all ease-out .2s;
+					-moz-transition: all ease-out .2s;
+					-o-transition:all ease-out .2s;
+					transition: all ease-out .2s;
+				}
+			}
 			a {
+				height:70px !important;
 				display:inline-block;
 				vertical-align: top;
-				padding: 15px 30px;
 				text-transform: uppercase;
 				@include montserrat;
 				span {
@@ -92,25 +121,12 @@ article.main {
 				}
 				span.big {
 					font-size: 16px;
-					line-height: 12px;
 					letter-spacing:3px;
 				}
 				span.small {
 					font-size: 12px;
-					line-height: 10px;
 					letter-spacing:1px;
 				}
-			}
-			a.reserve {
-				background: #3fafc4;
-				color:#fff;
-				height: 63px;
-			}
-			a.learn-more {
-				color:#000;
-				height: 60px;
-				margin-left: 42px;
-				border: 3px solid #000;
 			}
 		}
 	}
@@ -131,6 +147,9 @@ article.main {
 .modal-dialog {
 	width: 80% !important;
 	margin: 30px 10% 30px 10% !important;
+	button.close {
+		font-size:50px;
+	}
 	.modal-content {
 		background: none ;
 		box-shadow:none ;
@@ -143,5 +162,95 @@ article.main {
 }
 
 #reserveModal {
-	
+	.modal-body {
+		margin-top:50px;
+		h1 {
+			@include fjalla;
+			font-size:32px;
+			color:#222;
+			text-transform:uppercase;
+			padding-bottom:20px;
+		}
+		input {
+			height:50px;
+			@include montserrat;
+			text-transform:uppercase;
+			padding:5px 10px;
+		}
+		button {
+			display:block;
+			clear:both;
+			height:50px;
+			margin:20px auto;
+			padding: 12px 30px;
+			background:#3fafc4;
+			color:#fff;
+			border:0px !important;
+			text-transform: uppercase;
+			@include montserrat;
+			font-size:16px;
+			&:hover { 
+				background-color:#222;
+				-webkit-transition: background-color ease-out .2s;
+				-moz-transition: background-color ease-out .2s;
+				-o-transition: background-color ease-out .2s;
+				transition: background-color ease-out .2s;
+			}
+		}
+	}
+}
+
+#learnModal {
+	.modal-header {
+	}
+	.modal-body {
+		width:100%;
+		max-width:700px;
+		margin:0px auto;
+		h2 {
+			@include fjalla;
+			font-size:40px;
+			border-top:solid 10px #222;
+			border-bottom:solid 10px #222;
+			text-transform:uppercase;
+			padding:15px 0 10px 0;
+			margin-bottom:30px;
+		}
+		.line {
+			display:block;
+			width:74px;
+			margin:37px auto 35px auto;
+			border-top:solid 3px #222;
+		}
+		p {
+			font-size:21px;
+		}
+		h3 {
+			display:inline-block;
+			@include fjalla;
+			font-size:27px;
+			line-height:40px;
+			border-top:solid 5px #222;
+			border-bottom:solid 5px #222;
+			text-transform:uppercase;
+			padding:15px 0 10px 0;
+			margin-top:30px;
+		}
+		.float-right {
+			display:block;
+			margin-top:20px;
+			margin-left:40%;
+			text-align:left;
+			span {
+				font-size:21px;
+			}
+			img {
+				width:250px;
+				height:auto;
+				display:inline-block;
+				clear:both;
+				margin-top:20px;
+			}
+		}
+	}
 }

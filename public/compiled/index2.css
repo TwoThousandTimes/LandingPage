@@ -27,8 +27,8 @@ article.main {
   background-color: none; }
   article.main header.top-image {
     position: absolute;
-    top: 70px;
-    right: 50px; }
+    top: 35px;
+    right: 25px; }
     article.main header.top-image img.tt {
       width: 75%; }
   article.main main.text hgroup.intro {
@@ -51,6 +51,8 @@ article.main {
       font-size: 18px;
       text-transform: uppercase; }
       article.main main.text hgroup.intro h2 span {
+        display: inline-block;
+        padding: 0px 10px;
         font-size: 22px;
         letter-spacing: 3px; }
   article.main main.text section.stories {
@@ -59,10 +61,33 @@ article.main {
       font-size: 21px; }
   article.main section.join div.buttons {
     margin-top: 50px; }
+    article.main section.join div.buttons a.reserve {
+      line-height: 15px;
+      padding: 20px 30px;
+      color: #fff;
+      background-color: #3fafc4; }
+      article.main section.join div.buttons a.reserve:hover {
+        background-color: #222;
+        -webkit-transition: background-color ease-out 0.2s;
+        -moz-transition: background-color ease-out 0.2s;
+        -o-transition: background-color ease-out 0.2s;
+        transition: background-color ease-out 0.2s; }
+    article.main section.join div.buttons a.learn-more {
+      padding: 22px 30px;
+      color: #000;
+      margin-left: 42px;
+      border: 3px solid #000; }
+      article.main section.join div.buttons a.learn-more:hover {
+        border: solid 3px #fff;
+        color: #fff;
+        -webkit-transition: all ease-out 0.2s;
+        -moz-transition: all ease-out 0.2s;
+        -o-transition: all ease-out 0.2s;
+        transition: all ease-out 0.2s; }
     article.main section.join div.buttons a {
+      height: 70px !important;
       display: inline-block;
       vertical-align: top;
-      padding: 15px 30px;
       text-transform: uppercase;
       font-family: 'Montserrat', sans-serif;
       font-weight: 400; }
@@ -70,21 +95,10 @@ article.main {
         display: inline-block; }
       article.main section.join div.buttons a span.big {
         font-size: 16px;
-        line-height: 12px;
         letter-spacing: 3px; }
       article.main section.join div.buttons a span.small {
         font-size: 12px;
-        line-height: 10px;
         letter-spacing: 1px; }
-    article.main section.join div.buttons a.reserve {
-      background: #3fafc4;
-      color: #fff;
-      height: 63px; }
-    article.main section.join div.buttons a.learn-more {
-      color: #000;
-      height: 60px;
-      margin-left: 42px;
-      border: 3px solid #000; }
 
 /**
 	MODAL CODE
@@ -97,6 +111,8 @@ article.main {
 .modal-dialog {
   width: 80% !important;
   margin: 30px 10% 30px 10% !important; }
+  .modal-dialog button.close {
+    font-size: 50px; }
   .modal-dialog .modal-content {
     background: none;
     box-shadow: none;
@@ -105,3 +121,82 @@ article.main {
     .modal-dialog .modal-content .modal-header {
       border: none; }
 
+#reserveModal .modal-body {
+  margin-top: 50px; }
+  #reserveModal .modal-body h1 {
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    color: #222;
+    text-transform: uppercase;
+    padding-bottom: 20px; }
+  #reserveModal .modal-body input {
+    height: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 5px 10px; }
+  #reserveModal .modal-body button {
+    display: block;
+    clear: both;
+    height: 50px;
+    margin: 20px auto;
+    padding: 12px 30px;
+    background: #3fafc4;
+    color: #fff;
+    border: 0px !important;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px; }
+    #reserveModal .modal-body button:hover {
+      background-color: #222;
+      -webkit-transition: background-color ease-out 0.2s;
+      -moz-transition: background-color ease-out 0.2s;
+      -o-transition: background-color ease-out 0.2s;
+      transition: background-color ease-out 0.2s; }
+
+#learnModal .modal-body {
+  width: 100%;
+  max-width: 700px;
+  margin: 0px auto; }
+  #learnModal .modal-body h2 {
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    border-top: solid 10px #222;
+    border-bottom: solid 10px #222;
+    text-transform: uppercase;
+    padding: 15px 0 10px 0;
+    margin-bottom: 30px; }
+  #learnModal .modal-body .line {
+    display: block;
+    width: 74px;
+    margin: 37px auto 35px auto;
+    border-top: solid 3px #222; }
+  #learnModal .modal-body p {
+    font-size: 21px; }
+  #learnModal .modal-body h3 {
+    display: inline-block;
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 40px;
+    border-top: solid 5px #222;
+    border-bottom: solid 5px #222;
+    text-transform: uppercase;
+    padding: 15px 0 10px 0;
+    margin-top: 30px; }
+  #learnModal .modal-body .float-right {
+    display: block;
+    margin-top: 20px;
+    margin-left: 40%;
+    text-align: left; }
+    #learnModal .modal-body .float-right span {
+      font-size: 21px; }
+    #learnModal .modal-body .float-right img {
+      width: 250px;
+      height: auto;
+      display: inline-block;
+      clear: both;
+      margin-top: 20px; }
