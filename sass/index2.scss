@@ -1,5 +1,16 @@
 @import 'shared2';
 @import 'env';
+@import 'shared';
+@font-face {
+    font-family: 'garamond_oldstyle_fsregular';
+    src: url('fonts/GaramondOldstyle-Regular-webfont.eot');
+    src: url('fonts/GaramondOldstyle-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/GaramondOldstyle-Regular-webfont.woff') format('woff'),
+         url('fonts/GaramondOldstyle-Regular-webfont.ttf') format('truetype'),
+         url('fonts/GaramondOldstyle-Regular-webfont.svg#garamond_oldstyle_fsregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
 html {
 	height: 100%;
@@ -7,12 +18,13 @@ html {
 	background-repeat:no-repeat;
 	background-position: top center; //bottom is good, but it doesnt work with the learn more button
 	background-size: cover;	
-	border: 30px solid #fff;
+	border: 20px solid #fff;
 }
 
 body {
 	text-align: center;
 	background: none;
+	@include garamond;
 }
 
 article.main {
@@ -39,37 +51,54 @@ article.main {
 				@include fjalla;
 				font-style:normal;
 				text-transform: uppercase;
-				font-size: 40px;
+				font-size: 65px;
+			}
+			.line {
+				display:block;
+				width:74px;
+				margin:25px auto 35px auto;
+				border-top:solid 3px #222;
 			}
 			h2 {
 				@include fjalla;
 				font-style:normal;
-				font-size: 17px;
+				font-size: 18px;
 				text-transform: uppercase;
 				span {
-					font-size: 20px;
-					letter-spacing: 2px;
+					font-size: 22px;
+					letter-spacing: 3px;
 				}
+			}
+		}
+		section.stories {
+			margin-top:5px;
+			p {
+				font-size:21px;
 			}
 		}
 	}
 
 	section.join {
-		div.buttons {			
+		div.buttons {		
+			margin-top:50px;	
 			a {
 				display:inline-block;
 				vertical-align: top;
 				padding: 15px 30px;
 				text-transform: uppercase;
+				@include montserrat;
 				span {
 					display:inline-block;
 				}
 				span.big {
-					font-size: 15px;
+					font-size: 16px;
 					line-height: 12px;
+					letter-spacing:3px;
 				}
 				span.small {
+					font-size: 12px;
 					line-height: 10px;
+					letter-spacing:1px;
 				}
 			}
 			a.reserve {
