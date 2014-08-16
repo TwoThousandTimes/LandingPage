@@ -184,6 +184,21 @@ article.main {
 }
 
 
+section.footer {
+	position: absolute;
+	bottom: 30px;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	a.privacy {
+		color:#fff;
+		text-decoration: none;
+		&:hover {
+			color: #ccc;
+		}
+	}
+}
+
 /**
 	MODAL CODE
 **/
@@ -283,7 +298,7 @@ article.main {
 			font-size:21px;
 		}
 		h3 {
-			display:inline-block;
+			display:block;
 			@include fjalla;
 			font-size:27px;
 			line-height:40px;
@@ -310,6 +325,9 @@ article.main {
 				margin-top:20px;
 			}
 		@include media(xsmall) {
+			margin-left:0px;
+		}
+		@include media(small) {
 			margin-left:0px;
 		}
 		}

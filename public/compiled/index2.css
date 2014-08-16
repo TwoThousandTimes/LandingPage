@@ -147,6 +147,18 @@ article.main {
           width: 45%;
           height: 80px; } }
 
+section.footer {
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  width: 100%;
+  text-align: center; }
+  section.footer a.privacy {
+    color: #fff;
+    text-decoration: none; }
+    section.footer a.privacy:hover {
+      color: #ccc; }
+
 /**
 	MODAL CODE
 **/
@@ -232,7 +244,7 @@ article.main {
   #learnModal .modal-body p {
     font-size: 21px; }
   #learnModal .modal-body h3 {
-    display: inline-block;
+    display: block;
     font-family: 'Fjalla One', sans-serif;
     font-weight: 400;
     font-size: 27px;
@@ -257,5 +269,8 @@ article.main {
       clear: both;
       margin-top: 20px; }
     @media (max-width: 479px) {
+      #learnModal .modal-body .float-right {
+        margin-left: 0px; } }
+    @media (min-width: 480px) and (max-width: 767px) {
       #learnModal .modal-body .float-right {
         margin-left: 0px; } }
