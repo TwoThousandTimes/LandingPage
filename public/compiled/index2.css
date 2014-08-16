@@ -30,14 +30,22 @@ article.main {
   background-color: none; }
   article.main header.top-image {
     position: absolute;
-    top: 35px;
-    right: 25px; }
+    top: 20px;
+    right: 15px; }
+    @media (max-width: 479px) {
+      article.main header.top-image {
+        top: 15px;
+        right: 0px; } }
     article.main header.top-image img.tt {
       width: 75%; }
+      @media (max-width: 479px) {
+        article.main header.top-image img.tt {
+          width: 50%; } }
   article.main main.text hgroup.intro {
     padding-top: 120px; }
     @media (max-width: 479px) {
       article.main main.text hgroup.intro {
+        padding-top: 90px;
         padding-left: 20px;
         padding-right: 20px; } }
     @media (min-width: 480px) and (max-width: 767px) {
@@ -55,7 +63,7 @@ article.main {
           font-size: 32px; } }
       @media (min-width: 480px) and (max-width: 767px) {
         article.main main.text hgroup.intro h1 {
-          font-size: 32px; } }
+          font-size: 35px; } }
       @media (min-width: 768px) and (max-width: 991px) {
         article.main main.text hgroup.intro h1 {
           font-size: 40px; } }
@@ -64,6 +72,12 @@ article.main {
       width: 74px;
       margin: 25px auto 35px auto;
       border-top: solid 3px #222; }
+      @media (max-width: 479px) {
+        article.main main.text hgroup.intro .line {
+          margin: 15px auto 22px auto; } }
+      @media (min-width: 480px) and (max-width: 767px) {
+        article.main main.text hgroup.intro .line {
+          margin: 15px auto 22px auto; } }
     article.main main.text hgroup.intro h2 {
       font-family: 'Fjalla One', sans-serif;
       font-weight: 400;
@@ -77,10 +91,10 @@ article.main {
         letter-spacing: 3px; }
       @media (max-width: 479px) {
         article.main main.text hgroup.intro h2 {
-          line-height: 30px; } }
+          line-height: 21px; } }
       @media (min-width: 480px) and (max-width: 767px) {
         article.main main.text hgroup.intro h2 {
-          line-height: 30px; } }
+          line-height: 21px; } }
   article.main main.text section.stories {
     margin-top: 5px; }
     article.main main.text section.stories p {
@@ -93,8 +107,18 @@ article.main {
         article.main main.text section.stories p {
           font-size: 18px;
           padding: 0 15px; } }
+      @media (max-width: 479px) {
+        article.main main.text section.stories p {
+          text-align: center;
+          line-height: 21px; } }
   article.main section.join div.buttons {
     margin-top: 50px; }
+    @media (max-width: 479px) {
+      article.main section.join div.buttons {
+        margin-top: 20px; } }
+    @media (min-width: 480px) and (max-width: 767px) {
+      article.main section.join div.buttons {
+        margin-top: 20px; } }
     article.main section.join div.buttons a.reserve {
       line-height: 15px;
       padding: 20px 30px;
@@ -107,7 +131,7 @@ article.main {
         -o-transition: background-color ease-out 0.2s;
         transition: background-color ease-out 0.2s; }
     article.main section.join div.buttons a.learn-more {
-      padding: 22px 30px;
+      padding: 25px 30px;
       color: #000;
       background: #fff;
       margin-left: 42px;
@@ -122,12 +146,12 @@ article.main {
       @media (max-width: 479px) {
         article.main section.join div.buttons a.learn-more {
           margin-left: 2%;
-          padding-top: 15px; } }
+          padding-top: 17px; } }
       @media (min-width: 480px) and (max-width: 767px) {
         article.main section.join div.buttons a.learn-more {
-          margin-left: 2%;
-          padding-top: 20px; } }
+          margin-left: 2%; } }
     article.main section.join div.buttons a {
+      width: 205px;
       height: 70px;
       display: inline-block;
       vertical-align: top;
@@ -149,15 +173,70 @@ article.main {
 
 section.footer {
   position: absolute;
-  bottom: 30px;
-  left: 0;
-  width: 100%;
-  text-align: center; }
-  section.footer a.privacy {
+  bottom: 40px;
+  right: 35px;
+  margin: 0px;
+  text-align: right; }
+  @media (max-width: 479px) {
+    section.footer {
+      position: relative;
+      width: 100%;
+      display: block;
+      bottom: 0px;
+      right: 0px;
+      text-align: center;
+      margin-top: 30px; } }
+  @media (min-width: 480px) and (max-width: 767px) {
+    section.footer {
+      position: relative;
+      width: 100%;
+      display: block;
+      bottom: 0px;
+      right: 0px;
+      text-align: center;
+      margin-top: 50px; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    section.footer {
+      position: relative;
+      width: 100%;
+      display: block;
+      bottom: 0px;
+      right: 0px;
+      text-align: center;
+      margin-top: 30px; } }
+  section.footer a {
+    padding: 5px 15px;
     color: #fff;
-    text-decoration: none; }
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase; }
+  section.footer a.privacy {
+    text-decoration: none;
+    border-top: solid 3px #fff;
+    border-bottom: solid 3px #fff;
+    border-left: solid 3px #fff;
+    border-right: solid 1px #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400; }
     section.footer a.privacy:hover {
-      color: #ccc; }
+      background: #222;
+      -webkit-transition: all ease-out 0.2s;
+      -moz-transition: all ease-out 0.2s;
+      -o-transition: all ease-out 0.2s;
+      transition: all ease-out 0.2s; }
+  section.footer a.terms {
+    text-decoration: none;
+    border-top: solid 3px #fff;
+    border-bottom: solid 3px #fff;
+    border-right: solid 3px #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400; }
+    section.footer a.terms:hover {
+      background: #222;
+      -webkit-transition: all ease-out 0.2s;
+      -moz-transition: all ease-out 0.2s;
+      -o-transition: all ease-out 0.2s;
+      transition: all ease-out 0.2s; }
 
 /**
 	MODAL CODE
@@ -194,8 +273,17 @@ section.footer {
     height: 50px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    text-transform: uppercase;
     padding: 5px 10px; }
+    #reserveModal .modal-body input::-webkit-input-placeholder {
+      text-transform: uppercase; }
+    #reserveModal .modal-body input:-moz-placeholder {
+      /* Firefox 18- */
+      text-transform: uppercase; }
+    #reserveModal .modal-body input::-moz-placeholder {
+      /* Firefox 19+ */
+      text-transform: uppercase; }
+    #reserveModal .modal-body input:-ms-input-placeholder {
+      text-transform: uppercase; }
     @media (max-width: 479px) {
       #reserveModal .modal-body input {
         width: 90%;
@@ -219,12 +307,15 @@ section.footer {
       -moz-transition: background-color ease-out 0.2s;
       -o-transition: background-color ease-out 0.2s;
       transition: background-color ease-out 0.2s; }
+  #reserveModal .modal-body .error-message {
+    font-size: 16px;
+    letter-spacing: 1px; }
 
 #learnModal .modal-header {
   display: block;
   height: 50px; }
 #learnModal .modal-body {
-  width: 100%;
+  width: 65%;
   max-width: 700px;
   margin: 0px auto; }
   #learnModal .modal-body h2 {
@@ -236,6 +327,9 @@ section.footer {
     text-transform: uppercase;
     padding: 15px 0 10px 0;
     margin-bottom: 30px; }
+    @media (max-width: 479px) {
+      #learnModal .modal-body h2 {
+        font-size: 32px; } }
   #learnModal .modal-body .line {
     display: block;
     width: 74px;
@@ -243,6 +337,10 @@ section.footer {
     border-top: solid 3px #222; }
   #learnModal .modal-body p {
     font-size: 21px; }
+    @media (max-width: 479px) {
+      #learnModal .modal-body p {
+        font-size: 18px;
+        padding: 0 15px; } }
   #learnModal .modal-body h3 {
     display: block;
     font-family: 'Fjalla One', sans-serif;
@@ -254,14 +352,26 @@ section.footer {
     text-transform: uppercase;
     padding: 15px 0 10px 0;
     margin-top: 30px; }
+    @media (max-width: 479px) {
+      #learnModal .modal-body h3 {
+        font-size: 24px;
+        line-height: 30px; } }
+    @media (min-width: 480px) and (max-width: 767px) {
+      #learnModal .modal-body h3 {
+        font-size: 21px;
+        line-height: 30px; } }
   #learnModal .modal-body .float-right {
     display: block;
-    margin-top: 20px;
+    margin-top: 40px;
     margin-left: 50%;
     text-align: left; }
     #learnModal .modal-body .float-right span.stay-tuned {
       font-size: 21px;
       display: block; }
+      @media (max-width: 479px) {
+        #learnModal .modal-body .float-right span.stay-tuned {
+          font-size: 18px;
+          padding: 0 15px; } }
     #learnModal .modal-body .float-right img {
       width: 250px;
       height: auto;
@@ -274,3 +384,44 @@ section.footer {
     @media (min-width: 480px) and (max-width: 767px) {
       #learnModal .modal-body .float-right {
         margin-left: 0px; } }
+  @media (max-width: 479px) {
+    #learnModal .modal-body {
+      width: 100%; } }
+  @media (min-width: 480px) and (max-width: 767px) {
+    #learnModal .modal-body {
+      width: 100%; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    #learnModal .modal-body {
+      width: 100%; } }
+
+#privacyModal .modal-header, #termsModal .modal-header {
+  display: block;
+  height: 50px; }
+#privacyModal .modal-body, #termsModal .modal-body {
+  width: 100%;
+  max-width: 625px;
+  margin: 0px auto; }
+  #privacyModal .modal-body h1, #termsModal .modal-body h1 {
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 50px; }
+  #privacyModal .modal-body h2, #termsModal .modal-body h2 {
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-transform: uppercase; }
+  #privacyModal .modal-body h3, #termsModal .modal-body h3 {
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin-top: 60px;
+    padding-bottom: 10px;
+    border-bottom: solid 1px #222; }
+  #privacyModal .modal-body p, #termsModal .modal-body p {
+    text-align: justify !important; }
+    #privacyModal .modal-body p strong, #termsModal .modal-body p strong {
+      text-transform: uppercase;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400; }
