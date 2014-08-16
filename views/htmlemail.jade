@@ -1,0 +1,43 @@
+html(xmlns='http://www.w3.org/1999/xhtml')
+head
+	meta(name='viewport', content='width=device-width')
+	meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+	title Two Thousand Times - Reservation Confirmation
+	link(rel='stylesheet', type='text/css', href='http://twothousandtimes.com/vendor/email.css')
+body(bgcolor='#FFFFFF')
+    
+	table.head-wrap(bgcolor='#cccccc')
+		tr
+			td
+			td.header.container
+				.content
+					table(bgcolor='#cccccc')
+						tr
+							td
+								img(width='50', src='http://twothosuandtimes.com/images/v2/TTT-circle.png')
+							td(align='right') Two Thousand Times
+			td
+	
+	table.body-wrap
+		tr
+			td
+			td.container(bgcolor='#FFFFFF')
+				.content
+					table
+						tr
+							td
+								h3 Hi #{person}, 
+								p.lead
+								| Your desired username has been successfully reserved! We’ll send you one final confirmation email prior to launch to activate your account.
+								p
+								| You will have 2 weeks to log in before your username goes back up for grabs. We look forward to having you!
+								br
+								br
+								| Thanks,
+								p
+									img(width='30', src='http://twothousandtimes.com/images/v2/TTT-circle.png', alt='Two Thousand Times')
+								p.callout
+									a(href='http://facebook.com/twothousandtimes') facebook.com/twothousandtimes
+									| &nbsp;&nbsp;&nbsp;
+									a(href='http://twitter.com/twothousandx') twitter.com/twothousandx
+			td

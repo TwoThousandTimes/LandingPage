@@ -4,15 +4,18 @@ var db = require('../models');
 var validator = require('validator');
 var config = require('../config');
 var nodemailer = require('nodemailer');
+var ses = require('nodemailer-ses-transport');
+var jade = require('jade');
+
+//var email_text = jade.renderFile('views/htmlemail.jade', {person : 'test'});
+//	console.log(email_text);
 
 // create reusable transport method (opens pool of SMTP connections)
-var smtpTransport = nodemailer.createTransport("SMTP",{
-    service: "Gmail",
-    auth: {
-        user: config.email,
-        pass: config.email_pass
-    }
-});
+var smtpTransport = nodemailer.createTransport(ses({
+    accessKeyId: config.accessKeyId,
+    secretAccessKey: config.secretAccessKey,
+    rateLimit: 1
+}));
 
 /*
 *	Render the Index page.
@@ -67,7 +70,9 @@ router.post('/process/username', function (req, res) {
 			// The username/email was saved!
 			res.status(200).send({success: { username: req.body.username, email: req.body.email }});	
 			
-
+			var email_text = jade.renderFile('views/text.jade', {person : req.body.username});
+			var email_html = jade.renderFile('views/htmlemail.jade', {person : req.body.username});
+			console.log(email_text);
 
 			// =======================   SEND NEW USER EMAIL CONFIRMATION  =============================
 			// setup e-mail data with unicode symbols
@@ -75,8 +80,9 @@ router.post('/process/username', function (req, res) {
 			    from: config.email, // sender address
 			    to: req.body.email, // receiver
 			    subject: config.email_subject, // Subject line
-			    text: "Two Thousand Times", // plaintext body
-			    html: "<h1>Two Thousand Times</h1>" // html body
+			    text: email_text, // plaintext body
+
+			    html: email_html
 			};
 
 			// send mail with defined transport object

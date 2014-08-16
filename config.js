@@ -16,7 +16,11 @@ module.exports = {
     cdn: production ? 'http://dncuoirsa3u02.cloudfront.net/static-test' : '',
 
     // EMAIL
-    email: '',
+    email: 'no_reply@twothousandtimes.com',
     email_pass: '',
-    email_subject: 'Two Thousand Times - Reservation Confirmation'
+    email_subject: 'Two Thousand Times - Reservation Confirmation',
+
+    //Amazon SES
+    accessKeyId: 'AKIAJE2PK5M6LZ3Z4ZKA',
+    secretAccessKey: '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'
 };
