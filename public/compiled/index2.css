@@ -12,6 +12,9 @@ html {
   background-position: top center;
   background-size: cover;
   border: 20px solid #fff; }
+  @media (max-width: 479px) {
+    html {
+      background-image: url('/images/v2/bg-m.jpg'); } }
 
 body {
   text-align: center;
@@ -33,12 +36,29 @@ article.main {
       width: 75%; }
   article.main main.text hgroup.intro {
     padding-top: 120px; }
+    @media (max-width: 479px) {
+      article.main main.text hgroup.intro {
+        padding-left: 20px;
+        padding-right: 20px; } }
+    @media (min-width: 480px) and (max-width: 767px) {
+      article.main main.text hgroup.intro {
+        padding-left: 20px;
+        padding-right: 20px; } }
     article.main main.text hgroup.intro h1 {
       font-family: 'Fjalla One', sans-serif;
       font-weight: 400;
       font-style: normal;
       text-transform: uppercase;
       font-size: 65px; }
+      @media (max-width: 479px) {
+        article.main main.text hgroup.intro h1 {
+          font-size: 32px; } }
+      @media (min-width: 480px) and (max-width: 767px) {
+        article.main main.text hgroup.intro h1 {
+          font-size: 32px; } }
+      @media (min-width: 768px) and (max-width: 991px) {
+        article.main main.text hgroup.intro h1 {
+          font-size: 40px; } }
     article.main main.text hgroup.intro .line {
       display: block;
       width: 74px;
@@ -55,10 +75,24 @@ article.main {
         padding: 0px 10px;
         font-size: 22px;
         letter-spacing: 3px; }
+      @media (max-width: 479px) {
+        article.main main.text hgroup.intro h2 {
+          line-height: 30px; } }
+      @media (min-width: 480px) and (max-width: 767px) {
+        article.main main.text hgroup.intro h2 {
+          line-height: 30px; } }
   article.main main.text section.stories {
     margin-top: 5px; }
     article.main main.text section.stories p {
       font-size: 21px; }
+      @media (max-width: 479px) {
+        article.main main.text section.stories p {
+          font-size: 18px;
+          padding: 0 15px; } }
+      @media (min-width: 480px) and (max-width: 767px) {
+        article.main main.text section.stories p {
+          font-size: 18px;
+          padding: 0 15px; } }
   article.main section.join div.buttons {
     margin-top: 50px; }
     article.main section.join div.buttons a.reserve {
@@ -75,17 +109,26 @@ article.main {
     article.main section.join div.buttons a.learn-more {
       padding: 22px 30px;
       color: #000;
+      background: #fff;
       margin-left: 42px;
-      border: 3px solid #000; }
+      border: 1px solid #ccc; }
       article.main section.join div.buttons a.learn-more:hover {
-        border: solid 3px #fff;
+        background: #222;
         color: #fff;
         -webkit-transition: all ease-out 0.2s;
         -moz-transition: all ease-out 0.2s;
         -o-transition: all ease-out 0.2s;
         transition: all ease-out 0.2s; }
+      @media (max-width: 479px) {
+        article.main section.join div.buttons a.learn-more {
+          margin-left: 2%;
+          padding-top: 15px; } }
+      @media (min-width: 480px) and (max-width: 767px) {
+        article.main section.join div.buttons a.learn-more {
+          margin-left: 2%;
+          padding-top: 20px; } }
     article.main section.join div.buttons a {
-      height: 70px !important;
+      height: 70px;
       display: inline-block;
       vertical-align: top;
       text-transform: uppercase;
@@ -99,6 +142,10 @@ article.main {
       article.main section.join div.buttons a span.small {
         font-size: 12px;
         letter-spacing: 1px; }
+      @media (max-width: 479px) {
+        article.main section.join div.buttons a {
+          width: 45%;
+          height: 80px; } }
 
 /**
 	MODAL CODE
@@ -112,7 +159,8 @@ article.main {
   width: 80% !important;
   margin: 30px 10% 30px 10% !important; }
   .modal-dialog button.close {
-    font-size: 50px; }
+    font-size: 50px;
+    z-index: 100; }
   .modal-dialog .modal-content {
     background: none;
     box-shadow: none;
@@ -136,6 +184,10 @@ article.main {
     font-weight: 400;
     text-transform: uppercase;
     padding: 5px 10px; }
+    @media (max-width: 479px) {
+      #reserveModal .modal-body input {
+        width: 90%;
+        margin-top: 5px; } }
   #reserveModal .modal-body button {
     display: block;
     clear: both;
@@ -156,6 +208,9 @@ article.main {
       -o-transition: background-color ease-out 0.2s;
       transition: background-color ease-out 0.2s; }
 
+#learnModal .modal-header {
+  display: block;
+  height: 50px; }
 #learnModal .modal-body {
   width: 100%;
   max-width: 700px;
@@ -200,3 +255,6 @@ article.main {
       display: inline-block;
       clear: both;
       margin-top: 20px; }
+    @media (max-width: 479px) {
+      #learnModal .modal-body .float-right {
+        margin-left: 0px; } }

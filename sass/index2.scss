@@ -19,6 +19,9 @@ html {
 	background-position: top center; //bottom is good, but it doesnt work with the learn more button
 	background-size: cover;	
 	border: 20px solid #fff;
+	@include media(xsmall) {
+		background-image: url('#{$cdn}/images/v2/bg-m.jpg');
+	}
 }
 
 body {
@@ -47,11 +50,29 @@ article.main {
 
 		hgroup.intro {
 			padding-top: 120px;
+			@include media(xsmall) {
+				padding-left:20px;
+				padding-right:20px;
+			}
+			@include media(small) {
+				padding-left:20px;
+				padding-right:20px;
+			}
+
 			h1 {
 				@include fjalla;
 				font-style:normal;
 				text-transform: uppercase;
 				font-size: 65px;
+				@include media(xsmall) {
+					font-size:32px;
+				}
+				@include media(small) {
+					font-size:32px;
+				}
+				@include media(medium) {
+					font-size:40px;
+				}
 			}
 			.line {
 				display:block;
@@ -70,12 +91,26 @@ article.main {
 					font-size: 22px;
 					letter-spacing: 3px;
 				}
+				@include media(xsmall) {
+					line-height:30px;
+				}
+				@include media(small) {
+					line-height:30px;
+				}
 			}
 		}
 		section.stories {
 			margin-top:5px;
 			p {
 				font-size:21px;
+				@include media(xsmall) {
+					font-size:18px;
+					padding:0 15px;
+				}
+				@include media(small) {
+					font-size:18px;
+					padding:0 15px;
+				}
 			}
 		}
 	}
@@ -99,19 +134,29 @@ article.main {
 			a.learn-more {
 				padding: 22px 30px;
 				color:#000;
+				background:#fff;
 				margin-left: 42px;
-				border: 3px solid #000;
+				border: 1px solid #ccc;
 				&:hover { 
-					border:solid 3px #fff;
+					background:#222;
 					color:#fff;
 					-webkit-transition: all ease-out .2s;
 					-moz-transition: all ease-out .2s;
 					-o-transition:all ease-out .2s;
 					transition: all ease-out .2s;
 				}
+			@include media(xsmall) {
+				margin-left:2%;
+				padding-top:15px;
+			}
+			@include media(small) {
+				margin-left:2%;
+				padding-top:20px;
+			}
+
 			}
 			a {
-				height:70px !important;
+				height:70px;
 				display:inline-block;
 				vertical-align: top;
 				text-transform: uppercase;
@@ -122,11 +167,16 @@ article.main {
 				span.big {
 					font-size: 16px;
 					letter-spacing:3px;
+					
 				}
 				span.small {
 					font-size: 12px;
 					letter-spacing:1px;
 				}
+			@include media(xsmall) {
+				width:45%;
+				height:80px;
+			}
 			}
 		}
 	}
@@ -149,6 +199,7 @@ article.main {
 	margin: 30px 10% 30px 10% !important;
 	button.close {
 		font-size:50px;
+		z-index:100;
 	}
 	.modal-content {
 		background: none ;
@@ -176,6 +227,10 @@ article.main {
 			@include montserrat;
 			text-transform:uppercase;
 			padding:5px 10px;
+		@include media(xsmall) {
+			width:90%;
+			margin-top:5px;
+		}
 		}
 		button {
 			display:block;
@@ -202,6 +257,8 @@ article.main {
 
 #learnModal {
 	.modal-header {
+	display:block;
+	height:50px;
 	}
 	.modal-body {
 		width:100%;
@@ -251,6 +308,9 @@ article.main {
 				clear:both;
 				margin-top:20px;
 			}
+		@include media(xsmall) {
+			margin-left:0px;
+		}
 		}
 	}
 }
