@@ -296,10 +296,11 @@ article.main {
 		.float-right {
 			display:block;
 			margin-top:20px;
-			margin-left:40%;
+			margin-left:50%;
 			text-align:left;
-			span {
+			span.stay-tuned {
 				font-size:21px;
+				display:block;
 			}
 			img {
 				width:250px;

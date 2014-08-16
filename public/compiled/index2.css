@@ -245,10 +245,11 @@ article.main {
   #learnModal .modal-body .float-right {
     display: block;
     margin-top: 20px;
-    margin-left: 40%;
+    margin-left: 50%;
     text-align: left; }
-    #learnModal .modal-body .float-right span {
-      font-size: 21px; }
+    #learnModal .modal-body .float-right span.stay-tuned {
+      font-size: 21px;
+      display: block; }
     #learnModal .modal-body .float-right img {
       width: 250px;
       height: auto;
