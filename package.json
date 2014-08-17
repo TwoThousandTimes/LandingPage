@@ -21,6 +21,7 @@
     "sequelize": "~1.7.9",
     "static-favicon": "~1.0.0",
     "validator": "~3.16.1",
-    "amazon-ses": "0.0.3"
+    "amazon-ses": "0.0.3",
+    "nodemailer-smtp-transport": "~0.1.12"
   }
 }
