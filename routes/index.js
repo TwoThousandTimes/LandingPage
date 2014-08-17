@@ -21,7 +21,8 @@ var jade = require('jade');
 var mailer = nodemailer.createTransport(
 		smtpTransport({
 			host: 'email-smtp.us-west-2.amazonaws.com',
-			port: '587',
+			port: '2587',
+			secure: true,
 			auth: {
 				user: 'AKIAJMBR2BQYZ6KG6RUA',
 				pass: 'AlJlKnasivKsE2OEBbnkh5xoqDxyLi80KQhn49kCyZ9N'
@@ -101,14 +102,14 @@ router.post('/process/username', function (req, res) {
 			/*
 			ses.send(mailOptions);
 			*/
-			/*
+			
 			// send mail with defined transport object
 			mailer.sendMail(mailOptions, function(err, response){
 			    if(err) console.log(err);
 			    else console.log("Message sent: " + response.message);
 			    // smtpTransport.close(); // shut down the connection pool, no more messages
 			});			
-			*/
+			
 
 
 
