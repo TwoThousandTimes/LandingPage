@@ -16,7 +16,7 @@ module.exports = {
     cdn: production ? 'http://dncuoirsa3u02.cloudfront.net/static-test' : '',
 
     // EMAIL
-    email: 'no_reply@twothousandtimes.com',
+    email: 'team@twothousandtimes.com',
     email_pass: '',
     email_subject: 'Two Thousand Times - Reservation Confirmation',
 

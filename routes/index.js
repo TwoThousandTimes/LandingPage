@@ -72,7 +72,7 @@ router.post('/process/username', function (req, res) {
 			
 			var email_text = jade.renderFile('views/text.jade', {person : req.body.username});
 			var email_html = jade.renderFile('views/htmlemail.jade', {person : req.body.username});
-			console.log(email_text);
+			//console.log(email_text);
 
 			// =======================   SEND NEW USER EMAIL CONFIRMATION  =============================
 			// setup e-mail data with unicode symbols
