@@ -3,19 +3,25 @@ var router = express.Router();
 var db = require('../models');
 var validator = require('validator');
 var config = require('../config');
+/*
 var nodemailer = require('nodemailer');
 var ses = require('nodemailer-ses-transport');
+*/
+var AmazonSES = require('amazon-ses');
+var ses = new AmazonSES(config.accessKeyId, config.secretAccessKey);
 var jade = require('jade');
 
 //var email_text = jade.renderFile('views/htmlemail.jade', {person : 'test'});
 //	console.log(email_text);
 
+/*
 // create reusable transport method (opens pool of SMTP connections)
 var smtpTransport = nodemailer.createTransport(ses({
     accessKeyId: config.accessKeyId,
     secretAccessKey: config.secretAccessKey,
     rateLimit: 1
 }));
+*/
 
 /*
 *	Render the Index page.
@@ -78,19 +84,23 @@ router.post('/process/username', function (req, res) {
 			// setup e-mail data with unicode symbols
 			var mailOptions = {
 			    from: config.email, // sender address
-			    to: req.body.email, // receiver
+			    to: [req.body.email], // receiver
+			    replyTo: [config.email],
 			    subject: config.email_subject, // Subject line
-			    text: email_text, // plaintext body
-
-			    html: email_html
+			    body: {
+				    text: email_text, // plaintext body
+				    html: email_html
+			    }
 			};
-
+			ses.send(mailOptions);
+			/*
 			// send mail with defined transport object
 			smtpTransport.sendMail(mailOptions, function(err, response){
 			    if(err) console.log(err);
 			    else console.log("Message sent: " + response.message);
 			    // smtpTransport.close(); // shut down the connection pool, no more messages
 			});			
+			*/
 
 
 

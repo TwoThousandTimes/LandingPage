@@ -20,6 +20,7 @@
     "nodemailer-ses-transport": "^1.1.0",
     "sequelize": "~1.7.9",
     "static-favicon": "~1.0.0",
-    "validator": "~3.16.1"
+    "validator": "~3.16.1",
+    "amazon-ses": "0.0.3"
   }
 }
