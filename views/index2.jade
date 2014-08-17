@@ -1,6 +1,9 @@
 extends layout
 
 block content
+
+	include ga.html
+
 	article.main
 		header.top-image
 			img.tt(src="images/v2/TTT-circle.png",alt="Two Thousand Times")
@@ -103,3 +106,5 @@ block content
 	script(src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js")
 	script(src="#{cdn}/javascripts/lightbox.min.js")
 	script(src="#{cdn}/javascripts/index2.js")
+
+
