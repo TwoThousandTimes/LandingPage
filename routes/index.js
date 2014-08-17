@@ -22,11 +22,14 @@ var mailer = nodemailer.createTransport(
 		smtpTransport({
 			host: 'email-smtp.us-west-2.amazonaws.com',
 			port: '2587',
-			secure: true,
+			secure: false,
 			auth: {
 				user: 'AKIAJMBR2BQYZ6KG6RUA',
 				pass: 'AlJlKnasivKsE2OEBbnkh5xoqDxyLi80KQhn49kCyZ9N'
-			}
+			},
+			tls: {
+		        ciphers:'SSLv3'
+		    }
 		})
 	);
 
