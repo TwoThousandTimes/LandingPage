@@ -9,5 +9,28 @@ html
 		link(href="http://fonts.googleapis.com/css?family=Montserrat|Fjalla+One" rel="stylesheet" type="text/css")
 		script(type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-53f22b3f69014ed4")
 
+		-var description = "Epic stories come from strangers, and The Two Thousand Times is the place to share them. It is our mission to connect the world through the medium of storytelling.";
+		-var imageUrl = "";
+		-var siteUrl = "http://twothousandtimes.com";
+		-var twitterAccount = "@twothousandx";
+
+		meta(property="description", content=description)
+
+		meta(property="og:title", content=title)
+		meta(property="og:url", content=siteUrl)
+		meta(property="og:image", content=imageUrl)
+		meta(property="og:description", content=description)
+
+		meta(property="og:type", content="website")
+		meta(property="og:site_name", content=title)
+
+		//- Twitter version of the og tags
+		meta(property="twitter:card", content="summary")
+		meta(property="twitter:site", content=twitterAccount)
+		meta(property="twitter:url", content=siteUrl)
+		meta(property="twitter:title", content=title)
+		meta(property="twitter:description", content=description)
+		meta(property="twitter:image", content=imageUrl)
+
 	body
 		block content

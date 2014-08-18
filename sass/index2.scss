@@ -443,7 +443,24 @@ section.footer {
 				padding: 30px 40px;
 				color: white;
 				background-color: #14B254;
+				display: block;
+				width: 35%;
+				margin-left: auto;
+				margin-right: auto;
+				margin-bottom: 20px;
 			}
+		}
+		.social-container {
+			width: 35%;
+			margin-left: auto;
+			margin-right: auto;
+			text-align: left;
+		}
+		.error-message, .social-container {
+			-webkit-transition: all 500ms ease-out 1s;
+		    -moz-transition: all 500ms ease-out 1s;
+		    -o-transition: all 500ms ease-out 1s;
+		    transition: all 500ms ease-out 1s;
 		}
 	}
 }

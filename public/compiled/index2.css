@@ -382,7 +382,22 @@ section.footer {
     #reserveModal .modal-body .error-message.success {
       padding: 30px 40px;
       color: white;
-      background-color: #14B254; }
+      background-color: #14B254;
+      display: block;
+      width: 35%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 20px; }
+  #reserveModal .modal-body .social-container {
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left; }
+  #reserveModal .modal-body .error-message, #reserveModal .modal-body .social-container {
+    -webkit-transition: all 500ms ease-out 1s;
+    -moz-transition: all 500ms ease-out 1s;
+    -o-transition: all 500ms ease-out 1s;
+    transition: all 500ms ease-out 1s; }
 
 #learnModal .modal-header {
   display: block;

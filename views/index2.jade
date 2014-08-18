@@ -4,6 +4,18 @@ block content
 
 	include ga.html
 
+	div#fb-root
+	script.
+		(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=692634774150387&version=v2.0";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	script.
+		!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+
 	section.share
 			div.addthis_sharing_toolbox
 
@@ -54,8 +66,17 @@ block content
 
 						p *Eg GoodTalk, SnakeBiite, Miso, etc <br/> 
 
-						div.error-container
-						span.error-message
+					
+					span.error-message.hidden
+
+					div.social-container.hidden
+						div.fb-like(data-href="http://www.twothousandtimes.com/?ref=facebook", data-layout="standard", data-action="like", data-show-faces="true" data-share="true")
+						div.twitter-share
+							a(href="https://twitter.com/share", data-via="twothousandx", data-url="http://www.twothousandtimes.com/?ref=twitter", class="twitter-share-button", data-lang="en") Tweet
+						div.reddit-share
+							a(href="http://www.reddit.com/submit" onclick="window.location = 'http://www.reddit.com/submit?url=' + encodeURIComponent(window.location + '?ref=reddit'); return false")
+								img(src="http://www.reddit.com/static/spreddit7.gif", alt="submit to reddit", border="0")
+
 
 	div.modal.fade#learnModal(tabindex="-1",role="dialog",aria-labelledby="learnModalLabel",aria-hidden="true")
 		div.modal-dialog

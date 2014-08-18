@@ -38,6 +38,11 @@ var mailer = nodemailer.createTransport(
 *	Render the Index page.
 */
 router.get('/', function (req, res) {
+	var ref = req.param('ref');
+	if (ref) {
+		// TODO: store the ref data in db!
+		
+	}
 	res.render('index2', { title: 'Two Thousand Times', cdn: config.cdn ? config.cdn : '' });
 });
 
