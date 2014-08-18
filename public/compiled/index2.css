@@ -286,8 +286,12 @@ section.footer {
     opacity: 0.95 !important; }
 
 .modal-dialog {
-  width: 80% !important;
-  margin: 30px 10% 30px 10% !important; }
+  width: 80%;
+  margin: 30px 10% 30px 10%; }
+  @media (max-width: 479px) {
+    .modal-dialog {
+      width: 90%;
+      margin: 10px 5% 30px 5%; } }
   .modal-dialog button.close {
     font-size: 50px;
     z-index: 100; }
@@ -302,6 +306,9 @@ section.footer {
       .modal-dialog .modal-content .modal-body {
         margin-top: 0 !important; } }
 
+#reserveModal .modal-header {
+  display: block;
+  height: 50px; }
 #reserveModal .modal-body {
   margin-top: 50px; }
   #reserveModal .modal-body h1 {
@@ -367,12 +374,6 @@ section.footer {
   width: 65%;
   max-width: 700px;
   margin: 0px auto; }
-  @media (min-width: 768px) and (max-width: 991px) {
-    #learnModal .modal-body {
-      width: 75%; } }
-  @media (min-width: 992px) and (max-width: 1199px) {
-    #learnModal .modal-body {
-      width: 75%; } }
   #learnModal .modal-body h2 {
     font-family: 'Fjalla One', sans-serif;
     font-weight: 400;
@@ -448,6 +449,9 @@ section.footer {
   @media (min-width: 768px) and (max-width: 991px) {
     #learnModal .modal-body {
       width: 100%; } }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    #learnModal .modal-body {
+      width: 75%; } }
 
 #privacyModal .modal-header, #termsModal .modal-header {
   display: block;

@@ -330,8 +330,12 @@ section.footer {
 }
 
 .modal-dialog {
-	width: 80% !important;
-	margin: 30px 10% 30px 10% !important;
+	width: 80%;
+	margin: 30px 10% 30px 10%;
+	@include media(xsmall) {
+		width: 90%;
+		margin: 10px 5% 30px 5%;
+	}
 	button.close {
 		font-size:50px;
 		z-index:100;
@@ -354,6 +358,10 @@ section.footer {
 }
 
 #reserveModal {
+	.modal-header {
+		display:block;
+		height:50px;
+	}
 	.modal-body {
 		margin-top:50px;
 		h1 {
@@ -425,19 +433,13 @@ section.footer {
 
 #learnModal {
 	.modal-header {
-	display:block;
-	height:50px;
+		display:block;
+		height:50px;
 	}
 	.modal-body {
 		width:65%;
 		max-width:700px;
 		margin:0px auto;
-		@include media(medium) {
-			width:75%;
-		}
-		@include media(large) {
-			width:75%;
-		}
 		h2 {
 			@include fjalla;
 			font-size:40px;
@@ -517,6 +519,9 @@ section.footer {
 	}
 	@include media(medium) {
 		width:100%;
+	}
+	@include media(large) {
+		width:75%;
 	}
 	}
 }
