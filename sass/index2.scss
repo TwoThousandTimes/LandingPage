@@ -336,6 +336,10 @@ section.footer {
 		width: 90%;
 		margin: 10px 5% 30px 5%;
 	}
+	@include media(small) {
+		width: 90%;
+		margin: 10px 5% 30px 5%;
+	}
 	button.close {
 		font-size:50px;
 		z-index:100;
@@ -475,6 +479,9 @@ section.footer {
 			font-size:21px;
 			@include media(xsmall) {
 				font-size:17px;
+				padding:0;
+			}
+			@include media(small) {
 				padding:0;
 			}
 		}
