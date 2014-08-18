@@ -74,8 +74,10 @@ article.main {
 		}
 		img.tt {
 			width: 75%;
+			height:auto;
 			@include media(xsmall) {
 				width: 50%;
+				height:auto;
 			}
 		}
 	}
@@ -98,7 +100,7 @@ article.main {
 				@include fjalla;
 				font-style:normal;
 				text-transform: uppercase;
-				font-size: 65px;
+				font-size: 50px;
 				@include media(xsmall) {
 					font-size:32px;
 				}
@@ -112,7 +114,7 @@ article.main {
 			.line {
 				display:block;
 				width:74px;
-				margin:25px auto 35px auto;
+				margin:15px auto 25px auto;
 				border-top:solid 3px #222;
 				@include media(xsmall) {
 					margin:15px auto 22px auto;
@@ -124,20 +126,9 @@ article.main {
 			h2 {
 				@include fjalla;
 				font-style:normal;
-				font-size: 16px;
+				font-size: 18px;
+				letter-spacing: 3px;
 				text-transform: uppercase;
-				@include media(xsmall) {
-					font-size:14px;
-				}
-				span {
-					display:inline-block;
-					padding:0px 10px;
-					font-size: 22px;
-					letter-spacing: 3px;
-					@include media(xsmall) {
-						font-size:18px;
-					}
-				}
 				@include media(xsmall) {
 					line-height:21px;
 				}
@@ -152,7 +143,8 @@ article.main {
 		section.stories {
 			margin-top:5px;
 			p {
-				font-size:21px;
+				font-size:17px;
+				letter-spacing:1px;
 				@include media(xsmall) {
 					font-size:18px;
 					padding:0 15px;
@@ -198,7 +190,7 @@ article.main {
 			}
 			}
 			a.learn-more {
-				padding: 25px 15px;
+				padding: 25px 25px;
 				color:#000;
 				background:#fff;
 				margin-left: 42px;
