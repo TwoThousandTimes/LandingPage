@@ -24,7 +24,7 @@ $(function() {
                         $('.error-message').removeClass('hidden');
                     });
                     $('.error-message').addClass('success');
-                    // ga('send', 'pageview', 'success');
+                    ga('send', 'pageview', 'success');
                 }
             },
             error: function() {

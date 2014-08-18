@@ -16,6 +16,7 @@ block content
 	script.
 		!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
 
+
 	section.share
 			div.addthis_sharing_toolbox
 
@@ -36,7 +37,7 @@ block content
 			div.buttons
 				a.reserve(href="#reserve", data-toggle="modal", data-target="#reserveModal", onclick="ga('send','pageview','reserve')")
 					span.big Reserve
-					br			
+					br
 					span.small your username
 
 				a.learn-more(href="#learn", data-toggle="modal", data-target="#learnModal", onclick="ga('send','pageview','learnmore')")
@@ -72,9 +73,9 @@ block content
 					div.social-container.hidden
 						div.fb-like(data-href="http://www.twothousandtimes.com/?ref=facebook", data-layout="standard", data-action="like", data-show-faces="true" data-share="true")
 						div.twitter-share
-							a(href="https://twitter.com/share", data-via="twothousandx", data-url="http://www.twothousandtimes.com/?ref=twitter", class="twitter-share-button", data-lang="en") Tweet
+							a(href="https://twitter.com/share", data-text="I just reserved my username @twothousandx", data-url="http://www.twothousandtimes.com/?ref=twitter", class="twitter-share-button", data-lang="en") Tweet
 						div.reddit-share
-							a(href="http://www.reddit.com/submit" onclick="window.location = 'http://www.reddit.com/submit?url=' + encodeURIComponent(window.location + '?ref=reddit'); return false")
+							a(href="http://www.reddit.com/submit" onclick="window.open('http://www.reddit.com/submit?url=' + encodeURIComponent(window.location + '?ref=reddit')); return false")
 								img(src="http://www.reddit.com/static/spreddit7.gif", alt="submit to reddit", border="0")
 
 
