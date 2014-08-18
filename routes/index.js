@@ -95,7 +95,7 @@ router.post('/process/username', function (req, res) {
 			// setup e-mail data with unicode symbols
 
 			var mailOptions = {
-			    from: config.email, // sender address
+			    from: 'Two Thousand Times <'+config.email + '>', // sender address
 			    to: req.body.email, // receiver
 			    subject: config.email_subject, // Subject line
 			    text: email_text, // plaintext body

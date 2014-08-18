@@ -4,6 +4,9 @@ block content
 
 	include ga.html
 
+	section.share
+			div.addthis_sharing_toolbox
+
 	article.main
 		header.top-image
 			img.tt(src="images/v2/TTT-circle.png",alt="Two Thousand Times")
@@ -12,24 +15,21 @@ block content
 			hgroup.intro
 				h1 Almost Nothing Captivates Us<br/>Like a Well Told Story.
 				div.line
-				h2 the 
-					span Two Thousand Times 
-					| is a social storytelling platform.
+				h2
+					span Two Thousand Times
 			section.stories
 				p Epic stories come from strangers, and there needs to be a place to share them. <br/>
 					| It is our mission to connect the world through the medium of storytelling.
 
 		section.join
 			div.buttons
-				a.reserve(href="#reserve", data-toggle="modal", data-target="#reserveModal")
+				a.reserve(href="#reserve", data-toggle="modal", data-target="#reserveModal", onclick="ga('send','pageview','reserve')")
 					span.big Reserve
 					br			
 					span.small your username
 
-				a.learn-more(href="#learn", data-toggle="modal", data-target="#learnModal")
+				a.learn-more(href="#learn", data-toggle="modal", data-target="#learnModal", onclick="ga('send','pageview','learnmore')")
 					span.big Learn More
-
-
 
 		div.clearfix
 
@@ -49,8 +49,12 @@ block content
 					h1 Reserve your username.
 					form.email-form
 						input.email-input(type="text", name="email", placeholder="Email")
-						input(type="text", name="username", placeholder="Username")
+						br
+						input(type="text", name="username", placeholder="UserName*")
 						button(type="submit") Submit
+
+						p *Eg GoodTalk, SnakeBiite, Miso, etc <br/> 
+
 						div.error-container
 						span.error-message
 

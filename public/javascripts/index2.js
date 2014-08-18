@@ -19,7 +19,8 @@ $(function() {
                     } else {
                         // TODO: display some sort of success screen??
                         $form.find('.error-message').css('display','block').html(success + "'" + $form.find('input.email-input').val() + "'").fadeIn();
-                        $form.find('input').addClass('error');
+                        $form.find('.error-message').addClass('success');
+                        ga('send', 'pageview', 'success');
                     }
                 },
                 error: function() {
