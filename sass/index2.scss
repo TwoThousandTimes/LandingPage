@@ -432,6 +432,12 @@ section.footer {
 		width:65%;
 		max-width:700px;
 		margin:0px auto;
+		@include media(medium) {
+			width:75%;
+		}
+		@include media(large) {
+			width:75%;
+		}
 		h2 {
 			@include fjalla;
 			font-size:40px;

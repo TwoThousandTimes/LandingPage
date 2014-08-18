@@ -367,6 +367,12 @@ section.footer {
   width: 65%;
   max-width: 700px;
   margin: 0px auto; }
+  @media (min-width: 768px) and (max-width: 991px) {
+    #learnModal .modal-body {
+      width: 75%; } }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    #learnModal .modal-body {
+      width: 75%; } }
   #learnModal .modal-body h2 {
     font-family: 'Fjalla One', sans-serif;
     font-weight: 400;
