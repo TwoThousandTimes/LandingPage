@@ -88,8 +88,8 @@ article.main {
 			padding-top: 90px;
 			@include media(xsmall) {
 				padding-top:90px;
-				padding-left:20px;
-				padding-right:20px;
+				padding-left:10px;
+				padding-right:10px;
 			}
 			@include media(small) {
 				padding-left:20px;
@@ -102,7 +102,7 @@ article.main {
 				text-transform: uppercase;
 				font-size: 50px;
 				@include media(xsmall) {
-					font-size:32px;
+					font-size:27px;
 				}
 				@include media(small) {
 					font-size:35px;
@@ -364,16 +364,21 @@ section.footer {
 	}
 	.modal-body {
 		margin-top:50px;
+		padding-left:10px;
+		padding-right:10px;
 		h1 {
 			@include fjalla;
 			font-size:32px;
 			color:#222;
 			text-transform:uppercase;
 			padding-bottom:20px;
+			@include media(xsmall) {
+				font-size:27px;
+			}
 		}
 		input {
 			height:50px;
-			width: 30%;
+			width: 35%;
 			@include montserrat;
 			padding:5px 10px;
 			&::-webkit-input-placeholder {
@@ -393,6 +398,14 @@ section.footer {
 			}
 			@include media(xsmall) {
 				width:90%;
+				margin-top:5px;
+			}
+			@include media(small) {
+				width:90%;
+				margin-top:5px;
+			}
+			@include media(medium) {
+				width:70%;
 				margin-top:5px;
 			}
 		}
@@ -461,8 +474,8 @@ section.footer {
 		p {
 			font-size:21px;
 			@include media(xsmall) {
-				font-size:18px;
-				padding:0 15px;
+				font-size:17px;
+				padding:0;
 			}
 		}
 		h3 {
@@ -476,7 +489,7 @@ section.footer {
 			padding:15px 0 10px 0;
 			margin-top:30px;
 			@include media(xsmall) {
-				font-size:24px;
+				font-size:22px;
 				line-height:30px;
 			}
 			@include media(small) {
@@ -493,7 +506,7 @@ section.footer {
 				font-size:21px;
 				display:block;
 				@include media(xsmall) {
-					font-size:18px;
+					font-size:17px;
 					padding:0 15px;
 				}
 			}

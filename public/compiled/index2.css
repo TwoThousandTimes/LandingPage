@@ -74,8 +74,8 @@ article.main {
     @media (max-width: 479px) {
       article.main main.text hgroup.intro {
         padding-top: 90px;
-        padding-left: 20px;
-        padding-right: 20px; } }
+        padding-left: 10px;
+        padding-right: 10px; } }
     @media (min-width: 480px) and (max-width: 767px) {
       article.main main.text hgroup.intro {
         padding-left: 20px;
@@ -88,7 +88,7 @@ article.main {
       font-size: 50px; }
       @media (max-width: 479px) {
         article.main main.text hgroup.intro h1 {
-          font-size: 32px; } }
+          font-size: 27px; } }
       @media (min-width: 480px) and (max-width: 767px) {
         article.main main.text hgroup.intro h1 {
           font-size: 35px; } }
@@ -310,7 +310,9 @@ section.footer {
   display: block;
   height: 50px; }
 #reserveModal .modal-body {
-  margin-top: 50px; }
+  margin-top: 50px;
+  padding-left: 10px;
+  padding-right: 10px; }
   #reserveModal .modal-body h1 {
     font-family: 'Fjalla One', sans-serif;
     font-weight: 400;
@@ -318,9 +320,12 @@ section.footer {
     color: #222;
     text-transform: uppercase;
     padding-bottom: 20px; }
+    @media (max-width: 479px) {
+      #reserveModal .modal-body h1 {
+        font-size: 27px; } }
   #reserveModal .modal-body input {
     height: 50px;
-    width: 30%;
+    width: 35%;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     padding: 5px 10px; }
@@ -337,6 +342,14 @@ section.footer {
     @media (max-width: 479px) {
       #reserveModal .modal-body input {
         width: 90%;
+        margin-top: 5px; } }
+    @media (min-width: 480px) and (max-width: 767px) {
+      #reserveModal .modal-body input {
+        width: 90%;
+        margin-top: 5px; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      #reserveModal .modal-body input {
+        width: 70%;
         margin-top: 5px; } }
   #reserveModal .modal-body input.email-input {
     margin-bottom: 5px; }
@@ -395,8 +408,8 @@ section.footer {
     font-size: 21px; }
     @media (max-width: 479px) {
       #learnModal .modal-body p {
-        font-size: 18px;
-        padding: 0 15px; } }
+        font-size: 17px;
+        padding: 0; } }
   #learnModal .modal-body h3 {
     display: block;
     font-family: 'Fjalla One', sans-serif;
@@ -410,7 +423,7 @@ section.footer {
     margin-top: 30px; }
     @media (max-width: 479px) {
       #learnModal .modal-body h3 {
-        font-size: 24px;
+        font-size: 22px;
         line-height: 30px; } }
     @media (min-width: 480px) and (max-width: 767px) {
       #learnModal .modal-body h3 {
@@ -426,7 +439,7 @@ section.footer {
       display: block; }
       @media (max-width: 479px) {
         #learnModal .modal-body .float-right span.stay-tuned {
-          font-size: 18px;
+          font-size: 17px;
           padding: 0 15px; } }
     #learnModal .modal-body .float-right img {
       width: 250px;
