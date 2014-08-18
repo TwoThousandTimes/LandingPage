@@ -48,6 +48,7 @@ section.share {
 	bottom: 30px;
 	left: 30px;
 	z-index: 1000;
+	height: 0;
 	@include media(xsmall) {
 		top:40px;
 	}
@@ -350,6 +351,12 @@ section.footer {
 		border-radius: none;
 		.modal-header {
 			border:none;
+
+		}
+		.modal-body {
+			@include media(xsmall) {
+				margin-top: 0 !important;
+			}
 		}
 	}
 }
