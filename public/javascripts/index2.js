@@ -5,9 +5,7 @@ $(function() {
     $('.email-form').submit(function(event) {
         event.preventDefault();
         var $form = $(this);
-        if( $form.find('.error-message') ) {
-            clear_error($form);
-        }
+        
         $.ajax({
             type: "POST",
             url: '/process/username',
@@ -40,6 +38,7 @@ $(function() {
 });
 
 function clear_error(form) {
+    console.log('clear error');
 	form.find('input').removeClass('error');
-	form.find('.error-message').css('display','none').fadeOut();
+	$('.error-message').html('').addClass('hidden');
 }
