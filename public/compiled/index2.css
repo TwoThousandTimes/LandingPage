@@ -5,6 +5,21 @@
   font-weight: normal;
   font-style: normal; }
 
+@-webkit-viewport {
+  width: device-width; }
+
+@-moz-viewport {
+  width: device-width; }
+
+@-ms-viewport {
+  width: device-width; }
+
+@-o-viewport {
+  width: device-width; }
+
+@viewport {
+  width: device-width; }
+
 html {
   height: 100%;
   background-image: url('/images/v2/bg.jpg');
@@ -37,7 +52,7 @@ body {
 
 section.share {
   position: absolute;
-  bottom: 40px;
+  bottom: 25px;
   left: 30px;
   z-index: 1000;
   height: auto; }
@@ -72,7 +87,6 @@ section.share {
     section.share {
       text-align: left; } }
   section.share h4 {
-    margin-bottom: 5px;
     color: #fff;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
