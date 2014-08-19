@@ -72,6 +72,7 @@ section.share {
     section.share {
       text-align: left; } }
   section.share h4 {
+    margin-bottom: 5px;
     color: #fff;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
