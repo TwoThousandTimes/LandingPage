@@ -22,6 +22,10 @@ $(function() {
                         $('.error-message').removeClass('hidden');
                     });
                     $('.error-message').addClass('success');
+
+                    //Firefox issue
+                    $('.social-container .fb-like span').height(30);
+                    $('.social-container .fb-like iframe').height(30);
                     ga('send', 'pageview', 'success');
                 }
             },
