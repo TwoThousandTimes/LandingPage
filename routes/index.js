@@ -73,7 +73,7 @@ router.post('/process/username', function (req, res) {
 	console.log('process: ' + req.body.username + ' ' + validUsername + '  ' + req.body.email + ' ' + validEmail);
 
 	if (!validUsername)
-		return res.status(200).send({error: 'Invalid username. Allowed characters: a-z, 0-9, -, and _'});
+		return res.status(200).send({error: 'Invalid username. Allowed 3-15 characters: a-z, 0-9, -, and _'});
 	if (!validEmail)
 		return res.status(200).send({error: 'Invalid email format.'});
 
