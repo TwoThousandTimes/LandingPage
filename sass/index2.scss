@@ -45,15 +45,53 @@ body {
 
 section.share {
 	position: absolute;
-	bottom: 50px;
+	bottom: 40px;
 	left: 30px;
 	z-index: 1000;
-	height: 0;
+	height: auto;
 	@include media(xsmall) {
-		top:40px;
+		width:100%;
+		position: relative;
+		display:block;
+		bottom: auto;
+		left: auto;
+		margin-top:30px;
 	}
 	@include media(small) {
-		top:40px;
+		width:100%;
+		position: relative;
+		display:block;
+		bottom: auto;
+		left: auto;
+		margin-top:30px;
+	}
+	@include media(medium) {
+		width:100%;
+		position: relative;
+		display:block;
+		bottom: auto;
+		left: auto;
+		margin-top:30px;
+	}
+	@include media(large) {
+		text-align:left;
+	}
+	@include media(xlarge) {
+		text-align:left;
+	}
+	h4 {
+		color:#fff;
+		@include montserrat;
+		font-size:13px;
+		@include media(xsmall) {
+			color:#222;
+		}
+		@include media(small) {
+			color:#222;
+		}
+		@include media(medium) {
+			color:#222;
+		}
 	}
 }
 
@@ -258,8 +296,8 @@ section.footer {
 		position: relative;
 		width:100%;
 		display:block;
-		bottom: 0px;
-		right: 0px;
+		bottom: auto;
+		right:auto;
 		text-align:center;
 		margin-top:30px;
 	}
@@ -267,8 +305,8 @@ section.footer {
 		position: relative;
 		width:100%;
 		display:block;
-		bottom: 0px;
-		right: 0px;
+		bottom: auto;
+		right:auto;
 		text-align:center;
 		margin-top:50px;
 	}
@@ -276,8 +314,8 @@ section.footer {
 		position: relative;
 		width:100%;
 		display:block;
-		bottom: 0px;
-		right: 0px;
+		bottom: auto;
+		right:auto;
 		text-align:center;
 		margin-top:30px;
 	}
@@ -489,13 +527,13 @@ section.footer {
 		.line {
 			display:block;
 			width:74px;
-			margin:37px auto 35px auto;
+			margin:25px auto 23px auto;
 			border-top:solid 3px #222;
 		}
 		p {
 			font-size:21px;
 			@include media(xsmall) {
-				font-size:17px;
+				font-size:16px;
 				padding:0;
 			}
 			@include media(small) {
@@ -530,7 +568,7 @@ section.footer {
 				font-size:21px;
 				display:block;
 				@include media(xsmall) {
-					font-size:17px;
+					font-size:16px;
 					padding:0 15px;
 				}
 			}
