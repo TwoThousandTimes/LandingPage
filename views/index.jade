@@ -1,7 +1,8 @@
 extends layout
 
-block content
-  -// TITLE SECTION
+block content  
+  div#fb-root
+
   section.title-container
     div.video-overlay
       h1 
@@ -96,7 +97,7 @@ block content
     div.content-container
       div.logo-container
         img.logo(src="#{cdn}/images/TTT-icon.png")
-      img.footer-logo(src="#{cdn}/images/TTT-logo-20.png" alt="the Two Thousand Times")
+      img.footer-logo(src="#{cdn}/images/ttt-logo-20.png" alt="the Two Thousand Times")
       p It is our mission to connect the world through the power of storytelling.
       p.coming Coming September 2014
       h2 Reserve your username today
@@ -108,13 +109,19 @@ block content
           span.error-message
         
       div.social-media-container
-        img(src="#{cdn}/images/fbook.png")
-        img(src="#{cdn}/images/twitter.png")
+        a(href="https://www.facebook.com/twothousandtimes")
+         img(src="#{cdn}/images/fbook.png")
+        a(href="https://twitter.com/twothousandx")            
+         img(src="#{cdn}/images/twitter.png")
+
+    div.legal
+      a.privacy(href="#privacy",data-toggle="modal",data-target="#privacyModal",class="privacy") Privacy
+      a.terms(href="#terms",data-toggle="modal",data-target="#termsModal",class="terms") Terms
 
 
   -// =================================== FIXED FOOTER =====================================
   div.footer
-    a.thanks(href="images/thanks.jpg",data-lightbox="thanks") Thanks for Signing up
+    a.thanks(href="images/thanks.jpg",data-toggle="modal",data-target="#reserveModal",class="reserve") Thanks for Signing up    
 
     div.footer-container
       div.progress-container
@@ -134,8 +141,47 @@ block content
             span.error-message
           
       .social
-        img(src="#{cdn}/images/fbook.png")
-        img(src="#{cdn}/images/twitter.png")
+        a(href="https://www.facebook.com/twothousandtimes")
+         img(src="#{cdn}/images/fbook.png")
+        a(href="https://twitter.com/twothousandx")            
+         img(src="#{cdn}/images/twitter.png")
+
+   div.modal.fade#reserveModal(tabindex="-1",role="dialog",aria-labelledby="reserveModalLabel",aria-hidden="true")
+    div.modal-dialog
+     div.modal-content
+      div.modal-header
+       button.close(type="button",data-dismiss="modal")
+        span(aria-hidden="true") &times;
+        span.sr-only Close
+      div.modal-body
+       h2 Thanks! You should receive an e-mail with an confirmation.
+       div.social-container.hidden
+        div.fb-like(data-href="http://www.twothousandtimes.com/?ref=facebook", data-layout="standard", data-action="like", data-show-faces="true" data-share="true")
+        div.twitter-share
+         a(href="https://twitter.com/share", data-text="I just reserved my username @twothousandx", data-url="http://www.twothousandtimes.com/?ref=twitter", class="twitter-share-button", data-lang="en") Tweet
+        div.reddit-share
+         a(href="http://www.reddit.com/submit" onclick="window.open('http://www.reddit.com/submit?url=' + encodeURIComponent(window.location + '?ref=reddit')); return false")
+          img(src="http://www.reddit.com/static/spreddit7.gif", alt="submit to reddit", border="0")
+
+   div.modal.fade#privacyModal(tabindex="-1",role="dialog",aria-labelledby="privacyModalLabel",aria-hidden="true")
+    div.modal-dialog
+     div.modal-content
+      div.modal-header
+       button.close(type="button",data-dismiss="modal")
+        span(aria-hidden="true") &times;
+        span.sr-only Close
+      div.modal-body
+       include privacy.html
+
+   div.modal.fade#termsModal(tabindex="-1",role="dialog",aria-labelledby="termsModalLabel",aria-hidden="true")
+    div.modal-dialog
+     div.modal-content
+      div.modal-header
+       button.close(type="button",data-dismiss="modal")
+        span(aria-hidden="true") &times;
+        span.sr-only Close
+      div.modal-body
+       include terms.html
 
   script.
     window.cdn = '#{cdn}';
@@ -144,5 +190,6 @@ block content
   script(src="#{cdn}/javascripts/jquery-ui.min.js")
   script(src="#{cdn}/javascripts/raphael-min.js")
   script(src="#{cdn}/javascripts/skrollr.min.js")
-  script(src="#{cdn}/javascripts/lightbox.min.js")
+  script(src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js")
   script(src="#{cdn}/javascripts/index.js")
+  include script.html
