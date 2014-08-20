@@ -43,7 +43,7 @@ router.get('/', function (req, res) {
 		// TODO: store the ref data in db!
 		
 	}
-	res.render('index2', { title: 'Two Thousand Times', cdn: config.cdn ? config.cdn : '' });
+	res.render('index', { title: 'Two Thousand Times', cdn: config.cdn ? config.cdn : '' });
 });
 
 /**
