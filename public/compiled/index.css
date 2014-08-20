@@ -112,7 +112,7 @@ section, .title-container {
   position: relative;
   width: 100%;
   display: block;
-  height: 1400px;
+  height: 1300px;
   background-color: #fff;
   background-image: url('/images/stars.jpg');
   background-repeat: no-repeat;
@@ -165,20 +165,20 @@ section, .title-container {
         width: 65%;
         text-align: right;
         padding-top: 30px;
-        padding-right: 60px;
+        padding-right: 40px;
         background-image: url('/images/bubble.png');
         background-repeat: no-repeat;
         background-position: top right;
         font-family: 'Pathway Gothic One', sans-serif;
         font-weight: 400;
-        font-size: 40px;
+        font-size: 35px;
         letter-spacing: 7px;
         text-transform: uppercase; }
       .who-we-are .who-top-right h3.share {
         width: 60%;
         text-align: right;
         padding-bottom: 50px;
-        font-family: 'EB Garamond', serif;
+        font-family: 'Pathway Gothic One', sans-serif;
         font-weight: 400;
         font-size: 50px;
         letter-spacing: 10px;
@@ -226,7 +226,7 @@ section, .title-container {
     bottom: 0px;
     width: 100%;
     height: 560px;
-    background-image: url('/images/silhouette.png');
+    background-image: url('/images/mountain-range.png');
     background-repeat: no-repeat;
     background-position: center bottom;
     z-index: 3; }
@@ -270,7 +270,7 @@ section, .title-container {
     #canvas-wrapper .story-title h2 {
       font-family: 'Montserrat', sans-serif;
       font-weight: 700;
-      font-size: 60px;
+      font-size: 50px;
       letter-spacing: 3px;
       line-height: 55px;
       text-transform: uppercase;
@@ -298,7 +298,7 @@ section, .title-container {
       #canvas-wrapper .story-top-right .story-top-right-inner td.story-top-right-text p {
         font-family: 'Pathway Gothic One', sans-serif;
         font-weight: 400;
-        font-size: 30px;
+        font-size: 25px;
         letter-spacing: 5px;
         text-transform: uppercase;
         margin: 10px 0; }
@@ -310,11 +310,15 @@ section, .title-container {
         vertical-align: center;
         text-align: center; }
         #canvas-wrapper .story-top-right .story-top-right-inner td.story-top-right-img img {
-          width: 50px;
-          height: auto;
-          padding-left: 35px;
-          padding-right: 35px;
-          margin: 0px auto; }
+          display: block;
+          width: 70%;
+          height: auto !important;
+          margin: 0px auto;
+          padding-left: 8%; }
+          @media (min-width: 1200px) {
+            #canvas-wrapper .story-top-right .story-top-right-inner td.story-top-right-img img {
+              width: 70px;
+              padding-left: 30px; } }
   #canvas-wrapper .story-top-left {
     width: 47%;
     right: 50%;
@@ -326,7 +330,7 @@ section, .title-container {
     #canvas-wrapper .story-top-left p {
       font-family: 'EB Garamond', serif;
       font-weight: 400;
-      font-size: 24px;
+      font-size: 21px;
       letter-spacing: 3px; }
   #canvas-wrapper .story-bottom-left {
     right: 47%;
@@ -335,7 +339,7 @@ section, .title-container {
     #canvas-wrapper .story-bottom-left h3 {
       font-family: 'Pathway Gothic One', sans-serif;
       font-weight: 400;
-      font-size: 66px;
+      font-size: 50px;
       letter-spacing: 3px;
       text-transform: uppercase;
       margin: 10px 0; }
@@ -345,6 +349,8 @@ section, .title-container {
     #canvas-wrapper .story-bottom-left h3.energy::after {
       content: url('/images/bolt-R.png');
       padding-left: 10px; }
+    #canvas-wrapper .story-bottom-left p {
+      font-size: 24px; }
     #canvas-wrapper .story-bottom-left h2 {
       font-family: 'Montserrat', sans-serif;
       font-weight: 400;
@@ -360,13 +366,13 @@ section, .title-container {
     #canvas-wrapper .story-bottom-right p {
       font-family: 'EB Garamond', serif;
       font-weight: 400;
-      font-size: 24px;
+      font-size: 21px;
       letter-spacing: 5px;
       margin: 0; }
     #canvas-wrapper .story-bottom-right h3 {
       font-family: 'Pathway Gothic One', sans-serif;
       font-weight: 400;
-      font-size: 70px;
+      font-size: 50px;
       letter-spacing: 5px;
       line-height: 77%;
       margin: 0; }
@@ -379,7 +385,7 @@ section, .title-container {
     line-height: 200%; }
 
 .final-section {
-  height: 900px;
+  height: 750px;
   text-align: center;
   background-color: white;
   background-image: url('/images/beach2.jpg');
@@ -397,38 +403,43 @@ section, .title-container {
         width: 85px; }
     .final-section .content-container p {
       width: 60%;
-      margin-left: auto;
-      margin-right: auto;
+      margin: 0 auto 40px auto;
       font-family: 'EB Garamond', serif;
       font-weight: 400;
-      font-size: 24px;
+      font-size: 21px;
       letter-spacing: 3px;
-      line-height: 200%;
       color: #222; }
-      .final-section .content-container p img.footer-logo {
-        width: 255px;
-        height: auto; }
+    .final-section .content-container p.coming {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      text-transform: uppercase;
+      text-decoration: underline; }
     .final-section .content-container h2 {
       font-family: 'Montserrat', sans-serif;
       font-weight: 700;
-      font-size: 32px;
+      font-size: 21px;
+      text-transform: uppercase;
       letter-spacing: 3px;
-      color: #222; }
+      color: #222;
+      margin-top: 50px; }
     .final-section .content-container .email-form {
       position: relative;
       display: block;
-      width: 26%;
+      width: 50%;
       float: left;
       text-align: center;
-      margin: 0px 37%; }
+      margin: 0px 25%; }
       .final-section .content-container .email-form input[type="text"] {
         position: relative;
-        width: 90%;
-        height: 46px;
+        display: inline-block;
+        width: 50%;
+        height: 52px;
+        float: left;
         margin: 5px 0;
         padding: 0px 5%;
         border-top: solid 3px #32b1c6 !important;
-        border-right: solid 3px #32b1c6 !important;
+        border-right: 0px !important;
         border-bottom: solid 3px #32b1c6 !important;
         border-left: solid 3px #32b1c6 !important;
         font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -437,9 +448,12 @@ section, .title-container {
         text-transform: lowercase;
         letter-spacing: 1px;
         color: #222; }
+      .final-section .content-container .email-form input[name="username"] {
+        border-right: solid 3px #32b1c6 !important; }
       .final-section .content-container .email-form button[type="submit"] {
         position: relative;
-        width: 50%;
+        display: inline-block;
+        width: 20%;
         height: 52px;
         margin: 5px 0;
         padding: 0px 10px;
@@ -465,17 +479,57 @@ section, .title-container {
         background-color: #f74141;
         color: #fff;
         z-index: 10 !important; }
+  .final-section .legal {
+    position: absolute;
+    width: 100%;
+    right: 20px;
+    bottom: 100px;
+    z-index: 1000;
+    text-align: right; }
+    .final-section .legal a {
+      padding: 5px 15px;
+      color: #fff;
+      font-size: 10px;
+      letter-spacing: 1px;
+      text-transform: uppercase; }
+    .final-section .legal a.privacy {
+      text-decoration: none;
+      border-top: solid 3px #fff;
+      border-bottom: solid 3px #fff;
+      border-left: solid 3px #fff;
+      border-right: solid 1px #fff;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400; }
+      .final-section .legal a.privacy:hover {
+        background: #222;
+        -webkit-transition: all ease-out 0.2s;
+        -moz-transition: all ease-out 0.2s;
+        -o-transition: all ease-out 0.2s;
+        transition: all ease-out 0.2s; }
+    .final-section .legal a.terms {
+      text-decoration: none;
+      border-top: solid 3px #fff;
+      border-bottom: solid 3px #fff;
+      border-right: solid 3px #fff;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400; }
+      .final-section .legal a.terms:hover {
+        background: #222;
+        -webkit-transition: all ease-out 0.2s;
+        -moz-transition: all ease-out 0.2s;
+        -o-transition: all ease-out 0.2s;
+        transition: all ease-out 0.2s; }
 
 .footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 80px;
+  height: 70px;
   z-index: 99999;
   border-top: 2px solid white;
   background: url('/images/white90.png');
   background-repeat: repeat; }
-  .footer a.thanks {
+  .footer .thanks, .footer .privacy, .footer .terms {
     display: none; }
   .footer .footer-container {
     width: 100%;
@@ -527,10 +581,11 @@ section, .title-container {
       float: left;
       width: 75%;
       margin: 0px;
-      padding: 17px 0 0 0; }
+      padding: 12px 0 0 0; }
       .footer .footer-container .signup-container h4 {
         width: 38%;
-        margin-rith: 2%;
+        margin-top: 15px;
+        margin-right: 2%;
         float: left;
         font-family: 'Montserrat', sans-serif;
         font-weight: 700;
@@ -563,7 +618,7 @@ section, .title-container {
         .footer .footer-container .signup-container .email-form button[type="submit"] {
           position: relative;
           width: 20%;
-          height: 52px;
+          height: 46px;
           float: left;
           margin: 0px;
           padding: 0px 10px;
@@ -596,3 +651,161 @@ section, .title-container {
       width: 24%;
       margin: 0px 1% 0 0;
       padding: 17px 0 0 0; }
+
+/**
+	MODAL CODE
+**/
+.modal-backdrop {
+  background-color: #fff !important;
+  z-index: 1500; }
+  .modal-backdrop.in {
+    opacity: 0.95 !important; }
+
+.modal {
+  z-index: 1501; }
+
+.modal-dialog {
+  width: 80%;
+  margin: 30px 10% 30px 10%; }
+  @media (max-width: 479px) {
+    .modal-dialog {
+      width: 90%;
+      margin: 10px 5% 30px 5%; } }
+  @media (min-width: 480px) and (max-width: 767px) {
+    .modal-dialog {
+      width: 90%;
+      margin: 10px 5% 30px 5%; } }
+  .modal-dialog button.close {
+    font-size: 50px;
+    z-index: 100; }
+  .modal-dialog .modal-content {
+    background: none;
+    box-shadow: none;
+    border: none;
+    border-radius: none; }
+    .modal-dialog .modal-content .modal-header {
+      border: none; }
+    @media (max-width: 479px) {
+      .modal-dialog .modal-content .modal-body {
+        margin-top: 0 !important; } }
+
+#reserveModal .modal-header {
+  display: block;
+  height: 50px; }
+#reserveModal .modal-body {
+  margin-top: 50px;
+  padding-left: 10px;
+  padding-right: 10px; }
+  #reserveModal .modal-body h1 {
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    color: #222;
+    text-transform: uppercase;
+    padding-bottom: 20px; }
+    @media (max-width: 479px) {
+      #reserveModal .modal-body h1 {
+        font-size: 27px; } }
+  #reserveModal .modal-body input {
+    height: 50px;
+    width: 35%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    padding: 5px 10px; }
+    #reserveModal .modal-body input::-webkit-input-placeholder {
+      text-transform: uppercase; }
+    #reserveModal .modal-body input:-moz-placeholder {
+      /* Firefox 18- */
+      text-transform: uppercase; }
+    #reserveModal .modal-body input::-moz-placeholder {
+      /* Firefox 19+ */
+      text-transform: uppercase; }
+    #reserveModal .modal-body input:-ms-input-placeholder {
+      text-transform: uppercase; }
+    @media (max-width: 479px) {
+      #reserveModal .modal-body input {
+        width: 90%;
+        margin-top: 5px; } }
+    @media (min-width: 480px) and (max-width: 767px) {
+      #reserveModal .modal-body input {
+        width: 90%;
+        margin-top: 5px; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      #reserveModal .modal-body input {
+        width: 70%;
+        margin-top: 5px; } }
+  #reserveModal .modal-body input.email-input {
+    margin-bottom: 5px; }
+  #reserveModal .modal-body button {
+    display: block;
+    clear: both;
+    height: 50px;
+    margin: 20px auto;
+    padding: 12px 30px;
+    background: #3fafc4;
+    color: #fff;
+    border: 0px !important;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px; }
+    #reserveModal .modal-body button:hover {
+      background-color: #222;
+      -webkit-transition: background-color ease-out 0.2s;
+      -moz-transition: background-color ease-out 0.2s;
+      -o-transition: background-color ease-out 0.2s;
+      transition: background-color ease-out 0.2s; }
+  #reserveModal .modal-body .error-message {
+    font-size: 16px;
+    letter-spacing: 1px; }
+    #reserveModal .modal-body .error-message.success {
+      padding: 30px 40px;
+      color: white;
+      background-color: #14B254;
+      display: block;
+      width: 35%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 20px; }
+  #reserveModal .modal-body .social-container {
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left; }
+  #reserveModal .modal-body .error-message, #reserveModal .modal-body .social-container {
+    -webkit-transition: all 500ms ease-out 1s;
+    -moz-transition: all 500ms ease-out 1s;
+    -o-transition: all 500ms ease-out 1s;
+    transition: all 500ms ease-out 1s; }
+
+#privacyModal .modal-header, #termsModal .modal-header {
+  display: block;
+  height: 50px; }
+#privacyModal .modal-body, #termsModal .modal-body {
+  width: 100%;
+  max-width: 625px;
+  margin: 0px auto; }
+  #privacyModal .modal-body h1, #termsModal .modal-body h1 {
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 50px; }
+  #privacyModal .modal-body h2, #termsModal .modal-body h2 {
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-transform: uppercase; }
+  #privacyModal .modal-body h3, #termsModal .modal-body h3 {
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin-top: 60px;
+    padding-bottom: 10px;
+    border-bottom: solid 1px #222; }
+  #privacyModal .modal-body p, #termsModal .modal-body p {
+    text-align: justify !important; }
+    #privacyModal .modal-body p strong, #termsModal .modal-body p strong {
+      text-transform: uppercase;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400; }

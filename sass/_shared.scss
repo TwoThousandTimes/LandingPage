@@ -31,6 +31,25 @@ $lightgrey: #aaa;
 	font-weight:400;
 }
 
+//Media Queries
+@mixin media($size) {
+	@if $size == xsmall {
+		@media (max-width: 479px) { @content; }
+	}
+	@else if $size == small {
+		@media (min-width: 480px) and (max-width: 767px) { @content; }
+	}
+	@else if $size == medium {
+		@media (min-width: 768px) and (max-width: 991px) { @content; }
+	}
+	@else if $size == large {
+		@media (min-width: 992px) and (max-width: 1199px) { @content; }
+	}
+	@else if $size == xlarge {
+		@media (min-width: 1200px) { @content; }
+	}
+}
+
 //signup
 @mixin fields_full {
 	border-top:solid 3px $blue !important;

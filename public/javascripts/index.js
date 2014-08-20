@@ -115,7 +115,6 @@ $(function() {
             clear_error($(this).parent('form'));
         });
 
-
     });
 
     function clear_error(form) {
