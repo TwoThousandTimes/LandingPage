@@ -1,7 +1,9 @@
 
 $(function() {
+    var titleAnimationComplete = false;
 
     $(document).ready(function() {
+
         footerHidden = false;
         // Setup the skrollr
         var s = skrollr.init({
@@ -100,8 +102,12 @@ $(function() {
                         $form.find('.error-message').css('display','block').html(data.error).fadeIn();
                         $form.find('input').addClass('error');
                     } else {
-                        // TODO: display some sort of success screen??
+                        // Display the confirmation screen with social media share links
                         $('a.thanks').click();
+                        $('.footer').fadeOut();
+                        $('#reserveModal').on('hide.bs.modal', function (e) {
+                            $('.footer').fadeIn();
+                        });
                     }
                 },
                 error: function() {
@@ -122,6 +128,21 @@ $(function() {
             form.find('.error-message').css('display','none').fadeOut();
     }
 
+    var titleAnimationSpeed = 100; 
+    var elements = $('.title-container h1 span');
+    function fadeSpanIn ( index ) {
+        if (index < elements.length) {
+            $(elements[index]).fadeTo(titleAnimationSpeed, 1, function() {
+                fadeSpanIn( index + 1);
+            });
+        } else {
+            $('.loading-container, .learn-more').fadeIn('slow');
+            console.log('finished');
+            titleAnimationComplete = true;
+        }
+    }
+    fadeSpanIn(0);
+
     // Fetch the landing page video!
     var getSupportedVideo = function () {
         if (window.Modernizr.video.h264) return 'mp4';
@@ -131,28 +152,70 @@ $(function() {
     };
     var videoType = getSupportedVideo();
     console.log(videoType);
-    if (videoType) {
+
+    var loadFirstVideo = function ( videoType, callback ) {
         var xhr = new XMLHttpRequest();
         xhr.open('GET', window.cdn + '/images/video/intro.' + videoType, true);
         xhr.responseType = 'blob';
         xhr.onload = function(e) {
             if (this.status == 200) {
-                console.log("got it");            
+                console.log("got first video");            
 
                 var myBlob = this.response;
                 var vid = (window.webkitURL ? webkitURL : URL).createObjectURL(myBlob);
                 // myBlob is now the blob that the object URL pointed to.
                 var video = document.getElementById("bgvid");
                 video.src = vid;
+                // DONT PLAY VIDEO UNTIL LOADING ANIMATION COMPLETE!
+                var timer = setInterval(function() {
+                    if (titleAnimationComplete) {
+                        callback();
+                        video.play();
+                        $(video).fadeIn('slow');
+                        
+                        $('#bgvid').bind('ended', function() {
+                            console.log('first video ended!');
+                            $(this).fadeOut('fast');
+                            $('#bgvid2').show();
+                        });
+                        window.clearInterval(timer);
+                    }
+                }, 250);
+            }
+        }
+        xhr.send();
+    };
+
+    var loadSecondVideo = function ( videoType ) {
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', window.cdn + '/images/video/loop.' + videoType, true);
+        xhr.responseType = 'blob';
+        xhr.onload = function(e) {
+            if (this.status == 200) {
+                console.log("got second video");
+
+                var myBlob = this.response;
+                var vid = (window.webkitURL ? webkitURL : URL).createObjectURL(myBlob);
+                // myBlob is now the blob that the object URL pointed to.
+                var video = document.getElementById("bgvid2");
+                video.src = vid;
                 // TODO: stop the loading animation!
                 video.play();
+
+
+                
 
             }
         }
         xhr.send();
+    };
+
+    if (videoType) {
+        loadFirstVideo( videoType, function() {
+            // After first video is done loading, load the second video for loop...
+            loadSecondVideo( videoType );
+        });
     }
-
-
 
 
     // ========================== LINE ANIMATION STUFF ===================================

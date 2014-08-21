@@ -4,7 +4,7 @@ var production = process.env.NODE_ENV === 'production';
 
 module.exports = {
     // SERVER
-    port: production ? 3000 : 3000,
+    port: 3003,
     
     // DB
     db_port: typeof(process.env.HOSTNAME) == 'undefined' ? 8889 : process.env.PORT,

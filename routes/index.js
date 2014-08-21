@@ -77,65 +77,69 @@ router.post('/process/username', function (req, res) {
 	if (!validEmail)
 		return res.status(200).send({error: 'Invalid email format.'});
 
-	db.User.findOrCreate(
-		db.sequelize.or(
-      		{ username: req.body.username },
-      		{ email: req.body.email }
-    	),
-    	{
-    		username: req.body.username,
-    		email: req.body.email
-    	}
-	).success( function ( user, created ) {
-
-		if (created) {
-			// The username/email was saved!
-			res.status(200).send({success: { username: req.body.username, email: req.body.email }});	
-			
-			var email_text = jade.renderFile('views/text.jade', {person : req.body.username});
-			var email_html = jade.renderFile('views/htmlemail.jade', {person : req.body.username});
-			//console.log(email_text);
-
-			// =======================   SEND NEW USER EMAIL CONFIRMATION  =============================
-			// setup e-mail data with unicode symbols
-
-			var mailOptions = {
-			    from: 'Two Thousand Times <'+config.email + '>', // sender address
-			    to: req.body.email, // receiver
-			    subject: config.email_subject, // Subject line
-			    text: email_text, // plaintext body
-			    html: email_html
-			    
-			};
-			/*
-			ses.send(mailOptions);
-			*/
-			
-			// send mail with defined transport object
-			mailer.sendMail(mailOptions, function(err, response){
-			    if(err) console.log(err);
-			    else console.log("Message sent: " + response.message);
-			    // smtpTransport.close(); // shut down the connection pool, no more messages
-			});			
-			
-
-
-
-		} else if (user) {
-			if (user.dataValues.username === req.body.username) {
-				// the username already exists in db
-				res.status(200).send({error: 'The username has already been taken!'});
-			} else {
-				// assume the email already exists in db
-				res.status(200).send({error: 'The email is already in use.'});
-			}			
+	db.User.find( { where: { username: req.body.username }} ).success( function ( user ) {
+		
+		if ( user ) {
+			// Username already exists...
+			res.status(200).send({error: 'The username has already been taken!'});
 		} else {
-			res.status(500).send();  // Not sure if this is reachable, but just in case.
+			// Check if the email is already in use
+			db.User.findAll( { where: { email: req.body.email }} ).success( function ( users ) {
+				if ( users && users.length < 2 ) {
+					// There is less than two usernames reserved for this user. Proceed to reserve!
+
+					db.User.create( { username: req.body.username, email: req.body.email } ).success( function ( user ) {
+						
+						// =====================  Successfully reserved the username!  =====================
+						res.status(200).send({success: { username: req.body.username, email: req.body.email }});
+						// Send the email
+						processEmail( req.body.username, req.body.email );
+
+					}).error(function(err) {
+						res.status(500).send(err);
+					});
+				} else {
+					// There are already two usernames reserved for the given email!
+					res.status(200).send({error: 'The email is already in use.'});
+				}
+			}).error(function(err) {
+				res.status(500).send(err);
+			});
+
 		}
-	
+
 	}).error(function(err) {
 		res.status(500).send(err);
 	});
+
 });
+
+function processEmail ( username, email ) {
+	var email_text = jade.renderFile('views/text.jade', {person : username});
+	var email_html = jade.renderFile('views/htmlemail.jade', {person : username});
+	//console.log(email_text);
+
+	// =======================   SEND NEW USER EMAIL CONFIRMATION  =============================
+	// setup e-mail data with unicode symbols
+
+	var mailOptions = {
+	    from: 'Two Thousand Times <' + config.email + '>', // sender address
+	    to: email, // receiver
+	    subject: config.email_subject, // Subject line
+	    text: email_text, // plaintext body
+	    html: email_html
+	    
+	};
+	/*
+	ses.send(mailOptions);
+	*/
+	
+	// send mail with defined transport object
+	mailer.sendMail(mailOptions, function(err, response){
+	    if(err) console.log(err);
+	    else console.log("Message sent: " + response.message);
+	    // smtpTransport.close(); // shut down the connection pool, no more messages
+	});
+}
 
 module.exports = router;

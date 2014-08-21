@@ -6,9 +6,29 @@ block content
   section.title-container
     div.video-overlay
       h1 
-        span THE
-        br 
-        | Two Thousand Times
+        span.h1-the T
+        span.h1-the H
+        span.h1-the E
+        br
+        span T
+        span w
+        span o
+        span  
+        span T
+        span h
+        span o
+        span u
+        span s
+        span a
+        span n
+        span d
+        span  
+        span T
+        span i
+        span m
+        span e
+        span s
+
       div.loading-container
         img(src="#{cdn}/images/xxxxx.png")
 
@@ -18,7 +38,8 @@ block content
         img(src="#{cdn}/images/down-arrow.png")
 
 
-    video#bgvid(muted)
+    video#bgvid(muted, ended)
+    video#bgvid2(muted, loop)
       
   -// =========================== WHO WE ARE SECTION =============================
   section.who-we-are
@@ -154,8 +175,8 @@ block content
         span(aria-hidden="true") &times;
         span.sr-only Close
       div.modal-body
-       h2 Thanks! You should receive an e-mail with an confirmation.
-       div.social-container.hidden
+       h2.text-center Thanks! You should receive an e-mail with a confirmation.
+       div.social-container
         div.fb-like(data-href="http://www.twothousandtimes.com/?ref=facebook", data-layout="standard", data-action="like", data-show-faces="true" data-share="true")
         div.twitter-share
          a(href="https://twitter.com/share", data-text="I just reserved my username @twothousandx", data-url="http://www.twothousandtimes.com/?ref=twitter", class="twitter-share-button", data-lang="en") Tweet

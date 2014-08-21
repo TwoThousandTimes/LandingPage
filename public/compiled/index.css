@@ -51,12 +51,15 @@ section, .title-container {
       line-height: 80%;
       margin-top: 20px;
       margin-bottom: 20px; }
-      .title-container .video-overlay h1 span {
+      .title-container .video-overlay h1 span.h1-the {
         font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
         font-weight: 100;
         font-size: 30px;
         letter-spacing: 5px; }
+      .title-container .video-overlay h1 span {
+        opacity: 0; }
     .title-container .video-overlay .loading-container {
+      display: none;
       font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
       font-weight: 100;
       font-size: 30px;
@@ -64,9 +67,14 @@ section, .title-container {
       .title-container .video-overlay .loading-container img {
         width: 186px; }
   .title-container .learn-more {
+    display: none;
     position: absolute;
     bottom: 120px;
-    width: 100%; }
+    width: 100%;
+    -webkit-transition: all 2s ease-out 2s;
+    -moz-transition: all 2s ease-out 2s;
+    -o-transition: all 2s ease-out 2s;
+    transition: all 2s ease-out 2s; }
     .title-container .learn-more a {
       color: #fff;
       text-decoration: none;
@@ -78,7 +86,8 @@ section, .title-container {
         text-transform: uppercase;
         font-size: 12px;
         letter-spacing: 1px; }
-  .title-container video#bgvid {
+  .title-container video#bgvid, .title-container video#bgvid2 {
+    display: none;
     position: fixed;
     right: 0;
     bottom: 0;
@@ -86,9 +95,12 @@ section, .title-container {
     min-height: 100%;
     width: auto;
     height: auto;
-    z-index: -100;
     background-size: cover;
     overflow: hidden; }
+  .title-container video#bgvid {
+    z-index: -100; }
+  .title-container video#bgvid2 {
+    z-index: -101; }
 
 .who-top-left, .who-top-right, .who-bottom-left, .who-bottom-right {
   float: left;
