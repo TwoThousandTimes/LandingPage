@@ -108,6 +108,7 @@ $(function() {
                         $('#reserveModal').on('hide.bs.modal', function (e) {
                             $('.footer').fadeIn();
                         });
+                        ga('send', 'pageview', 'success');
                     }
                 },
                 error: function() {

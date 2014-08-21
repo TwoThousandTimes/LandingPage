@@ -1,6 +1,9 @@
 extends layout
 
 block content  
+  
+  include ga2.html
+
   div#fb-root
 
   section.title-container
@@ -30,7 +33,7 @@ block content
         span s
 
       div.loading-container
-        img(src="#{cdn}/images/xxxxx.png")
+        
 
     div.learn-more
        a(href="#learn")
@@ -149,7 +152,7 @@ block content
         div.progress(data-0="width:0%;", data-end="width:100%;")
         div.progress-default
           div.progress-node-x
-            img(src="#{cdn}/images/bluex-border.png")
+            //- img(src="#{cdn}/images/bluex-border.png")
       div.clearfix
 
       .signup-container

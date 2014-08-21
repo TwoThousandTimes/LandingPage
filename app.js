@@ -7,7 +7,7 @@ var bodyParser = require('body-parser');
 var sass = require('node-sass');
 var http = require('http');
 var db = require('./models');
-
+var config = require('./config');
 var routes = require('./routes/index');
 
 var app = express();
@@ -36,6 +36,7 @@ app.use(
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
 
+app.set('port', config.port);
 
 db
     .sequelize

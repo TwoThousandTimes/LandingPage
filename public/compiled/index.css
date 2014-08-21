@@ -413,6 +413,8 @@ section, .title-container {
       .final-section .content-container .logo-container .logo {
         height: 85px;
         width: 85px; }
+    .final-section .content-container .footer-logo {
+      padding-bottom: 20px; }
     .final-section .content-container p {
       width: 60%;
       margin: 0 auto 40px auto;
