@@ -3,7 +3,8 @@ var router = express.Router();
 var db = require('../models');
 var validator = require('validator');
 var config = require('../config');
-
+var MobileDetect = require('mobile-detect');
+    
 var nodemailer = require('nodemailer');
 var smtpTransport = require('nodemailer-smtp-transport');
 /*
@@ -38,6 +39,13 @@ var mailer = nodemailer.createTransport(
 *	Render the Index page.
 */
 router.get('/', function (req, res) {
+	// Mobile detect
+	var md = new MobileDetect(req.headers['user-agent']);
+	if (md.mobile()) {
+		console.log('mobile');
+		res.redirect('http://www.twothousandtimes.com');
+	}
+
 	var ref = req.param('ref');
 	if (ref) {
 		// TODO: store the ref data in db!
