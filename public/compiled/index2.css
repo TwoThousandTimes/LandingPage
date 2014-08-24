@@ -305,6 +305,8 @@ section.footer {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400; }
   section.footer a.contact {
+    text-align: center;
+    width: 100%;
     display: inline-block;
     padding: 10px 0 15px 0;
     font-size: 9px; }
