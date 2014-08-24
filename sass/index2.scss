@@ -331,6 +331,12 @@ section.footer {
 		font-size:10px;
 		letter-spacing:1px;
 		text-transform:uppercase;
+		@include montserrat;
+	}
+	a.contact {
+		display:inline-block;
+		padding: 10px 0 15px 0;
+		font-size: 9px;
 	}
 	a.privacy {
 		text-decoration: none;
@@ -338,7 +344,7 @@ section.footer {
 		border-bottom: solid 3px #fff;
 		border-left: solid 3px #fff;
 		border-right: solid 1px #fff;
-		@include montserrat;
+		
 		&:hover {
 			background:#222;
 			-webkit-transition: all ease-out .2s;
@@ -352,7 +358,6 @@ section.footer {
 		border-top: solid 3px #fff;
 		border-bottom: solid 3px #fff;
 		border-right: solid 3px #fff;
-		@include montserrat;
 		&:hover {
 			background:#222;
 			-webkit-transition: all ease-out .2s;
