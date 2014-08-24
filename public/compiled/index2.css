@@ -308,8 +308,7 @@ section.footer {
     text-align: center;
     width: 100%;
     display: inline-block;
-    padding: 10px 0 15px 0;
-    font-size: 9px; }
+    padding: 10px 0 15px 0; }
   section.footer a.privacy {
     text-decoration: none;
     border-top: solid 3px #fff;
