@@ -301,15 +301,20 @@ section.footer {
     color: #fff;
     font-size: 10px;
     letter-spacing: 1px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400; }
+  section.footer a.contact {
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    padding: 10px 0 15px 0; }
   section.footer a.privacy {
     text-decoration: none;
     border-top: solid 3px #fff;
     border-bottom: solid 3px #fff;
     border-left: solid 3px #fff;
-    border-right: solid 1px #fff;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400; }
+    border-right: solid 1px #fff; }
     section.footer a.privacy:hover {
       background: #222;
       -webkit-transition: all ease-out 0.2s;
@@ -320,9 +325,7 @@ section.footer {
     text-decoration: none;
     border-top: solid 3px #fff;
     border-bottom: solid 3px #fff;
-    border-right: solid 3px #fff;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400; }
+    border-right: solid 3px #fff; }
     section.footer a.terms:hover {
       background: #222;
       -webkit-transition: all ease-out 0.2s;
