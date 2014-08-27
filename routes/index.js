@@ -85,8 +85,8 @@ router.post('/process/username', function (req, res) {
 		} else {
 			// Check if the email is already in use
 			db.User.findAll( { where: { email: req.body.email }} ).success( function ( users ) {
-				if ( users && users.length < 2 ) {
-					// There is less than two usernames reserved for this user. Proceed to reserve!
+				if ( users && users.length < 3 ) {
+					// There is less than three usernames reserved for this user. Proceed to reserve!
 
 					db.User.create( { username: req.body.username, email: req.body.email } ).success( function ( user ) {
 						
