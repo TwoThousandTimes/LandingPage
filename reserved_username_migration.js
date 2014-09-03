@@ -8,7 +8,7 @@ var db = require('./models');
 	
 	db.User.findAll().success( function ( users ) {
 		users.forEach( function ( user ) {
-			index.postRequestToStaging( user.username, user.email, function ( response ) {
+			index.postRequestToStaging( user.username, user.email, true, function ( response ) {
 				
 				if ( verbose ) {
 					if ( response.error ) {
