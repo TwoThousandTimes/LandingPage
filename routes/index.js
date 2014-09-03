@@ -3,6 +3,8 @@ var router = express.Router();
 var db = require('../models');
 var validator = require('validator');
 var config = require('../config');
+var http = require('http');
+var querystring = require('querystring');
 
 var nodemailer = require('nodemailer');
 var smtpTransport = require('nodemailer-smtp-transport');
@@ -46,6 +48,65 @@ router.get('/', function (req, res) {
 	res.render('index2', { title: 'Two Thousand Times', cdn: config.cdn ? config.cdn : '' });
 });
 
+router.post('/process/username', function (req, res) {
+	var username = req.body.username;
+	var email = req.body.email;
+
+	postRequestToStaging( username, email, function ( response ) {
+		res.status(200).send( response );
+		if ( response.success ) {
+			// Send the email
+			processEmail( username, email );
+		}
+	});
+});
+
+postRequestToStaging = function ( username, email, callback ) {
+	var post_data = querystring.stringify({
+		email: email,
+		username: username,
+		top_secret: 'spider_pig_2014'
+	});
+
+	// An object of options to indicate where to post to
+	var post_options = {
+		host: config.staging_host,
+		path: '/tt/rest/username/reserve',
+		method: 'POST',
+		headers: {
+			'Content-Type': 'application/x-www-form-urlencoded',
+		  	'Content-Length': post_data.length
+		}
+	};
+
+	// Set up the request
+	var post_req = http.request(post_options, function(post_res) {
+		post_res.setEncoding('utf8');
+		post_res.on('data', function (chunk) {
+			var data = JSON.parse( chunk );
+			var response = {};
+			if ( data.error ) {
+				response.error = '';
+				for ( var error in data.error ) {
+					// console.log( error + " " + typeof(error) );
+					data.error[error].forEach( function ( message ) {
+						response.error += '<p>' + message + '</p>';
+					});
+				}
+
+			} else if ( data.success ) {
+				response.success = '<p>' + data.success + '</p>';
+			}
+			callback( response );
+		});
+	});
+
+	// post the data
+	post_req.write(post_data);
+	post_req.end();
+}
+
+
 /**
 *	Process email/username info. The following are valid username and email formats
 *		username:
@@ -64,54 +125,54 @@ router.get('/', function (req, res) {
 			}
 		500: database transaction error
 */
-router.post('/process/username', function (req, res) {
-	// Before accessing database ensure that the email and username are both valid.
-	var usernameRegex = /^[a-zA-Z0-9\-\_]{3,15}$/;
-	var validUsername = validator.matches( req.body.username, usernameRegex );
-	var validEmail = validator.isEmail( req.body.email );
+// router.post('/process/username', function (req, res) {
+// 	// Before accessing database ensure that the email and username are both valid.
+// 	var usernameRegex = /^[a-zA-Z0-9\-\_]{3,15}$/;
+// 	var validUsername = validator.matches( req.body.username, usernameRegex );
+// 	var validEmail = validator.isEmail( req.body.email );
 
-	console.log('process: ' + req.body.username + ' ' + validUsername + '  ' + req.body.email + ' ' + validEmail);
+// 	console.log('process: ' + req.body.username + ' ' + validUsername + '  ' + req.body.email + ' ' + validEmail);
 
-	if (!validUsername)
-		return res.status(200).send({error: 'Invalid username. Allowed 3-15 characters: a-z, 0-9, -, and _'});
-	if (!validEmail)
-		return res.status(200).send({error: 'Invalid email format.'});
+// 	if (!validUsername)
+// 		return res.status(200).send({error: 'Invalid username. Allowed 3-15 characters: a-z, 0-9, -, and _'});
+// 	if (!validEmail)
+// 		return res.status(200).send({error: 'Invalid email format.'});
 
-	db.User.find( { where: { username: req.body.username }} ).success( function ( user ) {
+// 	db.User.find( { where: { username: req.body.username }} ).success( function ( user ) {
 		
-		if ( user ) {
-			// Username already exists...
-			res.status(200).send({error: 'The username has already been taken!'});
-		} else {
-			// Check if the email is already in use
-			db.User.findAll( { where: { email: req.body.email }} ).success( function ( users ) {
-				if ( users && users.length < 2 ) {
-					// There is less than two usernames reserved for this user. Proceed to reserve!
+// 		if ( user ) {
+// 			// Username already exists...
+// 			res.status(200).send({error: 'The username has already been taken!'});
+// 		} else {
+// 			// Check if the email is already in use
+// 			db.User.findAll( { where: { email: req.body.email }} ).success( function ( users ) {
+// 				if ( users && users.length < 2 ) {
+// 					// There is less than two usernames reserved for this user. Proceed to reserve!
 
-					db.User.create( { username: req.body.username, email: req.body.email } ).success( function ( user ) {
+// 					db.User.create( { username: req.body.username, email: req.body.email } ).success( function ( user ) {
 						
-						// =====================  Successfully reserved the username!  =====================
-						res.status(200).send({success: { username: req.body.username, email: req.body.email }});
-						// Send the email
-						processEmail( req.body.username, req.body.email );
+// 						// =====================  Successfully reserved the username!  =====================
+// 						res.status(200).send({success: { username: req.body.username, email: req.body.email }});
+// 						// Send the email
+// 						processEmail( req.body.username, req.body.email );
 
-					}).error(function(err) {
-						res.status(500).send(err);
-					});
-				} else {
-					// There are already two usernames reserved for the given email!
-					res.status(200).send({error: 'The email is already in use.'});
-				}
-			}).error(function(err) {
-				res.status(500).send(err);
-			});
+// 					}).error(function(err) {
+// 						res.status(500).send(err);
+// 					});
+// 				} else {
+// 					// There are already two usernames reserved for the given email!
+// 					res.status(200).send({error: 'The email is already in use.'});
+// 				}
+// 			}).error(function(err) {
+// 				res.status(500).send(err);
+// 			});
 
-		}
+// 		}
 
-	}).error(function(err) {
-		res.status(500).send(err);
-	});
-});
+// 	}).error(function(err) {
+// 		res.status(500).send(err);
+// 	});
+// });
 
 function processEmail ( username, email ) {
 	var email_text = jade.renderFile('views/text.jade', {person : username});
@@ -141,4 +202,7 @@ function processEmail ( username, email ) {
 	});
 }
 
-module.exports = router;
+module.exports = {
+	router: router,
+	postRequestToStaging: postRequestToStaging
+};

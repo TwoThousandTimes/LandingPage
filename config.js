@@ -22,5 +22,8 @@ module.exports = {
 
     //Amazon SES
     accessKeyId: 'AKIAJE2PK5M6LZ3Z4ZKA',
-    secretAccessKey: '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'
+    secretAccessKey: 'x/8AMbO3HrHh9Kae0sGbnvD9Br8WBun9+q4JZXaR',
+
+    // Staging address
+    staging_host: production ? 'localhost' : 'localhost'
 };
