@@ -52,7 +52,7 @@ router.post('/process/username', function (req, res) {
 	var username = req.body.username;
 	var email = req.body.email;
 
-	postRequestToStaging( username, email, false, function ( response ) {
+	postRequestToStaging( username, email, function ( response ) {
 		res.status(200).send( response );
 		if ( response.success ) {
 			// Send the email
@@ -61,12 +61,11 @@ router.post('/process/username', function (req, res) {
 	});
 });
 
-postRequestToStaging = function ( username, email, ignore_username_length, callback ) {
+postRequestToStaging = function ( username, email, callback ) {
 	var post_data = querystring.stringify({
 		email: email,
 		username: username,
-		top_secret: 'spider_pig_2014',
-		ignore_username_length: ignore_username_length
+		top_secret: 'spider_pig_2014'
 	});
 
 	// An object of options to indicate where to post to
