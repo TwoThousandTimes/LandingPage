@@ -13,7 +13,7 @@ module.exports = {
     db_password: production ? 'TT99**' : 'TT99**',
     
     // CDN
-    cdn: production ? 'http://dncuoirsa3u02.cloudfront.net/static-test' : '',
+    cdn: production ? '' : '',
 
     // EMAIL
     email: 'team@twothousandtimes.com',
@@ -25,5 +25,5 @@ module.exports = {
     secretAccessKey: 'x/8AMbO3HrHh9Kae0sGbnvD9Br8WBun9+q4JZXaR',
 
     // Staging address
-    staging_host: production ? 'localhost' : 'localhost'
+    staging_host: production ? '172.31.34.117' : 'localhost'
 };

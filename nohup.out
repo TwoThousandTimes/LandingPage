@@ -1,0 +1,1905 @@
+
+> TTTAnimation@0.0.1 start /home/ec2-user/LandingPage
+> node ./bin/www
+
+
+events.js:72
+        throw er; // Unhandled 'error' event
+              ^
+Error: listen EACCES
+    at errnoException (net.js:904:11)
+    at Server._listen2 (net.js:1023:19)
+    at listen (net.js:1064:10)
+    at Server.listen (net.js:1138:5)
+    at Function.app.listen (/home/ec2-user/LandingPage/node_modules/express/lib/application.js:532:24)
+    at Object.<anonymous> (/home/ec2-user/LandingPage/bin/www:8:18)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+
+npm ERR! TTTAnimation@0.0.1 start: `node ./bin/www`
+npm ERR! Exit status 8
+npm ERR! 
+npm ERR! Failed at the TTTAnimation@0.0.1 start script.
+npm ERR! This is most likely a problem with the TTTAnimation package,
+npm ERR! not with npm itself.
+npm ERR! Tell the author that this fails on your system:
+npm ERR!     node ./bin/www
+npm ERR! You can get their info via:
+npm ERR!     npm owner ls TTTAnimation
+npm ERR! There is likely additional logging output above.
+npm ERR! System Linux 3.10.48-55.140.amzn1.x86_64
+npm ERR! command "node" "/usr/local/bin/npm" "start"
+npm ERR! cwd /home/ec2-user/LandingPage
+npm ERR! node -v v0.10.30
+npm ERR! npm -v 2.0.0-alpha.6.0
+npm ERR! code ELIFECYCLE
+npm ERR! 
+npm ERR! Additional logging details can be found in:
+npm ERR!     /home/ec2-user/LandingPage/npm-debug.log
+npm ERR! not ok code 0
+
+> TTTAnimation@0.0.1 start /home/ec2-user/LandingPage
+> node ./bin/www
+
+
+events.js:72
+        throw er; // Unhandled 'error' event
+              ^
+Error: listen EACCES
+    at errnoException (net.js:904:11)
+    at Server._listen2 (net.js:1023:19)
+    at listen (net.js:1064:10)
+    at Server.listen (net.js:1138:5)
+    at Function.app.listen (/home/ec2-user/LandingPage/node_modules/express/lib/application.js:532:24)
+    at Object.<anonymous> (/home/ec2-user/LandingPage/bin/www:8:18)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+
+npm ERR! TTTAnimation@0.0.1 start: `node ./bin/www`
+npm ERR! Exit status 8
+npm ERR! 
+npm ERR! Failed at the TTTAnimation@0.0.1 start script.
+npm ERR! This is most likely a problem with the TTTAnimation package,
+npm ERR! not with npm itself.
+npm ERR! Tell the author that this fails on your system:
+npm ERR!     node ./bin/www
+npm ERR! You can get their info via:
+npm ERR!     npm owner ls TTTAnimation
+npm ERR! There is likely additional logging output above.
+npm ERR! System Linux 3.10.48-55.140.amzn1.x86_64
+npm ERR! command "node" "/usr/local/bin/npm" "start"
+npm ERR! cwd /home/ec2-user/LandingPage
+npm ERR! node -v v0.10.30
+npm ERR! npm -v 2.0.0-alpha.6.0
+npm ERR! code ELIFECYCLE
+npm ERR! 
+npm ERR! Additional logging details can be found in:
+npm ERR!     /home/ec2-user/LandingPage/npm-debug.log
+npm ERR! not ok code 0
+
+> TTTAnimation@0.0.1 start /home/ec2-user/LandingPage
+> node ./bin/www
+
+[90mGET / [32m200 [90m335ms - 4.67kb[0m
+  [90msource :[0m [36m/home/ec2-user/LandingPage/sass/index.scss[0m
+  [90mdest :[0m [36m/home/ec2-user/LandingPage/public/compiled/index.css[0m
+  [90mread :[0m [36m/home/ec2-user/LandingPage/public/compiled/index.css[0m
+  [90mrender :[0m [36m/home/ec2-user/LandingPage/sass/index.scss[0m
+[90mGET /compiled/index.css [32m200 [90m19ms - 17.24kb[0m
+[90mGET /javascripts/jquery-ui.min.js [32m200 [90m1ms - 12.78kb[0m
+[90mGET /javascripts/index.js [32m200 [90m1ms - 6.91kb[0m
+[90mGET /images/xxxxx.png [32m200 [90m1ms - 1.2kb[0m
+[90mGET /javascripts/skrollr.min.js [32m200 [90m2ms - 12.26kb[0m
+[90mGET /images/down-arrow.png [32m200 [90m1ms - 1.5kb[0m
+[90mGET /images/connect.png [32m200 [90m1ms - 12.55kb[0m
+[90mGET /javascripts/raphael-min.js [32m200 [90m28ms - 89.33kb[0m
+[90mGET /images/bluex.png [32m200 [90m2ms - 371b[0m
+[90mGET /images/book.png [32m200 [90m1ms - 1.19kb[0m
+[90mGET /images/TTT-icon.png [32m200 [90m2ms - 1.27kb[0m
+[90mGET /images/footer-logo.png [32m200 [90m1ms - 2.52kb[0m
+[90mGET / [32m200 [90m133ms - 4.67kb[0m
+[90mGET /images/bluex-border.png [32m200 [90m3ms - 580b[0m
+[90mGET /images/fbook.png [32m200 [90m2ms - 257b[0m
+[90mGET /images/twitter.png [32m200 [90m2ms - 335b[0m
+[90mGET /images/silhouette.png [32m200 [90m3ms - 48.1kb[0m
+[90mGET /images/stars.jpg [32m200 [90m4ms - 107.3kb[0m
+[90mGET /images/bubble.png [32m200 [90m2ms - 553b[0m
+[90mGET /images/white90.png [32m200 [90m1ms - 141b[0m
+[90mGET /images/canoe.jpg [32m200 [90m31ms - 94.68kb[0m
+[90mGET /images/beach.jpg [32m200 [90m54ms - 93.66kb[0m
+[90mGET /images/B&W_pics_export._v2.mov [32m200 [90m5489ms - 9.78mb[0m
+[90mGET /images/bolt-L.png [32m200 [90m2ms - 453b[0m
+[90mGET /images/bolt-R.png [32m200 [90m2ms - 475b[0m
+[90mGET / [32m200 [90m81ms - 4.67kb[0m
+  [90msource :[0m [36m/home/ec2-user/LandingPage/sass/index.scss[0m
+  [90mdest :[0m [36m/home/ec2-user/LandingPage/public/compiled/index.css[0m
+[90mGET /compiled/index.css [32m200 [90m1ms - 17.24kb[0m
+[90mGET /javascripts/skrollr.min.js [32m200 [90m5ms - 12.26kb[0m
+[90mGET /javascripts/jquery-ui.min.js [32m200 [90m5ms - 12.78kb[0m
+[90mGET /images/xxxxx.png [32m200 [90m4ms - 1.2kb[0m
+[90mGET /javascripts/index.js [32m200 [90m3ms - 6.91kb[0m
+[90mGET /images/connect.png [32m200 [90m2ms - 12.55kb[0m
+[90mGET /images/down-arrow.png [32m200 [90m1ms - 1.5kb[0m
+[90mGET /images/bluex.png [32m200 [90m1ms - 371b[0m
+[90mGET /images/book.png [32m200 [90m1ms - 1.19kb[0m
+[90mGET /images/TTT-icon.png [32m200 [90m1ms - 1.27kb[0m
+[90mGET /images/footer-logo.png [32m200 [90m1ms - 2.52kb[0m
+[90mGET / [36m304 [90m83ms[0m
+[90mGET /images/bluex-border.png [32m200 [90m2ms - 580b[0m
+[90mGET /images/fbook.png [32m200 [90m2ms - 257b[0m
+[90mGET /images/twitter.png [32m200 [90m2ms - 335b[0m
+[90mGET /javascripts/raphael-min.js [32m200 [90m368ms - 89.33kb[0m
+[90mGET /images/white90.png [32m200 [90m0ms - 141b[0m
+[90mGET /images/silhouette.png [32m200 [90m1ms - 48.1kb[0m
+[90mGET /images/bubble.png [32m200 [90m0ms - 553b[0m
+[90mGET /images/canoe.jpg [32m200 [90m29ms - 94.68kb[0m
+[90mGET /images/stars.jpg [32m200 [90m34ms - 107.3kb[0m
+[90mGET /images/beach.jpg [32m200 [90m327ms - 93.66kb[0m
+[90mGET /images/B&W_pics_export._v2.mov [32m200 [90m5387ms - 9.78mb[0m
+
+> TTTAnimation@0.0.1 start /home/ec2-user/LandingPage
+> node ./bin/www
+
+
+events.js:72
+        throw er; // Unhandled 'error' event
+              ^
+Error: listen EADDRINUSE
+    at errnoException (net.js:904:11)
+    at Server._listen2 (net.js:1042:14)
+    at listen (net.js:1064:10)
+    at Server.listen (net.js:1138:5)
+    at Function.app.listen (/home/ec2-user/LandingPage/node_modules/express/lib/application.js:532:24)
+    at Object.<anonymous> (/home/ec2-user/LandingPage/bin/www:16:18)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+
+npm ERR! TTTAnimation@0.0.1 start: `node ./bin/www`
+npm ERR! Exit status 8
+npm ERR! 
+npm ERR! Failed at the TTTAnimation@0.0.1 start script.
+npm ERR! This is most likely a problem with the TTTAnimation package,
+npm ERR! not with npm itself.
+npm ERR! Tell the author that this fails on your system:
+npm ERR!     node ./bin/www
+npm ERR! You can get their info via:
+npm ERR!     npm owner ls TTTAnimation
+npm ERR! There is likely additional logging output above.
+npm ERR! System Linux 3.10.48-55.140.amzn1.x86_64
+npm ERR! command "node" "/usr/local/bin/npm" "start"
+npm ERR! cwd /home/ec2-user/LandingPage
+npm ERR! node -v v0.10.30
+npm ERR! npm -v 2.0.0-alpha.6.0
+npm ERR! code ELIFECYCLE
+npm ERR! 
+npm ERR! Additional logging details can be found in:
+npm ERR!     /home/ec2-user/LandingPage/npm-debug.log
+npm ERR! not ok code 0
+
+> TTTAnimation@0.0.1 start /home/ec2-user/LandingPage
+> node ./bin/www
+
+
+events.js:72
+        throw er; // Unhandled 'error' event
+              ^
+Error: listen EADDRINUSE
+    at errnoException (net.js:904:11)
+    at Server._listen2 (net.js:1042:14)
+    at listen (net.js:1064:10)
+    at Server.listen (net.js:1138:5)
+    at Function.app.listen (/home/ec2-user/LandingPage/node_modules/express/lib/application.js:532:24)
+    at Object.<anonymous> (/home/ec2-user/LandingPage/bin/www:16:18)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+
+npm ERR! TTTAnimation@0.0.1 start: `node ./bin/www`
+npm ERR! Exit status 8
+npm ERR! 
+npm ERR! Failed at the TTTAnimation@0.0.1 start script.
+npm ERR! This is most likely a problem with the TTTAnimation package,
+npm ERR! not with npm itself.
+npm ERR! Tell the author that this fails on your system:
+npm ERR!     node ./bin/www
+npm ERR! You can get their info via:
+npm ERR!     npm owner ls TTTAnimation
+npm ERR! There is likely additional logging output above.
+npm ERR! System Linux 3.10.48-55.140.amzn1.x86_64
+npm ERR! command "node" "/usr/local/bin/npm" "start"
+npm ERR! cwd /home/ec2-user/LandingPage
+npm ERR! node -v v0.10.30
+npm ERR! npm -v 2.0.0-alpha.6.0
+npm ERR! code ELIFECYCLE
+npm ERR! 
+npm ERR! Additional logging details can be found in:
+npm ERR!     /home/ec2-user/LandingPage/npm-debug.log
+npm ERR! not ok code 0
+[90mGET / [32m200 [90m88ms - 5.22kb[0m
+  [90msource :[0m [36m/home/ec2-user/LandingPage/sass/index.scss[0m
+  [90mdest :[0m [36m/home/ec2-user/LandingPage/public/compiled/index.css[0m
+[90mGET /compiled/index.css [32m200 [90m2ms - 17.62kb[0m
+[90mGET /images/down-arrow.png [36m304 [90m1ms[0m
+[90mGET /images/bluex.png [36m304 [90m1ms[0m
+[90mGET /images/connect.png [36m304 [90m1ms[0m
+[90mGET /images/xxxxx.png [36m304 [90m2ms[0m
+[90mGET /images/book.png [32m200 [90m0ms - 1.19kb[0m
+[90mGET /images/TTT-icon.png [32m200 [90m0ms - 1.27kb[0m
+[90mGET /images/twitter.png [32m200 [90m1ms - 335b[0m
+[90mGET /images/footer-logo.png [32m200 [90m2ms - 2.52kb[0m
+[90mGET /images/fbook.png [32m200 [90m2ms - 257b[0m
+[90mGET /images/bluex-border.png [36m304 [90m0ms[0m
+[90mGET /javascripts/modernizr.min.js [32m200 [90m1ms - 4.11kb[0m
+[90mGET /javascripts/raphael-min.js [36m304 [90m2ms[0m
+[90mGET /javascripts/skrollr.min.js [36m304 [90m2ms[0m
+[90mGET /javascripts/jquery-ui.min.js [36m304 [90m2ms[0m
+[90mGET /images/stars.jpg [36m304 [90m1ms[0m
+[90mGET /javascripts/index.js [32m200 [90m2ms - 8.67kb[0m
+[90mGET /images/bubble.png [36m304 [90m1ms[0m
+[90mGET /images/car.jpg [32m200 [90m3ms - 53.46kb[0m
+[90mGET /images/silhouette.png [32m200 [90m3ms - 48.1kb[0m
+[90mGET /images/white90.png [36m304 [90m0ms[0m
+[90mGET /images/beach2.jpg [32m200 [90m339ms - 283.94kb[0m
+[90mGET /images/video/intro.mp4 [32m200 [90m3725ms - 1.68mb[0m
+[90mGET /images/bolt-L.png [32m200 [90m0ms - 453b[0m
+[90mGET /images/bolt-R.png [32m200 [90m1ms - 475b[0m
+[90mGET / [32m200 [90m111ms - 5.22kb[0m
+  [90msource :[0m [36m/home/ec2-user/LandingPage/sass/index.scss[0m
+  [90mdest :[0m [36m/home/ec2-user/LandingPage/public/compiled/index.css[0m
+[90mGET /compiled/index.css [32m200 [90m1ms - 17.62kb[0m
+[90mGET /javascripts/skrollr.min.js [36m304 [90m1ms[0m
+[90mGET /javascripts/jquery-ui.min.js [36m304 [90m2ms[0m
+[90mGET /javascripts/raphael-min.js [36m304 [90m1ms[0m
+[90mGET /javascripts/modernizr.min.js [32m200 [90m3ms - 4.11kb[0m
+[90mGET /javascripts/index.js [32m200 [90m2ms - 8.67kb[0m
+[90mGET /images/xxxxx.png [36m304 [90m1ms[0m
+[90mGET /images/connect.png [36m304 [90m1ms[0m
+[90mGET /images/down-arrow.png [36m304 [90m0ms[0m
+[90mGET /images/bluex.png [36m304 [90m0ms[0m
+[90mGET /images/book.png [36m304 [90m1ms[0m
+[90mGET /images/TTT-icon.png [36m304 [90m1ms[0m
+[90mGET /images/footer-logo.png [36m304 [90m2ms[0m
+[90mGET /images/fbook.png [36m304 [90m1ms[0m
+[90mGET /images/twitter.png [36m304 [90m0ms[0m
+[90mGET /images/bluex-border.png [36m304 [90m1ms[0m
+[90mGET /images/stars.jpg [36m304 [90m1ms[0m
+[90mGET /images/bubble.png [36m304 [90m1ms[0m
+[90mGET /images/white90.png [36m304 [90m1ms[0m
+[90mGET /images/silhouette.png [36m304 [90m0ms[0m
+[90mGET /images/car.jpg [32m200 [90m1ms - 53.46kb[0m
+[90mGET /images/beach2.jpg [32m200 [90m343ms - 283.94kb[0m
+[90mGET /images/video/intro.mp4 [32m200 [90m1091ms - 1.68mb[0m
+[90mGET /images/bolt-L.png [32m200 [90m0ms - 453b[0m
+[90mGET /images/bolt-R.png [32m200 [90m1ms - 475b[0m
+
+> TTTAnimation@0.0.1 start /home/ec2-user/LandingPage
+> node ./bin/www
+
+
+events.js:72
+        throw er; // Unhandled 'error' event
+              ^
+Error: listen EADDRINUSE
+    at errnoException (net.js:904:11)
+    at Server._listen2 (net.js:1042:14)
+    at listen (net.js:1064:10)
+    at Server.listen (net.js:1138:5)
+    at Function.app.listen (/home/ec2-user/LandingPage/node_modules/express/lib/application.js:532:24)
+    at Object.<anonymous> (/home/ec2-user/LandingPage/bin/www:16:18)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+
+npm ERR! TTTAnimation@0.0.1 start: `node ./bin/www`
+npm ERR! Exit status 8
+npm ERR! 
+npm ERR! Failed at the TTTAnimation@0.0.1 start script.
+npm ERR! This is most likely a problem with the TTTAnimation package,
+npm ERR! not with npm itself.
+npm ERR! Tell the author that this fails on your system:
+npm ERR!     node ./bin/www
+npm ERR! You can get their info via:
+npm ERR!     npm owner ls TTTAnimation
+npm ERR! There is likely additional logging output above.
+npm ERR! System Linux 3.10.48-55.140.amzn1.x86_64
+npm ERR! command "node" "/usr/local/bin/npm" "start"
+npm ERR! cwd /home/ec2-user/LandingPage
+npm ERR! node -v v0.10.30
+npm ERR! npm -v 2.0.0-alpha.6.0
+npm ERR! code ELIFECYCLE
+npm ERR! 
+npm ERR! Additional logging details can be found in:
+npm ERR!     /home/ec2-user/LandingPage/npm-debug.log
+npm ERR! not ok code 0
+[90mGET / [32m200 [90m111ms - 5.28kb[0m
+  [90msource :[0m [36m/home/ec2-user/LandingPage/sass/index.scss[0m
+  [90mdest :[0m [36m/home/ec2-user/LandingPage/public/compiled/index.css[0m
+[90mGET /images/xxxxx.png [32m200 [90m1ms - 1.2kb[0m
+[90mGET /compiled/index.css [32m200 [90m2ms - 17.62kb[0m
+[90mGET /javascripts/modernizr.min.js [32m200 [90m1ms - 4.11kb[0m
+[90mGET /javascripts/skrollr.min.js [32m200 [90m2ms - 12.26kb[0m
+[90mGET /javascripts/jquery-ui.min.js [32m200 [90m2ms - 12.78kb[0m
+[90mGET /javascripts/index.js [32m200 [90m0ms - 8.67kb[0m
+[90mGET /javascripts/raphael-min.js [32m200 [90m44ms - 89.33kb[0m
+[90mGET /images/connect.png [32m200 [90m2ms - 12.55kb[0m
+[90mGET /images/down-arrow.png [32m200 [90m1ms - 1.5kb[0m
+[90mGET /images/bluex.png [32m200 [90m1ms - 371b[0m
+[90mGET /images/book.png [32m200 [90m5ms - 1.19kb[0m
+[90mGET /images/TTT-icon.png [32m200 [90m0ms - 1.27kb[0m
+[90mGET /images/footer-logo.png [32m200 [90m2ms - 2.52kb[0m
+[90mGET /images/fbook.png [32m200 [90m1ms - 257b[0m
+[90mGET /images/bluex-border.png [32m200 [90m1ms - 580b[0m
+[90mGET /images/twitter.png [32m200 [90m0ms - 335b[0m
+[90mGET /images/white90.png [32m200 [90m1ms - 141b[0m
+[90mGET /images/car.jpg [32m200 [90m1ms - 53.46kb[0m
+[90mGET /images/silhouette.png [32m200 [90m2ms - 48.1kb[0m
+[90mGET /images/bubble.png [32m200 [90m1ms - 553b[0m
+[90mGET /images/stars.jpg [32m200 [90m42ms - 107.3kb[0m
+[90mGET /images/beach2.jpg [32m200 [90m199ms - 283.94kb[0m
+[90mGET /images/favicon.ico [32m200 [90m1ms - 318b[0m
+[90mGET /images/video/intro.mp4 [32m200 [90m720ms - 1.68mb[0m
+[90mGET /images/bolt-L.png [32m200 [90m1ms - 453b[0m
+[90mGET /images/bolt-R.png [32m200 [90m1ms - 475b[0m
+[90mGET /images/bolt-L.png [36m304 [90m1ms[0m
+[90mGET /images/bolt-R.png [36m304 [90m2ms[0m
+[90mGET / [36m304 [90m90ms[0m
+  [90msource :[0m [36m/home/ec2-user/LandingPage/sass/index.scss[0m
+  [90mdest :[0m [36m/home/ec2-user/LandingPage/public/compiled/index.css[0m
+[90mGET /compiled/index.css [36m304 [90m1ms[0m
+[90mGET /images/down-arrow.png [36m304 [90m2ms[0m
+[90mGET /images/xxxxx.png [36m304 [90m1ms[0m
+[90mGET /images/connect.png [36m304 [90m1ms[0m
+[90mGET /images/book.png [36m304 [90m2ms[0m
+[90mGET /images/bluex.png [36m304 [90m2ms[0m
+[90mGET /javascripts/modernizr.min.js [36m304 [90m1ms[0m
+[90mGET /javascripts/skrollr.min.js [36m304 [90m3ms[0m
+[90mGET /javascripts/jquery-ui.min.js [36m304 [90m2ms[0m
+[90mGET /images/TTT-icon.png [36m304 [90m2ms[0m
+[90mGET /javascripts/raphael-min.js [36m304 [90m2ms[0m
+[90mGET /javascripts/index.js [36m304 [90m2ms[0m
+[90mGET /images/footer-logo.png [36m304 [90m1ms[0m
+[90mGET /images/stars.jpg [36m304 [90m1ms[0m
+[90mGET /images/twitter.png [36m304 [90m1ms[0m
+[90mGET /images/white90.png [36m304 [90m1ms[0m
+[90mGET /images/bubble.png [36m304 [90m1ms[0m
+[90mGET /images/bluex-border.png [36m304 [90m1ms[0m
+[90mGET /images/fbook.png [36m304 [90m0ms[0m
+[90mGET /images/beach2.jpg [36m304 [90m1ms[0m
+[90mGET /images/car.jpg [36m304 [90m1ms[0m
+[90mGET /images/silhouette.png [36m304 [90m1ms[0m
+[90mGET /images/video/intro.mp4 [36m304 [90m1ms[0m
+[90mGET /images/favicon.ico [36m304 [90m1ms[0m
+[90mGET / [36m304 [90m92ms[0m
+  [90msource :[0m [36m/home/ec2-user/LandingPage/sass/index.scss[0m
+  [90mdest :[0m [36m/home/ec2-user/LandingPage/public/compiled/index.css[0m
+[90mGET /compiled/index.css [36m304 [90m1ms[0m
+[90mGET /images/connect.png [36m304 [90m1ms[0m
+[90mGET /images/down-arrow.png [36m304 [90m1ms[0m
+[90mGET /images/xxxxx.png [36m304 [90m1ms[0m
+[90mGET /images/bluex.png [36m304 [90m1ms[0m
+[90mGET /images/book.png [36m304 [90m0ms[0m
+[90mGET /javascripts/modernizr.min.js [36m304 [90m0ms[0m
+[90mGET /javascripts/skrollr.min.js [36m304 [90m2ms[0m
+[90mGET /javascripts/jquery-ui.min.js [36m304 [90m2ms[0m
+[90mGET /javascripts/raphael-min.js [36m304 [90m1ms[0m
+[90mGET /images/TTT-icon.png [36m304 [90m1ms[0m
+[90mGET /javascripts/index.js [36m304 [90m1ms[0m
+[90mGET /images/footer-logo.png [36m304 [90m0ms[0m
+[90mGET /images/bluex-border.png [36m304 [90m1ms[0m
+[90mGET /images/fbook.png [36m304 [90m0ms[0m
+[90mGET /images/twitter.png [36m304 [90m1ms[0m
+[90mGET /images/video/intro.mp4 [36m304 [90m0ms[0m
+[90mGET /images/favicon.ico [36m304 [90m1ms[0m
+[90mGET / [36m304 [90m83ms[0m
+  [90msource :[0m [36m/home/ec2-user/LandingPage/sass/index.scss[0m
+  [90mdest :[0m [36m/home/ec2-user/LandingPage/public/compiled/index.css[0m
+[90mGET /compiled/index.css [36m304 [90m0ms[0m
+[90mGET /images/down-arrow.png [36m304 [90m0ms[0m
+[90mGET /images/xxxxx.png [36m304 [90m1ms[0m
+[90mGET /images/book.png [36m304 [90m4ms[0m
+[90mGET /images/bluex.png [36m304 [90m5ms[0m
+[90mGET /images/connect.png [36m304 [90m5ms[0m
+[90mGET /javascripts/modernizr.min.js [36m304 [90m0ms[0m
+[90mGET /javascripts/jquery-ui.min.js [36m304 [90m0ms[0m
+[90mGET /javascripts/raphael-min.js [36m304 [90m0ms[0m
+[90mGET /images/TTT-icon.png [36m304 [90m1ms[0m
+[90mGET /javascripts/skrollr.min.js [36m304 [90m1ms[0m
+[90mGET /javascripts/index.js [36m304 [90m1ms[0m
+[90mGET /images/footer-logo.png [36m304 [90m1ms[0m
+[90mGET /images/fbook.png [36m304 [90m0ms[0m
+[90mGET /images/twitter.png [36m304 [90m0ms[0m
+[90mGET /images/bluex-border.png [36m304 [90m1ms[0m
+[90mGET /images/video/intro.mp4 [36m304 [90m0ms[0m
+[90mGET /images/favicon.ico [36m304 [90m0ms[0m
+[90mGET / [36m304 [90m127ms[0m
+  [90msource :[0m [36m/home/ec2-user/LandingPage/sass/index.scss[0m
+  [90mdest :[0m [36m/home/ec2-user/LandingPage/public/compiled/index.css[0m
+[90mGET /compiled/index.css [36m304 [90m1ms[0m
+[90mGET /images/xxxxx.png [36m304 [90m1ms[0m
+[90mGET /images/down-arrow.png [36m304 [90m1ms[0m
+[90mGET /images/connect.png [36m304 [90m1ms[0m
+[90mGET /images/bluex.png [36m304 [90m1ms[0m
+[90mGET /images/book.png [36m304 [90m1ms[0m
+[90mGET /javascripts/modernizr.min.js [36m304 [90m1ms[0m
+[90mGET /javascripts/jquery-ui.min.js [36m304 [90m0ms[0m
+[90mGET /javascripts/raphael-min.js [36m304 [90m0ms[0m
+[90mGET /javascripts/index.js [36m304 [90m1ms[0m
+[90mGET /images/TTT-icon.png [36m304 [90m0ms[0m
+[90mGET /javascripts/skrollr.min.js [36m304 [90m0ms[0m
+[90mGET /images/footer-logo.png [36m304 [90m1ms[0m
+[90mGET /images/fbook.png [36m304 [90m1ms[0m
+[90mGET /images/twitter.png [36m304 [90m1ms[0m
+[90mGET /images/bluex-border.png [36m304 [90m0ms[0m
+[90mGET /images/video/intro.mp4 [36m304 [90m1ms[0m
+[90mGET /images/favicon.ico [36m304 [90m0ms[0m
+process:  false   false
+[90mPOST /process/username [32m200 [90m3ms - 68b[0m
+[90mGET /images/bolt-L.png [36m304 [90m1ms[0m
+[90mGET /images/bolt-R.png [36m304 [90m0ms[0m
+process:  false   false
+[90mPOST /process/username [32m200 [90m0ms - 68b[0m
+[90mGET / [36m304 [90m91ms[0m
+  [90msource :[0m [36m/home/ec2-user/LandingPage/sass/index.scss[0m
+  [90mdest :[0m [36m/home/ec2-user/LandingPage/public/compiled/index.css[0m
+[90mGET /compiled/index.css [36m304 [90m0ms[0m
+[90mGET /images/xxxxx.png [36m304 [90m0ms[0m
+[90mGET /images/bluex.png [36m304 [90m1ms[0m
+[90mGET /images/down-arrow.png [36m304 [90m1ms[0m
+[90mGET /images/connect.png [36m304 [90m2ms[0m
+[90mGET /images/book.png [36m304 [90m1ms[0m
+[90mGET /javascripts/modernizr.min.js [36m304 [90m0ms[0m
+[90mGET /javascripts/jquery-ui.min.js [36m304 [90m0ms[0m
+[90mGET /javascripts/raphael-min.js [36m304 [90m0ms[0m
+[90mGET /javascripts/skrollr.min.js [36m304 [90m1ms[0m
+[90mGET /javascripts/index.js [36m304 [90m1ms[0m
+[90mGET /images/TTT-icon.png [36m304 [90m1ms[0m
+[90mGET /images/footer-logo.png [36m304 [90m0ms[0m
+[90mGET /images/fbook.png [36m304 [90m0ms[0m
+[90mGET /images/bluex-border.png [36m304 [90m1ms[0m
+[90mGET /images/twitter.png [36m304 [90m0ms[0m
+[90mGET /images/video/intro.mp4 [36m304 [90m0ms[0m
+[90mGET /images/favicon.ico [36m304 [90m0ms[0m
+[90mGET / [32m200 [90m85ms - 5.28kb[0m
+  [90msource :[0m [36m/home/ec2-user/LandingPage/sass/index.scss[0m
+  [90mdest :[0m [36m/home/ec2-user/LandingPage/public/compiled/index.css[0m
+[90mGET /compiled/index.css [32m200 [90m1ms - 17.62kb[0m
+[90mGET /images/xxxxx.png [32m200 [90m1ms - 1.2kb[0m
+[90mGET /javascripts/index.js [32m200 [90m3ms - 8.67kb[0m
+[90mGET /javascripts/modernizr.min.js [32m200 [90m3ms - 4.11kb[0m
+[90mGET /javascripts/jquery-ui.min.js [32m200 [90m2ms - 12.78kb[0m
+[90mGET /javascripts/skrollr.min.js [32m200 [90m2ms - 12.26kb[0m
+[90mGET /images/down-arrow.png [32m200 [90m0ms - 1.5kb[0m
+[90mGET /javascripts/raphael-min.js [32m200 [90m106ms - 89.33kb[0m
+[90mGET /images/connect.png [32m200 [90m1ms - 12.55kb[0m
+[90mGET /images/TTT-icon.png [32m200 [90m1ms - 1.27kb[0m
+[90mGET /images/bluex.png [32m200 [90m1ms - 371b[0m
+[90mGET /images/book.png [32m200 [90m1ms - 1.19kb[0m
+[90mGET /images/silhouette.png [32m200 [90m0ms - 48.1kb[0m
+[90mGET /images/white90.png [32m200 [90m0ms - 141b[0m
+[90mGET /images/bubble.png [32m200 [90m1ms - 553b[0m
+[90mGET /images/fbook.png [32m200 [90m1ms - 257b[0m
+[90mGET /images/stars.jpg [32m200 [90m107ms - 107.3kb[0m
+[90mGET /images/twitter.png [32m200 [90m2ms - 335b[0m
+[90mGET /images/footer-logo.png [32m200 [90m1ms - 2.52kb[0m
+[90mGET /images/bluex-border.png [32m200 [90m1ms - 580b[0m
+[90mGET /images/car.jpg [32m200 [90m1ms - 53.46kb[0m
+[90mGET /images/beach2.jpg [32m200 [90m245ms - 283.94kb[0m
+[90mGET /images/favicon.ico [32m200 [90m1ms - 318b[0m
+[90mGET /images/video/intro.mp4 [32m200 [90m1035ms - 1.68mb[0m
+[90mGET / [36m304 [90m108ms[0m
+  [90msource :[0m [36m/home/ec2-user/LandingPage/sass/index.scss[0m
+  [90mdest :[0m [36m/home/ec2-user/LandingPage/public/compiled/index.css[0m
+[90mGET /compiled/index.css [36m304 [90m1ms[0m
+[90mGET /images/xxxxx.png [36m304 [90m2ms[0m
+[90mGET /images/connect.png [36m304 [90m1ms[0m
+[90mGET /images/down-arrow.png [36m304 [90m2ms[0m
+[90mGET /images/book.png [36m304 [90m2ms[0m
+[90mGET /images/bluex.png [36m304 [90m1ms[0m
+[90mGET /javascripts/modernizr.min.js [36m304 [90m1ms[0m
+[90mGET /javascripts/jquery-ui.min.js [36m304 [90m1ms[0m
+[90mGET /javascripts/skrollr.min.js [36m304 [90m2ms[0m
+[90mGET /javascripts/raphael-min.js [36m304 [90m2ms[0m
+[90mGET /javascripts/index.js [36m304 [90m1ms[0m
+[90mGET /images/TTT-icon.png [36m304 [90m1ms[0m
+[90mGET /images/footer-logo.png [36m304 [90m1ms[0m
+[90mGET /images/twitter.png [36m304 [90m1ms[0m
+[90mGET /images/bluex-border.png [36m304 [90m1ms[0m
+[90mGET /images/fbook.png [36m304 [90m1ms[0m
+[90mGET /images/video/intro.mp4 [36m304 [90m0ms[0m
+[90mGET /images/favicon.ico [36m304 [90m1ms[0m
+[90mGET / [36m304 [90m105ms[0m
+  [90msource :[0m [36m/home/ec2-user/LandingPage/sass/index.scss[0m
+  [90mdest :[0m [36m/home/ec2-user/LandingPage/public/compiled/index.css[0m
+[90mGET /compiled/index.css [36m304 [90m1ms[0m
+[90mGET /images/down-arrow.png [36m304 [90m2ms[0m
+[90mGET /images/xxxxx.png [36m304 [90m1ms[0m
+[90mGET /images/connect.png [36m304 [90m1ms[0m
+[90mGET /images/bluex.png [36m304 [90m1ms[0m
+[90mGET /images/book.png [36m304 [90m2ms[0m
+[90mGET /javascripts/modernizr.min.js [36m304 [90m1ms[0m
+[90mGET /javascripts/raphael-min.js [36m304 [90m1ms[0m
+[90mGET /javascripts/skrollr.min.js [36m304 [90m1ms[0m
+[90mGET /javascripts/jquery-ui.min.js [36m304 [90m1ms[0m
+[90mGET /images/TTT-icon.png [36m304 [90m2ms[0m
+[90mGET /javascripts/index.js [36m304 [90m1ms[0m
+[90mGET /images/footer-logo.png [36m304 [90m0ms[0m
+[90mGET /images/fbook.png [36m304 [90m1ms[0m
+[90mGET /images/twitter.png [36m304 [90m1ms[0m
+[90mGET /images/bluex-border.png [36m304 [90m0ms[0m
+[90mGET /images/video/intro.mp4 [36m304 [90m1ms[0m
+[90mGET /images/favicon.ico [36m304 [90m1ms[0m
+[90mGET / [36m304 [90m83ms[0m
+  [90msource :[0m [36m/home/ec2-user/LandingPage/sass/index.scss[0m
+  [90mdest :[0m [36m/home/ec2-user/LandingPage/public/compiled/index.css[0m
+[90mGET /compiled/index.css [36m304 [90m1ms[0m
+[90mGET /images/down-arrow.png [36m304 [90m1ms[0m
+[90mGET /images/xxxxx.png [36m304 [90m1ms[0m
+[90mGET /images/book.png [36m304 [90m1ms[0m
+[90mGET /images/connect.png [36m304 [90m1ms[0m
+[90mGET /images/bluex.png [36m304 [90m1ms[0m
+[90mGET /javascripts/modernizr.min.js [36m304 [90m0ms[0m
+[90mGET /javascripts/raphael-min.js [36m304 [90m0ms[0m
+[90mGET /javascripts/jquery-ui.min.js [36m304 [90m0ms[0m
+[90mGET /javascripts/skrollr.min.js [36m304 [90m0ms[0m
+[90mGET /javascripts/index.js [36m304 [90m0ms[0m
+[90mGET /images/TTT-icon.png [36m304 [90m1ms[0m
+[90mGET /images/footer-logo.png [36m304 [90m1ms[0m
+[90mGET /images/bluex-border.png [36m304 [90m0ms[0m
+[90mGET /images/twitter.png [36m304 [90m1ms[0m
+[90mGET /images/fbook.png [36m304 [90m1ms[0m
+[90mGET /images/video/intro.mp4 [36m304 [90m0ms[0m
+[90mGET /images/favicon.ico [36m304 [90m0ms[0m
+[90mGET / [36m304 [90m86ms[0m
+  [90msource :[0m [36m/home/ec2-user/LandingPage/sass/index.scss[0m
+  [90mdest :[0m [36m/home/ec2-user/LandingPage/public/compiled/index.css[0m
+[90mGET /compiled/index.css [36m304 [90m0ms[0m
+[90mGET /images/xxxxx.png [36m304 [90m0ms[0m
+[90mGET /images/down-arrow.png [36m304 [90m0ms[0m
+[90mGET /images/bluex.png [36m304 [90m0ms[0m
+[90mGET /images/book.png [36m304 [90m1ms[0m
+[90mGET /images/connect.png [36m304 [90m1ms[0m
+[90mGET /javascripts/modernizr.min.js [36m304 [90m0ms[0m
+[90mGET /javascripts/jquery-ui.min.js [36m304 [90m2ms[0m
+[90mGET /javascripts/raphael-min.js [36m304 [90m1ms[0m
+[90mGET /javascripts/skrollr.min.js [36m304 [90m1ms[0m
+[90mGET /javascripts/index.js [36m304 [90m2ms[0m
+[90mGET /images/TTT-icon.png [36m304 [90m2ms[0m
+[90mGET /images/footer-logo.png [36m304 [90m1ms[0m
+[90mGET /images/fbook.png [36m304 [90m1ms[0m
+[90mGET /images/bluex-border.png [36m304 [90m1ms[0m
+[90mGET /images/twitter.png [36m304 [90m1ms[0m
+[90mGET /images/video/intro.mp4 [36m304 [90m1ms[0m
+[90mGET /images/favicon.ico [36m304 [90m0ms[0m
+[90mGET / [36m304 [90m83ms[0m
+  [90msource :[0m [36m/home/ec2-user/LandingPage/sass/index.scss[0m
+  [90mdest :[0m [36m/home/ec2-user/LandingPage/public/compiled/index.css[0m
+[90mGET /compiled/index.css [36m304 [90m1ms[0m
+[90mGET /images/down-arrow.png [36m304 [90m2ms[0m
+[90mGET /images/xxxxx.png [36m304 [90m1ms[0m
+[90mGET /images/bluex.png [36m304 [90m1ms[0m
+[90mGET /images/connect.png [36m304 [90m1ms[0m
+[90mGET /images/book.png [36m304 [90m1ms[0m
+[90mGET /javascripts/modernizr.min.js [36m304 [90m1ms[0m
+[90mGET /javascripts/skrollr.min.js [36m304 [90m1ms[0m
+[90mGET /javascripts/raphael-min.js [36m304 [90m1ms[0m
+[90mGET /javascripts/jquery-ui.min.js [36m304 [90m1ms[0m
+[90mGET /javascripts/index.js [36m304 [90m0ms[0m
+[90mGET /images/TTT-icon.png [36m304 [90m0ms[0m
+[90mGET /images/twitter.png [36m304 [90m1ms[0m
+[90mGET /images/bluex-border.png [36m304 [90m1ms[0m
+[90mGET /images/fbook.png [36m304 [90m1ms[0m
+[90mGET /images/footer-logo.png [36m304 [90m0ms[0m
+[90mGET /images/video/intro.mp4 [36m304 [90m0ms[0m
+[90mGET /images/favicon.ico [36m304 [90m1ms[0m
+[90mGET / [36m304 [90m105ms[0m
+  [90msource :[0m [36m/home/ec2-user/LandingPage/sass/index.scss[0m
+  [90mdest :[0m [36m/home/ec2-user/LandingPage/public/compiled/index.css[0m
+[90mGET /compiled/index.css [36m304 [90m1ms[0m
+[90mGET /images/down-arrow.png [36m304 [90m1ms[0m
+[90mGET /images/xxxxx.png [36m304 [90m1ms[0m
+[90mGET /images/book.png [36m304 [90m1ms[0m
+[90mGET /images/bluex.png [36m304 [90m1ms[0m
+[90mGET /images/connect.png [36m304 [90m0ms[0m
+[90mGET /javascripts/modernizr.min.js [36m304 [90m0ms[0m
+[90mGET /javascripts/jquery-ui.min.js [36m304 [90m0ms[0m
+[90mGET /javascripts/raphael-min.js [36m304 [90m1ms[0m
+[90mGET /javascripts/skrollr.min.js [36m304 [90m1ms[0m
+[90mGET /javascripts/index.js [36m304 [90m1ms[0m
+[90mGET /images/TTT-icon.png [36m304 [90m1ms[0m
+[90mGET /images/fbook.png [36m304 [90m1ms[0m
+[90mGET /images/footer-logo.png [36m304 [90m1ms[0m
+[90mGET /images/bluex-border.png [36m304 [90m1ms[0m
+[90mGET /images/twitter.png [36m304 [90m1ms[0m
+[90mGET /images/video/intro.mp4 [36m304 [90m1ms[0m
+[90mGET /images/favicon.ico [36m304 [90m1ms[0m
+[90mGET / [36m304 [90m106ms[0m
+  [90msource :[0m [36m/home/ec2-user/LandingPage/sass/index.scss[0m
+  [90mdest :[0m [36m/home/ec2-user/LandingPage/public/compiled/index.css[0m
+[90mGET /compiled/index.css [36m304 [90m1ms[0m
+[90mGET /images/xxxxx.png [36m304 [90m2ms[0m
+[90mGET /images/down-arrow.png [36m304 [90m1ms[0m
+[90mGET /images/connect.png [36m304 [90m1ms[0m
+[90mGET /images/bluex.png [36m304 [90m1ms[0m
+[90mGET /images/book.png [36m304 [90m1ms[0m
+[90mGET /javascripts/modernizr.min.js [36m304 [90m1ms[0m
+[90mGET /javascripts/raphael-min.js [36m304 [90m0ms[0m
+[90mGET /javascripts/jquery-ui.min.js [36m304 [90m0ms[0m
+[90mGET /javascripts/index.js [36m304 [90m1ms[0m
+[90mGET /javascripts/skrollr.min.js [36m304 [90m1ms[0m
+[90mGET /images/TTT-icon.png [36m304 [90m1ms[0m
+[90mGET /images/fbook.png [36m304 [90m1ms[0m
+[90mGET /images/twitter.png [36m304 [90m1ms[0m
+[90mGET /images/footer-logo.png [36m304 [90m1ms[0m
+[90mGET /images/bluex-border.png [36m304 [90m1ms[0m
+[90mGET /images/video/intro.mp4 [36m304 [90m1ms[0m
+[90mGET /images/favicon.ico [36m304 [90m1ms[0m
+[90mGET / [36m304 [90m83ms[0m
+  [90msource :[0m [36m/home/ec2-user/LandingPage/sass/index.scss[0m
+  [90mdest :[0m [36m/home/ec2-user/LandingPage/public/compiled/index.css[0m
+[90mGET /compiled/index.css [36m304 [90m1ms[0m
+[90mGET /images/down-arrow.png [36m304 [90m1ms[0m
+[90mGET /images/connect.png [36m304 [90m1ms[0m
+[90mGET /images/xxxxx.png [36m304 [90m1ms[0m
+[90mGET /images/bluex.png [36m304 [90m0ms[0m
+[90mGET /images/book.png [36m304 [90m0ms[0m
+[90mGET /javascripts/modernizr.min.js [36m304 [90m0ms[0m
+[90mGET /javascripts/jquery-ui.min.js [36m304 [90m0ms[0m
+[90mGET /javascripts/raphael-min.js [36m304 [90m1ms[0m
+[90mGET /javascripts/skrollr.min.js [36m304 [90m1ms[0m
+[90mGET /images/TTT-icon.png [36m304 [90m0ms[0m
+[90mGET /javascripts/index.js [36m304 [90m0ms[0m
+[90mGET /images/footer-logo.png [36m304 [90m0ms[0m
+[90mGET /images/twitter.png [36m304 [90m1ms[0m
+[90mGET /images/bluex-border.png [36m304 [90m1ms[0m
+[90mGET /images/fbook.png [36m304 [90m0ms[0m
+[90mGET /images/video/intro.mp4 [36m304 [90m0ms[0m
+[90mGET /images/favicon.ico [36m304 [90m0ms[0m
+[90mGET / [36m304 [90m87ms[0m
+  [90msource :[0m [36m/home/ec2-user/LandingPage/sass/index.scss[0m
+  [90mdest :[0m [36m/home/ec2-user/LandingPage/public/compiled/index.css[0m
+[90mGET /compiled/index.css [36m304 [90m1ms[0m
+[90mGET /images/xxxxx.png [36m304 [90m2ms[0m
+[90mGET /images/down-arrow.png [36m304 [90m2ms[0m
+[90mGET /images/book.png [36m304 [90m4ms[0m
+[90mGET /images/bluex.png [36m304 [90m4ms[0m
+[90mGET /images/connect.png [36m304 [90m4ms[0m
+[90mGET /javascripts/modernizr.min.js [36m304 [90m1ms[0m
+[90mGET /javascripts/raphael-min.js [36m304 [90m1ms[0m
+[90mGET /javascripts/jquery-ui.min.js [36m304 [90m1ms[0m
+[90mGET /javascripts/skrollr.min.js [36m304 [90m1ms[0m
+[90mGET /javascripts/index.js [36m304 [90m2ms[0m
+[90mGET /images/TTT-icon.png [36m304 [90m1ms[0m
+[90mGET /images/twitter.png [36m304 [90m1ms[0m
+[90mGET /images/bluex-border.png [36m304 [90m1ms[0m
+[90mGET /images/footer-logo.png [36m304 [90m1ms[0m
+[90mGET /images/fbook.png [36m304 [90m1ms[0m
+[90mGET /images/video/intro.mp4 [36m304 [90m0ms[0m
+[90mGET /images/favicon.ico [36m304 [90m0ms[0m
+[90mGET / [32m200 [90m81ms - 5.28kb[0m
+  [90msource :[0m [36m/home/ec2-user/LandingPage/sass/index.scss[0m
+  [90mdest :[0m [36m/home/ec2-user/LandingPage/public/compiled/index.css[0m
+[90mGET /images/xxxxx.png [36m304 [90m1ms[0m
+[90mGET /compiled/index.css [32m200 [90m2ms - 17.62kb[0m
+[90mGET /javascripts/jquery-ui.min.js [36m304 [90m1ms[0m
+[90mGET /javascripts/skrollr.min.js [36m304 [90m0ms[0m
+[90mGET /javascripts/raphael-min.js [36m304 [90m1ms[0m
+[90mGET /javascripts/modernizr.min.js [32m200 [90m2ms - 4.11kb[0m
+[90mGET /javascripts/index.js [32m200 [90m1ms - 8.67kb[0m
+[90mGET /images/down-arrow.png [36m304 [90m0ms[0m
+[90mGET /images/book.png [36m304 [90m1ms[0m
+[90mGET /images/bluex.png [36m304 [90m1ms[0m
+[90mGET /images/connect.png [36m304 [90m0ms[0m
+[90mGET /images/TTT-icon.png [36m304 [90m1ms[0m
+[90mGET /images/footer-logo.png [36m304 [90m1ms[0m
+[90mGET /images/bluex-border.png [36m304 [90m1ms[0m
+[90mGET /images/twitter.png [36m304 [90m1ms[0m
+[90mGET /images/fbook.png [36m304 [90m1ms[0m
+[90mGET /images/white90.png [36m304 [90m1ms[0m
+[90mGET /images/car.jpg [32m200 [90m1ms - 53.46kb[0m
+[90mGET /images/stars.jpg [36m304 [90m0ms[0m
+[90mGET /images/silhouette.png [36m304 [90m1ms[0m
+[90mGET /images/bubble.png [36m304 [90m0ms[0m
+[90mGET /images/beach2.jpg [32m200 [90m199ms - 283.94kb[0m
+[90mGET /images/favicon.ico [32m200 [90m1ms - 318b[0m
+[90mGET /images/video/intro.mp4 [32m200 [90m923ms - 1.68mb[0m
+[90mGET /images/bolt-L.png [36m304 [90m1ms[0m
+[90mGET /images/bolt-R.png [36m304 [90m1ms[0m
+[90mGET / [32m200 [90m82ms - 5.28kb[0m
+[90mGET /images/down-arrow.png [36m304 [90m0ms[0m
+  [90msource :[0m [36m/home/ec2-user/LandingPage/sass/index.scss[0m
+  [90mdest :[0m [36m/home/ec2-user/LandingPage/public/compiled/index.css[0m
+[90mGET /javascripts/jquery-ui.min.js [36m304 [90m1ms[0m
+[90mGET /javascripts/index.js [36m304 [90m1ms[0m
+[90mGET /javascripts/modernizr.min.js [36m304 [90m1ms[0m
+[90mGET /compiled/index.css [36m304 [90m2ms[0m
+[90mGET /javascripts/raphael-min.js [36m304 [90m0ms[0m
+[90mGET /javascripts/skrollr.min.js [36m304 [90m0ms[0m
+[90mGET /images/bluex.png [36m304 [90m2ms[0m
+[90mGET /images/xxxxx.png [36m304 [90m3ms[0m
+[90mGET /images/connect.png [36m304 [90m1ms[0m
+[90mGET /images/book.png [36m304 [90m1ms[0m
+[90mGET /images/TTT-icon.png [36m304 [90m1ms[0m
+[90mGET /images/footer-logo.png [36m304 [90m1ms[0m
+[90mGET /images/twitter.png [36m304 [90m1ms[0m
+[90mGET /images/fbook.png [36m304 [90m1ms[0m
+[90mGET /images/bluex-border.png [36m304 [90m1ms[0m
+[90mGET /images/white90.png [36m304 [90m0ms[0m
+[90mGET /images/car.jpg [36m304 [90m1ms[0m
+[90mGET /images/beach2.jpg [36m304 [90m1ms[0m
+[90mGET /images/silhouette.png [36m304 [90m1ms[0m
+[90mGET /images/stars.jpg [36m304 [90m1ms[0m
+[90mGET /images/bubble.png [36m304 [90m0ms[0m
+[90mGET /images/video/intro.mp4 [36m304 [90m0ms[0m
+[90mGET /images/favicon.ico [32m200 [90m1ms - 318b[0m
+[90mGET /images/bolt-R.png [36m304 [90m1ms[0m
+[90mGET /images/bolt-L.png [36m304 [90m0ms[0m
+[90mGET / [36m304 [90m90ms[0m
+  [90msource :[0m [36m/home/ec2-user/LandingPage/sass/index.scss[0m
+  [90mdest :[0m [36m/home/ec2-user/LandingPage/public/compiled/index.css[0m
+[90mGET /compiled/index.css [36m304 [90m1ms[0m
+[90mGET /javascripts/modernizr.min.js [36m304 [90m0ms[0m
+[90mGET /javascripts/jquery-ui.min.js [36m304 [90m2ms[0m
+[90mGET /javascripts/skrollr.min.js [36m304 [90m1ms[0m
+[90mGET /javascripts/raphael-min.js [36m304 [90m1ms[0m
+[90mGET /javascripts/index.js [36m304 [90m2ms[0m
+[90mGET /images/xxxxx.png [36m304 [90m1ms[0m
+[90mGET /images/down-arrow.png [36m304 [90m0ms[0m
+[90mGET /images/bluex.png [36m304 [90m1ms[0m
+[90mGET /images/connect.png [36m304 [90m1ms[0m
+[90mGET /images/book.png [36m304 [90m1ms[0m
+[90mGET /images/footer-logo.png [36m304 [90m1ms[0m
+[90mGET /images/TTT-icon.png [36m304 [90m1ms[0m
+[90mGET /images/fbook.png [36m304 [90m0ms[0m
+[90mGET /images/twitter.png [36m304 [90m0ms[0m
+[90mGET /images/bluex-border.png [36m304 [90m0ms[0m
+[90mGET /images/white90.png [36m304 [90m0ms[0m
+[90mGET /images/car.jpg [36m304 [90m1ms[0m
+[90mGET /images/beach2.jpg [36m304 [90m0ms[0m
+[90mGET /images/silhouette.png [36m304 [90m1ms[0m
+[90mGET /images/stars.jpg [36m304 [90m0ms[0m
+[90mGET /images/bubble.png [36m304 [90m0ms[0m
+[90mGET /images/video/intro.mp4 [36m304 [90m0ms[0m
+[90mGET /images/bolt-L.png [36m304 [90m0ms[0m
+[90mGET /images/bolt-R.png [36m304 [90m0ms[0m
+[90mGET / [32m200 [90m123ms - 5.28kb[0m
+  [90msource :[0m [36m/home/ec2-user/LandingPage/sass/index.scss[0m
+  [90mdest :[0m [36m/home/ec2-user/LandingPage/public/compiled/index.css[0m
+[90mGET /compiled/index.css [36m304 [90m1ms[0m
+[90mGET /images/xxxxx.png [36m304 [90m1ms[0m
+[90mGET /images/down-arrow.png [36m304 [90m0ms[0m
+[90mGET /images/bluex.png [36m304 [90m1ms[0m
+[90mGET /images/connect.png [36m304 [90m1ms[0m
+[90mGET /images/book.png [36m304 [90m0ms[0m
+[90mGET /images/TTT-icon.png [36m304 [90m1ms[0m
+[90mGET /images/footer-logo.png [36m304 [90m1ms[0m
+[90mGET /images/fbook.png [36m304 [90m0ms[0m
+[90mGET /images/twitter.png [36m304 [90m0ms[0m
+[90mGET /images/bluex-border.png [36m304 [90m1ms[0m
+[90mGET /javascripts/modernizr.min.js [36m304 [90m2ms[0m
+[90mGET /javascripts/jquery-ui.min.js [36m304 [90m1ms[0m
+[90mGET /javascripts/skrollr.min.js [36m304 [90m1ms[0m
+[90mGET /javascripts/raphael-min.js [36m304 [90m1ms[0m
+[90mGET /javascripts/index.js [36m304 [90m0ms[0m
+[90mGET /images/stars.jpg [36m304 [90m0ms[0m
+[90mGET /images/bubble.png [36m304 [90m0ms[0m
+[90mGET /images/silhouette.png [36m304 [90m1ms[0m
+[90mGET /images/beach2.jpg [36m304 [90m1ms[0m
+[90mGET /images/car.jpg [36m304 [90m1ms[0m
+[90mGET /images/white90.png [36m304 [90m1ms[0m
+[90mGET /images/video/intro.mp4 [36m304 [90m0ms[0m
+[90mGET /images/bolt-L.png [36m304 [90m0ms[0m
+[90mGET /images/bolt-R.png [36m304 [90m0ms[0m
+[90mGET /images/favicon.ico [32m200 [90m1ms - 318b[0m
+[90mGET / [32m200 [90m88ms - 5.28kb[0m
+  [90msource :[0m [36m/home/ec2-user/LandingPage/sass/index.scss[0m
+  [90mdest :[0m [36m/home/ec2-user/LandingPage/public/compiled/index.css[0m
+[90mGET /compiled/index.css [32m200 [90m1ms - 17.62kb[0m
+[90mGET /javascripts/modernizr.min.js [32m200 [90m0ms - 4.11kb[0m
+[90mGET /javascripts/jquery-ui.min.js [32m200 [90m3ms - 12.78kb[0m
+[90mGET /images/xxxxx.png [32m200 [90m4ms - 1.2kb[0m
+[90mGET /javascripts/index.js [32m200 [90m4ms - 8.67kb[0m
+[90mGET /javascripts/skrollr.min.js [32m200 [90m3ms - 12.26kb[0m
+[90mGET /javascripts/raphael-min.js [32m200 [90m34ms - 89.33kb[0m
+[90mGET /images/connect.png [32m200 [90m2ms - 12.55kb[0m
+[90mGET /images/bluex.png [32m200 [90m2ms - 371b[0m
+[90mGET /images/down-arrow.png [32m200 [90m2ms - 1.5kb[0m
+[90mGET /images/book.png [32m200 [90m1ms - 1.19kb[0m
+[90mGET /images/TTT-icon.png [32m200 [90m1ms - 1.27kb[0m
+[90mGET /images/footer-logo.png [32m200 [90m1ms - 2.52kb[0m
+[90mGET /images/twitter.png [32m200 [90m1ms - 335b[0m
+[90mGET /images/fbook.png [32m200 [90m1ms - 257b[0m
+[90mGET /images/bluex-border.png [32m200 [90m0ms - 580b[0m
+[90mGET /images/white90.png [32m200 [90m1ms - 141b[0m
+[90mGET /images/car.jpg [32m200 [90m1ms - 53.46kb[0m
+[90mGET /images/silhouette.png [32m200 [90m1ms - 48.1kb[0m
+[90mGET /images/bubble.png [32m200 [90m0ms - 553b[0m
+[90mGET /images/stars.jpg [32m200 [90m62ms - 107.3kb[0m
+[90mGET /images/beach2.jpg [32m200 [90m147ms - 283.94kb[0m
+[90mGET /images/favicon.ico [32m200 [90m1ms - 318b[0m
+[90mGET /images/video/intro.mp4 [32m200 [90m4070ms - 1.68mb[0m
+[90mGET /images/favicon.ico [36m304 [90m1ms[0m
+[90mGET /images/favicon.ico [36m304 [90m0ms[0m
+[90mGET /images/favicon.ico [36m304 [90m1ms[0m
+[90mGET /images/favicon.ico [36m304 [90m1ms[0m
+[90mGET / [32m200 [90m82ms - 5.28kb[0m
+  [90msource :[0m [36m/home/ec2-user/LandingPage/sass/index.scss[0m
+  [90mdest :[0m [36m/home/ec2-user/LandingPage/public/compiled/index.css[0m
+[90mGET /compiled/index.css [32m200 [90m1ms - 17.62kb[0m
+[90mGET /images/xxxxx.png [32m200 [90m0ms - 1.2kb[0m
+[90mGET /javascripts/modernizr.min.js [32m200 [90m1ms - 4.11kb[0m
+[90mGET /javascripts/jquery-ui.min.js [32m200 [90m0ms - 12.78kb[0m
+[90mGET /javascripts/index.js [32m200 [90m2ms - 8.67kb[0m
+[90mGET /javascripts/skrollr.min.js [32m200 [90m1ms - 12.26kb[0m
+[90mGET /images/down-arrow.png [32m200 [90m1ms - 1.5kb[0m
+[90mGET /images/connect.png [32m200 [90m1ms - 12.55kb[0m
+[90mGET /javascripts/raphael-min.js [32m200 [90m46ms - 89.33kb[0m
+[90mGET /images/bluex.png [32m200 [90m1ms - 371b[0m
+[90mGET /images/book.png [32m200 [90m1ms - 1.19kb[0m
+[90mGET /images/white90.png [32m200 [90m1ms - 141b[0m
+[90mGET /images/stars.jpg [32m200 [90m99ms - 107.3kb[0m
+[90mGET /images/bubble.png [32m200 [90m0ms - 553b[0m
+[90mGET /images/fbook.png [32m200 [90m0ms - 257b[0m
+[90mGET /images/twitter.png [32m200 [90m2ms - 335b[0m
+[90mGET /images/TTT-icon.png [32m200 [90m1ms - 1.27kb[0m
+[90mGET /images/footer-logo.png [32m200 [90m1ms - 2.52kb[0m
+[90mGET /images/bluex-border.png [32m200 [90m0ms - 580b[0m
+[90mGET /images/car.jpg [32m200 [90m0ms - 53.46kb[0m
+[90mGET /images/silhouette.png [32m200 [90m0ms - 48.1kb[0m
+[90mGET /images/beach2.jpg [32m200 [90m242ms - 283.94kb[0m
+[90mGET /images/favicon.ico [32m200 [90m1ms - 318b[0m
+[90mGET /images/video/intro.mp4 [32m200 [90m961ms - 1.68mb[0m
+[90mGET /images/bolt-R.png [32m200 [90m1ms - 475b[0m
+[90mGET /images/bolt-L.png [32m200 [90m1ms - 453b[0m
+[90mGET / [36m304 [90m90ms[0m
+  [90msource :[0m [36m/home/ec2-user/LandingPage/sass/index.scss[0m
+  [90mdest :[0m [36m/home/ec2-user/LandingPage/public/compiled/index.css[0m
+[90mGET /compiled/index.css [36m304 [90m1ms[0m
+[90mGET /images/xxxxx.png [36m304 [90m0ms[0m
+[90mGET /images/down-arrow.png [36m304 [90m0ms[0m
+[90mGET /images/connect.png [36m304 [90m0ms[0m
+[90mGET /images/book.png [36m304 [90m0ms[0m
+[90mGET /images/bluex.png [36m304 [90m1ms[0m
+[90mGET /javascripts/modernizr.min.js [36m304 [90m0ms[0m
+[90mGET /javascripts/jquery-ui.min.js [36m304 [90m1ms[0m
+[90mGET /javascripts/skrollr.min.js [36m304 [90m0ms[0m
+[90mGET /javascripts/raphael-min.js [36m304 [90m0ms[0m
+[90mGET /javascripts/index.js [36m304 [90m0ms[0m
+[90mGET /images/footer-logo.png [36m304 [90m0ms[0m
+[90mGET /images/TTT-icon.png [36m304 [90m1ms[0m
+[90mGET /images/fbook.png [36m304 [90m1ms[0m
+[90mGET /images/white90.png [36m304 [90m0ms[0m
+[90mGET /images/stars.jpg [36m304 [90m0ms[0m
+[90mGET /images/bubble.png [36m304 [90m0ms[0m
+[90mGET /images/twitter.png [36m304 [90m1ms[0m
+[90mGET /images/bluex-border.png [36m304 [90m1ms[0m
+[90mGET /images/beach2.jpg [36m304 [90m0ms[0m
+[90mGET /images/car.jpg [36m304 [90m1ms[0m
+[90mGET /images/silhouette.png [36m304 [90m0ms[0m
+[90mGET /images/video/intro.mp4 [36m304 [90m1ms[0m
+[90mGET / [36m304 [90m95ms[0m
+  [90msource :[0m [36m/home/ec2-user/LandingPage/sass/index.scss[0m
+  [90mdest :[0m [36m/home/ec2-user/LandingPage/public/compiled/index.css[0m
+[90mGET /compiled/index.css [36m304 [90m1ms[0m
+[90mGET /images/xxxxx.png [36m304 [90m0ms[0m
+[90mGET /images/bluex.png [36m304 [90m1ms[0m
+[90mGET /images/connect.png [36m304 [90m1ms[0m
+[90mGET /images/book.png [36m304 [90m1ms[0m
+[90mGET /images/down-arrow.png [36m304 [90m1ms[0m
+[90mGET /javascripts/modernizr.min.js [36m304 [90m0ms[0m
+[90mGET /javascripts/jquery-ui.min.js [36m304 [90m1ms[0m
+[90mGET /javascripts/raphael-min.js [36m304 [90m1ms[0m
+[90mGET /javascripts/skrollr.min.js [36m304 [90m1ms[0m
+[90mGET /javascripts/index.js [36m304 [90m1ms[0m
+[90mGET /images/TTT-icon.png [36m304 [90m1ms[0m
+[90mGET /images/footer-logo.png [36m304 [90m1ms[0m
+[90mGET /images/fbook.png [36m304 [90m0ms[0m
+[90mGET /images/stars.jpg [36m304 [90m1ms[0m
+[90mGET /images/twitter.png [36m304 [90m1ms[0m
+[90mGET /images/white90.png [36m304 [90m2ms[0m
+[90mGET /images/bubble.png [36m304 [90m1ms[0m
+[90mGET /images/bluex-border.png [36m304 [90m0ms[0m
+[90mGET /images/beach2.jpg [36m304 [90m1ms[0m
+[90mGET /images/car.jpg [36m304 [90m1ms[0m
+[90mGET /images/silhouette.png [36m304 [90m0ms[0m
+[90mGET /images/video/intro.mp4 [36m304 [90m0ms[0m
+[90mGET / [36m304 [90m111ms[0m
+  [90msource :[0m [36m/home/ec2-user/LandingPage/sass/index.scss[0m
+  [90mdest :[0m [36m/home/ec2-user/LandingPage/public/compiled/index.css[0m
+[90mGET /compiled/index.css [36m304 [90m1ms[0m
+[90mGET /images/down-arrow.png [36m304 [90m0ms[0m
+[90mGET /images/xxxxx.png [36m304 [90m0ms[0m
+[90mGET /images/connect.png [36m304 [90m1ms[0m
+[90mGET /images/bluex.png [36m304 [90m1ms[0m
+[90mGET /images/book.png [36m304 [90m1ms[0m
+[90mGET /javascripts/raphael-min.js [36m304 [90m1ms[0m
+[90mGET /javascripts/modernizr.min.js [36m304 [90m1ms[0m
+[90mGET /javascripts/jquery-ui.min.js [36m304 [90m0ms[0m
+[90mGET /javascripts/skrollr.min.js [36m304 [90m0ms[0m
+[90mGET /javascripts/index.js [36m304 [90m0ms[0m
+[90mGET /images/TTT-icon.png [36m304 [90m1ms[0m
+[90mGET /images/footer-logo.png [36m304 [90m1ms[0m
+[90mGET /images/fbook.png [36m304 [90m0ms[0m
+[90mGET /images/white90.png [36m304 [90m0ms[0m
+[90mGET /images/bluex-border.png [36m304 [90m1ms[0m
+[90mGET /images/beach2.jpg [36m304 [90m0ms[0m
+[90mGET /images/twitter.png [36m304 [90m1ms[0m
+[90mGET /images/stars.jpg [36m304 [90m0ms[0m
+[90mGET /images/bubble.png [36m304 [90m0ms[0m
+[90mGET /images/silhouette.png [36m304 [90m0ms[0m
+[90mGET /images/car.jpg [36m304 [90m1ms[0m
+[90mGET /images/video/intro.mp4 [36m304 [90m0ms[0m
+[90mGET / [32m200 [90m92ms - 5.28kb[0m
+  [90msource :[0m [36m/home/ec2-user/LandingPage/sass/index.scss[0m
+  [90mdest :[0m [36m/home/ec2-user/LandingPage/public/compiled/index.css[0m
+[90mGET /images/connect.png [32m200 [90m3ms - 12.55kb[0m
+[90mGET /images/book.png [32m200 [90m3ms - 1.19kb[0m
+[90mGET /images/down-arrow.png [32m200 [90m3ms - 1.5kb[0m
+[90mGET /images/xxxxx.png [32m200 [90m2ms - 1.2kb[0m
+[90mGET /images/bluex.png [32m200 [90m2ms - 371b[0m
+[90mGET /compiled/index.css [32m200 [90m5ms - 17.62kb[0m
+[90mGET /javascripts/modernizr.min.js [32m200 [90m0ms - 4.11kb[0m
+[90mGET /javascripts/jquery-ui.min.js [32m200 [90m1ms - 12.78kb[0m
+[90mGET /javascripts/skrollr.min.js [32m200 [90m1ms - 12.26kb[0m
+[90mGET /javascripts/index.js [32m200 [90m1ms - 8.67kb[0m
+[90mGET /javascripts/raphael-min.js [32m200 [90m76ms - 89.33kb[0m
+[90mGET /images/white90.png [32m200 [90m1ms - 141b[0m
+[90mGET /images/stars.jpg [32m200 [90m74ms - 107.3kb[0m
+[90mGET /images/twitter.png [32m200 [90m1ms - 335b[0m
+[90mGET /images/bubble.png [32m200 [90m2ms - 553b[0m
+[90mGET /images/fbook.png [32m200 [90m2ms - 257b[0m
+[90mGET /images/TTT-icon.png [32m200 [90m0ms - 1.27kb[0m
+[90mGET /images/footer-logo.png [32m200 [90m1ms - 2.52kb[0m
+[90mGET /images/bluex-border.png [32m200 [90m1ms - 580b[0m
+[90mGET /images/car.jpg [32m200 [90m1ms - 53.46kb[0m
+[90mGET /images/silhouette.png [32m200 [90m1ms - 48.1kb[0m
+[90mGET /images/beach2.jpg [32m200 [90m394ms - 283.94kb[0m
+[90mGET /images/favicon.ico [36m304 [90m1ms[0m
+[90mGET /images/video/intro.mp4 [32m200 [90m1015ms - 1.68mb[0m
+[90mGET / [36m304 [90m83ms[0m
+  [90msource :[0m [36m/home/ec2-user/LandingPage/sass/index.scss[0m
+  [90mdest :[0m [36m/home/ec2-user/LandingPage/public/compiled/index.css[0m
+[90mGET /compiled/index.css [36m304 [90m1ms[0m
+[90mGET /images/book.png [36m304 [90m0ms[0m
+[90mGET /images/down-arrow.png [36m304 [90m0ms[0m
+[90mGET /images/connect.png [36m304 [90m1ms[0m
+[90mGET /images/xxxxx.png [36m304 [90m1ms[0m
+[90mGET /images/bluex.png [36m304 [90m0ms[0m
+[90mGET /javascripts/modernizr.min.js [36m304 [90m1ms[0m
+[90mGET /javascripts/jquery-ui.min.js [36m304 [90m0ms[0m
+[90mGET /javascripts/raphael-min.js [36m304 [90m0ms[0m
+[90mGET /images/TTT-icon.png [36m304 [90m0ms[0m
+[90mGET /images/footer-logo.png [36m304 [90m0ms[0m
+[90mGET /javascripts/skrollr.min.js [36m304 [90m1ms[0m
+[90mGET /javascripts/index.js [36m304 [90m1ms[0m
+[90mGET /images/stars.jpg [36m304 [90m1ms[0m
+[90mGET /images/bluex-border.png [36m304 [90m1ms[0m
+[90mGET /images/bubble.png [36m304 [90m1ms[0m
+[90mGET /images/fbook.png [36m304 [90m1ms[0m
+[90mGET /images/white90.png [36m304 [90m1ms[0m
+[90mGET /images/twitter.png [36m304 [90m1ms[0m
+[90mGET /images/beach2.jpg [36m304 [90m0ms[0m
+[90mGET /images/car.jpg [36m304 [90m1ms[0m
+[90mGET /images/silhouette.png [36m304 [90m1ms[0m
+[90mGET /images/video/intro.mp4 [36m304 [90m0ms[0m
+[90mGET / [36m304 [90m92ms[0m
+  [90msource :[0m [36m/home/ec2-user/LandingPage/sass/index.scss[0m
+  [90mdest :[0m [36m/home/ec2-user/LandingPage/public/compiled/index.css[0m
+[90mGET /images/xxxxx.png [36m304 [90m1ms[0m
+[90mGET /compiled/index.css [36m304 [90m1ms[0m
+[90mGET /images/down-arrow.png [36m304 [90m1ms[0m
+[90mGET /images/bluex.png [36m304 [90m1ms[0m
+[90mGET /images/book.png [36m304 [90m1ms[0m
+[90mGET /images/connect.png [36m304 [90m0ms[0m
+[90mGET /javascripts/modernizr.min.js [36m304 [90m0ms[0m
+[90mGET /javascripts/jquery-ui.min.js [36m304 [90m0ms[0m
+[90mGET /javascripts/index.js [36m304 [90m1ms[0m
+[90mGET /javascripts/skrollr.min.js [36m304 [90m2ms[0m
+[90mGET /javascripts/raphael-min.js [36m304 [90m1ms[0m
+[90mGET /images/footer-logo.png [36m304 [90m1ms[0m
+[90mGET /images/TTT-icon.png [36m304 [90m0ms[0m
+[90mGET /images/fbook.png [36m304 [90m0ms[0m
+[90mGET /images/stars.jpg [36m304 [90m0ms[0m
+[90mGET /images/twitter.png [36m304 [90m1ms[0m
+[90mGET /images/white90.png [36m304 [90m1ms[0m
+[90mGET /images/beach2.jpg [36m304 [90m1ms[0m
+[90mGET /images/bluex-border.png [36m304 [90m1ms[0m
+[90mGET /images/bubble.png [36m304 [90m0ms[0m
+[90mGET /images/car.jpg [36m304 [90m1ms[0m
+[90mGET /images/video/intro.mp4 [36m304 [90m1ms[0m
+[90mGET /images/silhouette.png [36m304 [90m1ms[0m
+[90mGET / [32m200 [90m98ms - 5.28kb[0m
+  [90msource :[0m [36m/home/ec2-user/LandingPage/sass/index.scss[0m
+  [90mdest :[0m [36m/home/ec2-user/LandingPage/public/compiled/index.css[0m
+[90mGET /images/down-arrow.png [32m200 [90m2ms - 1.5kb[0m
+[90mGET /images/xxxxx.png [32m200 [90m3ms - 1.2kb[0m
+[90mGET /compiled/index.css [32m200 [90m2ms - 17.62kb[0m
+[90mGET /images/connect.png [32m200 [90m2ms - 12.55kb[0m
+[90mGET /images/book.png [32m200 [90m1ms - 1.19kb[0m
+[90mGET /images/bluex.png [32m200 [90m2ms - 371b[0m
+[90mGET /javascripts/modernizr.min.js [32m200 [90m1ms - 4.11kb[0m
+[90mGET /javascripts/jquery-ui.min.js [32m200 [90m2ms - 12.78kb[0m
+[90mGET /javascripts/raphael-min.js [32m200 [90m126ms - 89.33kb[0m
+[90mGET /javascripts/skrollr.min.js [32m200 [90m1ms - 12.26kb[0m
+[90mGET /javascripts/index.js [32m200 [90m1ms - 8.67kb[0m
+[90mGET /images/white90.png [32m200 [90m3ms - 141b[0m
+[90mGET /images/bubble.png [32m200 [90m3ms - 553b[0m
+[90mGET /images/fbook.png [32m200 [90m2ms - 257b[0m
+[90mGET /images/twitter.png [32m200 [90m3ms - 335b[0m
+[90mGET /images/TTT-icon.png [32m200 [90m2ms - 1.27kb[0m
+[90mGET /images/stars.jpg [32m200 [90m198ms - 107.3kb[0m
+[90mGET /images/footer-logo.png [32m200 [90m3ms - 2.52kb[0m
+[90mGET /images/car.jpg [32m200 [90m3ms - 53.46kb[0m
+[90mGET /images/bluex-border.png [32m200 [90m2ms - 580b[0m
+[90mGET /images/silhouette.png [32m200 [90m1ms - 48.1kb[0m
+[90mGET /images/beach2.jpg [32m200 [90m983ms - 283.94kb[0m
+[90mGET /images/favicon.ico [36m304 [90m0ms[0m
+[90mGET /images/video/intro.mp4 [32m200 [90m2618ms - 1.68mb[0m
+[90mGET / [36m304 [90m113ms[0m
+  [90msource :[0m [36m/home/ec2-user/LandingPage/sass/index.scss[0m
+  [90mdest :[0m [36m/home/ec2-user/LandingPage/public/compiled/index.css[0m
+[90mGET /compiled/index.css [36m304 [90m1ms[0m
+[90mGET /images/xxxxx.png [36m304 [90m1ms[0m
+[90mGET /javascripts/modernizr.min.js [36m304 [90m1ms[0m
+[90mGET /javascripts/jquery-ui.min.js [36m304 [90m1ms[0m
+[90mGET /javascripts/index.js [36m304 [90m1ms[0m
+[90mGET /images/connect.png [36m304 [90m1ms[0m
+[90mGET /javascripts/skrollr.min.js [36m304 [90m1ms[0m
+[90mGET /javascripts/raphael-min.js [36m304 [90m1ms[0m
+[90mGET /images/bluex.png [36m304 [90m1ms[0m
+[90mGET /images/down-arrow.png [36m304 [90m1ms[0m
+[90mGET /images/book.png [36m304 [90m2ms[0m
+[90mGET /images/TTT-icon.png [36m304 [90m1ms[0m
+[90mGET /images/footer-logo.png [36m304 [90m1ms[0m
+[90mGET /images/fbook.png [36m304 [90m0ms[0m
+[90mGET /images/twitter.png [36m304 [90m1ms[0m
+[90mGET /images/bluex-border.png [36m304 [90m0ms[0m
+[90mGET /javascripts/modernizr.min.js [36m304 [90m0ms[0m
+[90mGET /images/stars.jpg [36m304 [90m1ms[0m
+[90mGET /images/bubble.png [36m304 [90m1ms[0m
+[90mGET /images/silhouette.png [36m304 [90m2ms[0m
+[90mGET /images/car.jpg [36m304 [90m1ms[0m
+[90mGET /images/white90.png [36m304 [90m1ms[0m
+[90mGET /images/beach2.jpg [36m304 [90m1ms[0m
+[90mGET /images/video/intro.mp4 [36m304 [90m1ms[0m
+[90mGET / [36m304 [90m81ms[0m
+  [90msource :[0m [36m/home/ec2-user/LandingPage/sass/index.scss[0m
+  [90mdest :[0m [36m/home/ec2-user/LandingPage/public/compiled/index.css[0m
+[90mGET /compiled/index.css [36m304 [90m0ms[0m
+[90mGET /images/xxxxx.png [36m304 [90m1ms[0m
+[90mGET /images/down-arrow.png [36m304 [90m0ms[0m
+[90mGET /images/connect.png [36m304 [90m1ms[0m
+[90mGET /images/TTT-icon.png [36m304 [90m2ms[0m
+[90mGET /images/book.png [36m304 [90m2ms[0m
+[90mGET /images/bluex.png [36m304 [90m1ms[0m
+[90mGET /javascripts/jquery-ui.min.js [36m304 [90m1ms[0m
+[90mGET /javascripts/raphael-min.js [36m304 [90m2ms[0m
+[90mGET /javascripts/modernizr.min.js [36m304 [90m2ms[0m
+[90mGET /javascripts/skrollr.min.js [36m304 [90m0ms[0m
+[90mGET /javascripts/index.js [36m304 [90m1ms[0m
+[90mGET /images/footer-logo.png [36m304 [90m1ms[0m
+[90mGET /images/fbook.png [36m304 [90m1ms[0m
+[90mGET /images/twitter.png [36m304 [90m1ms[0m
+[90mGET /images/bluex-border.png [36m304 [90m1ms[0m
+[90mGET /images/white90.png [36m304 [90m1ms[0m
+[90mGET /images/beach2.jpg [36m304 [90m0ms[0m
+[90mGET /images/silhouette.png [36m304 [90m1ms[0m
+[90mGET /images/stars.jpg [36m304 [90m1ms[0m
+[90mGET /images/car.jpg [36m304 [90m1ms[0m
+[90mGET /images/bubble.png [36m304 [90m1ms[0m
+[90mGET /javascripts/raphael-min.js [36m304 [90m1ms[0m
+[90mGET /images/video/intro.mp4 [36m304 [90m1ms[0m
+[90mGET / [32m200 [90m83ms - 5.28kb[0m
+  [90msource :[0m [36m/home/ec2-user/LandingPage/sass/index.scss[0m
+  [90mdest :[0m [36m/home/ec2-user/LandingPage/public/compiled/index.css[0m
+[90mGET /compiled/index.css [32m200 [90m1ms - 17.62kb[0m
+[90mGET /javascripts/modernizr.min.js [32m200 [90m3ms - 4.11kb[0m
+[90mGET /javascripts/skrollr.min.js [32m200 [90m3ms - 12.26kb[0m
+[90mGET /javascripts/index.js [32m200 [90m3ms - 8.67kb[0m
+[90mGET /javascripts/jquery-ui.min.js [32m200 [90m3ms - 12.78kb[0m
+[90mGET /images/xxxxx.png [32m200 [90m2ms - 1.2kb[0m
+[90mGET /images/down-arrow.png [32m200 [90m1ms - 1.5kb[0m
+[90mGET /images/connect.png [32m200 [90m0ms - 12.55kb[0m
+[90mGET /javascripts/raphael-min.js [32m200 [90m57ms - 89.33kb[0m
+[90mGET /images/bluex.png [32m200 [90m1ms - 371b[0m
+[90mGET /images/book.png [32m200 [90m3ms - 1.19kb[0m
+[90mGET /images/white90.png [32m200 [90m1ms - 141b[0m
+[90mGET /images/bubble.png [32m200 [90m1ms - 553b[0m
+[90mGET /images/fbook.png [32m200 [90m1ms - 257b[0m
+[90mGET /images/twitter.png [32m200 [90m1ms - 335b[0m
+[90mGET /images/TTT-icon.png [32m200 [90m0ms - 1.27kb[0m
+[90mGET /images/stars.jpg [32m200 [90m44ms - 107.3kb[0m
+[90mGET /images/bluex-border.png [32m200 [90m6ms - 580b[0m
+[90mGET /images/footer-logo.png [32m200 [90m6ms - 2.52kb[0m
+[90mGET /images/car.jpg [32m200 [90m1ms - 53.46kb[0m
+[90mGET /images/silhouette.png [32m200 [90m0ms - 48.1kb[0m
+[90mGET /images/beach2.jpg [32m200 [90m277ms - 283.94kb[0m
+[90mGET /images/favicon.ico [32m200 [90m1ms - 318b[0m
+[90mGET /images/video/intro.mp4 [32m200 [90m858ms - 1.68mb[0m
+[90mGET / [36m304 [90m83ms[0m
+  [90msource :[0m [36m/home/ec2-user/LandingPage/sass/index.scss[0m
+  [90mdest :[0m [36m/home/ec2-user/LandingPage/public/compiled/index.css[0m
+[90mGET /compiled/index.css [32m200 [90m1ms - 17.62kb[0m
+[90mGET /images/xxxxx.png [32m200 [90m1ms - 1.2kb[0m
+[90mGET /images/down-arrow.png [32m200 [90m2ms - 1.5kb[0m
+[90mGET /images/book.png [32m200 [90m1ms - 1.19kb[0m
+[90mGET /images/bluex.png [32m200 [90m1ms - 371b[0m
+[90mGET /images/connect.png [32m200 [90m2ms - 12.55kb[0m
+[90mGET /javascripts/modernizr.min.js [32m200 [90m1ms - 4.11kb[0m
+[90mGET /javascripts/jquery-ui.min.js [32m200 [90m0ms - 12.78kb[0m
+[90mGET /javascripts/skrollr.min.js [32m200 [90m1ms - 12.26kb[0m
+[90mGET /javascripts/index.js [32m200 [90m1ms - 8.67kb[0m
+[90mGET /images/white90.png [32m200 [90m1ms - 141b[0m
+[90mGET /images/bubble.png [32m200 [90m0ms - 553b[0m
+[90mGET /images/twitter.png [32m200 [90m1ms - 335b[0m
+[90mGET /images/fbook.png [32m200 [90m1ms - 257b[0m
+[90mGET /images/stars.jpg [32m200 [90m46ms - 107.3kb[0m
+[90mGET /javascripts/raphael-min.js [32m200 [90m193ms - 89.33kb[0m
+[90mGET /images/video/intro.mp4 [36m304 [90m1ms[0m
+[90mGET /images/TTT-icon.png [32m200 [90m2ms - 1.27kb[0m
+[90mGET /images/bluex-border.png [32m200 [90m3ms - 580b[0m
+[90mGET /images/footer-logo.png [32m200 [90m2ms - 2.52kb[0m
+[90mGET /images/car.jpg [32m200 [90m0ms - 53.46kb[0m
+[90mGET /images/silhouette.png [32m200 [90m1ms - 48.1kb[0m
+[90mGET /images/beach2.jpg [32m200 [90m363ms - 283.94kb[0m
+[90mGET /images/bolt-R.png [36m304 [90m2ms[0m
+[90mGET /images/bolt-L.png [36m304 [90m2ms[0m
+[90mGET / [36m304 [90m90ms[0m
+  [90msource :[0m [36m/home/ec2-user/LandingPage/sass/index.scss[0m
+  [90mdest :[0m [36m/home/ec2-user/LandingPage/public/compiled/index.css[0m
+[90mGET /images/xxxxx.png [36m304 [90m1ms[0m
+[90mGET /compiled/index.css [36m304 [90m1ms[0m
+[90mGET /images/down-arrow.png [36m304 [90m0ms[0m
+[90mGET /images/connect.png [36m304 [90m0ms[0m
+[90mGET /images/bluex.png [36m304 [90m0ms[0m
+[90mGET /images/book.png [36m304 [90m0ms[0m
+[90mGET /javascripts/modernizr.min.js [36m304 [90m0ms[0m
+[90mGET /javascripts/jquery-ui.min.js [36m304 [90m0ms[0m
+[90mGET /javascripts/raphael-min.js [36m304 [90m0ms[0m
+[90mGET /javascripts/skrollr.min.js [36m304 [90m0ms[0m
+[90mGET /javascripts/index.js [36m304 [90m1ms[0m
+[90mGET /images/TTT-icon.png [36m304 [90m0ms[0m
+[90mGET /images/fbook.png [36m304 [90m1ms[0m
+[90mGET /images/twitter.png [36m304 [90m1ms[0m
+[90mGET /images/footer-logo.png [36m304 [90m1ms[0m
+[90mGET /images/bluex-border.png [36m304 [90m0ms[0m
+[90mGET /images/video/intro.mp4 [36m304 [90m1ms[0m
+[90mGET /images/favicon.ico [36m304 [90m0ms[0m
+[90mGET / [36m304 [90m107ms[0m
+  [90msource :[0m [36m/home/ec2-user/LandingPage/sass/index.scss[0m
+  [90mdest :[0m [36m/home/ec2-user/LandingPage/public/compiled/index.css[0m
+[90mGET /compiled/index.css [36m304 [90m1ms[0m
+[90mGET /javascripts/skrollr.min.js [36m304 [90m2ms[0m
+[90mGET /javascripts/jquery-ui.min.js [36m304 [90m2ms[0m
+[90mGET /javascripts/modernizr.min.js [36m304 [90m2ms[0m
+[90mGET /javascripts/raphael-min.js [36m304 [90m2ms[0m
+[90mGET /javascripts/index.js [36m304 [90m2ms[0m
+[90mGET /images/xxxxx.png [36m304 [90m1ms[0m
+[90mGET /images/down-arrow.png [36m304 [90m1ms[0m
+[90mGET /images/connect.png [36m304 [90m2ms[0m
+[90mGET /images/book.png [36m304 [90m2ms[0m
+[90mGET /images/bluex.png [36m304 [90m1ms[0m
+[90mGET /images/TTT-icon.png [36m304 [90m1ms[0m
+[90mGET /images/footer-logo.png [36m304 [90m1ms[0m
+[90mGET /images/twitter.png [36m304 [90m1ms[0m
+[90mGET /images/bluex-border.png [36m304 [90m1ms[0m
+[90mGET /images/fbook.png [36m304 [90m0ms[0m
+[90mGET /images/white90.png [36m304 [90m1ms[0m
+[90mGET /images/beach2.jpg [36m304 [90m1ms[0m
+[90mGET /images/car.jpg [36m304 [90m1ms[0m
+[90mGET /images/silhouette.png [36m304 [90m2ms[0m
+[90mGET /images/bubble.png [36m304 [90m1ms[0m
+[90mGET /images/stars.jpg [36m304 [90m1ms[0m
+[90mGET /images/video/intro.mp4 [36m304 [90m1ms[0m
+[90mGET /images/favicon.ico [36m304 [90m1ms[0m
+[90mGET /images/favicon.ico [36m304 [90m1ms[0m
+[90mGET /images/favicon.ico [36m304 [90m1ms[0m
+[90mGET /images/favicon.ico [36m304 [90m1ms[0m
+[90mGET /images/favicon.ico [36m304 [90m1ms[0m
+[90mGET /images/favicon.ico [36m304 [90m1ms[0m
+[90mGET /images/favicon.ico [36m304 [90m1ms[0m
+[90mGET /images/favicon.ico [36m304 [90m0ms[0m
+[90mGET / [32m200 [90m97ms - 5.28kb[0m
+  [90msource :[0m [36m/home/ec2-user/LandingPage/sass/index.scss[0m
+  [90mdest :[0m [36m/home/ec2-user/LandingPage/public/compiled/index.css[0m
+[90mGET /images/xxxxx.png [32m200 [90m1ms - 1.2kb[0m
+[90mGET /compiled/index.css [32m200 [90m2ms - 17.62kb[0m
+[90mGET /javascripts/modernizr.min.js [32m200 [90m2ms - 4.11kb[0m
+[90mGET /javascripts/skrollr.min.js [32m200 [90m2ms - 12.26kb[0m
+[90mGET /javascripts/jquery-ui.min.js [32m200 [90m2ms - 12.78kb[0m
+[90mGET /javascripts/raphael-min.js [32m200 [90m58ms - 89.33kb[0m
+[90mGET /images/connect.png [32m200 [90m2ms - 12.55kb[0m
+[90mGET /images/down-arrow.png [32m200 [90m2ms - 1.5kb[0m
+[90mGET /javascripts/index.js [32m200 [90m2ms - 8.67kb[0m
+[90mGET /images/bluex.png [32m200 [90m1ms - 371b[0m
+[90mGET /images/book.png [32m200 [90m1ms - 1.19kb[0m
+[90mGET /images/TTT-icon.png [32m200 [90m2ms - 1.27kb[0m
+[90mGET /images/fbook.png [32m200 [90m2ms - 257b[0m
+[90mGET /images/footer-logo.png [32m200 [90m2ms - 2.52kb[0m
+[90mGET /images/twitter.png [32m200 [90m2ms - 335b[0m
+[90mGET /images/bluex-border.png [32m200 [90m1ms - 580b[0m
+[90mGET /images/bubble.png [32m200 [90m1ms - 553b[0m
+[90mGET /images/white90.png [32m200 [90m2ms - 141b[0m
+[90mGET /images/silhouette.png [32m200 [90m1ms - 48.1kb[0m
+[90mGET /images/stars.jpg [32m200 [90m61ms - 107.3kb[0m
+[90mGET /images/car.jpg [32m200 [90m1ms - 53.46kb[0m
+[90mGET /images/beach2.jpg [32m200 [90m778ms - 283.94kb[0m
+[90mGET /images/video/intro.mp4 [32m200 [90m1086ms - 1.68mb[0m
+[90mGET /images/favicon.ico [32m200 [90m1ms - 318b[0m
+[90mGET / [32m200 [90m87ms - 5.28kb[0m
+  [90msource :[0m [36m/home/ec2-user/LandingPage/sass/index.scss[0m
+  [90mdest :[0m [36m/home/ec2-user/LandingPage/public/compiled/index.css[0m
+[90mGET /images/xxxxx.png [32m200 [90m1ms - 1.2kb[0m
+[90mGET /compiled/index.css [32m200 [90m1ms - 17.62kb[0m
+[90mGET /javascripts/modernizr.min.js [32m200 [90m1ms - 4.11kb[0m
+[90mGET /javascripts/skrollr.min.js [32m200 [90m2ms - 12.26kb[0m
+[90mGET /javascripts/jquery-ui.min.js [32m200 [90m1ms - 12.78kb[0m
+[90mGET /javascripts/index.js [32m200 [90m0ms - 8.67kb[0m
+[90mGET /images/connect.png [32m200 [90m1ms - 12.55kb[0m
+[90mGET /images/down-arrow.png [32m200 [90m0ms - 1.5kb[0m
+[90mGET /javascripts/raphael-min.js [32m200 [90m56ms - 89.33kb[0m
+[90mGET /images/bluex.png [32m200 [90m1ms - 371b[0m
+[90mGET /images/book.png [32m200 [90m0ms - 1.19kb[0m
+[90mGET /images/TTT-icon.png [32m200 [90m0ms - 1.27kb[0m
+[90mGET /images/footer-logo.png [32m200 [90m1ms - 2.52kb[0m
+[90mGET /images/fbook.png [32m200 [90m0ms - 257b[0m
+[90mGET /images/twitter.png [32m200 [90m1ms - 335b[0m
+[90mGET /images/bluex-border.png [32m200 [90m1ms - 580b[0m
+[90mGET /images/bubble.png [32m200 [90m0ms - 553b[0m
+[90mGET /images/white90.png [32m200 [90m1ms - 141b[0m
+[90mGET /images/car.jpg [32m200 [90m1ms - 53.46kb[0m
+[90mGET /images/stars.jpg [32m200 [90m57ms - 107.3kb[0m
+[90mGET /images/silhouette.png [32m200 [90m1ms - 48.1kb[0m
+[90mGET /images/beach2.jpg [32m200 [90m233ms - 283.94kb[0m
+[90mGET /images/favicon.ico [32m200 [90m1ms - 318b[0m
+[90mGET /images/video/intro.mp4 [32m200 [90m904ms - 1.68mb[0m
+[90mGET / [36m304 [90m84ms[0m
+  [90msource :[0m [36m/home/ec2-user/LandingPage/sass/index.scss[0m
+  [90mdest :[0m [36m/home/ec2-user/LandingPage/public/compiled/index.css[0m
+[90mGET /images/xxxxx.png [36m304 [90m1ms[0m
+[90mGET /images/down-arrow.png [36m304 [90m1ms[0m
+[90mGET /images/connect.png [36m304 [90m1ms[0m
+[90mGET /images/bluex.png [36m304 [90m1ms[0m
+[90mGET /images/book.png [36m304 [90m0ms[0m
+[90mGET /compiled/index.css [36m304 [90m3ms[0m
+[90mGET /javascripts/jquery-ui.min.js [36m304 [90m2ms[0m
+[90mGET /javascripts/modernizr.min.js [36m304 [90m1ms[0m
+[90mGET /javascripts/raphael-min.js [36m304 [90m1ms[0m
+[90mGET /javascripts/skrollr.min.js [36m304 [90m2ms[0m
+[90mGET /images/TTT-icon.png [36m304 [90m1ms[0m
+[90mGET /javascripts/index.js [36m304 [90m0ms[0m
+[90mGET /images/fbook.png [36m304 [90m1ms[0m
+[90mGET /images/footer-logo.png [36m304 [90m1ms[0m
+[90mGET /images/twitter.png [36m304 [90m2ms[0m
+[90mGET /images/stars.jpg [36m304 [90m0ms[0m
+[90mGET /images/bubble.png [36m304 [90m0ms[0m
+[90mGET /images/bluex-border.png [36m304 [90m1ms[0m
+[90mGET /images/video/intro.mp4 [36m304 [90m0ms[0m
+[90mGET /images/white90.png [36m304 [90m1ms[0m
+[90mGET /images/car.jpg [36m304 [90m1ms[0m
+[90mGET /images/beach2.jpg [36m304 [90m1ms[0m
+[90mGET /images/silhouette.png [36m304 [90m1ms[0m
+[90mGET /images/favicon.ico [36m304 [90m0ms[0m
+[90mGET /images/favicon.ico [36m304 [90m1ms[0m
+[90mGET / [32m200 [90m104ms - 5.62kb[0m
+  [90msource :[0m [36m/home/ec2-user/LandingPage/sass/index2.scss[0m
+  [90mdest :[0m [36m/home/ec2-user/LandingPage/public/compiled/index2.css[0m
+  [90mread :[0m [36m/home/ec2-user/LandingPage/public/compiled/index2.css[0m
+  [90mrender :[0m [36m/home/ec2-user/LandingPage/sass/index2.scss[0m
+[90mGET /images/xxxxx.png [36m304 [90m1ms[0m
+[90mGET /images/connect.png [36m304 [90m1ms[0m
+[90mGET /images/down-arrow.png [36m304 [90m1ms[0m
+[90mGET /javascripts/lightbox.min.js [32m200 [90m4ms - 7.62kb[0m
+[90mGET /images/TTT-loading.svg [32m200 [90m3ms - 5.88kb[0m
+[90mGET /compiled/index2.css [32m200 [90m11ms - 6.12kb[0m
+[90mGET /javascripts/modernizr.min.js [36m304 [90m1ms[0m
+[90mGET /javascripts/jquery-ui.min.js [36m304 [90m0ms[0m
+[90mGET /javascripts/raphael-min.js [36m304 [90m0ms[0m
+[90mGET /javascripts/skrollr.min.js [36m304 [90m1ms[0m
+[90mGET /images/bluex.png [36m304 [90m1ms[0m
+[90mGET /javascripts/index.js [32m200 [90m1ms - 9.5kb[0m
+[90mGET /images/book.png [36m304 [90m1ms[0m
+[90mGET /images/TTT-icon.png [36m304 [90m0ms[0m
+[90mGET /images/footer-logo.png [36m304 [90m1ms[0m
+[90mGET /images/fbook.png [36m304 [90m1ms[0m
+[90mGET /images/twitter.png [36m304 [90m1ms[0m
+[90mGET /images/bluex-border.png [36m304 [90m1ms[0m
+[90mGET /images/video/intro.mp4 [36m304 [90m1ms[0m
+[90mGET /images/v2/bg.jpg [32m200 [90m144ms - 276.83kb[0m
+[90mGET /images/favicon.ico [36m304 [90m1ms[0m
+[90mGET /images/favicon.ico [36m304 [90m0ms[0m
+[90mGET / [36m304 [90m111ms[0m
+  [90msource :[0m [36m/home/ec2-user/LandingPage/sass/index2.scss[0m
+  [90mdest :[0m [36m/home/ec2-user/LandingPage/public/compiled/index2.css[0m
+[90mGET /images/xxxxx.png [36m304 [90m2ms[0m
+[90mGET /images/TTT-loading.svg [36m304 [90m2ms[0m
+[90mGET /images/down-arrow.png [36m304 [90m1ms[0m
+[90mGET /images/bluex.png [36m304 [90m1ms[0m
+[90mGET /images/connect.png [36m304 [90m1ms[0m
+[90mGET /compiled/index2.css [36m304 [90m3ms[0m
+[90mGET /javascripts/modernizr.min.js [36m304 [90m2ms[0m
+[90mGET /javascripts/jquery-ui.min.js [36m304 [90m1ms[0m
+[90mGET /javascripts/lightbox.min.js [36m304 [90m1ms[0m
+[90mGET /javascripts/raphael-min.js [36m304 [90m1ms[0m
+[90mGET /javascripts/skrollr.min.js [36m304 [90m1ms[0m
+[90mGET /javascripts/index.js [36m304 [90m0ms[0m
+[90mGET /images/book.png [36m304 [90m0ms[0m
+[90mGET /images/TTT-icon.png [36m304 [90m1ms[0m
+[90mGET /images/fbook.png [36m304 [90m5ms[0m
+[90mGET /images/footer-logo.png [36m304 [90m4ms[0m
+[90mGET /images/twitter.png [36m304 [90m5ms[0m
+[90mGET /images/bluex-border.png [36m304 [90m0ms[0m
+[90mGET /images/video/intro.mp4 [36m304 [90m0ms[0m
+[90mGET /images/v2/bg.jpg [36m304 [90m0ms[0m
+[90mGET /images/favicon.ico [36m304 [90m0ms[0m
+[90mGET /images/favicon.ico [36m304 [90m1ms[0m
+
+> TTTAnimation@0.0.1 start /home/ec2-user/LandingPage
+> node ./bin/www
+
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module 'nodemailer-ses-transport'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Module.require (module.js:364:17)
+    at require (module.js:380:17)
+    at Object.<anonymous> (/home/ec2-user/LandingPage/routes/index.js:7:11)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.require (module.js:364:17)
+
+npm ERR! TTTAnimation@0.0.1 start: `node ./bin/www`
+npm ERR! Exit status 8
+npm ERR! 
+npm ERR! Failed at the TTTAnimation@0.0.1 start script.
+npm ERR! This is most likely a problem with the TTTAnimation package,
+npm ERR! not with npm itself.
+npm ERR! Tell the author that this fails on your system:
+npm ERR!     node ./bin/www
+npm ERR! You can get their info via:
+npm ERR!     npm owner ls TTTAnimation
+npm ERR! There is likely additional logging output above.
+npm ERR! System Linux 3.10.48-55.140.amzn1.x86_64
+npm ERR! command "node" "/usr/local/bin/npm" "start"
+npm ERR! cwd /home/ec2-user/LandingPage
+npm ERR! node -v v0.10.30
+npm ERR! npm -v 2.0.0-alpha.6.0
+npm ERR! code ELIFECYCLE
+npm ERR! 
+npm ERR! Additional logging details can be found in:
+npm ERR!     /home/ec2-user/LandingPage/npm-debug.log
+npm ERR! not ok code 0
+
+> TTTAnimation@0.0.1 start /home/ec2-user/LandingPage
+> node ./bin/www
+
+Warning: missing space before text for line 23 of jade file "/home/ec2-user/LandingPage/views/index2.jade"
+[90mGET / [36m304 [90m157ms[0m
+  [90msource :[0m [36m/home/ec2-user/LandingPage/sass/index2.scss[0m
+  [90mdest :[0m [36m/home/ec2-user/LandingPage/public/compiled/index2.css[0m
+  [90mread :[0m [36m/home/ec2-user/LandingPage/public/compiled/index2.css[0m
+[90mGET /images/v2/signoff.png [36m304 [90m4ms[0m
+[90mGET /images/v2/TTT-circle.png [36m304 [90m4ms[0m
+[90mGET /javascripts/index2.js [36m304 [90m4ms[0m
+[90mGET /javascripts/modernizr.min.js [36m304 [90m3ms[0m
+[90mGET /javascripts/lightbox.min.js [36m304 [90m2ms[0m
+  [90mrender :[0m [36m/home/ec2-user/LandingPage/sass/index2.scss[0m
+[90mGET /compiled/index2.css [32m200 [90m18ms - 8.58kb[0m
+[90mGET /images/v2/bg.jpg [36m304 [90m1ms[0m
+[90mGET /images/favicon.ico [36m304 [90m0ms[0m
+[90mGET /images/favicon.ico [36m304 [90m1ms[0m
+Warning: missing space before text for line 23 of jade file "/home/ec2-user/LandingPage/views/index2.jade"
+[90mGET / [36m304 [90m125ms[0m
+  [90msource :[0m [36m/home/ec2-user/LandingPage/sass/index2.scss[0m
+  [90mdest :[0m [36m/home/ec2-user/LandingPage/public/compiled/index2.css[0m
+[90mGET /images/v2/TTT-circle.png [36m304 [90m3ms[0m
+[90mGET /javascripts/modernizr.min.js [36m304 [90m2ms[0m
+[90mGET /images/v2/signoff.png [36m304 [90m2ms[0m
+[90mGET /javascripts/index2.js [36m304 [90m2ms[0m
+[90mGET /javascripts/lightbox.min.js [36m304 [90m2ms[0m
+[90mGET /compiled/index2.css [36m304 [90m4ms[0m
+[90mGET /images/v2/bg.jpg [36m304 [90m1ms[0m
+[90mGET /images/favicon.ico [36m304 [90m0ms[0m
+[90mGET /images/favicon.ico [36m304 [90m1ms[0m
+Warning: missing space before text for line 23 of jade file "/home/ec2-user/LandingPage/views/index2.jade"
+[90mGET / [36m304 [90m78ms[0m
+  [90msource :[0m [36m/home/ec2-user/LandingPage/sass/index2.scss[0m
+  [90mdest :[0m [36m/home/ec2-user/LandingPage/public/compiled/index2.css[0m
+[90mGET /images/v2/TTT-circle.png [36m304 [90m1ms[0m
+[90mGET /images/v2/signoff.png [36m304 [90m1ms[0m
+[90mGET /javascripts/modernizr.min.js [36m304 [90m0ms[0m
+[90mGET /compiled/index2.css [36m304 [90m2ms[0m
+[90mGET /javascripts/index2.js [36m304 [90m0ms[0m
+[90mGET /javascripts/lightbox.min.js [36m304 [90m1ms[0m
+[90mGET /images/v2/bg.jpg [36m304 [90m1ms[0m
+[90mGET /images/favicon.ico [36m304 [90m1ms[0m
+[90mGET /images/favicon.ico [36m304 [90m0ms[0m
+Warning: missing space before text for line 23 of jade file "/home/ec2-user/LandingPage/views/index2.jade"
+[90mGET / [32m200 [90m77ms - 29.76kb[0m
+  [90msource :[0m [36m/home/ec2-user/LandingPage/sass/index2.scss[0m
+  [90mdest :[0m [36m/home/ec2-user/LandingPage/public/compiled/index2.css[0m
+[90mGET /compiled/index2.css [32m200 [90m2ms - 8.58kb[0m
+[90mGET /javascripts/modernizr.min.js [32m200 [90m1ms - 4.11kb[0m
+[90mGET /javascripts/lightbox.min.js [32m200 [90m1ms - 7.62kb[0m
+[90mGET /javascripts/index2.js [32m200 [90m1ms - 1.25kb[0m
+[90mGET /images/v2/TTT-circle.png [32m200 [90m0ms - 1.29kb[0m
+[90mGET /images/v2/signoff.png [32m200 [90m1ms - 3.46kb[0m
+[90mGET /images/v2/bg.jpg [32m200 [90m146ms - 276.83kb[0m
+Warning: missing space before text for line 23 of jade file "/home/ec2-user/LandingPage/views/index2.jade"
+[90mGET / [32m200 [90m95ms - 29.76kb[0m
+  [90msource :[0m [36m/home/ec2-user/LandingPage/sass/index2.scss[0m
+  [90mdest :[0m [36m/home/ec2-user/LandingPage/public/compiled/index2.css[0m
+[90mGET /compiled/index2.css [32m200 [90m3ms - 8.58kb[0m
+[90mGET /javascripts/lightbox.min.js [32m200 [90m2ms - 7.62kb[0m
+[90mGET /javascripts/modernizr.min.js [32m200 [90m2ms - 4.11kb[0m
+[90mGET /javascripts/index2.js [32m200 [90m1ms - 1.25kb[0m
+[90mGET /images/v2/TTT-circle.png [32m200 [90m1ms - 1.29kb[0m
+[90mGET /images/v2/signoff.png [32m200 [90m2ms - 3.46kb[0m
+[90mGET /images/v2/bg.jpg [32m200 [90m23ms - 276.83kb[0m
+[90mGET /images/favicon.ico [32m200 [90m1ms - 318b[0m
+[90mGET /a1b2c3d4e5f6g7h8i9/nonexistentfile.php [32m200 [90m1ms[0m
+[90mGET /adxmlrpc.php [32m200 [90m0ms[0m
+[90mGET /adserver/adxmlrpc.php [32m200 [90m1ms[0m
+[90mGET /phpAdsNew/adxmlrpc.php [32m200 [90m0ms[0m
+[90mGET /phpadsnew/adxmlrpc.php [32m200 [90m1ms[0m
+[90mGET /phpads/adxmlrpc.php [32m200 [90m1ms[0m
+[90mGET /Ads/adxmlrpc.php [32m200 [90m0ms[0m
+[90mGET /ads/adxmlrpc.php [32m200 [90m0ms[0m
+[90mGET /xmlrpc.php [32m200 [90m0ms[0m
+[90mGET /xmlrpc/xmlrpc.php [32m200 [90m0ms[0m
+[90mGET /xmlsrv/xmlrpc.php [32m200 [90m1ms[0m
+[90mGET /blog/xmlrpc.php [32m200 [90m1ms[0m
+[90mGET /drupal/xmlrpc.php [32m200 [90m1ms[0m
+[90mGET /community/xmlrpc.php [32m200 [90m0ms[0m
+[90mGET /blogs/xmlrpc.php [32m200 [90m1ms[0m
+[90mGET /blogs/xmlsrv/xmlrpc.php [32m200 [90m1ms[0m
+[90mGET /blog/xmlsrv/xmlrpc.php [32m200 [90m1ms[0m
+[90mGET /blogtest/xmlsrv/xmlrpc.php [32m200 [90m0ms[0m
+[90mGET /b2/xmlsrv/xmlrpc.php [32m200 [90m1ms[0m
+[90mGET /b2evo/xmlsrv/xmlrpc.php [32m200 [90m0ms[0m
+[90mGET /wordpress/xmlrpc.php [32m200 [90m0ms[0m
+[90mGET /phpgroupware/xmlrpc.php [32m200 [90m0ms[0m
+Warning: missing space before text for line 23 of jade file "/home/ec2-user/LandingPage/views/index2.jade"
+[90mGET / [32m200 [90m79ms - 29.76kb[0m
+Warning: missing space before text for line 23 of jade file "/home/ec2-user/LandingPage/views/index2.jade"
+[90mGET / [32m200 [90m92ms - 29.76kb[0m
+  [90msource :[0m [36m/home/ec2-user/LandingPage/sass/index2.scss[0m
+  [90mdest :[0m [36m/home/ec2-user/LandingPage/public/compiled/index2.css[0m
+[90mGET /images/v2/TTT-circle.png [32m200 [90m2ms - 1.29kb[0m
+[90mGET /compiled/index2.css [32m200 [90m2ms - 8.58kb[0m
+[90mGET /images/v2/signoff.png [32m200 [90m1ms - 3.46kb[0m
+[90mGET /javascripts/lightbox.min.js [32m200 [90m1ms - 7.62kb[0m
+[90mGET /javascripts/index2.js [32m200 [90m2ms - 1.25kb[0m
+[90mGET /javascripts/modernizr.min.js [32m200 [90m1ms - 4.11kb[0m
+[90mGET /javascripts/modernizr.min.js [36m304 [90m1ms[0m
+[90mGET /images/v2/bg.jpg [32m200 [90m156ms - 276.83kb[0m
+[90mGET /images/favicon.ico [32m200 [90m1ms - 318b[0m
+Warning: missing space before text for line 23 of jade file "/home/ec2-user/LandingPage/views/index2.jade"
+[90mGET / [32m200 [90m101ms - 29.76kb[0m
+Warning: missing space before text for line 23 of jade file "/home/ec2-user/LandingPage/views/index2.jade"
+[90mHEAD / [32m200 [90m80ms - 29.76kb[0m
+Warning: missing space before text for line 23 of jade file "/home/ec2-user/LandingPage/views/index2.jade"
+[90mGET / [32m200 [90m72ms - 30.87kb[0m
+  [90msource :[0m [36m/home/ec2-user/LandingPage/sass/index2.scss[0m
+  [90mdest :[0m [36m/home/ec2-user/LandingPage/public/compiled/index2.css[0m
+[90mGET /compiled/index2.css [32m200 [90m1ms - 13.52kb[0m
+[90mGET /images/v2/signoff.png [36m304 [90m1ms[0m
+[90mGET /images/v2/TTT-circle.png [36m304 [90m0ms[0m
+[90mGET /javascripts/lightbox.min.js [36m304 [90m1ms[0m
+[90mGET /javascripts/index2.js [36m304 [90m1ms[0m
+[90mGET /javascripts/modernizr.min.js [36m304 [90m0ms[0m
+[90mGET /images/v2/bg.jpg [36m304 [90m1ms[0m
+Warning: missing space before text for line 23 of jade file "/home/ec2-user/LandingPage/views/index2.jade"
+[90mGET / [36m304 [90m80ms[0m
+  [90msource :[0m [36m/home/ec2-user/LandingPage/sass/index2.scss[0m
+  [90mdest :[0m [36m/home/ec2-user/LandingPage/public/compiled/index2.css[0m
+[90mGET /compiled/index2.css [36m304 [90m1ms[0m
+[90mGET /images/v2/TTT-circle.png [36m304 [90m0ms[0m
+[90mGET /javascripts/index2.js [36m304 [90m0ms[0m
+[90mGET /javascripts/modernizr.min.js [36m304 [90m1ms[0m
+[90mGET /javascripts/lightbox.min.js [36m304 [90m1ms[0m
+[90mGET /images/v2/signoff.png [36m304 [90m1ms[0m
+[90mGET /images/v2/bg.jpg [36m304 [90m1ms[0m
+[90mGET /images/favicon.ico [36m304 [90m1ms[0m
+[90mGET /images/favicon.ico [36m304 [90m0ms[0m
+process: Dell true  person@y-designs.com true
+Executing (default): SELECT * FROM `Users` WHERE (`Users`.`username`='Dell' OR `Users`.`email`='person@y-designs.com') LIMIT 1;
+Executing (default): INSERT INTO `Users` (`id`,`username`,`email`,`createdAt`,`updatedAt`) VALUES (DEFAULT,'Dell','person@y-designs.com','2014-08-16 23:38:01','2014-08-16 23:38:01');
+[90mPOST /process/username [32m200 [90m25ms - 62b[0m
+Welcome Dell,
+Your desired username has been successfully reserved! 
+We’ll send you one final confirmation email prior to launch to activate your account. 
+You will have 2 weeks to log in before your username goes back up for grabs. 
+We look forward to having you! 
+Thanks,
+- The Two Thousand Times 
+http://facebook.com/twothousandtimes
+http://twitter.com/twothousandx'
+{ [MessageRejected: Email address is not verified.]
+  message: 'Email address is not verified.',
+  code: 'MessageRejected',
+  time: Sat Aug 16 2014 23:38:01 GMT+0000 (UTC),
+  statusCode: 400,
+  retryable: false }
+process: Dell true  person@y-designs.com true
+Executing (default): SELECT * FROM `Users` WHERE (`Users`.`username`='Dell' OR `Users`.`email`='person@y-designs.com') LIMIT 1;
+[90mPOST /process/username [32m200 [90m3ms - 48b[0m
+Warning: missing space before text for line 23 of jade file "/home/ec2-user/LandingPage/views/index2.jade"
+[90mGET / [36m304 [90m117ms[0m
+[90mGET /javascripts/index2.js [36m304 [90m1ms[0m
+[90mGET /images/v2/TTT-circle.png [36m304 [90m0ms[0m
+[90mGET /javascripts/modernizr.min.js [36m304 [90m1ms[0m
+[90mGET /javascripts/lightbox.min.js [36m304 [90m1ms[0m
+  [90msource :[0m [36m/home/ec2-user/LandingPage/sass/index2.scss[0m
+  [90mdest :[0m [36m/home/ec2-user/LandingPage/public/compiled/index2.css[0m
+[90mGET /compiled/index2.css [36m304 [90m0ms[0m
+[90mGET /images/v2/signoff.png [36m304 [90m0ms[0m
+[90mGET /images/v2/bg.jpg [36m304 [90m1ms[0m
+[90mGET /images/favicon.ico [36m304 [90m0ms[0m
+[90mGET /images/favicon.ico [36m304 [90m0ms[0m
+
+> TTTAnimation@0.0.1 start /home/ec2-user/LandingPage
+> node ./bin/www
+
+Warning: missing space before text for line 23 of jade file "/home/ec2-user/LandingPage/views/index2.jade"
+[90mGET / [32m200 [90m160ms - 30.89kb[0m
+  [90msource :[0m [36m/home/ec2-user/LandingPage/sass/index2.scss[0m
+  [90mdest :[0m [36m/home/ec2-user/LandingPage/public/compiled/index2.css[0m
+  [90mread :[0m [36m/home/ec2-user/LandingPage/public/compiled/index2.css[0m
+[90mGET /javascripts/modernizr.min.js [36m304 [90m2ms[0m
+  [90mrender :[0m [36m/home/ec2-user/LandingPage/sass/index2.scss[0m
+[90mGET /compiled/index2.css [32m200 [90m17ms - 13.52kb[0m
+[90mGET /javascripts/lightbox.min.js [36m304 [90m1ms[0m
+[90mGET /javascripts/index2.js [32m200 [90m2ms - 1.51kb[0m
+[90mGET /images/v2/TTT-circle.png [36m304 [90m1ms[0m
+[90mGET /images/v2/signoff.png [36m304 [90m1ms[0m
+[90mGET /images/v2/bg.jpg [36m304 [90m1ms[0m
+[90mGET /images/favicon.ico [36m304 [90m1ms[0m
+process: ydesigns true  info@y-designs.com true
+Executing (default): SELECT * FROM `Users` WHERE (`Users`.`username`='ydesigns' OR `Users`.`email`='info@y-designs.com') LIMIT 1;
+Executing (default): INSERT INTO `Users` (`id`,`username`,`email`,`createdAt`,`updatedAt`) VALUES (DEFAULT,'ydesigns','info@y-designs.com','2014-08-16 23:54:00','2014-08-16 23:54:00');
+[90mPOST /process/username [32m200 [90m21ms - 64b[0m
+Welcome ydesigns,
+Your desired username has been successfully reserved! 
+We’ll send you one final confirmation email prior to launch to activate your account. 
+You will have 2 weeks to log in before your username goes back up for grabs. 
+We look forward to having you! 
+Thanks,
+- The Two Thousand Times 
+http://facebook.com/twothousandtimes
+http://twitter.com/twothousandx'
+{ [MessageRejected: Email address is not verified.]
+  message: 'Email address is not verified.',
+  code: 'MessageRejected',
+  time: Sat Aug 16 2014 23:54:01 GMT+0000 (UTC),
+  statusCode: 400,
+  retryable: false }
+process: test true  ryuheixys@gmail.com true
+Executing (default): SELECT * FROM `Users` WHERE (`Users`.`username`='test' OR `Users`.`email`='ryuheixys@gmail.com') LIMIT 1;
+Executing (default): INSERT INTO `Users` (`id`,`username`,`email`,`createdAt`,`updatedAt`) VALUES (DEFAULT,'test','ryuheixys@gmail.com','2014-08-17 00:19:28','2014-08-17 00:19:28');
+[90mPOST /process/username [32m200 [90m10ms - 61b[0m
+Welcome test,
+Your desired username has been successfully reserved! 
+We’ll send you one final confirmation email prior to launch to activate your account. 
+You will have 2 weeks to log in before your username goes back up for grabs. 
+We look forward to having you! 
+Thanks,
+- The Two Thousand Times 
+http://facebook.com/twothousandtimes
+http://twitter.com/twothousandx'
+{ [MessageRejected: Email address is not verified.]
+  message: 'Email address is not verified.',
+  code: 'MessageRejected',
+  time: Sun Aug 17 2014 00:19:29 GMT+0000 (UTC),
+  statusCode: 400,
+  retryable: false }
+Warning: missing space before text for line 23 of jade file "/home/ec2-user/LandingPage/views/index2.jade"
+[90mGET / [36m304 [90m102ms[0m
+[90mGET /images/v2/signoff.png [36m304 [90m0ms[0m
+[90mGET /images/v2/TTT-circle.png [36m304 [90m0ms[0m
+  [90msource :[0m [36m/home/ec2-user/LandingPage/sass/index2.scss[0m
+  [90mdest :[0m [36m/home/ec2-user/LandingPage/public/compiled/index2.css[0m
+[90mGET /compiled/index2.css [36m304 [90m1ms[0m
+[90mGET /javascripts/index2.js [36m304 [90m1ms[0m
+[90mGET /javascripts/modernizr.min.js [36m304 [90m0ms[0m
+[90mGET /javascripts/lightbox.min.js [36m304 [90m1ms[0m
+[90mGET /images/v2/bg.jpg [36m304 [90m1ms[0m
+[90mGET /images/favicon.ico [36m304 [90m1ms[0m
+[90mGET /images/favicon.ico [36m304 [90m0ms[0m
+
+> TTTAnimation@0.0.1 start /home/ec2-user/LandingPage
+> node ./bin/www
+
+Warning: missing space before text for line 23 of jade file "/home/ec2-user/LandingPage/views/index2.jade"
+[90mGET / [36m304 [90m160ms[0m
+[90mGET /javascripts/index2.js [36m304 [90m2ms[0m
+[90mGET /images/v2/TTT-circle.png [36m304 [90m1ms[0m
+  [90msource :[0m [36m/home/ec2-user/LandingPage/sass/index2.scss[0m
+  [90mdest :[0m [36m/home/ec2-user/LandingPage/public/compiled/index2.css[0m
+  [90mread :[0m [36m/home/ec2-user/LandingPage/public/compiled/index2.css[0m
+  [90mrender :[0m [36m/home/ec2-user/LandingPage/sass/index2.scss[0m
+[90mGET /javascripts/modernizr.min.js [36m304 [90m2ms[0m
+[90mGET /compiled/index2.css [32m200 [90m16ms - 13.52kb[0m
+[90mGET /images/v2/signoff.png [36m304 [90m0ms[0m
+[90mGET /javascripts/lightbox.min.js [36m304 [90m0ms[0m
+[90mGET /images/v2/bg.jpg [36m304 [90m0ms[0m
+[90mGET /images/favicon.ico [36m304 [90m1ms[0m
+[90mGET /images/favicon.ico [36m304 [90m1ms[0m
+process: testing321 true  test@y-designs.com true
+Executing (default): SELECT * FROM `Users` WHERE (`Users`.`username`='testing321' OR `Users`.`email`='test@y-designs.com') LIMIT 1;
+Executing (default): INSERT INTO `Users` (`id`,`username`,`email`,`createdAt`,`updatedAt`) VALUES (DEFAULT,'testing321','test@y-designs.com','2014-08-17 00:25:41','2014-08-17 00:25:41');
+[90mPOST /process/username [32m200 [90m21ms - 66b[0m
+{ [MessageRejected: Email address is not verified.]
+  message: 'Email address is not verified.',
+  code: 'MessageRejected',
+  time: Sun Aug 17 2014 00:25:41 GMT+0000 (UTC),
+  statusCode: 400,
+  retryable: false }
+Warning: missing space before text for line 23 of jade file "/home/ec2-user/LandingPage/views/index2.jade"
+[90mGET / [32m200 [90m104ms - 30.89kb[0m
+
+> TTTAnimation@0.0.1 start /home/ec2-user/LandingPage
+> node ./bin/www
+
+Warning: missing space before text for line 23 of jade file "/home/ec2-user/LandingPage/views/index2.jade"
+[90mGET / [36m304 [90m176ms[0m
+[90mGET /images/v2/signoff.png [36m304 [90m2ms[0m
+[90mGET /javascripts/index2.js [36m304 [90m1ms[0m
+[90mGET /javascripts/lightbox.min.js [36m304 [90m0ms[0m
+  [90msource :[0m [36m/home/ec2-user/LandingPage/sass/index2.scss[0m
+  [90mdest :[0m [36m/home/ec2-user/LandingPage/public/compiled/index2.css[0m
+  [90mread :[0m [36m/home/ec2-user/LandingPage/public/compiled/index2.css[0m
+[90mGET /javascripts/modernizr.min.js [36m304 [90m1ms[0m
+  [90mrender :[0m [36m/home/ec2-user/LandingPage/sass/index2.scss[0m
+[90mGET /compiled/index2.css [32m200 [90m17ms - 13.52kb[0m
+[90mGET /images/v2/TTT-circle.png [36m304 [90m0ms[0m
+[90mGET /images/v2/bg.jpg [36m304 [90m0ms[0m
+[90mGET /images/favicon.ico [36m304 [90m1ms[0m
+[90mGET /images/favicon.ico [36m304 [90m1ms[0m
+process: testing123 true  info@y-designs.com true
+Executing (default): SELECT * FROM `Users` WHERE (`Users`.`username`='testing123' OR `Users`.`email`='info@y-designs.com') LIMIT 1;
+[90mPOST /process/username [32m200 [90m14ms - 40b[0m
+process: testing123 true  info2@y-designs.com true
+Executing (default): SELECT * FROM `Users` WHERE (`Users`.`username`='testing123' OR `Users`.`email`='info2@y-designs.com') LIMIT 1;
+Executing (default): INSERT INTO `Users` (`id`,`username`,`email`,`createdAt`,`updatedAt`) VALUES (DEFAULT,'testing123','info2@y-designs.com','2014-08-17 00:45:04','2014-08-17 00:45:04');
+[90mPOST /process/username [32m200 [90m14ms - 67b[0m
+process: testing123 true  info2@y-designs.com true
+Executing (default): SELECT * FROM `Users` WHERE (`Users`.`username`='testing123' OR `Users`.`email`='info2@y-designs.com') LIMIT 1;
+[90mPOST /process/username [32m200 [90m5ms - 48b[0m
+process: testing1233 true  info@y-designs.com true
+Executing (default): SELECT * FROM `Users` WHERE (`Users`.`username`='testing1233' OR `Users`.`email`='info@y-designs.com') LIMIT 1;
+[90mPOST /process/username [32m200 [90m4ms - 40b[0m
+process: testing1233 true  ryuhei@y-designs.com true
+Executing (default): SELECT * FROM `Users` WHERE (`Users`.`username`='testing1233' OR `Users`.`email`='ryuhei@y-designs.com') LIMIT 1;
+[90mPOST /process/username [32m200 [90m12ms - 40b[0m
+process: testing1233 true  max@y-designs.com true
+Executing (default): SELECT * FROM `Users` WHERE (`Users`.`username`='testing1233' OR `Users`.`email`='max@y-designs.com') LIMIT 1;
+[90mPOST /process/username [32m200 [90m4ms - 40b[0m
+process: testing1233 true  neil@y-designs.com true
+Executing (default): SELECT * FROM `Users` WHERE (`Users`.`username`='testing1233' OR `Users`.`email`='neil@y-designs.com') LIMIT 1;
+Executing (default): INSERT INTO `Users` (`id`,`username`,`email`,`createdAt`,`updatedAt`) VALUES (DEFAULT,'testing1233','neil@y-designs.com','2014-08-17 00:54:13','2014-08-17 00:54:13');
+[90mPOST /process/username [32m200 [90m9ms - 67b[0m
+
+> TTTAnimation@0.0.1 start /home/ec2-user/LandingPage
+> node ./bin/www
+
+
+events.js:72
+        throw er; // Unhandled 'error' event
+              ^
+Error: listen EADDRINUSE
+    at errnoException (net.js:904:11)
+    at Server._listen2 (net.js:1042:14)
+    at listen (net.js:1064:10)
+    at Server.listen (net.js:1138:5)
+    at Function.app.listen (/home/ec2-user/LandingPage/node_modules/express/lib/application.js:532:24)
+    at Object.<anonymous> (/home/ec2-user/LandingPage/bin/www:16:18)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+
+npm ERR! TTTAnimation@0.0.1 start: `node ./bin/www`
+npm ERR! Exit status 8
+npm ERR! 
+npm ERR! Failed at the TTTAnimation@0.0.1 start script.
+npm ERR! This is most likely a problem with the TTTAnimation package,
+npm ERR! not with npm itself.
+npm ERR! Tell the author that this fails on your system:
+npm ERR!     node ./bin/www
+npm ERR! You can get their info via:
+npm ERR!     npm owner ls TTTAnimation
+npm ERR! There is likely additional logging output above.
+npm ERR! System Linux 3.10.48-55.140.amzn1.x86_64
+npm ERR! command "node" "/usr/local/bin/npm" "start"
+npm ERR! cwd /home/ec2-user/LandingPage
+npm ERR! node -v v0.10.30
+npm ERR! npm -v 2.0.0-alpha.6.0
+npm ERR! code ELIFECYCLE
+npm ERR! 
+npm ERR! Additional logging details can be found in:
+npm ERR!     /home/ec2-user/LandingPage/npm-debug.log
+npm ERR! not ok code 0
+Warning: missing space before text for line 23 of jade file "/home/ec2-user/LandingPage/views/index2.jade"
+[90mGET / [36m304 [90m114ms[0m
+[90mGET /images/v2/TTT-circle.png [36m304 [90m1ms[0m
+[90mGET /javascripts/lightbox.min.js [36m304 [90m0ms[0m
+[90mGET /images/v2/signoff.png [36m304 [90m1ms[0m
+[90mGET /javascripts/modernizr.min.js [36m304 [90m1ms[0m
+[90mGET /javascripts/index2.js [36m304 [90m0ms[0m
+  [90msource :[0m [36m/home/ec2-user/LandingPage/sass/index2.scss[0m
+  [90mdest :[0m [36m/home/ec2-user/LandingPage/public/compiled/index2.css[0m
+[90mGET /compiled/index2.css [36m304 [90m1ms[0m
+[90mGET /images/v2/bg.jpg [36m304 [90m0ms[0m
+[90mGET /images/favicon.ico [36m304 [90m0ms[0m
+[90mGET /images/favicon.ico [36m304 [90m0ms[0m
+
+> TTTAnimation@0.0.1 start /home/ec2-user/LandingPage
+> node ./bin/www
+
+Warning: missing space before text for line 23 of jade file "/home/ec2-user/LandingPage/views/index2.jade"
+[90mGET / [36m304 [90m155ms[0m
+[90mGET /javascripts/index2.js [36m304 [90m2ms[0m
+[90mGET /javascripts/lightbox.min.js [36m304 [90m1ms[0m
+  [90msource :[0m [36m/home/ec2-user/LandingPage/sass/index2.scss[0m
+  [90mdest :[0m [36m/home/ec2-user/LandingPage/public/compiled/index2.css[0m
+  [90mread :[0m [36m/home/ec2-user/LandingPage/public/compiled/index2.css[0m
+[90mGET /images/v2/signoff.png [36m304 [90m0ms[0m
+  [90mrender :[0m [36m/home/ec2-user/LandingPage/sass/index2.scss[0m
+[90mGET /compiled/index2.css [32m200 [90m16ms - 13.52kb[0m
+[90mGET /images/v2/TTT-circle.png [36m304 [90m1ms[0m
+[90mGET /javascripts/modernizr.min.js [36m304 [90m0ms[0m
+[90mGET /images/v2/bg.jpg [36m304 [90m1ms[0m
+[90mGET /images/favicon.ico [36m304 [90m1ms[0m
+[90mGET /images/favicon.ico [36m304 [90m1ms[0m
+process: testing123 true  info@y-designs.com true
+Executing (default): SELECT * FROM `Users` WHERE (`Users`.`username`='testing123' OR `Users`.`email`='info@y-designs.com') LIMIT 1;
+[90mPOST /process/username [32m200 [90m13ms - 40b[0m
+process: testing123 true  info2@y-designs.com true
+Executing (default): SELECT * FROM `Users` WHERE (`Users`.`username`='testing123' OR `Users`.`email`='info2@y-designs.com') LIMIT 1;
+[90mPOST /process/username [32m200 [90m4ms - 48b[0m
+process: testing123321 true  info2@y-designs.com true
+Executing (default): SELECT * FROM `Users` WHERE (`Users`.`username`='testing123321' OR `Users`.`email`='info2@y-designs.com') LIMIT 1;
+[90mPOST /process/username [32m200 [90m4ms - 40b[0m
+process: testing123321 true  info4@y-designs.com true
+Executing (default): SELECT * FROM `Users` WHERE (`Users`.`username`='testing123321' OR `Users`.`email`='info4@y-designs.com') LIMIT 1;
+Executing (default): INSERT INTO `Users` (`id`,`username`,`email`,`createdAt`,`updatedAt`) VALUES (DEFAULT,'testing123321','info4@y-designs.com','2014-08-17 01:05:59','2014-08-17 01:05:59');
+[90mPOST /process/username [32m200 [90m15ms - 70b[0m
+
+> TTTAnimation@0.0.1 start /home/ec2-user/LandingPage
+> node ./bin/www
+
+process: testasdfasdf true  info9@y-designs.com true
+Executing (default): SELECT * FROM `Users` WHERE (`Users`.`username`='testasdfasdf' OR `Users`.`email`='info9@y-designs.com') LIMIT 1;
+Executing (default): INSERT INTO `Users` (`id`,`username`,`email`,`createdAt`,`updatedAt`) VALUES (DEFAULT,'testasdfasdf','info9@y-designs.com','2014-08-17 01:45:57','2014-08-17 01:45:57');
+[90mPOST /process/username [32m200 [90m25ms - 69b[0m
+Message sent: undefined
+process: testasdfasdfasdf false  info10@y-designs.com true
+[90mPOST /process/username [32m200 [90m1ms - 68b[0m
+process: test3 true  info10@y-designs.com true
+Executing (default): SELECT * FROM `Users` WHERE (`Users`.`username`='test3' OR `Users`.`email`='info10@y-designs.com') LIMIT 1;
+Executing (default): INSERT INTO `Users` (`id`,`username`,`email`,`createdAt`,`updatedAt`) VALUES (DEFAULT,'test3','info10@y-designs.com','2014-08-17 01:46:12','2014-08-17 01:46:12');
+[90mPOST /process/username [32m200 [90m9ms - 63b[0m
+Message sent: undefined
+
+> TTTAnimation@0.0.1 start /home/ec2-user/LandingPage
+> node ./bin/www
+
+Warning: missing space before text for line 23 of jade file "/home/ec2-user/LandingPage/views/index2.jade"
+[90mGET / [36m304 [90m156ms[0m
+[90mGET /javascripts/index2.js [36m304 [90m2ms[0m
+  [90msource :[0m [36m/home/ec2-user/LandingPage/sass/index2.scss[0m
+  [90mdest :[0m [36m/home/ec2-user/LandingPage/public/compiled/index2.css[0m
+  [90mread :[0m [36m/home/ec2-user/LandingPage/public/compiled/index2.css[0m
+[90mGET /images/v2/signoff.png [36m304 [90m1ms[0m
+  [90mrender :[0m [36m/home/ec2-user/LandingPage/sass/index2.scss[0m
+[90mGET /javascripts/lightbox.min.js [36m304 [90m1ms[0m
+[90mGET /compiled/index2.css [32m200 [90m18ms - 13.52kb[0m
+[90mGET /images/v2/TTT-circle.png [36m304 [90m1ms[0m
+[90mGET /javascripts/modernizr.min.js [36m304 [90m1ms[0m
+[90mGET /images/v2/bg.jpg [36m304 [90m0ms[0m
+[90mGET /images/favicon.ico [36m304 [90m1ms[0m
+[90mGET /images/v2/TTT-circle.png [32m200 [90m1ms - 1.29kb[0m
+Warning: missing space before text for line 23 of jade file "/home/ec2-user/LandingPage/views/index2.jade"
+[90mGET / [36m304 [90m113ms[0m
+[90mGET /javascripts/lightbox.min.js [36m304 [90m1ms[0m
+  [90msource :[0m [36m/home/ec2-user/LandingPage/sass/index2.scss[0m
+  [90mdest :[0m [36m/home/ec2-user/LandingPage/public/compiled/index2.css[0m
+[90mGET /compiled/index2.css [36m304 [90m1ms[0m
+[90mGET /images/v2/TTT-circle.png [36m304 [90m0ms[0m
+[90mGET /javascripts/modernizr.min.js [36m304 [90m0ms[0m
+[90mGET /javascripts/index2.js [36m304 [90m1ms[0m
+[90mGET /images/v2/signoff.png [36m304 [90m0ms[0m
+[90mGET /images/v2/bg.jpg [36m304 [90m0ms[0m
+[90mGET /images/favicon.ico [36m304 [90m1ms[0m
+[90mGET /images/favicon.ico [36m304 [90m2ms[0m
+process: ydesigns true  info11@y-designs.com true
+Executing (default): SELECT * FROM `Users` WHERE (`Users`.`username`='ydesigns' OR `Users`.`email`='info11@y-designs.com') LIMIT 1;
+[90mPOST /process/username [32m200 [90m13ms - 48b[0m
+process: ydesigns2 true  info11@y-designs.com true
+Executing (default): SELECT * FROM `Users` WHERE (`Users`.`username`='ydesigns2' OR `Users`.`email`='info11@y-designs.com') LIMIT 1;
+Executing (default): INSERT INTO `Users` (`id`,`username`,`email`,`createdAt`,`updatedAt`) VALUES (DEFAULT,'ydesigns2','info11@y-designs.com','2014-08-17 01:53:52','2014-08-17 01:53:52');
+[90mPOST /process/username [32m200 [90m15ms - 67b[0m
+Message sent: undefined
+process: ydesigns3 true  info12@y-designs.com true
+Executing (default): SELECT * FROM `Users` WHERE (`Users`.`username`='ydesigns3' OR `Users`.`email`='info12@y-designs.com') LIMIT 1;
+Executing (default): INSERT INTO `Users` (`id`,`username`,`email`,`createdAt`,`updatedAt`) VALUES (DEFAULT,'ydesigns3','info12@y-designs.com','2014-08-17 01:54:45','2014-08-17 01:54:45');
+[90mPOST /process/username [32m200 [90m10ms - 67b[0m
+Message sent: undefined
+[90mGET /images/v2/TTT-circle.png [32m200 [90m2ms - 1.29kb[0m
+process: ydesigns4 true  info13@y-designs.com true
+Executing (default): SELECT * FROM `Users` WHERE (`Users`.`username`='ydesigns4' OR `Users`.`email`='info13@y-designs.com') LIMIT 1;
+Executing (default): INSERT INTO `Users` (`id`,`username`,`email`,`createdAt`,`updatedAt`) VALUES (DEFAULT,'ydesigns4','info13@y-designs.com','2014-08-17 01:56:03','2014-08-17 01:56:03');
+[90mPOST /process/username [32m200 [90m8ms - 67b[0m
+Message sent: undefined
+[90mGET /images/v2/fbook.png [32m200 [90m1ms - 556b[0m
+[90mGET /images/v2/twitter.png [32m200 [90m1ms - 693b[0m
+[90mGET /images/v2/TTT-circle.png [32m200 [90m1ms - 1.29kb[0m
+[90mGET /images/v2/twitter.png [32m200 [90m1ms - 693b[0m
+Warning: missing space before text for line 23 of jade file "/home/ec2-user/LandingPage/views/index2.jade"
+[90mGET / [32m200 [90m106ms - 30.89kb[0m
+  [90msource :[0m [36m/home/ec2-user/LandingPage/sass/index2.scss[0m
+  [90mdest :[0m [36m/home/ec2-user/LandingPage/public/compiled/index2.css[0m
+[90mGET /compiled/index2.css [32m200 [90m2ms - 13.52kb[0m
+[90mGET /images/v2/signoff.png [32m200 [90m1ms - 3.46kb[0m
+[90mGET /images/v2/TTT-circle.png [32m200 [90m1ms - 1.29kb[0m
+[90mGET /javascripts/modernizr.min.js [32m200 [90m1ms - 4.11kb[0m
+[90mGET /javascripts/lightbox.min.js [32m200 [90m1ms - 7.62kb[0m
+[90mGET /javascripts/index2.js [32m200 [90m1ms - 1.51kb[0m
+[90mGET /images/v2/bg.jpg [32m200 [90m164ms - 276.83kb[0m
+[90mGET /images/favicon.ico [32m200 [90m1ms - 318b[0m
+[90mGET /images/v2/bg-m.jpg [32m200 [90m1ms - 85.46kb[0m
+Warning: missing space before text for line 23 of jade file "/home/ec2-user/LandingPage/views/index2.jade"
+[90mGET / [32m200 [90m82ms - 30.89kb[0m
+  [90msource :[0m [36m/home/ec2-user/LandingPage/sass/index2.scss[0m
+  [90mdest :[0m [36m/home/ec2-user/LandingPage/public/compiled/index2.css[0m
+[90mGET /compiled/index2.css [32m200 [90m1ms - 13.52kb[0m
+[90mGET /javascripts/modernizr.min.js [32m200 [90m1ms - 4.11kb[0m
+[90mGET /javascripts/index2.js [32m200 [90m1ms - 1.51kb[0m
+[90mGET /javascripts/lightbox.min.js [32m200 [90m1ms - 7.62kb[0m
+[90mGET /images/v2/TTT-circle.png [32m200 [90m2ms - 1.29kb[0m
+[90mGET /images/v2/signoff.png [32m200 [90m0ms - 3.46kb[0m
+[90mGET /images/v2/bg.jpg [32m200 [90m393ms - 276.83kb[0m
+Warning: missing space before text for line 23 of jade file "/home/ec2-user/LandingPage/views/index2.jade"
+[90mGET / [32m200 [90m73ms - 30.89kb[0m
+  [90msource :[0m [36m/home/ec2-user/LandingPage/sass/index2.scss[0m
+  [90mdest :[0m [36m/home/ec2-user/LandingPage/public/compiled/index2.css[0m
+[90mGET /compiled/index2.css [32m200 [90m1ms - 13.52kb[0m
+[90mGET /javascripts/modernizr.min.js [32m200 [90m2ms - 4.11kb[0m
+[90mGET /javascripts/index2.js [32m200 [90m1ms - 1.51kb[0m
+[90mGET /javascripts/lightbox.min.js [32m200 [90m1ms - 7.62kb[0m
+[90mGET /images/v2/signoff.png [32m200 [90m2ms - 3.46kb[0m
+[90mGET /images/v2/TTT-circle.png [32m200 [90m2ms - 1.29kb[0m
+[90mGET /images/v2/bg.jpg [32m200 [90m173ms - 276.83kb[0m
+Warning: missing space before text for line 23 of jade file "/home/ec2-user/LandingPage/views/index2.jade"
+[90mGET / [32m200 [90m83ms - 30.89kb[0m
+  [90msource :[0m [36m/home/ec2-user/LandingPage/sass/index2.scss[0m
+  [90mdest :[0m [36m/home/ec2-user/LandingPage/public/compiled/index2.css[0m
+[90mGET /compiled/index2.css [36m304 [90m1ms[0m
+[90mGET /javascripts/modernizr.min.js [36m304 [90m1ms[0m
+[90mGET /javascripts/lightbox.min.js [36m304 [90m1ms[0m
+[90mGET /javascripts/index2.js [36m304 [90m1ms[0m
+[90mGET /images/v2/signoff.png [36m304 [90m2ms[0m
+[90mGET /images/v2/TTT-circle.png [36m304 [90m1ms[0m
+Warning: missing space before text for line 23 of jade file "/home/ec2-user/LandingPage/views/index2.jade"
+[90mGET / [32m200 [90m112ms - 30.89kb[0m
+  [90msource :[0m [36m/home/ec2-user/LandingPage/sass/index2.scss[0m
+  [90mdest :[0m [36m/home/ec2-user/LandingPage/public/compiled/index2.css[0m
+[90mGET /compiled/index2.css [36m304 [90m1ms[0m
+[90mGET /javascripts/modernizr.min.js [36m304 [90m2ms[0m
+[90mGET /javascripts/index2.js [36m304 [90m1ms[0m
+[90mGET /javascripts/lightbox.min.js [36m304 [90m1ms[0m
+[90mGET /images/v2/TTT-circle.png [36m304 [90m1ms[0m
+[90mGET /images/v2/signoff.png [36m304 [90m1ms[0m

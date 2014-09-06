@@ -1,0 +1,17 @@
+npm ERR! Error: ENOENT, open '/home/ec2-user/LandingPage/views/package.json'
+npm ERR! If you need help, you may report this *entire* log,
+npm ERR! including the npm and node versions, at:
+npm ERR!     <http://github.com/npm/npm/issues>
+
+npm ERR! System Linux 3.10.48-55.140.amzn1.x86_64
+npm ERR! command "node" "/usr/local/bin/npm" "start"
+npm ERR! cwd /home/ec2-user/LandingPage/views
+npm ERR! node -v v0.10.30
+npm ERR! npm -v 2.0.0-alpha.6.0
+npm ERR! path /home/ec2-user/LandingPage/views/package.json
+npm ERR! code ENOENT
+npm ERR! errno 34
+npm ERR! 
+npm ERR! Additional logging details can be found in:
+npm ERR!     /home/ec2-user/LandingPage/views/npm-debug.log
+npm ERR! not ok code 0

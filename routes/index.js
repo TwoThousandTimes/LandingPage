@@ -71,7 +71,7 @@ postRequestToStaging = function ( username, email, callback ) {
 	// An object of options to indicate where to post to
 	var post_options = {
 		host: config.staging_host,
-		path: '/tt/rest/username/reserve',
+		path: '/rest/username/reserve',
 		method: 'POST',
 		headers: {
 			'Content-Type': 'application/x-www-form-urlencoded',
@@ -83,6 +83,7 @@ postRequestToStaging = function ( username, email, callback ) {
 	var post_req = http.request(post_options, function(post_res) {
 		post_res.setEncoding('utf8');
 		post_res.on('data', function (chunk) {
+		console.log(chunk);
 			var data = JSON.parse( chunk );
 			var response = {};
 			if ( data.error ) {
