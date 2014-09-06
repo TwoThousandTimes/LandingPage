@@ -101,9 +101,10 @@ block content
 						|<br/> &
 						|<br/> Somewhere there's a story that you were part of making.
 
-					div.float-right
-						span.stay-tuned Where writers & readers meet...
-						img.ttt(src="images/v2/signoff.png", alt="The Two Thousand Times")
+					a.reserve(href="#reserve", data-toggle="modal", data-target="#reserveModal", onclick="ga('send','pageview','reserve')")
+						span.big Reserve
+						br
+						span.small your username
 
 	div.modal.fade#privacyModal(tabindex="-1",role="dialog",aria-labelledby="privacyModalLabel",aria-hidden="true")
 		div.modal-dialog

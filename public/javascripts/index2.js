@@ -48,6 +48,11 @@ $(function() {
     $('input').change(function() {
         clear_error($(this).parent('form'));
     });
+
+    $('#learnModal a.reserve').click(function() {
+        $('#learnModal').modal('hide');
+    });
+
 });
 
 function clear_error(form) {
